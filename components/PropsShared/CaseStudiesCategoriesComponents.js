@@ -78,7 +78,7 @@ const CaseStudiesCategoriesComponents = ({ categoryId }) => {
                                     <div className='mt-3'>
                                         <div class="iv-link-1 cursor-pointer d-inline-block" onClick={() => handleShowModal(items)}>
                                             Read more
-                                            <FaArrowRight className="icons" />
+                                            <FaArrowRight className="icons ms-1" />
                                         </div>
                                     </div>
                                 </div>

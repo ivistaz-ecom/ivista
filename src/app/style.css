@@ -25,7 +25,7 @@ opacity: 0.2;
 
 /************************************************************************************/
 
-.timeline>h6 {
+.timeline>h6 , .timeline>h1{
   position: relative;
   list-style: none;
 }

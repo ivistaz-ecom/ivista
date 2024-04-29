@@ -80,8 +80,6 @@ const CareerCom = () => {
                                 <button type="button" class="btn btn-15">Apply</button>
                             </Col>
                         </Row>
-                        <p className="text-red para-text fw-bolder">
-                            Do you have it in you?Do you have it in you?                        </p>
                     </Col>
 
                     <Col className='mb-4 iv-bg rounded-4 p-4'>

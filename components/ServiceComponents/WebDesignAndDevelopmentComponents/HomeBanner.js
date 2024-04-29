@@ -21,7 +21,7 @@ const HomeBanner = () => {
 
         <>
 
-            <Container className='ng-white' fluid>
+            <Container className='ng-white z-index-100' fluid>
                 <Container className="w-80 custom-container" >
                     <Row className="d-flex align-items-center px-lg-0 px-2">
                         <ServiceBanner backgroundImage={backgroundImage} bannerSubHeading={bannerSubHeading} bannerHeading={bannerHeading} mobileBackgroundImage={mobileBackgroundImage} />

@@ -4,7 +4,7 @@ import { Col, Container } from 'react-bootstrap'
 const ContentDevelopment = () => {
     return (
         <>
-            <Container className="w-80 mt-4" >
+            <Container className="w-80 mt-4 mb-5" >
 
                 <h1 className='fs-3 text-red fw-bold'>
                     Content Development
