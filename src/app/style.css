@@ -2,7 +2,7 @@ p.animation{
 opacity: 0.2;
 }
 
-ul.timeline {
+.timeline {
   padding-left: 0px !important;
 }
 
@@ -25,15 +25,11 @@ ul.timeline {
 
 /************************************************************************************/
 
-.timeline>li {
+.timeline>h6 {
   position: relative;
   list-style: none;
 }
 
-.timeline {
-  position: relative;
-  list-style: none;
-}
 /************************************************************************************/
 
 .timeline-panel {
@@ -73,10 +69,10 @@ ul.timeline {
   -moz-animation-iteration-count: 1;
 }
 
-.timeline-badge.active .hover-paragraph {
+/* .timeline-badge.active .hover-paragraph {
   color: white !important;
   opacity: 1;
-}
+} */
 
 
 /************************************************************************************/
@@ -117,11 +113,14 @@ ul.timeline {
     -moz-transform: scale(1, 1);
   }
   50% {
-    /* border: 1.25px solid #ffffff; */
+    border: 1.25px solid #ffffff;
     transform: scale(1.5, 1.5);
     -ms-transform: scale(1.5, 1.5);
     -webkit-transform: scale(1.5, 1.5);
     -moz-transform: scale(1.5, 1.5);
+    box-shadow: 0 0 10px 5px red; /* Add a glow effect with hex code */
+    /* animation-timing-function: ease-in-out;  */
+
   }
   100% {
     /* border: 2px solid #ffffff; */
@@ -131,3 +130,4 @@ ul.timeline {
     -moz-transform: scale(1, 1);
   }
 }
+

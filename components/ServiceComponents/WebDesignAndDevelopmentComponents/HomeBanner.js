@@ -20,12 +20,14 @@ const HomeBanner = () => {
     return (
 
         <>
-            <Container className="w-80 custom-container" >
-                <Row className="d-flex align-items-center px-lg-0 px-2">
-                    <ServiceBanner backgroundImage={backgroundImage} bannerSubHeading={bannerSubHeading} bannerHeading={bannerHeading} mobileBackgroundImage={mobileBackgroundImage} />
-                </Row>
-            </Container>
 
+            <Container className='ng-white' fluid>
+                <Container className="w-80 custom-container" >
+                    <Row className="d-flex align-items-center px-lg-0 px-2">
+                        <ServiceBanner backgroundImage={backgroundImage} bannerSubHeading={bannerSubHeading} bannerHeading={bannerHeading} mobileBackgroundImage={mobileBackgroundImage} />
+                    </Row>
+                </Container>
+            </Container>
             {/* <Container className="pt-4 w-80 pb-4 pt-4">
                 <p className="para-text">As social developments produce both new possibilities and fresh challenges, active attempts to establish a better future for monitoring, assessment, and learning will become increasingly more crucial in the coming years. These changes in the philanthropic landscape—and the world around it—are profoundly altering the backdrop for decision-making inside social sector organisations as well as the larger practise of monitoring, evaluation, and learning.</p>
             </Container>

@@ -106,22 +106,22 @@ const MasteryArtsPerfomancePage = () => {
 
             <ScrollAnimation />
 
-            <ul className='timeline'>
-                <li ref={nextSectionRef}>
+            <div className='timeline'>
+                <h6 ref={nextSectionRef}>
                     <div class="timeline-badge"></div>
                     <Mastery />
-                </li>
+                </h6>
 
-                <li ref={nextSectionRef1}>
+                <h6 ref={nextSectionRef1}>
                     <div class="timeline-badge"></div>
                     <Arts />
-                </li>
+                </h6>
 
-                <li ref={nextSectionRef2}>
+                <h6 ref={nextSectionRef2}>
                     <div class="timeline-badge"></div>
                     <Performance />
-                </li>
-            </ul>
+                </h6>
+            </div>
             <Footer />
         </>
     );

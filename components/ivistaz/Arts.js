@@ -16,7 +16,7 @@ function Arts() {
                         <h1 className="fs-80 fw-bold text-white">Art</h1>
                     </Container>
                     <Container>
-                        <p className="fs-20 fw-bold text-white-50 hover-paragraph" >
+                        <p className="fs-20 fw-bold text-white-50 timeline-item" >
                             We’ve been crafting and creating art that captivates and resonates with our clients and their audiences. As the digital world continues to evolve, we have kept pace, adapting our strategies to the ever-changing landscape. With personalized solutions and a commitment to live up to client’s expectations, we delivered what was expected of us. Our point of differentiation was the performance-focused model, which earned us a reputation for excellence making us a trusted choice for over 300 brands.
                         </p>
                     </Container>
