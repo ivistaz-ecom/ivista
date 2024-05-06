@@ -222,7 +222,7 @@ function Footer() {
                     </Row>
                 </Container>
             </Container>
-            <Container className="bg-black pt-1 pb-1" fluid>
+            <Container className="bg-black pt-1 pb-1 z-2" fluid>
                 <Container className="text-center copyright">
                     <p className='mb-0'>© {currentYear} iVistaz Ecom Services Pvt Ltd</p>
                 </Container>

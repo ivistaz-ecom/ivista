@@ -1465,6 +1465,7 @@ cursor: pointer;
     height: auto;
   }
   .w-80{
+    /* width:100% !important;    */
     width:100% !important;   
     }
     .arts-img{
