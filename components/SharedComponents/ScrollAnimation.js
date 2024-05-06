@@ -103,6 +103,6 @@ const ScrollAnimation = () => {
 
         </div>
     )
-}
+};
 
 export default ScrollAnimation

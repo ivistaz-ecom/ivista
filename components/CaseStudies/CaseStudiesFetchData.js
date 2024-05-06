@@ -28,27 +28,6 @@ const CaseStudiesFetchData = () => {
         fetchData();
     }, [siteUrl, serverUrl]); // Include dependencies in useEffect dependency array
 
-    // useEffect(() => {
-    //     if (isOpen) {
-    //         document.body.style.overflow = 'hidden';
-    //     } else {
-    //         document.body.style.overflow = 'auto';
-    //     }
-    //     return () => {
-    //         document.body.style.overflow = 'auto';
-    //     };
-    // }, [isOpen]);
-
-    // const handleShowModal = (item) => {
-    //     setSelectedItem(item);
-    //     setIsOpen(true);
-    // };
-
-    // const handleCloseModal = () => {
-    //     setIsOpen(false);
-    //     setSelectedItem(null);
-    // };
-
     const handleLoadMore = () => {
         setVisibleItems((prevCount) => prevCount + 3);
     };

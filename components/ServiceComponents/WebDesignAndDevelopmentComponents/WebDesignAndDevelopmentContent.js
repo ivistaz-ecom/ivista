@@ -7,15 +7,16 @@ import ScrollAnimation from '../../SharedComponents/ScrollAnimation'
 const WebDesignAndDevelopmentContent = () => {
     return (
         <>
-
             <ScrollAnimation />
-            <Container className="w-80 mt-4">
+            <Container fluid className=" mt-4 p-0">
                 <div className='timeline'>
-                    <h6 className='fs-3 text-red fw-bold '>
+                    <h6 className='fs-3 text-red fw-bold'>
                         <div class="timeline-badge"></div>
-                        Web Design and Development
+                        <Container className='w-80'>
+                            Web Design and Development
+                        </Container>
                     </h6>
-                    <Col>
+                    <div>
                         <p className="text-black para-text fw-semibold">
                             If your website is not engaging, intuitive, and visually appealing, you&apos;re losing potential customers to competitors. That is why a professionally designed website is crucial to bring back visitors for meaningful engagement.
                         </p>
@@ -90,7 +91,7 @@ const WebDesignAndDevelopmentContent = () => {
                         <h1 className='para-text text-red fw-bold pb-5 '>
                             <Link href="/contact-us" className='red'>Contact us</Link> today to embark on your journey to digital success.
                         </h1>
-                    </Col>
+                    </div>
                 </div>
             </Container>
 

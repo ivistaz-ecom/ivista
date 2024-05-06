@@ -22,10 +22,9 @@ opacity: 0.2;
   border-radious: 40px;
 }
 
-
 /************************************************************************************/
 
-.timeline>h6 , .timeline>h1{
+.timeline>h6 , .timeline>h1 .timeline>li .timeline>div{
   position: relative;
   list-style: none;
 }
@@ -74,7 +73,6 @@ opacity: 0.2;
   opacity: 1;
 } */
 
-
 /************************************************************************************/
 
 .timeline-badge {
@@ -101,8 +99,6 @@ opacity: 0.2;
 }
 
 /************************************************************************************/
-
-
 
 @keyframes lines {
   0% {
@@ -131,3 +127,21 @@ opacity: 0.2;
   }
 }
 
+.custom-text-clr.active {
+  background : orange !important;
+}
+
+
+.animated-element.active {
+  /* Add styles for the animated element when it's scrolled into view */
+}
+
+/* Custom text color class */
+.custom-text {
+  /* Add styles for the text element */
+}
+
+/* Custom text color class when active */
+.custom-text.custom-text-clr {
+  color: red; /* Change the color to whatever you need */
+}

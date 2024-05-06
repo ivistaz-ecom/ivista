@@ -1652,3 +1652,12 @@ cursor: pointer;
     transform: translateY(0); /* Final position, at the top */
   }
 }
+
+.custom-career:hover{
+  background : red;
+}
+
+.custom-career:hover p{
+  background : red;
+  color: white !important;
+}

@@ -50,7 +50,7 @@ function HeroBanner() {
               Whether it is B2C products like home appliances, automobiles, earphones, airline tickets, or hotel room bookings, we have helped businesses significantly increase their online sales. Our e-commerce marketing capabilities include Organic Search, Paid Search/Google PPC, real-time bidding, Organic and Paid Social marketing, and Amazon marketing. Our ad campaigns are designed not just to create awareness and demand for your products and services but will also keep a sharp eye on your CPL (Cost Per Lead) and ROAS (Return on Ad Spend).
             </p>
             <p className="para-text">
-              Read our success stories for boosting online sales <Link href="/case-studies" className=' red fw-semibold'>here.
+              Read our success stories for boosting online sales <Link href="/case-studies" className='red'>here.
               </Link>
             </p>
           </Col>

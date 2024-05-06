@@ -4,9 +4,6 @@ import Link from 'next/link'
 import React, { useEffect, useState } from 'react'
 import { Col, Container, Row, CloseButton, Image } from 'react-bootstrap'
 
-import ConfigData from '../../config'
-
-import { FaArrowRight } from 'react-icons/fa'
 import CaseStudiesCategoriesComponents from '../PropsShared/CaseStudiesCategoriesComponents'
 
 

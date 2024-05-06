@@ -11,7 +11,7 @@ function Footer() {
 
     return (
         <>
-            <Container fluid className="iv-bg p-0 z-index-100 position-relative">
+            <Container fluid className="iv-bg p-0 z-2 position-relative">
                 <Container className="w-80 p-12 d-lg-block d-none" >
                     <Row>
                         <Col className="f-head" lg={4}>
@@ -28,7 +28,7 @@ function Footer() {
             </Container>
 
 
-            <Container fluid className="bg-black z-index-100 position-relative">
+            <Container fluid className="bg-black z-2 position-relative">
                 <Container className="w-80 p-12" >
                     <Row>
                         <Col className="footer" lg={4}>
