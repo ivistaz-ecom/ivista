@@ -2,27 +2,27 @@
 'use client'
 import React from 'react'
 import { Col, Container } from 'react-bootstrap'
-import ScrollAnimation from '../../SharedComponents/ScrollAnimation'
+import ScrollAnimationService from '../../SharedComponents/ScrollAnimationServices'
+
 
 const DesignContentComponents = () => {
     return (
         <>
-
-            <ScrollAnimation />
+            <ScrollAnimationService />
 
             <Container fluid className="mt-4 p-0">
                 <article>
-                    <div className='timeline'>
-                        <h1 className='fs-3 text-red fw-bold ps-lg-0 ps-5 px-0 position-relative'>
-                            <div class="timeline-badge"></div>
-                            <Container className='w-80 px-0'>
+                    <div className='timeline1'>
+                        <h1 className='fs-3 text-red fw-bold ps-7 position-relative'>
+                            <div class="timeline-badge1"></div>
+                            <Container className='w-80'>
                                 Design
                             </Container>
                         </h1>
                     </div>
 
                     <Col>
-                        <Container className='w-80 px-0 ps-lg-0 ps-5'>
+                        <Container className='w-80 ps-7'>
                             <p className="text-black para-text fw-semibold">
                                 “Design is not just what it looks like and feels like. Design is how it works.” - Steve Jobs
                             </p>
@@ -34,8 +34,8 @@ const DesignContentComponents = () => {
                     </Col>
 
                     <Col className='position-relative'>
-                        <div class="timeline-badge"></div>
-                        <Container className='w-80 px-0 ps-lg-0 ps-5'>
+                        <div class="timeline-badge1"></div>
+                        <Container className='w-80 ps-7'>
                             <h1 className='fs-3 text-red fw-bold'>
                                 Web design services
                             </h1>
@@ -43,7 +43,7 @@ const DesignContentComponents = () => {
                     </Col>
 
                     <Col>
-                        <Container className='w-80 px-0 ps-lg-0 ps-5'>
+                        <Container className='w-80 ps-7'>
                             <p className="text-black para-text">
                                 Our web design services are tailored to create visually appealing and user-friendly websites that align with your brand identity and objectives. We prioritize not only aesthetic appeal but also user experience (UX) and user interface (UI) design to ensure that your website delivers an engaging and intuitive browsing experience for your visitors. Our designers meticulously craft each element of your website, focusing on navigation ease, page load speed, and mobile responsiveness to enhance user satisfaction and encourage prolonged engagement.
                             </p>
@@ -59,8 +59,8 @@ const DesignContentComponents = () => {
                     </Col>
 
                     <Col className='position-relative'>
-                        <div class="timeline-badge"></div>
-                        <Container className='w-80 px-0 ps-lg-0 ps-5'>
+                        <div class="timeline-badge1"></div>
+                        <Container className='w-80 ps-7'>
                             <h1 className='fs-3 text-red fw-bold'>
                                 Logo Design
                             </h1>
@@ -68,7 +68,7 @@ const DesignContentComponents = () => {
                     </Col>
 
                     <Col>
-                        <Container className='w-80 px-0 ps-lg-0 ps-5'>
+                        <Container className='w-80 ps-7'>
                             <p className="text-black para-text">
                                 Whether it is your brand/company logo or a logo for your sub-brand, unit, or initiative, our designers will work closely with you to understand your brand ethos and create a logo that encapsulates your unique identity.
                             </p>
@@ -76,8 +76,8 @@ const DesignContentComponents = () => {
                     </Col>
 
                     <Col className='position-relative'>
-                        <div class="timeline-badge"></div>
-                        <Container className='w-80 px-0 ps-lg-0 ps-5'>
+                        <div class="timeline-badge1"></div>
+                        <Container className='w-80 ps-7'>
                             <h1 className='fs-3 text-red fw-bold'>
                                 Infographics
                             </h1>
@@ -85,7 +85,7 @@ const DesignContentComponents = () => {
                     </Col>
 
                     <Col>
-                        <Container className='w-80 px-0 ps-lg-0 ps-5'>
+                        <Container className='w-80 ps-7'>
                             <p className="text-black para-text">
                                 Infographics serve as powerful tools for communicating key messages and insights in a digestible format, enhancing audience engagement and retention. We will spend time understanding your brief and translating them into visually striking graphics that are easy to understand and share.
                             </p>
@@ -93,8 +93,8 @@ const DesignContentComponents = () => {
                     </Col>
 
                     <Col className='position-relative'>
-                        <div class="timeline-badge"></div>
-                        <Container className='w-80 px-0 ps-lg-0 ps-5'>
+                        <div class="timeline-badge1"></div>
+                        <Container className='w-80 ps-7'>
                             <h1 className='fs-3 text-red fw-bold'>
                                 Collateral Design
                             </h1>
@@ -102,7 +102,7 @@ const DesignContentComponents = () => {
                     </Col>
 
                     <Col>
-                        <Container className='w-80 px-0 ps-lg-0 ps-5'>
+                        <Container className='w-80 ps-7'>
                             <p className="text-black para-text">
                                 Our collateral design services include the creation of various marketing materials, like brochures, white papers, and other promotional materials.
                             </p>
@@ -111,8 +111,8 @@ const DesignContentComponents = () => {
 
 
                     <Col className='position-relative'>
-                        <div class="timeline-badge"></div>
-                        <Container className='w-80 px-0 ps-lg-0 ps-5'>
+                        <div class="timeline-badge1"></div>
+                        <Container className='w-80 ps-7'>
                             <h1 className='fs-4 text-red fw-bold'>
                                 What is your design requirement today?
                             </h1>
@@ -120,8 +120,8 @@ const DesignContentComponents = () => {
                     </Col>
 
                     <Col className='position-relative mb-5'>
-                        <div class="timeline-badge"></div>
-                        <Container className='w-80 px-0 ps-lg-0 ps-5'>
+                        <div class="timeline-badge1"></div>
+                        <Container className='w-80 ps-7'>
                             <h1 className='fs-4 text-red fw-bold'>
                                 Write to us at:
                             </h1>

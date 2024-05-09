@@ -5,13 +5,18 @@ import Header from '../../../../components/HeaderBlack'
 import HeroBanner from '../../../../components/Fashion/HomeBanner'
 import Footer from '../../../../components/Footer'
 
+import FashionComponents from '../../../../components/Fashion'
+
 function page() {
     return (
-        <Container fluid className="bg-black pb-5">
-            <Header />
-            <HeroBanner />
-            <Footer />
-        </Container>
+        // <Container fluid className="bg-black pb-5">
+        //     <Header />
+        //     <HeroBanner />
+        //     <Footer />
+        // </Container>
+        <>
+            <FashionComponents />
+        </>
     )
 }
 

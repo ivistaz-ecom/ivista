@@ -1,25 +1,26 @@
 'use client'
 import React from 'react'
 import { Col, Container } from 'react-bootstrap'
-import ScrollAnimation from '../../SharedComponents/ScrollAnimation'
+import ScrollAnimationService from '../../SharedComponents/ScrollAnimationServices'
+
 
 const ContentDevelopment = () => {
     return (
         <>
-            <ScrollAnimation />
+            <ScrollAnimationService />
             <Container fluid className="mt-4 p-0">
                 <article>
-                    <div className='timeline'>
-                        <h1 className='fs-3 text-red fw-bold ps-lg-0 ps-5 px-0 position-relative'>
-                            <div class="timeline-badge"></div>
-                            <Container className='w-80 px-0'>
+                    <div className='timeline1'>
+                        <h1 className='fs-3 text-red fw-bold ps-7 position-relative'>
+                            <div class="timeline-badge1"></div>
+                            <Container className='w-80'>
                                 Content Development
                             </Container>
                         </h1>
                     </div>
 
                     <Col className='position-relative'>
-                        <Container className='w-80 px-0 ps-lg-0 ps-5'>
+                        <Container className='w-80 ps-7'>
                             <p className="text-black para-text fw-semibold">
                                 “Content builds relationships. Relationships are built on trust. Trust drives revenue.” – Andrew Davis, Bestselling Author and Keynote Speaker
                             </p>
@@ -37,8 +38,8 @@ const ContentDevelopment = () => {
                     </Col>
 
                     <Col className='position-relative'>
-                        <div class="timeline-badge"></div>
-                        <Container className='w-80 px-0 ps-lg-0 ps-5 position-relative'>
+                        <div class="timeline-badge1"></div>
+                        <Container className='w-80 ps-7 position-relative'>
                             <h1 className='fs-3 text-red fw-bold'>
                                 Our content development expertise covers the following:
                             </h1>
@@ -46,7 +47,7 @@ const ContentDevelopment = () => {
                     </Col>
 
                     <Col>
-                        <Container className='w-80 px-0 ps-lg-0 ps-5 position-relative'>
+                        <Container className='w-80 ps-7 position-relative'>
                             <p className='text-red fw-bold para-text'>
                                 Long-form content:
                             </p>
@@ -73,8 +74,8 @@ const ContentDevelopment = () => {
                     </Col>
 
                     <Col className='position-relative pb-5'>
-                        <div class="timeline-badge"></div>
-                        <Container className='w-80 px-0 ps-lg-0 ps-5 pt-2'>
+                        <div class="timeline-badge1"></div>
+                        <Container className='w-80 ps-7 pt-2'>
                             <p className='text-red fw-bold para-text'>
                                 What is your content requirement today?
                                 Write to us at:

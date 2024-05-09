@@ -1,18 +1,19 @@
 'use client'
 import React from 'react'
 import { Col, Container } from 'react-bootstrap'
-import ScrollAnimation from '../../SharedComponents/ScrollAnimation'
+import ScrollAnimationServiceˀ from '../../SharedComponents/ScrollAnimationServices'
+
 
 const SocialMediaMarketingContent = () => {
     return (
         <>
-            <ScrollAnimation />
+            <ScrollAnimationServiceˀ />
 
             <Container fluid className="mt-4 p-0">
                 <article>
-                    <div className='timeline'>
-                        <h1 className='fs-3 text-red fw-bold ps-lg-0 ps-5 px-0 position-relative'>
-                            <div class="timeline-badge"></div>
+                    <div className='timeline1'>
+                        <h1 className='fs-3 text-red fw-bold ps-7 position-relative'>
+                            <div class="timeline-badge1"></div>
                             <Container className='w-80 px-0'>
                                 Social Media Marketing
                             </Container>
@@ -20,7 +21,7 @@ const SocialMediaMarketingContent = () => {
                     </div>
 
                     <Col>
-                        <Container className='w-80 px-0 ps-lg-0 ps-5'>
+                        <Container className='w-80 ps-7'>
                             <p className="text-black para-text">
                                 From targeting and re-targeting to leveraging look-alike and custom audiences, as well as diving into demographics, behaviors, attributes, and interests – the power of precise targeting on social media can be invaluable in helping businesses generate leads or sell online.
                             </p>
@@ -38,8 +39,8 @@ const SocialMediaMarketingContent = () => {
                     </Col>
 
                     <Col className='position-relative'>
-                        <div class="timeline-badge"></div>
-                        <Container className='w-80 px-0 ps-lg-0 ps-5'>
+                        <div class="timeline-badge1"></div>
+                        <Container className='w-80 ps-7'>
                             <h1 className='fs-4 text-red fw-bold'>
                                 Leads, online sales, enquiries, room bookings—what goals do you want to achieve with social media marketing?
                             </h1>
@@ -47,8 +48,8 @@ const SocialMediaMarketingContent = () => {
                         </Container>
                     </Col>
                     <Col className='position-relative mb-5'>
-                        <div class="timeline-badge"></div>
-                        <Container className='w-80 px-0 ps-lg-0 ps-5'>
+                        <div class="timeline-badge1"></div>
+                        <Container className='w-80 ps-7'>
                             <h1 className='fs-4 text-red fw-bold'>
                                 Write to us at:
                             </h1>

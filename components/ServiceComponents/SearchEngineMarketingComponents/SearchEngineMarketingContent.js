@@ -1,24 +1,25 @@
 'use client'
 import React from 'react'
 import { Col, Container } from 'react-bootstrap'
-import ScrollAnimation from '../../SharedComponents/ScrollAnimation'
+import ScrollAnimationService from '../../SharedComponents/ScrollAnimationServices'
+
 
 const SearchEngineMarketingContent = () => {
     return (
         <>
-            <ScrollAnimation />
+            <ScrollAnimationService />
             <Container className="mt-4 p-0" fluid>
                 <article>
-                    <div className='timeline'>
-                        <h1 className='fs-3 text-red fw-bold ps-lg-0 ps-5 px-0 position-relative'>
-                            <div class="timeline-badge"></div>
-                            <Container className='w-80 px-0'>
+                    <div className='timeline1'>
+                        <h1 className='fs-3 text-red fw-bold  position-relative'>
+                            <div class="timeline-badge1"></div>
+                            <Container className='w-80 ps-7'>
                                 Search Engine Marketing
                             </Container>
                         </h1>
                     </div>
                     <Col>
-                        <Container className='w-80 px-0 ps-lg-0 ps-5 px-0'>
+                        <Container className='w-80 ps-7'>
                             <p className="text-black para-text fw-semibold">
                                 Digital journeys and buying decisions are unpredictable, impulsive, and fragmented. Buying decisions take place in micro-moments.
                             </p>
@@ -50,9 +51,9 @@ const SearchEngineMarketingContent = () => {
                         </Container>
                     </Col>
 
-                    <div className='position-relative mb-5 ps-lg-0 ps-5 px-0'>
-                        <div class="timeline-badge"></div>
-                        <Container className='w-80 p-0'>
+                    <div className='position-relative mb-5 '>
+                        <div class="timeline-badge1"></div>
+                        <Container className='w-80 ps-7'>
                             <h1 className='fs-3 text-red fw-bold'>
                                 Need help with your Search Engine Marketing?
                             </h1>

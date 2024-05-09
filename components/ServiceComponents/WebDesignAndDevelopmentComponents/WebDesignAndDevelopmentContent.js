@@ -2,7 +2,8 @@
 import Link from 'next/link'
 import React from 'react'
 import { Col, Container } from 'react-bootstrap'
-import ScrollAnimation from '../../SharedComponents/ScrollAnimation'
+import ScrollAnimation from '../../SharedComponents/ScrollAnimationServices'
+// import ScrollAnimation from '../../SharedComponents/ScrollAnimation'
 
 const WebDesignAndDevelopmentContent = () => {
     return (
@@ -11,15 +12,15 @@ const WebDesignAndDevelopmentContent = () => {
 
             <Container fluid className="mt-4 p-0">
                 <article>
-                    <div className='timeline'>
-                        <h6 className='fs-3 text-red fw-bold ps-lg-0 ps-5 px-0'>
-                            <div class="timeline-badge"></div>
-                            <Container className='w-80 px-0'>
+                    <div className='timeline1'>
+                        <h6 className='fs-3 text-red fw-bold ps-7 px-0'>
+                            <div class="timeline-badge1"></div>
+                            <Container className='w-80 ps-7'>
                                 Web Design and Development
                             </Container>
                         </h6>
                         <div>
-                            <Container className='w-80 ps-lg-0 ps-5'>
+                            <Container className='w-80 ps-7'>
                                 <p className="text-black para-text fw-semibold">
                                     If your website is not engaging, intuitive, and visually appealing, you&apos;re losing potential customers to competitors. That is why a professionally designed website is crucial to bring back visitors for meaningful engagement.
                                 </p>
@@ -42,9 +43,9 @@ const WebDesignAndDevelopmentContent = () => {
                             </Container>
                         </div>
 
-                        <div className='position-relative pt-3 ps-lg-0 ps-5 px-0'>
-                            <div class="timeline-badge"></div>
-                            <Container className='w-80'>
+                        <div className='position-relative pt-3  px-0'>
+                            <div class="timeline-badge1"></div>
+                            <Container className='w-80 ps-7'>
                                 <h1 className='fs-3 text-red fw-bold'>
                                     Our expertise in web and mobile app design includes:
                                 </h1>
@@ -69,9 +70,9 @@ const WebDesignAndDevelopmentContent = () => {
                             </Container>
                         </div>
 
-                        <div className='position-relative pt-3 ps-lg-0 ps-5 px-0'>
-                            <div class="timeline-badge"></div>
-                            <Container className='w-80'>
+                        <div className='position-relative pt-3 ps-7 px-0'>
+                            <div class="timeline-badge1"></div>
+                            <Container className='w-80 ps-7'>
                                 <h1 className='fs-3 text-red fw-bold'>
                                     Technological Proficiency:
                                 </h1>
@@ -98,9 +99,9 @@ const WebDesignAndDevelopmentContent = () => {
                                 </ul>
                             </Container>
                         </div>
-                        <h1 className='para-text text-red fw-bold pb-5 pt-2 position-relative ps-lg-0 ps-5 px-0'>
-                            <div class="timeline-badge"></div>
-                            <Container className='w-80'>
+                        <h1 className='para-text text-red fw-bold pb-5 pt-2 position-relative px-0'>
+                            <div class="timeline-badge1"></div>
+                            <Container className='w-80 ps-7'>
                                 <Link href="/contact-us" className='red'>Contact us</Link> today to embark on your journey to digital success.
                             </Container>
                         </h1>

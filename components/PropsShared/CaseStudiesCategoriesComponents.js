@@ -1,3 +1,4 @@
+'use client'
 import React, { useEffect, useState } from 'react'
 import { Container, Col, Image, CloseButton } from 'react-bootstrap'
 
@@ -5,9 +6,14 @@ import ConfigData from '../../config'
 import Link from 'next/link';
 import { FaArrowRight } from 'react-icons/fa';
 
+import { usePathname } from 'next/navigation'
+
 const CaseStudiesCategoriesComponents = ({ categoryId }) => {
 
     const [data, setData] = useState(null);
+    const pathname = usePathname();
+
+    // alert(pathname);
 
     const siteUrl = ConfigData.wpApiUrl;
     const serverUrl = ConfigData.SERVER;
@@ -59,7 +65,7 @@ const CaseStudiesCategoriesComponents = ({ categoryId }) => {
 
     return (
         <>
-            <Container>
+            <Container className='bg-black position-relative z-3'>
                 <Col className='d-flex flex-lg-row flex-column justify-content-center gap-3'>
                     {data ? ( // Check if data is available
                         data.map((items) => (
@@ -124,15 +130,62 @@ const CaseStudiesCategoriesComponents = ({ categoryId }) => {
                         </div>
                     )}
                 </Col>
-            </Container >
+            </Container>
+
             <Container className="mt-5 d-flex justify-content-center">
-                <Link className="btn-13" href="/ivistaz">Enter website</Link>
+                {/* <Link className="btn-13" href="/ivistaz">Enter website</Link> */}
+                {
+                    (
+                        pathname === '/leads' ||
+                        pathname === '/sales' ||
+                        pathname === '/traffic' ||
+                        pathname === '/keyword-ranking' ||
+                        pathname === '/engagement'
+                    )
+                    && (
+                        <Link href="/ivistaz" className="btn-13">Enter website</Link>
+                    )
+                }
+                {
+                    (
+                        pathname === '/industries/appliances' ||
+                        pathname === '/industries/automobiles' ||
+                        pathname === '/industries/beauty' ||
+                        pathname === '/industries/fashion' ||
+                        pathname === '/industries/hospitality' ||
+                        pathname === '/industries/jewellery' ||
+                        pathname === '/industries/ngo' ||
+                        pathname === '/industries/tech'
+                    )
+                    && (
+                        <Link href="/case-studies" className="btn-13 z-0">View All Case Studies</Link>
+                    )
+                }
+
             </Container>
         </>
     )
 }
 
 export default CaseStudiesCategoriesComponents
+
+// {router.pathname === '/leads' ||
+// router.pathname === '/about-us' ||
+// router.pathname === '/sales' ||
+// router.pathname === '/traffic' ? (
+//    <div className="mt-5 d-flex justify-content-center">
+//        <Link href="/ivistaz">
+//            <a>Enter website</a>
+//        </Link>
+//    </div>
+// ) : null}
+
+// {router.pathname === '/industries/automobiles' ||
+// router.pathname === '/industries/appliances' ? (
+//    <div className="mt-5 d-flex justify-content-center">
+
+//    </div>
+// ) : null}
 
 
 

@@ -5,14 +5,19 @@ import HeroBanner from '../../../../components/Ngos/HomeBanner'
 import Header from '../../../../components/HeaderBlack'
 import Footer from '../../../../components/Footer'
 
+import NgoComponents from '../../../../components/Ngos'
 
 function page() {
   return (
-    <Container fluid className="bg-black pb-5">
-      <Header />
-      <HeroBanner />
-      <Footer />
-    </Container>
+    // <Container fluid className="bg-black pb-5">
+    //   <Header />
+    //   <HeroBanner />
+    //   <Footer />
+    // </Container>
+
+    <>
+      <NgoComponents />
+    </>
   )
 }
 

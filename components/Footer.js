@@ -199,7 +199,7 @@ function Footer() {
                     </Row>
                 </Container>
             </Container>
-            <Container className="iv-grey pt-2 pb-2" fluid>
+            <Container className="iv-grey pt-2 pb-2 z-3" fluid>
                 <Container className="text-center">
                     <Row className="g-0">
                         <Col className="d-flex align-items-center justify-content-end">

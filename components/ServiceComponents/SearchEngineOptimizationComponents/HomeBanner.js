@@ -17,10 +17,12 @@ const HomeBanner = () => {
     const bannerHeading = "OPTIMISATION"
     return (
         <>
-            <Container className="w-80 custom-container" >
-                <Row className="d-flex align-items-center px-lg-0 px-2">
-                    <ServiceBanner backgroundImage={backgroundImage} mobileBackgroundImage={mobileBackgroundImage} bannerSubHeading={bannerSubHeading} bannerHeading={bannerHeading} />
-                </Row>
+            <Container className='bg-white z-3 position-relative' fluid>
+                <Container className="w-80 custom-container z-index-100" >
+                    <Row className="d-flex align-items-center px-lg-0 px-2">
+                        <ServiceBanner backgroundImage={backgroundImage} mobileBackgroundImage={mobileBackgroundImage} bannerSubHeading={bannerSubHeading} bannerHeading={bannerHeading} />
+                    </Row>
+                </Container>
             </Container>
         </>
     )

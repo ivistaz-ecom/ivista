@@ -2,28 +2,33 @@
 import Link from 'next/link'
 import React from 'react'
 import { Col, Container } from 'react-bootstrap'
-import ScrollAnimation from '../../SharedComponents/ScrollAnimation'
+import ScrollAnimationServicePage from '../../SharedComponents/ScrollAnimationServices'
+
 
 const SearchEngineOptimizationContent = () => {
     return (
         <>
-            <ScrollAnimation />
+            <ScrollAnimationServicePage />
+
             <Container fluid className="mt-4 p-0" >
                 <article>
-                    <div className='timeline'>
-                        <h1 className='fs-3 text-red fw-bold ps-lg-0 ps-5 px-0 position-relative'>
-                            <div class="timeline-badge"></div>
-                            <Container className='w-80 px-0'>
+                    <div className='timeline1'>
+                        <h1 className='fs-3 text-red fw-bold ps-lg-0 ps-7 px-0 position-relative'>
+                            <div class="timeline-badge1"></div>
+                            <Container className='w-80 ps-7'>
                                 Search Engine Optimization
                             </Container>
                         </h1>
                     </div>
 
                     <Col>
-                        <Container className='w-80 ps-lg-0 ps-5'>
+                        <Container className='w-80 ps-7'>
+
+
                             <p className="text-black para-text fw-semibold">
                                 If your company, product, or service does not show up in the top 10 search results, that enquiry, lead, or sale is going to your competitor. That’s why SEO is crucial for your business.
                             </p>
+
                             <p className="text-black para-text">
                                 Today, the search for a product, solution, service or person inevitably begins online (view SEO-related stats <Link href="https://www.webfx.com/seo/statistics/#:~:text=When%20people%20go%20online%20to,search%20engine%20to%20guide%20them." target='_blank' className='hyper-link-red cursor-pointer'>here</Link>).
                             </p>
@@ -41,23 +46,28 @@ const SearchEngineOptimizationContent = () => {
                             </p>
 
                             <p className="text-black para-text">
+                                There are 2 trillion global searches per year, translating to 8.5 billion searches per day. A staggering 75% of users never scroll past the first page of search results. These stark statistics underscore the critical importance of Search Engine Optimization (SEO) in driving organic traffic and maximizing online visibility.
+                            </p>
+
+                            <p className="text-black para-text">
                                 Our experts understand that SEO requires a nuanced understanding of your target audience, industry trends, and competitive landscape. We employ a holistic approach that encompasses both on-page and off-page optimization strategies. From keyword research and content optimization to link building and technical SEO audits, we address each factor with a meticulous approach to elevate your brand&apos;s digital presence. By analyzing user intent and behavior we recommend and craft tailored content to align with SEO strategies that resonate with your audience and drive meaningful engagement with your web pages.
                             </p>
 
                             <p className="text-black para-text">
                                 iVistaz will provide weekly, monthly, and quarterly reports to help you track progress on keyword ranking and its impact on your web traffic and user engagement with your most important pages.
                             </p>
+
                         </Container>
                     </Col>
 
-                    <Col className='position-relative pt-2'>
-                        <Container className='w-80 ps-lg-0 ps-5'>
-                            <div class="timeline-badge"></div>
+                    <div className='position-relative pt-2'>
+                        <Container className='w-80 ps-7'>
+                            <div class="timeline-badge1"></div>
                             <h1 className='para-text text-red fw-bold pb-5 '>
                                 <Link href="/contact-us" className='red'>Contact us</Link> today to embark on your journey to digital success.
                             </h1>
                         </Container>
-                    </Col>
+                    </div>
                 </article>
             </Container>
         </>

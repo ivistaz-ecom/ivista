@@ -29,6 +29,14 @@ background: #3a3a3a;
 .text-offwhite{
 color:#ffffff83;  
 }
+
+.ps-6 {
+  padding-left: 4rem !important;
+}
+
+.ps-7 {
+  padding-left: 5rem !important;
+}
 .p-12{
 padding-top:12px;
 padding-bottom:12px;  
