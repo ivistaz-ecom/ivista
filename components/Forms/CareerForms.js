@@ -18,24 +18,6 @@ const CareerForms = () => {
     const [yourSubject, setyourSubject] = React.useState(null);
     const [loading, setLoading] = useState(false);
 
-    // Email Validation
-    const emailRegex = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i
-    const customErrors = {
-        field: 'yourEmail',
-        message: 'Please enter a valid email address.'
-    }
-    const customDomainErrors = {
-        field: 'yourEmail',
-        message: 'This email domain is not allowed.'
-    }
-
-    const notAllowedDomains = ['test.com', 'sample.com', 'example.com', 'testing.com'];
-
-    function isValidEmail(email) {
-        const [_, domain] = email.split('@');
-        return notAllowedDomains.includes(domain);
-    }
-
     const handleTextChange = e => {
         const { name, value } = e.target;
         if (name === 'yourName') {
@@ -43,31 +25,8 @@ const CareerForms = () => {
             console.log(value)
         }
         if (name === 'yourEmail') {
-            if (!emailRegex.test(value)) {
-                console.log('invalid Email')
-                const fieldErrors = {}
-                const { field, message } = customErrors;
-                fieldErrors[field] = message;
-                setErrors(fieldErrors);
-                setEmail()
-                //alert('valid email enter')
-            }
-            else {
-                console.log('characters looks valid')
-                setEmail(value)
-                setErrors();
-            }
-            if (isValidEmail(value)) {
-                console.log('Email domain is not allowed');
-                const fieldErrors = {}
-                const { field, message } = customDomainErrors;
-                fieldErrors[field] = message;
-                setErrors(fieldErrors);
-            } else {
-                console.log('Email domain is allowed');
-
-            }
-
+            setyourEmail(value)
+            console.log(value)
         }
         if (name === 'yourSubject') {
             setyourSubject(value)
@@ -142,13 +101,12 @@ const CareerForms = () => {
                     <label htmlFor="yourEmail" className="form-label text-black">Email *</label>
                     <input
                         type="email"
-                        className={`form-control ${errors && errors.yourEmail ? 'is-invalid' : ''}`}
+                        className="form-control"
                         id="yourEmail"
                         name="yourEmail"
                         value={yourEmail}
                         onChange={handleTextChange}
                     />
-                    {errors && errors.yourEmail && <div className="invalid-feedback">{errors.yourEmail}</div>}
                 </div>
                 <div className="mb-3">
                     <label htmlFor="yourSubject" className="form-label text-black">Subject *</label>
