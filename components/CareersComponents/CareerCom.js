@@ -34,7 +34,7 @@ const CareerCom = () => {
                 const response = await fetch(`${siteUrl}/careers?categories=${categoryId}&_embed&production_mode[]=${serverUrl}`);
                 const data = await response.json();
                 setData(data);
-                console.log(data);
+                // console.log(data);
             } catch (error) {
                 console.error('Error fetching data:', error);
             }
@@ -84,7 +84,7 @@ const CareerCom = () => {
                         data.length > 0 ? ( // Check if data is available and not empty
                             data.slice(0, visibleItems).map((item) => (
                                 <>
-                                    <Row className='border-0 custom-career d-flex flex-lg-row flex-column mt-3' key={item.id}>
+                                    <Row className='border-0 custom-career d-flex flex-lg-row flex-column mt-3 shadow-lg' key={item.id}>
                                         <Col className='list-group-1 border-0' lg={10}>
                                             <div className="d-flex justify-content-between align-items-center border-0">
                                                 <div className="ms-2 me-auto">
@@ -148,7 +148,7 @@ const CareerCom = () => {
                         )}
                     </Col>
                 </Row>
-                <p className="para-text text-black">We value your privacy and will handle your information with utmost confidentiality. By submitting this form, you agree to our Privacy Policy.</p>
+                <p className="para-text text-black mt-3">We value your privacy and will handle your information with utmost confidentiality. By submitting this form, you agree to our Privacy Policy.</p>
             </Container >
         </>
     )

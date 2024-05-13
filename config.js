@@ -2,6 +2,8 @@ const config = {
     apiDomainUrl: "https://docs.ivistaz.com/",
     wpApiUrl: "https://docs.ivistaz.com/wp-json/wp/v2",
     wpPageUrl: "",
+    // Career form
+    careeFormApi: "https://docs.ivistaz.com/wp-json/contact-form-7/v1/contact-forms/239/feedback",
     "SERVER": "9"
 }
 
