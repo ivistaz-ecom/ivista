@@ -174,15 +174,18 @@ const ContactForm = () => {
     return (
         <Container>
 
-            {
-                `
+            <style>
+                {
+                    `
                 h1.reg-success.mt-4 {
                     color: green !important;
                     font-size: 22px !important;
                     font-weight: 700 !important;
                 }
                 `
-            }
+                }
+            </style>
+
             {!submitted ? (
                 <form className="row p-0 z-index-100">
                     {/* Name */}
