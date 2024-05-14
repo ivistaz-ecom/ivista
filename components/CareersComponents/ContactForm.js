@@ -6,8 +6,7 @@ import axios from 'axios'; // Don't forget to import axios
 import ConfigData from '../../config';
 
 
-const CareerForms = () => {
-
+const ContactForm = () => {
     const siteUrl = ConfigData.apiDomainUrl;
 
     const [post, setPost] = React.useState(null);
@@ -16,22 +15,9 @@ const CareerForms = () => {
     const [yourName, setyourName] = React.useState(null);
     const [yourEmail, setyourEmail] = React.useState(null);
     const [yourPhone, setyourPhone] = React.useState(null);
-    const [yourJobType, setyourJobType] = React.useState(null);
-    // const [yourResume, setyourResume] = React.useState(null);
+    const [yourCompany, setyourCompany] = React.useState(null);
+    const [yourMessage, setyourMessage] = React.useState(null);
     const [loading, setLoading] = useState(false);
-
-    const [selectedFile, setSelectedFile] = useState(null);
-
-
-    const options = [
-        { value: 'account_manager', label: 'Account Manager/Client Servicing' },
-        { value: 'content_writer', label: 'Content Writer' },
-        { value: 'ui_ux_designer', label: 'UI/UX Designer' },
-        { value: 'front_end_developer', label: 'Front-End Developer' },
-        { value: 'back_end_developer', label: 'Back-End Developer' },
-        { value: 'paid_marketing_specialist', label: 'Paid Marketing Specialist' },
-        { value: 'seo', label: 'SEO' }
-    ];
 
     // Email Validation
     const emailRegex = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i;
@@ -105,22 +91,14 @@ const CareerForms = () => {
             console.log(value)
         }
 
-        if (name === 'yourJobType') {
-            if (value === 'Job Type') {
-                // Display required error if no job type is selected
-                const fieldErrors = {};
-                fieldErrors['yourJobType'] = 'Please select a job type';
-                setErrors(fieldErrors);
-            } else {
-                // Clear any previous errors if a job type is selected
-                setErrors({});
-                // Update the job type state
-                setyourJobType(value);
-                console.log(value);
-            }
+        if (name === 'yourCompany') {
+            setyourCompany(value)
+            console.log(value);
         }
-
-
+        if (name === 'yourMessage') {
+            setyourMessage(value)
+            console.log(value)
+        }
     };
 
     const handleSubmit = async (e) => {
@@ -133,18 +111,20 @@ const CareerForms = () => {
         setyourName('');
         setyourEmail('');
         setyourPhone('');
-        setyourJobType('');
+        setyourCompany('');
+        setyourMessage('');
     };
 
     function createPost() {
         setErrors({});
-        axios.post(`https://docs.ivistaz.com/wp-json/contact-form-7/v1/contact-forms/239/feedback`,
+        axios.post(`https://docs.ivistaz.com/wp-json/contact-form-7/v1/contact-forms/271/feedback`,
             // axios.post(`https://docs.walmartvriddhi.org/wp-json/contact-form-7/v1/contact-forms/239/feedback`,
             {
                 'yourName': { yourName },
                 'yourEmail': { yourEmail },
                 'yourPhone': { yourPhone },
-                'yourJobType': { yourJobType },
+                'yourCompany': { yourCompany },
+                'yourMessage': { yourMessage },
             }, {
             headers: {
                 "Content-Type": 'multipart/form-data',
@@ -162,7 +142,8 @@ const CareerForms = () => {
                     document.getElementById("yourEmail").value = "";
                     document.getElementById("yourName").value = "";
                     document.getElementById("yourPhone").value = "";
-                    document.getElementById("yourJobType").value = "";
+                    document.getElementById("yourCompany").value = "";
+                    document.getElementById("yourMessage").value = "";
                 }
                 else if (msg == 'validation_failed') {
                     const fieldErrors = {};
@@ -182,7 +163,7 @@ const CareerForms = () => {
             <form className="row p-0 z-index-100">
                 {/* Name */}
                 <div className="mb-3">
-                    <label htmlFor="yourName" className="form-label text-black">Full Name *</label>
+                    <label htmlFor="yourName" className="form-label text-white">Full Name *</label>
                     <input
                         type="text"
                         className={`form-control ${errors && errors.yourName ? 'is-invalid' : ''}`}
@@ -197,7 +178,7 @@ const CareerForms = () => {
 
                 {/* Email */}
                 <div className="mb-3">
-                    <label htmlFor="yourEmail" className="form-label text-black">Email *</label>
+                    <label htmlFor="yourEmail" className="form-label text-white">Email *</label>
                     <input
                         type="email"
                         className={`form-control ${errors && errors.yourEmail ? 'is-invalid' : ''}`}
@@ -211,10 +192,10 @@ const CareerForms = () => {
 
                 {/*  Mobile */}
                 <div className="mb-3">
-                    <label htmlFor="yourPhone" className="form-label text-black">Phone</label>
+                    <label htmlFor="yourPhone" className="form-label text-white">Phone</label>
                     <input
                         type="text"
-                        className="form-control"
+                        className={`form-control ${errors && errors.yourPhone ? 'is-invalid' : ''}`}
                         id="yourPhone"
                         name="yourPhone"
                         value={yourPhone}
@@ -223,32 +204,40 @@ const CareerForms = () => {
                     {errors && errors.yourPhone && <div className="invalid-feedback">{errors.yourPhone}</div>}
                 </div>
 
-                {/* Job Type */}
+                {/* Your Company */}
                 <div className="mb-3">
-                    <label htmlFor="yourJobType" className="form-label text-black">Job Type</label>
-                    <select
-                        value={yourJobType}
+                    <label htmlFor="yourCompany" className="form-label text-white">Company</label>
+                    <input
+                        type="text"
+                        className={`form-control ${errors && errors.yourCompany ? 'is-invalid' : ''}`}
+                        id="yourCompany"
+                        name="yourCompany"
+                        value={yourCompany}
                         onChange={handleTextChange}
-                        className={`form-select ${errors && errors.yourEmail ? 'is-invalid' : ''}`}
-                        name='yourJobType'
-                    >
-                        <option value="Job Type">Job Type</option>
-                        {options.map(option => (
-                            <option key={option.value} value={option.value}>
-                                {option.label}
-                            </option>
-                        ))}
-                    </select>
-                    {/* {errors.yourJobType && <span>{errors.yourJobType}</span>} */}
-                    {errors && errors.yourJobType && <div className="invalid-feedback">{errors.yourJobType}</div>}
-
+                    />
+                    {errors && errors.yourCompany && <div className="invalid-feedback">{errors.yourCompany}</div>}
                 </div>
+
+                <div className="mb-3">
+                    <label htmlFor="yourMessage" className="form-label text-white">Message</label>
+                    <textarea
+                        type="text"
+                        className="form-control"
+                        id="yourMessage"
+                        name="yourMessage"
+                        value={yourMessage}
+                        onChange={handleTextChange}
+                        rows="5"
+                    />
+                    {errors && errors.yourMessage && <div className="invalid-feedback">{errors.yourMessage}</div>}
+                </div>
+
                 {/* Submit Button */}
                 <div className="mt-3 text-center">
                     <div class="text-center">
                         <button
                             type="button"
-                            class="btn btn-15 bg-black text-white"
+                            class="btn btn-15"
                             onClick={handleSubmit}
                         >
                             Submit
@@ -260,5 +249,4 @@ const CareerForms = () => {
         </Container>
     );
 };
-
-export default CareerForms;
+export default ContactForm

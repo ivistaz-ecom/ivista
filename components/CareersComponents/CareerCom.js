@@ -1,9 +1,6 @@
-import Image from 'next/image'
 import React, { useState, useEffect } from 'react'
 import { CloseButton, Col, Container, Row } from 'react-bootstrap'
 import ConfigData from '../../config';
-import { FaArrowRight } from 'react-icons/fa';
-import Link from 'next/link';
 import CareerForms from '../Forms/CareerForms';
 
 const CareerCom = () => {
@@ -130,7 +127,7 @@ const CareerCom = () => {
                         {isOpen && (
                             <div className='position-fixed top-0 start-0 end-0 bottom-0 z-index-100 d-flex flex-column justify-content-center align-items-center bg-black bg-opacity-75'>
                                 <span className='position-absolute top-0 bottom-0 end-0 start-0 z-3' onClick={handleCloseModal}></span>
-                                <div className='position-relative p-5 bg-white h-80vh w-50 rounded-3 overflow-auto z-index-100'>
+                                <div className='position-relative p-lg-5 p-4 py-lg-5 py-5 bg-white h-80vh rounded-3 overflow-auto z-index-100 col-lg-6'>
                                     <div className='position-absolute end-0 p-4 pe-5 top-0' onClick={handleCloseModal}>
                                         <div className='position-fixed'>
                                             <CloseButton />
