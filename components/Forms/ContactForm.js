@@ -19,6 +19,9 @@ const ContactForm = () => {
     const [yourMessage, setyourMessage] = React.useState(null);
     const [loading, setLoading] = useState(false);
 
+    const [submitted, setSubmitted] = useState(false);
+
+
     // Email Validation
     const emailRegex = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i;
     const customErrors = {
@@ -86,9 +89,19 @@ const ContactForm = () => {
             // Always update the email state
             setyourEmail(value);
         }
+
         if (name === 'yourPhone') {
-            setyourPhone(value)
-            console.log(value)
+            if (!numRegex.test(value)) {
+                const fieldErrors = {};
+                const { field, message } = numErrors;
+                fieldErrors[field] = message;
+                setErrors(fieldErrors);
+            } else {
+                // Phone number format is valid, clear any previous errors
+                setErrors({});
+                setyourPhone(value);
+                console.log(value)
+            }
         }
 
         if (name === 'yourCompany') {
@@ -160,92 +173,112 @@ const ContactForm = () => {
 
     return (
         <Container>
-            <form className="row p-0 z-index-100">
-                {/* Name */}
-                <div className="mb-3">
-                    <label htmlFor="yourName" className="form-label text-white">Full Name *</label>
-                    <input
-                        type="text"
-                        className={`form-control ${errors && errors.yourName ? 'is-invalid' : ''}`}
-                        id="yourName"
-                        name="yourName"
-                        value={yourName}
-                        required
-                        onChange={handleTextChange}
-                    />
-                    {errors && errors.yourName && <div className="invalid-feedback">{errors.yourName}</div>}
-                </div>
 
-                {/* Email */}
-                <div className="mb-3">
-                    <label htmlFor="yourEmail" className="form-label text-white">Email *</label>
-                    <input
-                        type="email"
-                        className={`form-control ${errors && errors.yourEmail ? 'is-invalid' : ''}`}
-                        id="yourEmail"
-                        name="yourEmail"
-                        value={yourEmail}
-                        onChange={handleTextChange}
-                    />
-                    {errors && errors.yourEmail && <div className="invalid-feedback">{errors.yourEmail}</div>}
-                </div>
+            {
+                `
+                h1.reg-success.mt-4 {
+                    color: green !important;
+                    font-size: 22px !important;
+                    font-weight: 700 !important;
+                }
+                `
+            }
+            {!submitted ? (
+                <form className="row p-0 z-index-100">
+                    {/* Name */}
+                    <div className="mb-3">
+                        <label htmlFor="yourName" className="form-label text-white">Full Name <sup className='text-danger'>*</sup></label>
+                        <input
+                            type="text"
+                            className={`form-control ${errors && errors.yourName ? 'is-invalid' : ''}`}
+                            required
+                            id="yourName"
+                            name="yourName"
+                            value={yourName}
 
-                {/*  Mobile */}
-                <div className="mb-3">
-                    <label htmlFor="yourPhone" className="form-label text-white">Phone</label>
-                    <input
-                        type="text"
-                        className={`form-control ${errors && errors.yourPhone ? 'is-invalid' : ''}`}
-                        id="yourPhone"
-                        name="yourPhone"
-                        value={yourPhone}
-                        onChange={handleTextChange}
-                    />
-                    {errors && errors.yourPhone && <div className="invalid-feedback">{errors.yourPhone}</div>}
-                </div>
-
-                {/* Your Company */}
-                <div className="mb-3">
-                    <label htmlFor="yourCompany" className="form-label text-white">Company</label>
-                    <input
-                        type="text"
-                        className={`form-control ${errors && errors.yourCompany ? 'is-invalid' : ''}`}
-                        id="yourCompany"
-                        name="yourCompany"
-                        value={yourCompany}
-                        onChange={handleTextChange}
-                    />
-                    {errors && errors.yourCompany && <div className="invalid-feedback">{errors.yourCompany}</div>}
-                </div>
-
-                <div className="mb-3">
-                    <label htmlFor="yourMessage" className="form-label text-white">Message</label>
-                    <textarea
-                        type="text"
-                        className="form-control"
-                        id="yourMessage"
-                        name="yourMessage"
-                        value={yourMessage}
-                        onChange={handleTextChange}
-                        rows="5"
-                    />
-                    {errors && errors.yourMessage && <div className="invalid-feedback">{errors.yourMessage}</div>}
-                </div>
-
-                {/* Submit Button */}
-                <div className="mt-3 text-center">
-                    <div class="text-center">
-                        <button
-                            type="button"
-                            class="btn btn-15"
-                            onClick={handleSubmit}
-                        >
-                            Submit
-                        </button>
+                            onChange={handleTextChange}
+                        />
+                        {errors && errors.yourName && <div className="invalid-feedback">{errors.yourName}</div>}
                     </div>
-                    {loading && <h1 class="reg-success mt-4">{post}</h1>}
+
+                    {/* Email */}
+                    <div className="mb-3">
+                        <label htmlFor="yourEmail" className="form-label text-white">Email <sup className='text-danger'>*</sup></label>
+                        <input
+                            type="email"
+                            className={`form-control ${errors && errors.yourEmail ? 'is-invalid' : ''}`}
+                            required
+                            id="yourEmail"
+                            name="yourEmail"
+                            value={yourEmail}
+                            onChange={handleTextChange}
+                        />
+                        {errors && errors.yourEmail && <div className="invalid-feedback">{errors.yourEmail}</div>}
+                    </div>
+
+                    {/*  Mobile */}
+                    <div className="mb-3">
+                        <label htmlFor="yourPhone" className="form-label text-white">Phone <sup className='text-danger'>*</sup></label>
+                        <input
+                            type="text"
+                            className={`form-control ${errors && errors.yourPhone ? 'is-invalid' : ''}`}
+                            required
+                            id="yourPhone"
+                            name="yourPhone"
+                            value={yourPhone}
+                            onChange={handleTextChange}
+                        />
+                        {errors && errors.yourPhone && <div className="invalid-feedback">{errors.yourPhone}</div>}
+                    </div>
+
+                    {/* Your Company */}
+                    <div className="mb-3">
+                        <label htmlFor="yourCompany" className="form-label text-white">Company <sup className='text-danger'>*</sup></label>
+                        <input
+                            type="text"
+                            className={`form-control ${errors && errors.yourCompany ? 'is-invalid' : ''}`}
+                            required
+                            id="yourCompany"
+                            name="yourCompany"
+                            value={yourCompany}
+                            onChange={handleTextChange}
+                        />
+                        {errors && errors.yourCompany && <div className="invalid-feedback">{errors.yourCompany}</div>}
+                    </div>
+
+                    <div className="mb-3">
+                        <label htmlFor="yourMessage" className="form-label text-white">Message</label>
+                        <textarea
+                            type="text"
+                            className="form-control"
+                            id="yourMessage"
+                            name="yourMessage"
+                            value={yourMessage}
+                            onChange={handleTextChange}
+                            rows="5"
+                        />
+                        {errors && errors.yourMessage && <div className="invalid-feedback">{errors.yourMessage}</div>}
+                    </div>
+
+                    {/* Submit Button */}
+                    <div className="mt-3 text-center">
+                        <div class="text-center">
+                            <button
+                                type="button"
+                                class="btn btn-15"
+                                onClick={handleSubmit}
+                            >
+                                Submit
+                            </button>
+                        </div>
+                        {loading && <h1 class="reg-success mt-4">{post}</h1>}
+                    </div>
+                </form>
+            ) : (
+                <div>
+                    <p>Thank you for your submission!</p>
                 </div>
-            </form>
+            )}
         </Container>
     );
 };

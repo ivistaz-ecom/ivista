@@ -2,7 +2,7 @@ import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
 import Link from 'next/link';
 import Image from 'next/image'
-import ContactForm from '../CareersComponents/ContactForm';
+import ContactForm from '../Forms/ContactForm';
 
 
 const ContactusContent = () => {
@@ -21,42 +21,8 @@ const ContactusContent = () => {
                     </Col>
                 </Row>
                 <Row>
-                    <Col lg={6}>
-
+                    <Col lg={6} className='py-4'>
                         <ContactForm />
-                        {/* <form class="row g-3 pt-4 mt-3">
-                            <div class="mb-3">
-                                <label for="formFile" class="form-label">Your Name</label>
-                                <input class="form-control" type="text" id="formFile" />
-                            </div>
-                            <div class="mb-3">
-                                <label for="formFile" class="form-label">Title</label>
-                                <input class="form-control" type="text" id="formFile" />
-                            </div>
-                            <div class="mb-3">
-                                <label for="formFile" class="form-label">Company</label>
-                                <input class="form-control" type="text" id="formFile" />
-                            </div>
-                            <div class="mb-3">
-                                <label for="formFile" class="form-label">Email</label>
-                                <input class="form-control" type="text" id="formFile" />
-                            </div>
-                            <div class="mb-3">
-                                <label for="formFile" class="form-label">Phone</label>
-                                <input class="form-control" type="text" id="formFile" />
-                            </div>
-                            <div class="mb-3">
-                                <label for="formFile" class="form-label">Location</label>
-                                <input class="form-control" type="text" id="formFile" />
-                            </div>
-                            <div class="mb-3">
-                                <label for="formFile" class="form-label">Message</label>
-                                <textarea class="form-control" id="formFile" />
-                            </div>
-                            <div class="mb-3 text-center">
-                                <button type="button" class="btn btn-15">Submit</button>
-                            </div>
-                        </form> */}
                     </Col>
                     <Col lg={6} className="d-flex justify-content-center align-items-center">
                         <Container className="iv-bg contact py-lg-0 py-3">

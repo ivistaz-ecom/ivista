@@ -57,12 +57,17 @@ const CareerForms = () => {
         field: 'yourName',
         message: 'Invalid character in name'
     };
+    // Name Validation End
 
-    const numRegex = /^[0-9]*$/;
+
+    // Mobile Number validation
+    const numRegex = /^[0-9]+$/; // Regular expression to match any number of digits
+
     const numErrors = {
         field: 'yourPhone',
-        message: 'Invalid phone number'
+        message: 'Please enter a valid phone number.'
     };
+    // Mobile Number validation End
 
     const handleTextChange = e => {
         const { name, value } = e.target;
@@ -100,9 +105,21 @@ const CareerForms = () => {
             // Always update the email state
             setyourEmail(value);
         }
-        if (name === 'yourPhone') {
-            setyourPhone(value)
-            console.log(value)
+
+        if (fname === 'yourPhone') {
+            if (!numRegex.test(value)) {
+                console.log('invalid Phone')
+                const fieldErrors = {}
+                const { field, message } = numErrors;
+                fieldErrors[field] = message;
+                setErrors(fieldErrors);
+                //alert('valid email enter')
+            }
+            else {
+                console.log('characters looks valid')
+                setPhone(value)
+                setErrors();
+            }
         }
 
         if (name === 'yourJobType') {
@@ -214,7 +231,7 @@ const CareerForms = () => {
                     <label htmlFor="yourPhone" className="form-label text-black">Phone</label>
                     <input
                         type="text"
-                        className="form-control"
+                        className={`form-control ${errors && errors.yourPhone ? 'is-invalid' : ''}`}
                         id="yourPhone"
                         name="yourPhone"
                         value={yourPhone}

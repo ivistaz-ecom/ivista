@@ -147,7 +147,7 @@ const CareerCom = () => {
                 </Row>
 
                 <p className="para-text text-black mt-5">
-                    For inquiries about any positions not listed, please email <a href="mailto:hr@ivistaz.com" target='_blank' className='text-red'> hr@ivistaz.com</a>
+                    For inquiries about any positions not listed, please email <a href="mailto:hr@ivistasolutions.com" target='_blank' className='text-red'> hr@ivistasolutions.com</a>
                 </p>
                 <p className="para-text text-black ">We value your privacy and will handle your information with utmost confidentiality. By submitting this form, you agree to our Privacy Policy.</p>
             </Container>
