@@ -33,8 +33,8 @@ function IhomePage() {
     <>
       <Header />
       {isMainSectionVisible && (
-        <Container className="bg-black h-100vh custom-container" fluid>
-          <Row className="d-flex flex-column justify-content-center align-items-center" style={{ height: '500px' }}>
+        <Container className="bg-black h-100vh d-flex flex-column justify-content-center" fluid>
+          <Row className="d-flex flex-column justify-content-center align-items-center">
             <Col className="d-flex flex-column justify-content-center align-items-center">
               <h2 className="text-white fs-80 fw-bold">
                 <CountUp end={perfomance}

@@ -164,29 +164,6 @@ p.animation{
 }
   }
   
-  
-  /* .timeline {
-    padding-left: 0px !important;
-  }
-  
-  .timeline:after {
-    top: 0;
-    bottom: 0;
-    position: fixed;
-    content: "";
-    width: 0px;
-    background-color: transparent; 
-    
-    left: 3.9%;
-    border-left: 10px dashed #ff0000;
-    
-    height: 50vh; 
-    z-index: 1;
-    border-radious: 40px;
-  } */
-
-
-
 
   /* Scroll Animation Services */
   
@@ -259,7 +236,8 @@ p.animation{
       font-size: 2em;
       text-align: center;
       position: absolute;
-      top: 12%;
+      /* top: 12%; */
+      top: 1%;
       left: 10%;
       /* left: 7.7%;
       margin-left: -60px; */
@@ -304,8 +282,8 @@ p.animation{
     }
     
     .KW_progressContainer1 {
-      left: 10.2%;
-      width: 0.8em;
+      left: 10.38%;
+      width: 0.5em;
       height: 50%;
       margin-bottom: 0px;
       position: fixed;

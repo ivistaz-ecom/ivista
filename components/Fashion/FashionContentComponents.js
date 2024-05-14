@@ -13,10 +13,10 @@ const FashionContentComponents = () => {
             <ScrollAnimation />
             <Container fluid className='bg-black p-0'>
                 <article>
-                    <Col className='timeline1 pt-1'>
+                    <Col className='timeline1'>
                         <div className='position-relative '>
-                            <div className='timeline-badge1'></div>
-                            <Container className="w-80 pb-4 pt-3 ps-7" >
+                            <div className='timeline-badge1 mt-4'></div>
+                            <Container className="w-80 pb-4 pt-4 ps-7" >
                                 <p className="text-white para-text">
                                     According to an article by the Times of India, the fashion industry<Link href="https://timesofindia.indiatimes.com/blogs/voices/indian-apparel-and-fashion-market-in-next-five-years-industry-growth-challenges-and-opportunities/" target='_blank' className='hyper-link-red cursor-pointer'> is poised to grow into a $106 billion industry by 2026</Link>, bringing up the Indian fashion market on maps. We will help you to capitalize on this market opportunity with robust digital solutions that include:</p>
                             </Container>
@@ -24,7 +24,7 @@ const FashionContentComponents = () => {
 
 
                         <div className='position-relative p-0'>
-                            <div className='timeline-badge1'></div>
+                            <div className='timeline-badge1 mt-5'></div>
                             <Container className="iv-bg w-80 banner pt-5 pe-5 pb-5 ps-7">
                                 <ul>
                                     <li className='industry-bullet'>

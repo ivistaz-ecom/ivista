@@ -17,7 +17,7 @@ const BeautyContent = () => {
                 <article>
                     <Col className='timeline1'>
                         <div className='position-relative'>
-                            <div className='timeline-badge1'></div>
+                            <div className='timeline-badge1 mt-4'></div>
                             <Container className="pt-4 w-80 pb-4 pt-4 ps-7" >
                                 <p className="text-white para-text" >The beauty and wellness market has been growing at a rapid pace in India. The market in India<Link href="https://bwwellbeingworld.businessworld.in/article/How-Beauty-Wellness-Sector-Emerge-As-A-Thriving-Sector-In-India/18-10-2021-408985/" target='_blank' className='hyper-link-red cursor-pointer'> was valued at INR 901.07 Bn in 2018 and is forecasted to reach INR 2,463.49 Bn by the year 2024</Link>.</p>
                                 <p className="text-white para-text">What is notable is that the beauty and wellness market today straddles the affluent as well as the middle class, the female as well as the male sexes, the synthetic brands as well as the organic brands. The sheer number of new entrants, especially in the ‘natural’, ‘vegan’ ‘safe’ and ‘sustainable’ categories is testimony to the exponential growth of the industry.</p>
@@ -27,7 +27,7 @@ const BeautyContent = () => {
 
 
                         <div className='position-relative'>
-                            <div className='timeline-badge1'></div>
+                            <div className='timeline-badge1 mt-5'></div>
                             <Container className="iv-bg w-80 banner pb-5 pt-5 pe-5 ps-7">
                                 <p className="fw-bold text-white fs-3">To help your brand to stand out in a highly crowded market, we will:</p>
                                 <ul>

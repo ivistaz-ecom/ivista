@@ -17,14 +17,14 @@ const JewellryContent = () => {
                 <article>
                     <Col className='timeline1 pt-1'>
                         <div className='position-relative '>
-                            <div className='timeline-badge1'></div>
+                            <div className='timeline-badge1 mt-4'></div>
                             <Container className="pt-4 w-80 pb-4 ps-7" >
                                 <p className="text-white para-text">The Indian jewellery industry is a celebrated sector that exhibits a remarkable ability to adapt to evolving trends in response to the ever-changing needs and preferences of its customers. We will help your business keep up with this dynamic industry.</p>
                             </Container>
                         </div>
 
                         <div className='position-relative '>
-                            <div className='timeline-badge1'></div>
+                            <div className='timeline-badge1 mt-5'></div>
                             <Container className="iv-bg w-80 banner pt-5 pe-5 pb-5 ps-7">
                                 <p className="text-white para-text">Creating and improving the connection between online visitors and sales, through end-to-end services, in order to boost online conversions and sales both in-store and online.</p>
                                 <p className="text-white para-text">Develop compelling and personalized online experiences that will strengthen customers’ loyalty to your brand, thus creating a more curated online experience.</p>

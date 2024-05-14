@@ -10,18 +10,17 @@ const SocialMediaOrganicComponents = () => {
             <ScrollAnimationService />
             <Container className="mt-4 p-0" fluid>
                 <article>
-
-                    <Col className='timeline1'>
-                        <div className='position-relative '>
+                    <div className='timeline1'>
+                        {/* <div className='position-relative '>
                             <div class="timeline-badge1"></div>
                             <Container className='w-80 px-0'>
                                 <h1 className='fs-3 text-red fw-bold ps-7'>
                                     Organic Social Media
                                 </h1>
                             </Container>
-                        </div>
-
-                        <Col>
+                        </div> */}
+                        <Col className='position-relative'>
+                            <div class="timeline-badge1"></div>
                             <Container className='w-80 ps-7'>
                                 <p className="text-black para-text fw-semibold">
                                     “Online is old news. Online in social media is today’s news... Social media is not a subset of the internet. Social media is the internet.” Sean Case, Nielsen Social President
@@ -43,13 +42,13 @@ const SocialMediaOrganicComponents = () => {
 
                         <div className='position-relative'>
                             <div className='timeline-badge1'></div>
-                            <Container className='w-80 ps-7'>
+                            <Container className='w-80 ps-7 mb-5'>
                                 <h1 className='fs-3 text-red fw-bold'>
                                     How can we help you with your organic social media?
                                 </h1>
                             </Container>
                         </div>
-                    </Col>
+                    </div>
                 </article>
             </Container>
         </>

@@ -15,16 +15,16 @@ const TechContetn = () => {
             <ScrollAnimation />
             <Container fluid className='bg-black p-0'>
                 <article>
-                    <Col className='timeline1 pt-3'>
-                        <div className='position-relative '>
-                            <div className='timeline-badge1'></div>
-                            <Container className=" w-80 pb-4 pt-2  ps-7" >
+                    <Col className='timeline1'>
+                        <div className='position-relative'>
+                            <div className='timeline-badge1 mt-4'></div>
+                            <Container className=" w-80 pb-4 pt-4  ps-7" >
                                 <p className="text-white para-text">The evolving digital trends and technologies are causing a tectonic shift in digital marketing. In this scenario, iVistaz will help you keep pace and have a firm grasp on the evolving digital ecosystem to give you measurable ROI for your digital spending. Our services include:</p>
                             </Container>
                         </div>
 
                         <div className='position-relative '>
-                            <div className='timeline-badge1'></div>
+                            <div className='timeline-badge1 mt-5'></div>
                             <Container className="iv-bg w-80 banner pt-5 pe-5 pb-5 ps-7">
                                 <ul>
                                     <li className='industry-bullet'>

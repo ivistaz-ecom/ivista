@@ -14,7 +14,6 @@ const BlogsPageComponets = () => {
 
     useEffect(() => {
         const fetchData = async () => {
-            x
             try {
                 const response = await fetch(`${siteUrl}/blogs?_embed&production_mode[]=${serverUrl}`);
                 const data = await response.json();

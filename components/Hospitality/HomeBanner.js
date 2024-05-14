@@ -18,7 +18,7 @@ function HeroBanner() {
   return (
     <>
       <Container fluid className='p-0 bg-black position-relative z-3'>
-        <Container className="w-80 custom-container p-0">
+        <Container className="w-80 custom-container">
           <Row className="d-flex align-items-center">
             <BannerAllPage backgroundImage={backgroundImage} bannerHeading={bannerHeading} mobileBackgroundImage={mobileBackgroundImage} />
           </Row>

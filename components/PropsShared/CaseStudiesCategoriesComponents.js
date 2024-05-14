@@ -65,7 +65,7 @@ const CaseStudiesCategoriesComponents = ({ categoryId }) => {
 
     return (
         <>
-            <Container className='bg-black position-relative z-3'>
+            <Container className='bg-black position-relative'>
                 <Col className='d-flex flex-lg-row flex-column justify-content-center gap-3'>
                     {data ? ( // Check if data is available
                         data.map((items) => (

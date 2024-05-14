@@ -84,7 +84,7 @@ const CareerCom = () => {
                         data.length > 0 ? ( // Check if data is available and not empty
                             data.slice(0, visibleItems).map((item) => (
                                 <>
-                                    <Row className='border-0 custom-career d-flex flex-lg-row flex-column mt-3 shadow-lg' key={item.id}>
+                                    <Row className='border-0 custom-career d-flex flex-lg-row flex-column mt-3 shadow-sm' key={item.id}>
                                         <Col className='list-group-1 border-0' lg={10}>
                                             <div className="d-flex justify-content-between align-items-center border-0">
                                                 <div className="ms-2 me-auto">
@@ -96,8 +96,8 @@ const CareerCom = () => {
                                                 </div> */}
                                             </div>
                                         </Col>
-                                        <Col className='d-flex flex-column justify-content-center align-items-center'>
-                                            <button type="button" class="btn btn-15 bg-black text-white z-0" onClick={() => handleShowModal(item)} >Apply</button>
+                                        <Col className='d-flex flex-column justify-content-center align-items-center p-3'>
+                                            <button type="button" class="btn btn-15 bg-black text-white z-0" onClick={() => handleShowModal(item)}>Apply</button>
                                         </Col>
                                     </Row>
                                 </>
@@ -148,8 +148,12 @@ const CareerCom = () => {
                         )}
                     </Col>
                 </Row>
-                <p className="para-text text-black mt-3">We value your privacy and will handle your information with utmost confidentiality. By submitting this form, you agree to our Privacy Policy.</p>
-            </Container >
+
+                <p className="para-text text-black mt-5">
+                    For inquiries about any positions not listed, please email <a href="mailto:hr@ivistaz.com" target='_blank' className='text-red'> hr@ivistaz.com</a>
+                </p>
+                <p className="para-text text-black ">We value your privacy and will handle your information with utmost confidentiality. By submitting this form, you agree to our Privacy Policy.</p>
+            </Container>
         </>
     )
 }
