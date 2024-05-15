@@ -10,6 +10,17 @@ import Footer from '../../../components/Footer';
 
 
 function page() {
+
+  const [countVisible, setCountVisible] = useState([true, false, false]); // State to manage visibility of each count
+
+  const handleMouseEnter = () => {
+    setCountVisible([true, true, true]);
+  };
+
+  const handleMouseLeave = () => {
+    setCountVisible([false, false, false]);
+  };
+
   return (
     <>
       <Container fluid className="bg-black d-flex flex-column justify-content-between min-vh-100 bg-black" >
@@ -21,17 +32,22 @@ function page() {
           </Col>
           <Row className='d-flex flex-lg-row flex-column-reverse'>
             <Col className="section">
-              <p className="mastery-text mastery-h">Years of Experience & Expertise - 28</p>
+              <p className="mastery-text mastery-h" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>Years of Experience & Expertise</p>
               <p className="mastery-text mastery-h">Clients Served - 800+</p>
               <p className="mastery-text mastery-h">Online Revenue Generated - $6B</p>
               {/* <p className="mastery-text mastery-h">Marketing Qualified Leads (MQLs) delivered</p> */}
               <p className="mastery-text mastery-h">Websites Designed and Developed ?</p>
             </Col>
             <Col className="d-flex justify-content-lg-end justify-content-start">
-              <CountUp end={574}
-                prefix="+"
-                className="counter"
-              />
+              {countVisible[0] && (
+                <CountUp end={28} prefix="" className="counter" />
+              )}
+              {countVisible[1] && (
+                <CountUp end={800} suffix="+" className="counter" />
+              )}
+              {countVisible[2] && (
+                <CountUp end={6} prefix="$" suffix='B' className="counter" />
+              )}
             </Col>
           </Row>
         </Container>

@@ -16,14 +16,15 @@ const Posts = ({ slug }) => {
                 const response = await fetch(`${siteUrl}/blogs?_embed&slug=${slug}`);
                 const data = await response.json();
                 setData(data);
-                console.log(data);
+                // console.log(data);
             } catch (error) {
                 console.error('Error fetching data:', error);
             }
         };
-
         fetchData();
-    }, [siteUrl, serverUrl]); // Include dependencies in useEffect dependency array
+    }, [siteUrl, serverUrl]);
+
+
     return (
         <>
             <Container fluid className="w-80 custom-container">

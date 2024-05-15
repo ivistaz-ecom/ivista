@@ -20,9 +20,6 @@ const CareerForms = () => {
     // const [yourResume, setyourResume] = React.useState(null);
     const [loading, setLoading] = useState(false);
 
-    const [selectedFile, setSelectedFile] = useState(null);
-
-
     const options = [
         { value: 'account_manager', label: 'Account Manager/Client Servicing' },
         { value: 'content_writer', label: 'Content Writer' },
@@ -43,7 +40,7 @@ const CareerForms = () => {
         field: 'yourEmail',
         message: 'This email domain is not allowed.'
     };
-    const notAllowedDomains = ['test.com', 'sample.com', 'example.com', 'testing.com', 'gmail.co', 'gmail.c'];
+    const notAllowedDomains = ['test.com', 'sample.com', 'example.com', 'testing.com', 'gmail.co', 'gmail.c', 'gmail.'];
 
     const isValidEmail = (email) => {
         const [, domain] = email.split('@');

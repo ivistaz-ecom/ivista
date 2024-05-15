@@ -32,7 +32,7 @@ const ContactForm = () => {
         field: 'yourEmail',
         message: 'This email domain is not allowed.'
     };
-    const notAllowedDomains = ['test.com', 'sample.com', 'example.com', 'testing.com', 'gmail.co', 'gmail.c'];
+    const notAllowedDomains = ['test.com', 'sample.com', 'example.com', 'testing.com', 'gmail.co', 'gmail.c', 'gmail.'];
 
     const isValidEmail = (email) => {
         const [, domain] = email.split('@');
@@ -117,7 +117,6 @@ const ContactForm = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         createPost();
-
     };
 
     const resetForm = () => {
@@ -285,4 +284,4 @@ const ContactForm = () => {
         </Container>
     );
 };
-export default ContactForm
+export default ContactForm;

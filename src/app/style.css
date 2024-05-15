@@ -328,3 +328,174 @@ p.animation{
       table-layout: fixed;
   }
     }
+
+
+    /* Timeline 2 */
+
+    p.animation2{
+      opacity: 0.2;
+      }
+      
+      
+      
+      /************************************************************************************/
+      
+      .timeline2>h6 , .timeline2>h1 .timeline2>li .timeline2>div{
+        position: relative;
+        list-style: none;
+      }
+      
+      /************************************************************************************/
+      
+      .timeline-panel2 {
+        width: 1%;
+        height: 5px;
+        float: right;
+        padding: 50px;
+        position: relative;
+        text-align: justify;
+        color:#000000;
+      }
+      
+      /************************************************************************************/
+      
+      .timeline-badge2.active {
+        color: #ff0909;  /* text color */
+        animation-name: lines;
+        /* opacity: 1; */
+        /* background-color: rgb(255, 0, 0); */
+        -webkit-animation-name: lines;
+        -ms-animation-name: lines;
+        -moz-animation-name: lines;
+        animation-duration: 1s;
+        -webkit-animation-duration: 1s;
+        -ms-animation-duration: 1s;
+        -moz-animation-duration: 1s;
+        animation-delay: 0s;
+        -ms-animation-delay: 0s;
+        -webkit-animation-delay: 0s;
+        -moz-animation-delay: 0s;
+        animation-fill-mode: forwards;
+        -webkit-animation-fill-mode: forwards;
+        -ms-animation-fill-mode: forwards;
+        -moz-animation-fill-mode: forwards;
+        animation-iteration-count: 1;
+        -webkit-animation-iteration-count: 1;
+        -ms-animation-iteration-count: 1;
+        -moz-animation-iteration-count: 1;
+      }
+      
+      /* .timeline-badge1.active .hover-paragraph {
+        color: white !important;
+        opacity: 1;
+      } */
+      
+      /************************************************************************************/
+      
+      .timeline-badge2 {
+        color: rgb(255, 255, 255);
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        line-height: 50px;
+        font-size: 2em;
+        text-align: center;
+        position: absolute;
+        /* top: 12%; */
+        top: 1%;
+        left: 2.1%;
+        /* left: 7.7%;
+        margin-left: -60px; */
+        background-color: rgb(255, 0, 0);
+        /* background-color: transparent ; */
+        /* border: 1px solid rgb(255, 255, 255); */
+        z-index: 100;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        /* opacity: 0; */
+      }
+      
+      /************************************************************************************/
+      
+      @keyframes lines {
+        0% {
+          /* border: 1px solid rgb(255, 255, 255); */
+          transform: scale(1, 1);
+          -ms-transform: scale(1, 1);
+          -webkit-transform: scale(1, 1);
+          -moz-transform: scale(1, 1);
+        }
+        50% {
+          border: 1.25px solid #ffffff;
+          transform: scale(1.5, 1.5);
+          -ms-transform: scale(1.5, 1.5);
+          -webkit-transform: scale(1.5, 1.5);
+          -moz-transform: scale(1.5, 1.5);
+          box-shadow: 0 0 10px 5px red; /* Add a glow effect with hex code */
+          /* animation-timing-function: ease-in-out;  */
+      
+        }
+        100% {
+          /* border: 2px solid #ffffff; */
+          transform: scale(2, 2);
+          -ms-transform: scale(1, 1);
+          -webkit-transform: scale(1, 1);
+          -moz-transform: scale(1, 1);
+        }
+      }
+      
+      .KW_progressContainer2 {
+        left: 10.38%;
+        width: 0.5em;
+        height: 50%;
+        margin-bottom: 0px;
+        position: fixed;
+        bottom: 0px;
+        top:0px;
+        overflow: hidden;
+        background-color: #fff0;
+        content: "";
+        display: table;
+        table-layout: fixed;
+        z-index: 0 !important;
+      }
+      
+      .KW_progressBar2 {
+        width: 100%;
+        float: left;
+        height: 0%;
+        z-index:0;
+        max-width: 100%;
+        border:10px dashed rgb(243, 2, 2);
+        background-color: #ff000000;;
+        -webkit-transition: width .6s ease;
+        -o-transition: width .6s ease;
+        transition: width .6s ease;
+      }
+    
+    
+      @media(max-width:767px) {
+        .KW_progressContainer2 {
+        /* left: 19px; */
+        left: 11.3%;
+        width: 0.6em;
+        height: 45%;
+        margin-bottom: 0px;
+        position: fixed;
+        bottom: 0px;
+        top: 0px;
+        overflow: hidden;
+        background-color: #fff0;
+        content: "";
+        display: table;
+        table-layout: fixed;
+    }
+
+    .timeline-badge2 {
+      top: 1%;
+      left: 8%
+    }
+    
+      }

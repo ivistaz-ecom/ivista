@@ -7,7 +7,7 @@ import Footer from '../../../../components/Footer';
 
 function page() {
   return (
-    <Container fluid className="bg-black pb-5">
+    <Container fluid className="bg-black pb-5 z-index-100">
       <Header1 />
       <Container className='w-80 custom-container bg-black z-3'>
         <h1 className="text-offwhite fs-70 fw-bold text-start">MASTERY</h1>
