@@ -15,7 +15,6 @@ function HeroBanner() {
 
   return (
     <>
-
       <ScrollAnimationIOthers />
       <Container className="bg-white banner w-80 pb-5 mb-4  z-3 p-0" >
         <Row className="d-flex align-items-start p-0">

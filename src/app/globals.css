@@ -47,6 +47,7 @@ padding-bottom:12px;
 
 .custom-container {
   padding-top:90px !important;
+  z-index:0;
 }
 
 .red-outline{

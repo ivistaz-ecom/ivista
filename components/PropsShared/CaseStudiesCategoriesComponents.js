@@ -65,11 +65,11 @@ const CaseStudiesCategoriesComponents = ({ categoryId }) => {
 
     return (
         <>
-            <Container className='bg-black position-relative'>
+            <Container className=' position-relative'>
                 <Col className='d-flex flex-lg-row flex-column justify-content-center gap-3'>
                     {data ? ( // Check if data is available
                         data.map((items) => (
-                            <div className='iv-cards-categories col-lg-4 d-flex flex-column justify-content-between text-start' key={items.id}>
+                            <div className='iv-cards-categories col-lg-4 d-flex flex-column justify-content-between text-start z-3' key={items.id}>
                                 <Image
                                     src={items.acf.thumbnail_image.url}
                                     alt={items.title.rendered}

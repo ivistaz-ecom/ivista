@@ -11,14 +11,16 @@ import Footer from '../../../components/Footer';
 
 function page() {
 
-  const [countVisible, setCountVisible] = useState([true, false, false]); // State to manage visibility of each count
+  const [countVisible, setCountVisible] = useState([true, false, false]);
 
-  const handleMouseEnter = () => {
-    setCountVisible([true, true, true]);
+  const handleMouseEnter = (index) => {
+    const newCountVisible = [false, false, false];
+    newCountVisible[index] = true;
+    setCountVisible(newCountVisible);
   };
 
   const handleMouseLeave = () => {
-    setCountVisible([false, false, false]);
+    setCountVisible([true, false, false]);
   };
 
   return (
@@ -32,9 +34,9 @@ function page() {
           </Col>
           <Row className='d-flex flex-lg-row flex-column-reverse'>
             <Col className="section">
-              <p className="mastery-text mastery-h" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>Years of Experience & Expertise</p>
-              <p className="mastery-text mastery-h">Clients Served - 800+</p>
-              <p className="mastery-text mastery-h">Online Revenue Generated - $6B</p>
+              <p className="mastery-text mastery-h" onMouseEnter={() => handleMouseEnter(0)} onMouseLeave={handleMouseLeave}>Years of Experience & Expertise</p>
+              <p className="mastery-text mastery-h" onMouseEnter={() => handleMouseEnter(1)} onMouseLeave={handleMouseLeave}>Clients Served - 800+</p>
+              <p className="mastery-text mastery-h" onMouseEnter={() => handleMouseEnter(2)} onMouseLeave={handleMouseLeave}>Online Revenue Generated - $6B</p>
               {/* <p className="mastery-text mastery-h">Marketing Qualified Leads (MQLs) delivered</p> */}
               <p className="mastery-text mastery-h">Websites Designed and Developed ?</p>
             </Col>

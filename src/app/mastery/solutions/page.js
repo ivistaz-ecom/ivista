@@ -13,7 +13,7 @@ function page() {
         <Header1 />
       </Container>
       <Container className='w-80 custom-container bg-black z-3'>
-        <h1 className="text-offwhite fs-70 fw-bold">MASTERY</h1>
+        <h1 className="text-offwhite fs-70 ps-6 fw-bold">MASTERY</h1>
       </Container>
       <HomeBanner />
       <Footer />
