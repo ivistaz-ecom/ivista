@@ -11,16 +11,16 @@ import Footer from '../../../components/Footer';
 
 function page() {
 
-  const [countVisible, setCountVisible] = useState([true, false, false]);
+  const [countVisible, setCountVisible] = useState([true, false, false, false]);
 
   const handleMouseEnter = (index) => {
-    const newCountVisible = [false, false, false];
+    const newCountVisible = [false, false, false, false];
     newCountVisible[index] = true;
     setCountVisible(newCountVisible);
   };
 
   const handleMouseLeave = () => {
-    setCountVisible([true, false, false]);
+    setCountVisible([true, false, false, false]);
   };
 
   return (
@@ -29,18 +29,18 @@ function page() {
         <Header1 />
 
         <Container className="w-80 custom-container">
-          <Col>
-            <h1 className="text-white fs-70 fw-bold">MASTERY</h1>
+          <Col className='w-auto'>
           </Col>
           <Row className='d-flex flex-lg-row flex-column-reverse'>
             <Col className="section">
+              <h1 className="text-white fs-70 fw-bold d-inline-block">MASTERY</h1>
               <p className="mastery-text mastery-h" onMouseEnter={() => handleMouseEnter(0)} onMouseLeave={handleMouseLeave}>Years of Experience & Expertise</p>
-              <p className="mastery-text mastery-h" onMouseEnter={() => handleMouseEnter(1)} onMouseLeave={handleMouseLeave}>Clients Served - 800+</p>
-              <p className="mastery-text mastery-h" onMouseEnter={() => handleMouseEnter(2)} onMouseLeave={handleMouseLeave}>Online Revenue Generated - $6B</p>
+              <p className="mastery-text mastery-h" onMouseEnter={() => handleMouseEnter(1)} onMouseLeave={handleMouseLeave}>Clients Served </p>
+              <p className="mastery-text mastery-h" onMouseEnter={() => handleMouseEnter(2)} onMouseLeave={handleMouseLeave}>Online Revenue Generated</p>
               {/* <p className="mastery-text mastery-h">Marketing Qualified Leads (MQLs) delivered</p> */}
-              <p className="mastery-text mastery-h">Websites Designed and Developed ?</p>
+              <p className="mastery-text mastery-h" onMouseEnter={() => handleMouseEnter(3)} onMouseLeave={handleMouseLeave}>Websites Designed and Developed ?</p>
             </Col>
-            <Col className="d-flex justify-content-lg-end justify-content-start">
+            <Col className="d-flex justify-content-center align-items-center">
               {countVisible[0] && (
                 <CountUp end={28} prefix="" className="counter" />
               )}
@@ -49,6 +49,9 @@ function page() {
               )}
               {countVisible[2] && (
                 <CountUp end={6} prefix="$" suffix='B' className="counter" />
+              )}
+              {countVisible[3] && (
+                <CountUp end={0} prefix="?" suffix='?' className="counter" />
               )}
             </Col>
           </Row>

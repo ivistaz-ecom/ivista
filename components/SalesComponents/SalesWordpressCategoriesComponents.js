@@ -9,9 +9,6 @@ import CaseStudiesCategoriesComponents from '../PropsShared/CaseStudiesCategorie
 const SalesWordpressCategoriesComponents = () => {
 
     const categoryId = 2;
-
-
-
     return (
         <>
             <Container className="bg-black pb-5 text-center min-vh-100" fluid>

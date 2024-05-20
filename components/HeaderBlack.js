@@ -59,7 +59,8 @@ function Header1() {
                   pathname === '/arts/services' ||
                   pathname === '/arts/services/digital-marketing' ||
                   pathname === '/arts/services/content-development-design' ||
-                  pathname === '/arts/services/design-development')
+                  pathname === '/arts/services/design-development'
+                )
                   ? "btn btn-outline-black"
                   : (pathname === '/service/website-design-and-development' ||
                     pathname === '/service/search-engine-optimization' ||
@@ -69,7 +70,8 @@ function Header1() {
                     pathname === '/service/social-media-marketing' ||
                     pathname === '/service/content-development-b2b-b2c' ||
                     pathname === '/service/design' ||
-                    pathname === '/service/videos'
+                    pathname === '/service/videos' ||
+                    pathname === '/our-clients'
                   )
                     ? "btn btn-outline-custom" // Change this to your desired class for /design and /about
                     : "btn btn-outline"
