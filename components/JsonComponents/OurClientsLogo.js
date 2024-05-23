@@ -41,10 +41,6 @@ const ourclients = {
         },
 
         {
-            clientlogos: '/our_clients_logo/jeeves.png',
-        },
-
-        {
             clientlogos: '/our_clients_logo/manorama.png',
         },
 
@@ -55,6 +51,11 @@ const ourclients = {
         {
             clientlogos: '/our_clients_logo/trident.png',
         },
+
+        {
+            clientlogos: '/our_clients_logo/imagination_at_work.png',
+        },
+
 
         {
             clientlogos: '/our_clients_logo/cellstream.png',

@@ -38,7 +38,7 @@ function page() {
               <p className="mastery-text mastery-h" onMouseEnter={() => handleMouseEnter(1)} onMouseLeave={handleMouseLeave}>Clients Served </p>
               <p className="mastery-text mastery-h" onMouseEnter={() => handleMouseEnter(2)} onMouseLeave={handleMouseLeave}>Online Revenue Generated</p>
               {/* <p className="mastery-text mastery-h">Marketing Qualified Leads (MQLs) delivered</p> */}
-              <p className="mastery-text mastery-h" onMouseEnter={() => handleMouseEnter(3)} onMouseLeave={handleMouseLeave}>Websites Designed and Developed ?</p>
+              <p className="mastery-text mastery-h" onMouseEnter={() => handleMouseEnter(3)} onMouseLeave={handleMouseLeave}>Websites Designed and Developed</p>
             </Col>
             <Col className="d-flex justify-content-center align-items-center">
               {countVisible[0] && (
@@ -51,7 +51,7 @@ function page() {
                 <CountUp end={6} prefix="$" suffix='B' className="counter" />
               )}
               {countVisible[3] && (
-                <CountUp end={0} prefix="?" suffix='?' className="counter" />
+                <CountUp end={500}  suffix='+' className="counter" />
               )}
             </Col>
           </Row>

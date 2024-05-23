@@ -19,7 +19,7 @@ const TechContetn = () => {
                         <div className='position-relative'>
                             <div className='timeline-badge1 mt-4'></div>
                             <Container className=" w-80 pb-4 pt-4  ps-7" >
-                                <p className="text-white para-text">The evolving digital trends and technologies are causing a tectonic shift in digital marketing. In this scenario, iVistaz will help you keep pace and have a firm grasp on the evolving digital ecosystem to give you measurable ROI for your digital spending. Our services include:</p>
+                                <p className="text-white para-text pe-lg-2 pe-3">The evolving digital trends and technologies are causing a tectonic shift in digital marketing. In this scenario, iVistaz will help you keep pace and have a firm grasp on the evolving digital ecosystem to give you measurable ROI for your digital spending. Our services include:</p>
                             </Container>
                         </div>
 

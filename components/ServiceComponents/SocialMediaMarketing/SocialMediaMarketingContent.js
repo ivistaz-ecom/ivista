@@ -21,7 +21,7 @@ const SocialMediaMarketingContent = () => {
 
                         <Col className='position-relative'>
                             <div class="timeline-badge1"></div>
-                            <Container className='w-80 ps-7'>
+                            <Container className='w-80 ps-7 pe-lg-0 pe-4'>
                                 <p className="text-black para-text">
                                     From targeting and re-targeting to leveraging look-alike and custom audiences, as well as diving into demographics, behaviors, attributes, and interests – the power of precise targeting on social media can be invaluable in helping businesses generate leads or sell online.
                                 </p>

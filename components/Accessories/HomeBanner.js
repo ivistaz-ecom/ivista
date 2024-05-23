@@ -40,7 +40,7 @@ function HeroBanner() {
             <h1 className="fs-21 fw-bold">FASHION & ACCESSORIES</h1>
           </Col>
           <Col lg={5}>
-            <Image src="/industries/fashion.svg" width={400} height={400} alt='' />
+            <Image src="/industries/fashion.svg" width={350} height={400} alt='' />
           </Col>
         </Row>
       </Container>
@@ -62,7 +62,7 @@ function HeroBanner() {
       </Container>
       <Container className="w-80">
         <Row>
-          <Col>
+          <Col sm={12} lg={4}>
             <div class="iv-cards">
               <Image src="/images/1.jpg" class="card-img-top w-100 h-100 img-r" alt="..." width={200} height={200} />
               <div class="card-body">

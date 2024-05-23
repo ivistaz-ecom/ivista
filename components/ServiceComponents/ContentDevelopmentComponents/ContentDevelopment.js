@@ -20,7 +20,7 @@ const ContentDevelopment = () => {
 
                         <Col className='position-relative'>
                             <div class="timeline-badge1"></div>
-                            <Container className='w-80 ps-7'>
+                            <Container className='w-80 ps-7 pe-lg-0 pe-3'>
                                 <p className="text-black para-text fw-semibold">
                                     “Content builds relationships. Relationships are built on trust. Trust drives revenue.” – Andrew Davis, Bestselling Author and Keynote Speaker
                                 </p>
@@ -47,7 +47,7 @@ const ContentDevelopment = () => {
                         </Col>
 
                         <Col>
-                            <Container className='w-80 ps-7 position-relative'>
+                            <Container className='w-80 ps-7 position-relative pe-lg-0 pe-3'>
                                 <p className='text-red fw-bold para-text'>
                                     Long-form content:
                                 </p>

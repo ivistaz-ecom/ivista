@@ -23,7 +23,7 @@ const SearchEngineOptimizationContent = () => {
 
                         <Col className='position-relative'>
                             <div class="timeline-badge1"></div>
-                            <Container className='w-80 ps-7'>
+                            <Container className='w-80 ps-7 pe-lg-0 pe-3'>
                                 <p className="text-black para-text fw-semibold">
                                     If your company, product, or service does not show up in the top 10 search results, that enquiry, lead, or sale is going to your competitor. That’s why SEO is crucial for your business.
                                 </p>
