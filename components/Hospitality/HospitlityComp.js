@@ -17,7 +17,7 @@ const HospitlityComp = () => {
                         <div className='position-relative'>
                             <div className='timeline-badge1 mt-4'></div>
                             <Container className="w-80 pb-4 pt-4 ps-7" >
-                                <p className="text-white para-text">Inthe last 12 years,<span className='fw-bold'> iVistaz has built a deep digital hospitality practice</span>.</p>
+                                <p className="text-white para-text pe-lg-0 pe-3">In the last 12 years,<span className='fw-bold'> iVistaz has built a deep digital hospitality practice</span>.</p>
                             </Container>
                         </div>
 

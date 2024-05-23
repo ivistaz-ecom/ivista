@@ -19,7 +19,7 @@ const SearchEngineMarketingContent = () => {
                         </h1> */}
                         <Col className='position-relative'>
                             <div class="timeline-badge1"></div>
-                            <Container className='w-80 ps-7'>
+                            <Container className='w-80 ps-7 pe-lg-0 pe-3'>
                                 <p className="text-black para-text fw-semibold">
                                     Digital journeys and buying decisions are unpredictable, impulsive, and fragmented. Buying decisions take place in micro-moments.
                                 </p>

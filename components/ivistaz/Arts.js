@@ -11,7 +11,7 @@ function Arts() {
 
             <ScrollAnimation />
             <Container className="bg-black z-0" fluid>
-                <Container className="w-80 py-5 mb-5">
+                <Container className="w-80 py-5 mb-5 ps-4">
                     <Container>
                         <h1 className="fs-80 fw-bold text-white">Art</h1>
                     </Container>

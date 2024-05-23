@@ -18,7 +18,7 @@ const OurClientsLogs = () => {
                     {clientLogos.length > 0 && (
                         <Row>
                             {clientLogos.map((logo, index) => (
-                                <Col key={index} xs={6} md={3} lg={2} className='d-flex justify-content-center m-lg-3 m-0 rounded-3 shadow-lg'>
+                                <Col key={index} xs={6} md={3} lg={2} className='d-flex justify-content-center m-lg-3 m-0 rounded-3'>
                                     <Image
                                         src={logo}
                                         alt={`Client logo ${index}`}

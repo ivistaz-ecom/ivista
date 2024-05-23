@@ -8,10 +8,10 @@ function Mastery({ handleScrollToResults }) {
   return (
     <Container className="w-80 pt-4 mb-5">
       <Container>
-        <h1 className="fs-80 fw-bold">Mastery</h1>
+        <h1 className="fs-80 fw-bold ps-4">Mastery</h1>
       </Container>
       <Container>
-        <p className="fs-20 fw-bold custom-text-clr">
+        <p className="fs-20 fw-bold custom-text-clr ps-4">
           As an agency, we've mastered the intricacies of digital marketing over the years, crafting winning strategies rooted in deep insights. Through ongoing learning and training, we have adeptly navigated the digital landscape. Our commitment is reflected in our meticulous approach to every step, guiding clients to their digital goals with precision and mastery.
         </p>
       </Container>

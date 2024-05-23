@@ -19,7 +19,7 @@ const JewellryContent = () => {
                         <div className='position-relative '>
                             <div className='timeline-badge1 mt-4'></div>
                             <Container className="pt-4 w-80 pb-4 ps-7" >
-                                <p className="text-white para-text">The Indian jewellery industry is a celebrated sector that exhibits a remarkable ability to adapt to evolving trends in response to the ever-changing needs and preferences of its customers. We will help your business keep up with this dynamic industry.</p>
+                                <p className="text-white para-text pe-lg-2 pe-3">The Indian jewellery industry is a celebrated sector that exhibits a remarkable ability to adapt to evolving trends in response to the ever-changing needs and preferences of its customers. We will help your business keep up with this dynamic industry.</p>
                             </Container>
                         </div>
 

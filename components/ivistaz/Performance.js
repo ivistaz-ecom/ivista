@@ -7,11 +7,11 @@ function Performance() {
     return (
         <>
             <Container className="mb-5" fluid>
-                <Container className="w-80 pt-4 pb-5">
-                    <h1 className="fs-80 fw-bold red">Performance</h1>
+                <Container className="w-80 pt-4 ">
+                    <h1 className="fs-80 fw-bold red ">Performance</h1>
                 </Container>
                 <Container className="w-80">
-                    <p className="fs-20 fw-bold red-50">
+                    <p className="fs-20 fw-bold red-50 ps-4">
                         Over the years, iVistaz has excelled by partnering with clients to craft unforgettable digital journeys, consistently striving to surpass expectations with every performance.
                     </p>
                 </Container>
