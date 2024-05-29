@@ -14,12 +14,12 @@ function Footer() {
             <Container fluid className="iv-bg p-0 z-2 position-relative">
                 <Container className="w-80 p-12 d-lg-block d-none" >
                     <Row>
-                        <Col className="f-head" lg={4}>
-                            SERVICES
-                        </Col>
-                        <Col className="f-head" lg={2}>SOLUTIONS</Col>
+                    <Col className="f-head" lg={3}>ABOUT IVISTAZ</Col>
+                        <Col className="f-head" lg={3}> SERVICES </Col>
+                       
                         <Col className="f-head" lg={3}>INDUSTRIES</Col>
-                        <Col className="f-head" lg={3}>ABOUT IVISTAZ</Col>
+                        <Col className="f-head" lg={2}>SOLUTIONS</Col>
+                        
                     </Row>
                 </Container>
 
@@ -31,8 +31,63 @@ function Footer() {
             <Container fluid className="bg-black z-2 position-relative">
                 <Container className="w-80 p-12" >
                     <Row>
-                        <Col className="footer" lg={4}>
-                            <Col className="f-head d-lg-none d-flex py-lg-0 py-3 pb-2" lg={4}>SERVICES</Col>
+
+                        {/* ABOUT IVISTAZ */}
+                        <Col className="footer" lg={3}>
+                        <Col className="f-head d-lg-none d-flex py-lg-0 py-3 pb-2" lg={4}>ABOUT IVISTAZ</Col>
+                            <ul className='d-flex flex-column g-1'>
+                                {/* <li>
+                                    <Link href="#" className='text-decoration-none text-white custom-footer-font'>
+                                        Performance Focus
+                                    </Link>
+                                </li> */}
+                                <li>
+                                    <Link href="#" className='text-decoration-none text-white custom-footer-font'>
+                                        Company
+                                    </Link>
+                                </li> 
+                                <li>
+                                    <Link href="/team" className='text-decoration-none text-white custom-footer-font'>
+                                        Team
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link href="/contact-us" className='text-decoration-none text-white custom-footer-font'>
+                                        Contact
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link href="/case-studies" className='text-decoration-none text-white custom-footer-font'>
+                                        Case Studies
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link href="/blogs" className='text-decoration-none text-white custom-footer-font'>
+                                        Blog
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link href="#" className='text-decoration-none text-white custom-footer-font'>
+                                        Privacy
+                                    </Link>
+                                </li>
+                                {/* <li>
+                                    <Link href="#" className='text-decoration-none text-white custom-footer-font'>
+                                        Statement
+                                    </Link>
+                                </li> */}
+                                {/* <li>
+                                    <Link href="#" className='text-decoration-none text-white custom-footer-font'>
+                                        Disclaimer
+                                    </Link>
+                                </li> */}
+                            </ul>
+
+                        </Col>
+
+                        {/* SERVICES */} 
+                        <Col className="footer" lg={3}>
+                        <Col className="f-head d-lg-none d-flex py-lg-0 py-3 pb-2" lg={3}>SERVICES</Col>
                             <ul>
                                 <li>
                                     <Link href="/service/website-design-and-development" className='text-decoration-none text-white custom-footer-font'>
@@ -75,32 +130,10 @@ function Footer() {
                                     </Link>
                                 </li> */}
                             </ul>
+                           
                         </Col>
-                        <Col className="footer" lg={2}>
-                            <Col className="f-head d-lg-none d-flex py-lg-0 py-3 pb-2" lg={2}>SOLUTIONS</Col>
-                            <ul>
-                                <li>
-                                    <Link href="/mastery/solutions#value" className='text-decoration-none text-white custom-footer-font'>
-                                        Value Creation
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link href="/mastery/solutions#traffic" className='text-decoration-none text-white custom-footer-font'>
-                                        Traffic Lead-gen
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link href="/mastery/solutions#leadgen" className='text-decoration-none text-white custom-footer-font'>
-                                        Online Sales
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link href="/mastery/solutions#exp" className='text-decoration-none text-white custom-footer-font'>
-                                        Experience
-                                    </Link>
-                                </li>
-                            </ul>
-                        </Col>
+
+                        {/* INDUSTRIES */}
                         <Col className="footer" lg={3}>
                             <Col className="f-head d-lg-none d-flex py-lg-0 py-3 pb-2" lg={3}>INDUSTRIES</Col>
                             <ul>
@@ -146,57 +179,36 @@ function Footer() {
                                 </li>
                             </ul>
                         </Col>
-                        <Col className="footer d-flex flex-column" lg={3}>
-                            <Col className="f-head d-lg-none d-flex py-lg-0 py-3 pb-2" lg={3}>ABOUT IVISTAZ</Col>
-                            <ul className='d-flex flex-column g-1'>
+
+                        {/*SOLUTIONS*/}
+                        <Col className="footer d-flex flex-column" lg={2}>
+                        <Col className="f-head d-lg-none d-flex py-lg-0 py-3 pb-2" lg={2}>SOLUTIONS</Col>
+                            <ul>
                                 <li>
-                                    <Link href="#" className='text-decoration-none text-white custom-footer-font'>
-                                        Performance Focus
+                                    <Link href="/mastery/solutions#value" className='text-decoration-none text-white custom-footer-font'>
+                                        Value Creation
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="#" className='text-decoration-none text-white custom-footer-font'>
-                                        Company
+                                    <Link href="/mastery/solutions#traffic" className='text-decoration-none text-white custom-footer-font'>
+                                        Traffic Lead-gen
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="/team" className='text-decoration-none text-white custom-footer-font'>
-                                        Team
+                                    <Link href="/mastery/solutions#leadgen" className='text-decoration-none text-white custom-footer-font'>
+                                        Online Sales
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="/contact-us" className='text-decoration-none text-white custom-footer-font'>
-                                        Contact
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link href="/case-studies" className='text-decoration-none text-white custom-footer-font'>
-                                        Case Studies
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link href="/blogs" className='text-decoration-none text-white custom-footer-font'>
-                                        Blog
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link href="#" className='text-decoration-none text-white custom-footer-font'>
-                                        Privacy
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link href="#" className='text-decoration-none text-white custom-footer-font'>
-                                        Statement
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link href="#" className='text-decoration-none text-white custom-footer-font'>
-                                        Disclaimer
+                                    <Link href="/mastery/solutions#exp" className='text-decoration-none text-white custom-footer-font'>
+                                        Experience
                                     </Link>
                                 </li>
                             </ul>
+                            
                         </Col>
                     </Row>
+                    ``
                 </Container>
             </Container>
             <Container className="iv-grey pt-2 pb-2 z-3" fluid>
