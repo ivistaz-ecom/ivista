@@ -26,6 +26,21 @@ const Posts = ({ slug }) => {
 
     return (
         <>
+            {data ? ( // Check if data is available
+                data.map((post) => (
+                    <>
+                        <title>{post.acf.meta_title}</title>
+                        <meta name="description" content={post.acf.meta_description_} />
+                        <meta name="robots" content="index,follow"></meta>
+                        <meta name="viewport" content="width=device-width, initial-scale=1" />
+                        <meta property="article:modified_time" content="2023-07-06T15:35:40+00:00" />
+
+                    </>
+                ))
+            ) : (
+                <div className='text-white'>Loading...</div>
+            )
+            }
             <Container fluid className="w-80 custom-container">
                 {data ? ( // Check if data is available
                     data.map((post) => (

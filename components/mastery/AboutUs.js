@@ -1,14 +1,7 @@
 import React, { useEffect, useRef } from 'react'
 import { Container, Row, Col, Button } from 'react-bootstrap'
-import Image from 'next/image';
-import Link from 'next/link'
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-import Svg from '../Automobiles/svg'
-import { MotionPathPlugin } from "gsap/MotionPathPlugin";
-import { FaArrowRight } from "react-icons/fa";
+
 import ScrollAnimationIOthers from '../SharedComponents/ScrollAnimationIOthers';
-gsap.registerPlugin(MotionPathPlugin, ScrollTrigger);
 
 
 function HeroBanner() {
