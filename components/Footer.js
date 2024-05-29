@@ -15,9 +15,9 @@ function Footer() {
                 <Container className="w-80 p-12 d-lg-block d-none p-0 py-2" >
                     <Row>
                         <Col className="f-head p-0" lg={3}>ABOUT IVISTAZ</Col>
-                        <Col className="f-head" lg={3}> SERVICES </Col>
+                        <Col className="f-head p-0" lg={3}> SERVICES </Col>
 
-                        <Col className="f-head" lg={3}>INDUSTRIES</Col>
+                        <Col className="f-head p-0" lg={3}>INDUSTRIES</Col>
                         <Col className="f-head p-0" lg={3}>SOLUTIONS</Col>
 
                     </Row>
@@ -28,7 +28,7 @@ function Footer() {
             </Container>
 
 
-            <Container fluid className="bg-black z-2 position-relative p-0">
+            <Container fluid className="bg-black z-2 position-relative p-lg-0 px-4">
                 <Container className="w-80 p-12 p-0 py-2" >
                     <Row>
 
@@ -86,7 +86,7 @@ function Footer() {
                         </Col>
 
                         {/* SERVICES */}
-                        <Col className="footer" lg={3}>
+                        <Col className="footer p-0" lg={3}>
                             <Col className="f-head d-lg-none d-flex py-lg-0 py-3 pb-2" lg={3}>SERVICES</Col>
                             <ul>
                                 <li>
@@ -134,7 +134,7 @@ function Footer() {
                         </Col>
 
                         {/* INDUSTRIES */}
-                        <Col className="footer" lg={3}>
+                        <Col className="footer p-0" lg={3}>
                             <Col className="f-head d-lg-none d-flex py-lg-0 py-3 pb-2" lg={3}>INDUSTRIES</Col>
                             <ul>
                                 <li>
@@ -208,7 +208,7 @@ function Footer() {
 
                         </Col>
                     </Row>
-                    ``
+                
                 </Container>
             </Container>
             <Container className="iv-grey pt-2 pb-2 z-3" fluid>
