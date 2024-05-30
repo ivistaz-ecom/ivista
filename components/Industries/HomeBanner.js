@@ -4,7 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link'
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import Svg from '../Automobiles/svg'
+import Svg from './Automobiles/svg'
 import { MotionPathPlugin } from "gsap/MotionPathPlugin";
 import { FaArrowRight } from "react-icons/fa";
 import ScrollAnimationIOthers from '../SharedComponents/ScrollAnimationIOthers';
@@ -33,7 +33,7 @@ function HeroBanner() {
 
             <Col lg={12} className="mt-4 position-relative ps-6">
               <div className='timeline-badge2 mt-2'></div>
-              <Link className="fs-3 i-link fw-semibold" href="/industries/tech">Tech/IT</Link></Col>
+              <Link className="fs-3 i-link fw-semibold" href="/industries/technology-IT">Tech/IT</Link></Col>
 
             <Col lg={12} className="mt-4 position-relative ps-6">
               <div className='timeline-badge2 mt-2'></div>
@@ -45,19 +45,19 @@ function HeroBanner() {
 
             <Col lg={12} className="mt-4 position-relative ps-6">
               <div className='timeline-badge2 mt-2'></div>
-              <Link className="fs-3 i-link fw-semibold" href="/industries/ngo">Not-for-Profits/NGOs</Link></Col>
+              <Link className="fs-3 i-link fw-semibold" href="/industries/ngos">Not-for-Profits/NGOs</Link></Col>
 
             <Col lg={12} className="mt-4 position-relative ps-6">
               <div className='timeline-badge2 mt-2'></div>
-              <Link className="fs-3 i-link fw-semibold" href="/industries/jewellery">Jewellry</Link></Col>
+              <Link className="fs-3 i-link fw-semibold" href="/industries/jewellery">Jewellery</Link></Col>
 
             <Col lg={12} className="mt-4 position-relative ps-6">
               <div className='timeline-badge2 mt-2'></div>
-              <Link className="fs-3 i-link fw-semibold" href="/industries/beauty">Beauty & Wellness</Link></Col>
+              <Link className="fs-3 i-link fw-semibold" href="/industries/beauty-wellness">Beauty & Wellness</Link></Col>
 
             <Col lg={12} className="mt-4 position-relative ps-6">
               <div className='timeline-badge2 mt-2'></div>
-              <Link className="fs-3 i-link fw-semibold" href="/industries/accessories">Fashion & Accessories</Link></Col>
+              <Link className="fs-3 i-link fw-semibold" href="/industries/fashion-accessories">Fashion & Accessories</Link></Col>
           </Row>
         </article>
       </Container>
