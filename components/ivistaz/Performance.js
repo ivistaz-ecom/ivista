@@ -7,7 +7,7 @@ function Performance() {
     return (
         <>
             <Container className="mb-5" fluid>
-                <Container className="w-80 pt-4 ">
+                <Container className="w-80 pt-4">
                     <h1 className="fs-80 fw-bold red ">Performance</h1>
                 </Container>
                 <Container className="w-80">

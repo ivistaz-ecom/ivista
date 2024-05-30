@@ -21,7 +21,7 @@ function Arts() {
                         </p>
                     </Container>
                     <Container>
-                        <Link className="btn btn-12" href="/arts">Know More</Link>
+                        <Link className="btn btn-12" href="/art">Know More</Link>
                     </Container>
                 </Container>
             </Container>
