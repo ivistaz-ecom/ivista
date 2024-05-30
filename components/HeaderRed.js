@@ -44,21 +44,21 @@ function Header1() {
                   <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Industries</a>
                     <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="/industries/automobiles">Automobiles</a></li>
+                      <li><a class="dropdown-item" href="/industries/automobiles/ ">Automobiles</a></li>
                       <li><hr class="dropdown-divider" /></li>
-                      <li><a class="dropdown-item" href="/industries/tech">Tech/IT</a></li>
+                      <li><a class="dropdown-item" href="/industries/technology-IT">Tech/IT</a></li>
                       <li><hr class="dropdown-divider" /></li>
                       <li><a class="dropdown-item" href="/industries/hospitality"> Hospitality</a></li>
                       <li><hr class="dropdown-divider" /></li>
                       <li><a class="dropdown-item" href="/industries/appliances">Appliances</a></li>
                       <li><hr class="dropdown-divider" /></li>
-                      <li><a class="dropdown-item" href="/industries/ngo">Not-for-Profits/NGOs</a></li>
+                      <li><a class="dropdown-item" href="/industries/ngos">Not-for-Profits/NGOs</a></li>
                       <li><hr class="dropdown-divider" /></li>
-                      <li><a class="dropdown-item" href="/industries/jewelry">Jewelry</a></li>
+                      <li><a class="dropdown-item" href="/industries/jewellery">Jewellery</a></li>
                       <li><hr class="dropdown-divider" /></li>
-                      <li><a class="dropdown-item" href="/industries/beauty">Beauty & Wellness</a></li>
+                      <li><a class="dropdown-item" href="/industries/beauty-wellness">Beauty & Wellness</a></li>
                       <li><hr class="dropdown-divider" /></li>
-                      <li><a class="dropdown-item" href="/industries/accessories">Fashion & Accessories</a></li>
+                      <li><a class="dropdown-item" href="/industries/fashion-accessories">Fashion & Accessories</a></li>
                     </ul>
                   </li>
                   <li className="divider-center">

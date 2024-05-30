@@ -1,11 +1,11 @@
 "use client"
 import React from 'react'
 import { Container } from 'react-bootstrap'
-import HeroBanner from '../../../../components/Industries/Hospitality/HomeBanner'
+import HeroBanner from '../../../../components/Industries/Beauty/HomeBanner'
 import Header from '../../../../components/HeaderBlack'
 import Footer from '../../../../components/Footer'
 
-import HospitalityComponent from '../../../../components/Industries/Hospitality'
+import BeautyComponents from '../../../../components/Industries/Beauty'
 
 function page() {
   return (
@@ -16,7 +16,9 @@ function page() {
     // </Container>
 
     <>
-      <HospitalityComponent />
+
+      <BeautyComponents />
+
     </>
   )
 }

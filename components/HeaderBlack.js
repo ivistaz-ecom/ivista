@@ -55,17 +55,17 @@ function Header1() {
               <Button
                 onClick={handleShow}
                 className={(
-                  pathname === '/arts' ||
-                  pathname === '/arts/services' ||
-                  pathname === '/arts/services/digital-marketing' ||
-                  pathname === '/arts/services/content-development-design' ||
-                  pathname === '/arts/services/design-development'
+                  pathname === '/art' ||
+                  pathname === '/art/services' ||
+                  pathname === '/art/services/digital-marketing' ||
+                  pathname === '/art/services/content-development-design' ||
+                  pathname === '/art/services/design-development'
                 )
                   ? "btn btn-outline-black"
                   : (pathname === '/service/website-design-and-development' ||
                     pathname === '/service/search-engine-optimization' ||
                     pathname === '/service/search-engine-marketing' ||
-                    pathname === '/service/social-media-organic' ||
+                    pathname === '/service/organic-social-media' ||
                     pathname === '/service/social-media-marketing' ||
                     pathname === '/service/social-media-marketing' ||
                     pathname === '/service/content-development-b2b-b2c' ||
@@ -115,7 +115,7 @@ function Header1() {
                       Search Engine Marketing
                     </NavDropdown.Item>
                     {/* <NavDropdown.Divider /> */}
-                    <NavDropdown.Item href="/service/social-media-organic">
+                    <NavDropdown.Item href="/service/organic-social-media">
                       Social Media - Organic
                     </NavDropdown.Item>
                     {/* <NavDropdown.Divider /> */}
@@ -149,17 +149,17 @@ function Header1() {
                     {/* <NavDropdown.Divider /> */}
                     <NavDropdown.Item href="/industries/automobiles">Automobiles</NavDropdown.Item>
                     {/* <NavDropdown.Divider /> */}
-                    <NavDropdown.Item href="/industries/beauty">Beauty & Wellness</NavDropdown.Item>
+                    <NavDropdown.Item href="/industries/beauty-wellness">Beauty & Wellness</NavDropdown.Item>
                     {/* <NavDropdown.Divider /> */}
-                    <NavDropdown.Item href="/industries/fashion">Fashion & Accessories</NavDropdown.Item>
+                    <NavDropdown.Item href="/industries/fashion-accessories">Fashion & Accessories</NavDropdown.Item>
                     {/* <NavDropdown.Divider /> */}
                     <NavDropdown.Item href="/industries/hospitality">Hospitality</NavDropdown.Item>
                     {/* <NavDropdown.Divider /> */}
                     <NavDropdown.Item href="/industries/jewellery">Jewellery</NavDropdown.Item>
                     {/* <NavDropdown.Divider /> */}
-                    <NavDropdown.Item href="/industries/ngo">Not-for-Profits/NGOs</NavDropdown.Item>
+                    <NavDropdown.Item href="/industries/ngos">Not-for-Profits/NGOs</NavDropdown.Item>
                     {/* <NavDropdown.Divider /> */}
-                    <NavDropdown.Item href="/industries/tech">Tech/IT</NavDropdown.Item>
+                    <NavDropdown.Item href="/industries/technology-IT">Tech/IT</NavDropdown.Item>
                     {/* <NavDropdown.Divider /> */}
 
                     {/* <NavDropdown.Item href="#action4">
@@ -189,7 +189,7 @@ function Header1() {
                   </li>
 
                   <NavDropdown title="Company" id="navbarScrollingDropdown" className='custom-nav-company'>
-                    <NavDropdown.Item href="/team">Team</NavDropdown.Item>
+                    <NavDropdown.Item href="/get-in-touch">Team</NavDropdown.Item>
                     <NavDropdown.Item href="/mastery/about-us">About Us</NavDropdown.Item>
                     <NavDropdown.Item href="/careers">Careers</NavDropdown.Item>
                     <NavDropdown.Item href="/map-philosophy">Map Philosophy</NavDropdown.Item>

@@ -143,19 +143,19 @@ const CaseStudiesCategoriesComponents = ({ categoryId }) => {
                         pathname === '/engagement'
                     )
                     && (
-                        <Link href="/ivistaz" className="btn-13">Enter website</Link>
+                        <Link href="/home" className="btn-13">Enter website</Link>
                     )
                 }
                 {
                     (
                         pathname === '/industries/appliances' ||
                         pathname === '/industries/automobiles' ||
-                        pathname === '/industries/beauty' ||
-                        pathname === '/industries/fashion' ||
+                        pathname === '/industries/beauty-wellness' ||
+                        pathname === '/industries/fashion-accessories' ||
                         pathname === '/industries/hospitality' ||
                         pathname === '/industries/jewellery' ||
-                        pathname === '/industries/ngo' ||
-                        pathname === '/industries/tech'
+                        pathname === '/industries/ngos' ||
+                        pathname === '/industries/technology-IT'
                     )
                     && (
                         <Link href="/case-studies" className="btn-13 z-0">View All Case Studies</Link>

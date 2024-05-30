@@ -4,7 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link'
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import Svg from '../Automobiles/svg'
+import Svg from '../Industries/Automobiles/svg'
 import { MotionPathPlugin } from "gsap/MotionPathPlugin";
 import { FaArrowRight } from "react-icons/fa";
 import ScrollAnimationIOthers from '../SharedComponents/ScrollAnimationIOthers';
