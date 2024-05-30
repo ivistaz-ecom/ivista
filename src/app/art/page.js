@@ -24,7 +24,7 @@ function page() {
               <p className="art-text"><span className='fst-italic fw-bold'>“It’s not what you look that matters, it’s what you see.”</span> – Henry David Thoreau</p>
               <p className="art-text"> A picture may speak a thousand words but an action speaks louder than them. Therefore, we create digital experiences that lead to meaningful conversations and convert to qualified leads.</p>
               <Container className="mt-5 pb-5 margin-left">
-                <Link href="/arts/services" className="btn btn-11 z-0">Services</Link>
+                <Link href="/art/services" className="btn btn-11 z-0">Services</Link>
               </Container>
             </Col>
           </Row>

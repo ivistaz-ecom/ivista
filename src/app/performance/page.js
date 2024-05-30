@@ -38,7 +38,7 @@ function performance() {
 
               <Container className="margin-left d-lg-flex d-none mb-4">
                 <Col className=''>
-                  <Link href="/arts" className="perform-text">ART</Link>
+                  <Link href="/art" className="perform-text">ART</Link>
                   <Link href="/mastery" className="perform-text mx-5">MASTERY</Link>
                 </Col>
               </Container>
@@ -51,7 +51,7 @@ function performance() {
 
           <Container className="margin-left d-lg-none d-flex mb-2">
             <Col className=''>
-              <Link href="/arts" className="perform-text">ART</Link>
+              <Link href="/art" className="perform-text">ART</Link>
               <Link href="/mastery" className="perform-text mx-5">MASTERY</Link>
             </Col>
           </Container>
