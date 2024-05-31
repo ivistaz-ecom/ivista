@@ -3,16 +3,10 @@
 import React from 'react'
 import { Col, Container } from 'react-bootstrap'
 import ScrollAnimationService from '../../SharedComponents/ScrollAnimationServices'
-import styled from '../../StyledComponents'
 
 
 const DesignContentComponents = () => {
-    const timelineBadge1 =styled.p`
-    top: 1%;
-    left:13.4%;  
-    `;
     return (
-       
         <>
             <ScrollAnimationService />
 
@@ -26,7 +20,7 @@ const DesignContentComponents = () => {
                             </Container>
                         </h1> */}
 
-                        <Col className='position-relative '>
+                        <Col className='position-relative'>
                             <div class="timeline-badge1"></div>
                             <Container className='w-80 ps-7'>
                                 <p className="text-black para-text fw-semibold">
@@ -38,7 +32,6 @@ const DesignContentComponents = () => {
                                 </p>
                             </Container>
                         </Col>
- 
 
                         <Col className='position-relative'>
                             <div class="timeline-badge1 mt-1"></div>
