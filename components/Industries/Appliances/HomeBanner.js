@@ -4,7 +4,7 @@ import Link from 'next/link'
 import BannerAllPage from '../../PropsShared/BannerAllPage';
 
 import CaseStudiesCategoriesComponents from '../../PropsShared/CaseStudiesCategoriesComponents';
-import ScrollAnimation from '../../SharedComponents/ScrollAnimationServices';
+import ScrollAnimationIndustries from '../../SharedComponents/ScrollAnimationindustries'
 
 function HeroBanner() {
 
@@ -20,7 +20,7 @@ function HeroBanner() {
 
   return (
     <>
-      <ScrollAnimation />
+      <ScrollAnimationIndustries />
 
       <Container fluid className="bg-black p-0 position-relative z-3">
         <Container className="w-80 custom-container">
