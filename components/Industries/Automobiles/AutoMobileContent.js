@@ -10,7 +10,7 @@ const AutoMobileContent = () => {
 
     return ( 
         <>
-            <ScrollAnimationIndustries />
+            <ScrollAnimationIndustries/>
             <Container fluid className="p-0">
                 <Container fluid className="bg-black p-0">
                     <article>
