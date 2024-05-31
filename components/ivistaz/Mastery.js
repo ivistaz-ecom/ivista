@@ -15,7 +15,7 @@ function Mastery({ handleScrollToResults }) {
           As an agency, we've mastered the intricacies of digital marketing over the years, crafting winning strategies rooted in deep insights. Through ongoing learning and training, we have adeptly navigated the digital landscape. Our commitment is reflected in our meticulous approach to every step, guiding clients to their digital goals with precision and mastery.
         </p>
       </Container>
-      <Container>
+      <Container className='ms-5'>
         <Link className="btn btn-11" href="/mastery">Know More</Link>
       </Container>
     </Container>
