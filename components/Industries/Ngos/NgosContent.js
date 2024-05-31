@@ -1,6 +1,6 @@
 import React from 'react'
 import { Col, Container } from 'react-bootstrap';
-import ScrollAnimation from '../../SharedComponents/ScrollAnimationServices';
+import ScrollAnimationIndustries from '../../SharedComponents/ScrollAnimationindustries';
 import CaseStudiesCategoriesComponents from '../../PropsShared/CaseStudiesCategoriesComponents';
 import Link from 'next/link';
 
@@ -10,12 +10,12 @@ const NgosContent = () => {
 
     return (
         <>
-            <ScrollAnimation />
+            <ScrollAnimationIndustries />
             <Container fluid className='bg-black p-0'>
                 <article>
-                    <Col className='timeline1 pt-1'>
+                    <Col className='timeline3 pt-1'>
                         <div className='position-relative '>
-                            <div className='timeline-badge1 mt-4'></div>
+                            <div className='timeline-badge3 mt-4'></div>
                             <Container className="pt-4 w-80 pb-4 ps-7" >
 
                                 <p className="text-white para-text pe-lg-2 pe-3">As social developments produce both new possibilities and fresh challenges, active attempts to establish a better future for monitoring, assessment, and learning will become increasingly more crucial in the coming years. These changes in the philanthropic landscape—and the world around it—are profoundly altering the backdrop for decision-making inside social sector organisations as well as the larger practise of monitoring, evaluation, and learning.</p>
@@ -23,7 +23,7 @@ const NgosContent = () => {
                         </div>
 
                         <div className='position-relative '>
-                            <div className='timeline-badge1 mt-5'></div>
+                            <div className='timeline-badge3 mt-5'></div>
                             <Container className="iv-bg w-80 banner pt-5 pb-5 pe-5 ps-7">
                                 <p className="fw-bold text-white fs-3">Our services will help your audience understand your niche and help create awareness it by:</p>
                                 <p className="text-white para-text">Providing end-to-end services that will bring in more attention from the identified target group.</p>

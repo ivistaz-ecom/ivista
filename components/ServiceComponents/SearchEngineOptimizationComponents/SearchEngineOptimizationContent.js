@@ -20,7 +20,7 @@ const SearchEngineOptimizationContent = () => {
                             </Container>
                         </h1> */}
 
-
+                    
                         <Col className='position-relative'>
                             <div class="timeline-badge1"></div>
                             <Container className='w-80 ps-7 pe-lg-0 pe-3'>

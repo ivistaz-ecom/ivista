@@ -1,6 +1,7 @@
 import React from 'react'
 import { Container } from 'react-bootstrap'
 import Header1 from '../../../components/HeaderBlack'
+// import Footer from '../../../components/Footer';
 
 const page = () => {
     return (
@@ -23,6 +24,8 @@ const page = () => {
                     </p>
                 </Container>
             </Container>
+            
+            {/* <Footer/> */}
         </>
     )
 }

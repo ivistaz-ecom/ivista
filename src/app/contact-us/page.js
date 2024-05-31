@@ -2,7 +2,7 @@
 import React from 'react';
 import { Container } from 'react-bootstrap'
 import Header1 from '../../../components/HeaderBlack';
-import Footer from '../../../components/Footer';
+import Footer from '../../../components/Footer'; 
 
 import ContactusComponents from '../../../components/ContactUsComponents'
 

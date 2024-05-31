@@ -3,6 +3,7 @@ import ScrollAnimation from '../../SharedComponents/ScrollAnimationServices';
 import { Col, Container } from 'react-bootstrap';
 import CaseStudiesCategoriesComponents from '../../PropsShared/CaseStudiesCategoriesComponents';
 import Link from 'next/link';
+import ScrollAnimationIndustries from '../../SharedComponents/ScrollAnimationindustries';
 
 const TechContetn = () => {
 
@@ -12,19 +13,19 @@ const TechContetn = () => {
     return (
         <>
 
-            <ScrollAnimation />
+            <ScrollAnimationIndustries />
             <Container fluid className='bg-black p-0'>
                 <article>
-                    <Col className='timeline1'>
+                    <Col className='timeline3'>
                         <div className='position-relative'>
-                            <div className='timeline-badge1 mt-4'></div>
+                            <div className='timeline-badge3 mt-4'></div>
                             <Container className=" w-80 pb-4 pt-4  ps-7" >
                                 <p className="text-white para-text pe-lg-2 pe-3">The evolving digital trends and technologies are causing a tectonic shift in digital marketing. In this scenario, iVistaz will help you keep pace and have a firm grasp on the evolving digital ecosystem to give you measurable ROI for your digital spending. Our services include:</p>
                             </Container>
                         </div>
 
                         <div className='position-relative '>
-                            <div className='timeline-badge1 mt-5'></div>
+                            <div className='timeline-badge3 mt-5'></div>
                             <Container className="iv-bg w-80 banner pt-5 pe-5 pb-5 ps-7">
                                 <ul>
                                     <li className='industry-bullet'>
