@@ -48,8 +48,8 @@ function Header1() {
       <Container className="p-0 position-fixed z-index-100" fluid>
         <Container className='w-80'>
           <nav class="navbar bg-color z-index-100">
-            <div class="container-fluid p-0">
-              <Link class="navbar-brand" href="/ivistaz" className='z-index-100'>
+            <div class="container-fluid ">
+              <Link class="navbar-brand" href="/home" className='z-index-100'>
                 <Image src="/images/ivista_logo.svg" width={200} height={40} className="img-fluid z-index-100" alt='' />
               </Link>
               <Button

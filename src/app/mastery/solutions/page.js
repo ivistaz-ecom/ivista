@@ -7,17 +7,17 @@ import Footer from '../../../../components/Footer';
 
 function page() {
   return (
-    <Container fluid className="bg-black z-3">
-      <Container fluid className="bg-black z-3">
 
-        <Header1 />
-      </Container>
-      <Container className='w-80 custom-container bg-black z-3'>
-        <h1 className="text-offwhite fs-70 ps-6 fw-bold">MASTERY</h1>
+
+    <Container fluid className="bg-black pb-5">
+      <Header1 />
+      <Container className='w-80 custom-container bg-black position-relative z-3 mb-0'>
+        <h1 className="text-offwhite fs-70 fw-bold text-start ps-5 mb-0">MASTERY</h1>
       </Container>
       <HomeBanner />
       <Footer />
     </Container>
+
   )
 }
 
