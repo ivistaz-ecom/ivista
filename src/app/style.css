@@ -464,12 +464,11 @@ p.animation2 {
 .KW_progressBar2 {
   width: 100%;
   float: left;
-  height: 0;
+  height: 100% !important;
   z-index: 0;
   max-width: 100%;
   border: 10px dashed rgb(243, 2, 2);
   background-color: #ff000000;
-  ;
   -webkit-transition: width .6s ease;
   -o-transition: width .6s ease;
   transition: width .6s ease;
@@ -620,7 +619,7 @@ p.animation3 {
   margin-bottom: 0px;
   position: fixed;
   bottom: 0px;
-  top: 2%;
+  top: 0%;
   overflow: hidden;
   background-color: #fff0;
   content: "";
@@ -632,12 +631,12 @@ p.animation3 {
 .KW_progressBar3 {
   width: 100%;
   float: left;
-  height: 0;
+  height: 100% !important;
   z-index: 0;
   max-width: 100%;
   border: 10px dashed rgb(243, 2, 2);
   background-color: #ff000000;
-  ;
+
   -webkit-transition: width .6s ease;
   -o-transition: width .6s ease;
   transition: width .6s ease;
@@ -703,6 +702,56 @@ p.animation3 {
     -o-border-radius: 50%;
     opacity: 0;
   }
+
+  .KW_progressContainer2 {
+    left: 11.5%;
+    width: 0.5em;
+    height: 50%;
+    margin-bottom: 0px;
+    position: fixed;
+    bottom: 0px;
+    top: 0%;
+    overflow: hidden;
+    background-color: #fff0;
+    content: "";
+    display: table;
+    table-layout: fixed;
+    z-index: 0 !important;
+  }
+
+  .timeline-badge2 {
+    color: rgb(255, 255, 255);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    line-height: 50px;
+    font-size: 2em;
+    text-align: center;
+    position: absolute;
+    top: 0%;
+    left: 7.5%;
+    background-color: rgb(255, 0, 0);
+    z-index: 100;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    opacity: 0;
+  }
+
+  .KW_progressBar2 {
+    width: 100%;
+    float: left;
+    height: 50% !important;
+    z-index: 99;
+    max-width: 100%;
+    border: 10px dashed rgb(243, 2, 2);
+    background-color: #ff000000;
+    -webkit-transition: width .6s ease;
+    -o-transition: width .6s ease;
+    transition: width .6s ease;
+  }
+
 }
 
 
@@ -1103,7 +1152,7 @@ p.animation3 {
     font-size: 2em;
     text-align: center;
     position: absolute;
-    top: 2%;
+    top: 0%;
     left: 17.7%;
     background-color: rgb(255, 0, 0);
     z-index: 100;
@@ -1117,11 +1166,40 @@ p.animation3 {
   .KW_progressContainer2 {
     left: 17.1%;
     width: 0.5em;
+    height: 100%;
+    margin-bottom: 0px;
+    position: fixed;
+    bottom: 0px;
+    top: 0%;
+    overflow: hidden;
+    background-color: #fff0;
+    content: "";
+    display: table;
+    table-layout: fixed;
+    z-index: 0 !important;
+  }
+  
+  .KW_progressBar2 {
+    width: 100%;
+    float: left;
+    height: 30% !important;
+    z-index: 0;
+    max-width: 100%;
+    border: 10px dashed rgb(243, 2, 2);
+    background-color: #ff000000;
+    -webkit-transition: width .6s ease;
+    -o-transition: width .6s ease;
+    transition: width .6s ease;
+  }
+
+  .KW_progressContainer3 {
+    left: 17.8%;
+    width: 0.5em;
     height: 50%;
     margin-bottom: 0px;
     position: fixed;
     bottom: 0px;
-    top: 2%;
+    top: 0%;
     overflow: hidden;
     background-color: #fff0;
     content: "";
@@ -1130,21 +1208,18 @@ p.animation3 {
     z-index: 0 !important;
   }
 
-  .KW_progressContainer3 {
-    left: 17.8%;
-    width: 0.5em;
-    height: 80%;
-    margin-bottom: 0px;
-    position: fixed;
-    bottom: 0px;
-    top: 2%;
-    overflow: hidden;
-    background-color: #fff0;
-    content: "";
-    display: table;
-    table-layout: fixed;
-    z-index: 0 !important;
-  }
+  /* .KW_progressBar3 {
+    width: 100%;
+    float: left;
+    height: 50% !important;
+    z-index: 0;
+    max-width: 100%;
+    border: 10px dashed rgb(243, 2, 2);
+    background-color: #ff000000;
+    -webkit-transition: width .6s ease;
+    -o-transition: width .6s ease;
+    transition: width .6s ease;
+  } */
 
   .timeline-badge3 {
     color: rgb(255, 255, 255);
@@ -1164,6 +1239,10 @@ p.animation3 {
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
     opacity: 0;
+  }
+
+  .footer-main{
+    min-height: 35vh !important ;
   }
 }
 
@@ -1307,6 +1386,10 @@ p.animation3 {
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
     opacity: 0;
+  }
+
+  .footer-main{
+    min-height: 35vh !important ;
   }
 
 }

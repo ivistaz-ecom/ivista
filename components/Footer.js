@@ -28,10 +28,9 @@ function Footer() {
             </Container>
 
 
-            <Container fluid className="bg-black z-2 position-relative p-lg-0 px-4">
+            <Container fluid className="bg-black z-2 position-relative p-lg-0 px-4 footer-main">
                 <Container className="w-80 p-12 p-0 py-2" >
                     <Row>
-
                         {/* ABOUT IVISTAZ */}
                         <Col className="footer p-0" lg={3}>
                             <Col className="f-head d-lg-none d-flex py-lg-0 py-3 pb-2" lg={3}>ABOUT IVISTAZ</Col>
