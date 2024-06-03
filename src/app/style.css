@@ -303,7 +303,6 @@ p.animation1 {
   max-width: 100%;
   border: 10px dashed rgb(243, 2, 2);
   background-color: #ff000000;
-  ;
   -webkit-transition: width .6s ease;
   -o-transition: width .6s ease;
   transition: width .6s ease;
@@ -1082,6 +1081,19 @@ p.animation3 {
     z-index: 0;
   }
 
+  .KW_progressBar1 {
+    width: 100%;
+    float: left;
+    height: 98% !important;
+    z-index: 99;
+    max-width: 100%;
+    border: 10px dashed rgb(243, 2, 2);
+    background-color: #ff000000;
+    -webkit-transition: width .6s ease;
+    -o-transition: width .6s ease;
+    transition: width .6s ease;
+  }
+
   .timeline-badge1 {
     color: rgb(255, 255, 255);
     width: 20px;
@@ -1091,7 +1103,7 @@ p.animation3 {
     font-size: 2em;
     text-align: center;
     position: absolute;
-    top: 1%;
+    top: 2%;
     left: 17.7%;
     background-color: rgb(255, 0, 0);
     z-index: 100;
@@ -1195,19 +1207,32 @@ p.animation3 {
   }
 
   .KW_progressContainer1 {
-    left: 20.3%;
+    left: 21.3%;
     width: 0.5em;
-    height: 50%;
+    height: 40%;
     margin-bottom: 0px;
     position: fixed;
     bottom: 0px;
-    top: 2%;
+    top: 0%;
     overflow: hidden;
     background-color: #fff0;
     content: "";
     display: table;
     table-layout: fixed;
     z-index: 0 !important;
+  }
+
+  .KW_progressBar1 {
+    width: 100%;
+    float: left;
+    height: 100% !important;
+    z-index: 99;
+    max-width: 100%;
+    border: 10px dashed rgb(243, 2, 2);
+    background-color: #ff000000;
+    -webkit-transition: width .6s ease;
+    -o-transition: width .6s ease;
+    transition: width .6s ease;
   }
 
   .timeline-badge1 {
@@ -1219,8 +1244,8 @@ p.animation3 {
     font-size: 2em;
     text-align: center;
     position: absolute;
-    top: 2%;
-    left: 20%;
+    top: 0%;
+    left: 21%;
     background-color: rgb(255, 0, 0);
     z-index: 100;
     -webkit-border-radius: 50%;
@@ -1329,12 +1354,12 @@ p.animation3 {
   .KW_progressContainer1 {
     left: 24.3%;
     width: 0.5em;
-    height: 60%;
+    height: 50%;
     margin-bottom: 0px;
     position: fixed;
     bottom: 0px;
     top: 1%;
-    overflow: hidden;
+    /* overflow: hidden; */
     background-color: #fff0;
     content: "";
     display: table;
