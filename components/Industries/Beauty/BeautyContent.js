@@ -32,13 +32,13 @@ const BeautyContent = () => {
                                 <p className="fw-bold text-white fs-3">To help your brand to stand out in a highly crowded market, we will:</p>
                                 <ul>
                                     <li className='industry-bullet'>
-                                        <p className="text-white para-text">Develop and implement robust<span className='fw-bold'> search strategies</span> to drive your primary target audience to your brand store and marketplaces.</p>
+                                        <p className="text-white para-text">Develop and implement robust search strategies to drive your primary target audience to your brand store and marketplaces. Our digital marketing for beauty products focuses on optimizing search visibility and attracting potential customers interested in wellness products.</p>
                                     </li>
                                     <li className='industry-bullet'>
-                                        <p className="text-white para-text">Create a robust<span className='fw-bold'> performance-based e-commerce model</span> with a monthly/quarterly goal of improving and sustaining your revenues.</p>
+                                        <p className="text-white para-text">Create a robust performance-based e-commerce model with a monthly/quarterly goal of improving and sustaining your revenues. Through our online marketing service for beauty product brands, we ensure your brand achieves steady growth and increased online sales for wellness products.</p>
                                     </li>
                                     <li className='industry-bullet'>
-                                        <p className="text-white para-text">Create a robust e-commerce channel that will not only improve revenues on your e-store and marketplaces but<span className='fw-bold'>  also drive customers to your offline stores</span>.</p>
+                                        <p className="text-white para-text">Create a robust e-commerce channel that will not only improve revenues on your e-store and marketplaces but also drive customers to your offline stores. With our social media marketing for beauty brands, we engage your audience across platforms, driving traffic to both your online and offline stores, maximizing your brand's reach and impact.</p>
                                     </li>
                                 </ul>
                                 <Container className="text-center">

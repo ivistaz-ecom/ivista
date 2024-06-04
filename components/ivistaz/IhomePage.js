@@ -5,8 +5,23 @@ import Image from 'next/image'
 import Header from '../HeaderBlack'
 import CountUp from 'react-countup';
 import MasteryArtsPerfomancePage from './MasteryArtsPerfomancePage'
+import SeoComponents from '../SeoComponents/Seo'
+import { usePathname } from 'next/navigation'
 
 function IhomePage() {
+
+  const pathname = usePathname();
+  const [domainName, setDomainName] = useState('');
+
+  useEffect(() => {
+    setDomainName(window.location.hostname);
+  }, []);
+
+  const title = " Crafting Digital Excellence: Mastery, Art, and Performance in Digital Marketing";
+  const description = "Explore the expertise of iVistaz, a digital marketing agency mastering the intricacies of performance marketing, crafting captivating digital art, and delivering unforgettable digital journeys with precision and excellence.";
+  const path = `${domainName}${pathname}`;
+  const metaImage = "";
+
   const [isYearOfPerformance, setIsYearOfPerformance] = useState(1996);
   const [perfomance, setPerformance] = useState(0);
   const [isMainSectionVisible, setIsMainSectionVisible] = useState(true);
@@ -31,6 +46,9 @@ function IhomePage() {
 
   return (
     <>
+
+      <SeoComponents title={title} description={description} path={path} metaImage={metaImage} />
+
       <Header />
       {isMainSectionVisible && (
         <Container className="bg-black h-100vh d-flex flex-column justify-content-center" fluid>

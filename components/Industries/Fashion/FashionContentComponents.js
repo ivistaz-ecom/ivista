@@ -28,16 +28,16 @@ const FashionContentComponents = () => {
                             <Container className="iv-bg w-80 banner pt-5 pe-5 pb-5 ps-7">
                                 <ul>
                                     <li className='industry-bullet'>
-                                        <p className="text-white para-text">Bridging the gap between online visitors and sales (in-store and online) both on your e-store, as well as on marketplaces and<span className='fw-bold'> increasing online conversions</span></p>
+                                        <p className="text-white para-text">Bridging the gap between online visitors and sales (in-store and online) both on your e-store, as well as on marketplaces and<span className='fw-bold'> increasing online sales for fashion accessories.</span></p>
                                     </li>
                                     <li className='industry-bullet'>
                                         <p className="text-white para-text">
-                                            Creating<span className='fw-bold'> strong curated online experiences</span> for your customers to strengthen brand loyalty
+                                            Creating<span className='fw-bold'> strong curated online experiences</span> for your customers to strengthen brand loyalty. Our digital marketing for fashion brands focuses on crafting compelling content and engaging experiences to attract and retain customers.
                                         </p>
                                     </li>
                                     <li className='industry-bullet'>
                                         <p className="text-white para-text">
-                                            Ensuring a<span className='fw-bold'> consistent social media engagement</span> with your customers.
+                                            Ensuring <span className='fw-bold'> consistent social media engagement</span> with your customers. Our social media marketing for fashion brands ensures your brand stays top-of-mind and engages with your audience across platforms, driving brand awareness and loyalty.
                                         </p>
                                     </li>
                                 </ul>

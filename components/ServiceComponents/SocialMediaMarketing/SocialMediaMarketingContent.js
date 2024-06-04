@@ -23,18 +23,16 @@ const SocialMediaMarketingContent = () => {
                             <div class="timeline-badge1"></div>
                             <Container className='w-80 ps-7 pe-lg-0 pe-4'>
                                 <p className="text-black para-text">
-                                    From targeting and re-targeting to leveraging look-alike and custom audiences, as well as diving into demographics, behaviors, attributes, and interests – the power of precise targeting on social media can be invaluable in helping businesses generate leads or sell online.
+                                    From targeting and retargeting to leveraging look-alike and custom audiences, as well as diving into demographics, behaviours, attributes, and interests – the power of precise targeting with social media advertising can be invaluable in helping businesses generate leads or sell online.
                                 </p>
 
                                 <p className="text-black para-text">
-                                    Leveraging social media marketing for driving website traffic, generating leads, or facilitating online sales goes beyond crafting compelling content or eye-catching visuals. Targeting, timing, ad formats, and bidding strategies must all come together in a well-thought-out plan. Only then can social media marketing truly fulfill its objectives and propel businesses towards success.
+                                    Leveraging social media marketing services for driving website traffic, generating leads, or facilitating online sales goes beyond crafting compelling content or eye-catching visuals. Targeting, timing, ad formats, and bidding strategies must all come together in a well-thought-out plan. Only then can social media marketing truly fulfil its objectives and propel businesses towards success.
                                 </p>
 
                                 <p className="text-black para-text">
-                                    We understand the critical role that social media plays in helping you reach your goals, and we&apos;re here to guide your brand towards success in this dynamic arena. For businesses in both the B2B and B2C sectors, we will harness the intricacies of audience segmentation to ensure that your ad is seen by the right people through the right social media platforms like LinkedIn, Facebook, Instagram, and Twitter.
+                                    We understand the critical role that social media plays in helping you reach your goals, and we&apos;re here to guide your brand towards success in this dynamic arena. For businesses in both the B2B and B2C sectors, through social media ad campaigns, we will harness the intricacies of audience segmentation to ensure that your ad is seen by the right people through the right social media platforms, working to generate traffic through Twitter ads, LinkedIn ads, YouTube ads and  Facebook ads.
                                 </p>
-
-
                             </Container>
                         </Col>
 

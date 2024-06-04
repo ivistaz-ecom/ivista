@@ -18,18 +18,29 @@ const NgosContent = () => {
                             <div className='timeline-badge3 mt-4'></div>
                             <Container className="pt-4 w-80 pb-4 ps-7" >
 
-                                <p className="text-white para-text pe-lg-2 pe-3">As social developments produce both new possibilities and fresh challenges, active attempts to establish a better future for monitoring, assessment, and learning will become increasingly more crucial in the coming years. These changes in the philanthropic landscape—and the world around it—are profoundly altering the backdrop for decision-making inside social sector organisations as well as the larger practise of monitoring, evaluation, and learning.</p>
+                                <p className="text-white para-text pe-lg-2 pe-3">As social developments produce both new possibilities and fresh challenges, active attempts to establish a better future for monitoring, assessment, and learning will become increasingly more crucial in the coming years. These changes in the philanthropic landscape—and the world around it—are profoundly altering the backdrop for decision-making inside social sector organizations as well as the larger practice of monitoring, evaluation, and learning.</p>
                             </Container>
                         </div>
 
                         <div className='position-relative '>
                             <div className='timeline-badge3 mt-5'></div>
                             <Container className="iv-bg w-80 banner pt-5 pb-5 pe-5 ps-7">
-                                <p className="fw-bold text-white fs-3">Our services will help your audience understand your niche and help create awareness it by:</p>
-                                <p className="text-white para-text">Providing end-to-end services that will bring in more attention from the identified target group.</p>
-                                <p className="text-white para-text">For value creation, evaluate or reframe the current positioning, message, and narrative.</p>
-                                <p className="text-white para-text">With captivating content and SEO, generate traction for your website and offerings.</p>
-                                <p className="text-white para-text">Using email marketing, generate Marketing Qualified Leads (MQLs).</p>
+                                <p className="fw-bold text-white fs-3">Our digital marketing for nonprofit organizations services will help your audience understand your niche and help create awareness by:</p>
+                                <ul>
+                                    <li className='industry-bullet'>
+                                        <p className="text-white para-text">Providing end-to-end services that will bring in more attention from the identified target group.</p>
+                                    </li>
+                                    <li className='industry-bullet'>
+                                        <p className="text-white para-text">For value creation, evaluate or reframe the current positioning, message, and narrative.</p>
+                                    </li>
+                                    <li className='industry-bullet'>
+                                        <p className="text-white para-text">With captivating content and SEO, generate traction for your website and offerings.</p>
+                                    </li>
+                                    <li className='industry-bullet'>
+                                        <p className="text-white para-text">Using email marketing, generate Marketing Qualified Leads (MQLs).</p>
+                                    </li>
+                                </ul>
+                                <p className="text-white para-text">We specialize in social media marketing for non-profit organizations to enhance your social presence and engagement. Additionally, our digital marketing for NGOs ensures your campaigns are effective and far-reaching. For those needing a stronger online presence, our web design for NGOs will create a user-friendly and impactful website to support your mission.</p>
                                 <Container className="text-center">
                                     <Col className='d-flex flex-column align-items-center'>
                                         <Link className="btn-14 z-0" href="/contact-us">Contact us</Link>

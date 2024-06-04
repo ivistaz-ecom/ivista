@@ -1,8 +1,26 @@
+"use client"
 import React, { useEffect, useRef, useState } from 'react'
 import { Container, Row, Col, Button, Image, CloseButton } from 'react-bootstrap'
 import BannerAllPage from '../../PropsShared/BannerAllPage';
+import SeoComponents from '../../../components/SeoComponents/Seo'
+import { usePathname } from 'next/navigation'
+
+
+
 
 function HeroBanner() {
+  
+  const pathname = usePathname();
+  const [domainName, setDomainName] = useState('');
+
+  useEffect(() => {
+    setDomainName(window.location.hostname);
+  }, []);
+
+  const title = "Strengthening market share in Indian Automobile Industry";
+  const description = "As India sees transformative growth at global levels for the automobile industry, digital marketing services are imperative to grow brand networks.";
+  const path = `${domainName}${pathname}`;
+  const metaImage = ""; 
 
   const backgroundImage = {
     url: '/industrie/automobile_banner.jpg'
@@ -16,6 +34,8 @@ function HeroBanner() {
 
   return (
     <>
+    <SeoComponents title={title} description={description} path={path} metaImage={metaImage} />
+
       <Container className='bg-black z-3 position-relative p-0' fluid>
         <Container className="w-80 custom-container">
           <Row className="d-flex align-items-center">

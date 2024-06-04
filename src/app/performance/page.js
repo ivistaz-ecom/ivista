@@ -1,14 +1,33 @@
 "use client"
-import React from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import Header1 from '../../../components/HeaderBlack'
 import { Col, Container, Row } from 'react-bootstrap'
 import CountUp from 'react-countup';
 import Link from 'next/link';
 import Image from 'next/image'
 import Footer from '../../../components/Footer';
+import SeoComponents from '../../../components/SeoComponents/Seo'
+import { usePathname } from 'next/navigation'
+
 function performance() {
+
+  const pathname = usePathname();
+  const [domainName, setDomainName] = useState('');
+
+  useEffect(() => {
+    setDomainName(window.location.hostname);
+  }, []);
+
+  const title = "Seamless digital performance with iVistaz";
+  const description = " Working closely with our clients, we make sure we deliver performance that goes beyond expectations, prioritising excellence.";
+  const path = `${domainName}${pathname}`;
+  const metaImage = ""; 
+
   return (
     <>
+
+     <SeoComponents title={title} description={description} path={path} metaImage={metaImage} />
+
       <Container fluid className="iv-bg border-bottom d-flex flex-column justify-content-between min-vh-100">
         <Header1 />
         <Container className="w-80 mb-5 custom-container">
@@ -23,6 +42,9 @@ function performance() {
                 </p>
                 <p className="mastery-text">
                   We work in collaboration with our clients to design digital journeys that create experiences that people will never forget; and for that we intend to deliver performance beyond expectations.
+                </p>
+                <p className="mastery-text">
+                By creating high-performing digital marketing campaigns, we increase website traffic with SEO and content marketing. Through transformative digital experience design and performance optimization strategies, we make sure we deliver exactly what the client needs, and more.
                 </p>
                 <Container className="mt-3 pb-5 margin-left d-flex flex-column justify-content-center">
                   <div className='d-flex flex-lg-row flex-column gap-3'>
