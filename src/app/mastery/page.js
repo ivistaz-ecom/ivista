@@ -51,7 +51,7 @@ function page() {
                 <CountUp end={6} prefix="$" suffix='B' className="counter" />
               )}
               {countVisible[3] && (
-                <CountUp end={500}  suffix='+' className="counter" />
+                <CountUp end={500} suffix='+' className="counter" />
               )}
             </Col>
           </Row>
