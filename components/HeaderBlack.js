@@ -189,7 +189,7 @@ function Header1() {
                   </li>
 
                   <NavDropdown title="Company" id="navbarScrollingDropdown" className='custom-nav-company'>
-                    <NavDropdown.Item href="/get-in-touch">Team</NavDropdown.Item>
+                    <NavDropdown.Item href="/our-team">Team</NavDropdown.Item>
                     <NavDropdown.Item href="/mastery/about-us">About Us</NavDropdown.Item>
                     <NavDropdown.Item href="/careers">Careers</NavDropdown.Item>
                     <NavDropdown.Item href="/map-philosophy">Map Philosophy</NavDropdown.Item>

@@ -22,7 +22,7 @@ const KeywordRankingWordpressCategoriesComponents = () => {
                         </Col>
                         <Col>
                             <p className="text-white fw-bold fs-3 text-center">
-                                Here are some sales performances<br />we have achieved for our clients.
+                                Here are some keyword ranking performances<br />we have achieved for our clients.
                             </p>
                         </Col>
                     </Row>

@@ -3,12 +3,15 @@ import { Button, CloseButton, Col, Container } from 'react-bootstrap';
 import ConfigData from '../../config';
 import { FaArrowRight } from 'react-icons/fa';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 
 const CaseStudiesFetchData = () => {
     const [data, setData] = useState([]);
     const [isOpen, setIsOpen] = useState(false);
     const [selectedItem, setSelectedItem] = useState(null);
     const [visibleItems, setVisibleItems] = useState(4);
+
+    const pathname = usePathname()
 
     const siteUrl = ConfigData.wpApiUrl;
     const serverUrl = ConfigData.SERVER;

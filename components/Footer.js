@@ -46,7 +46,7 @@ function Footer() {
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="/team" className='text-decoration-none text-white custom-footer-font'>
+                                    <Link href="/our-team" className='text-decoration-none text-white custom-footer-font'>
                                         Team
                                     </Link>
                                 </li>
@@ -207,7 +207,7 @@ function Footer() {
 
                         </Col>
                     </Row>
-                
+
                 </Container>
             </Container>
             <Container className="iv-grey pt-2 pb-2 z-3" fluid>

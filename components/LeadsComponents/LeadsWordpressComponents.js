@@ -23,7 +23,7 @@ const LeadsWordpressComponents = () => {
                         </Col>
                         <Col>
                             <p className="text-white fw-bold fs-3 text-center">
-                                Here are some sales performances<br />we have achieved for our clients.
+                                Here are some leads performances<br />we have achieved for our clients.
                             </p>
                         </Col>
                     </Row>
