@@ -17,22 +17,22 @@ const WebDesignAndDevelopmentContent = () => {
                             <div class="timeline-badge1"></div>
                             <Container className='w-80 ps-7'>
                                 <p className="text-black para-text fw-semibold pe-lg-0 pe-3">
-                                If your website could be more engaging, intuitive, and visually appealing, you're losing potential customers to competitors. That is why a professionally designed website by a top website designing company is crucial to bring back visitors for meaningful engagement. </p>
+                                    If your website could be more engaging, intuitive, and visually appealing, you're losing potential customers to competitors. That is why a professionally designed website by a top website designing company is crucial to bring back visitors for meaningful engagement. </p>
 
                                 <p className="text-black para-text pe-lg-0 pe-3">
-                                Your brand&apos;s reputation hinges on your digital footprint. The website and mobile app serve as the primary showcases for your brand, products, expertise, and distinctiveness.
+                                    Your brand&apos;s reputation hinges on your digital footprint. The website and mobile app serve as the primary showcases for your brand, products, expertise, and distinctiveness.
                                 </p>
 
                                 <p className="text-black para-text pe-lg-0 pe-3">
-                                With over 26 years of experience, we have crafted more than 150 websites for businesses spanning aviation, e-commerce, healthcare, home appliances, hospitality, NGOs, technology, real estate, and retail.
+                                    With over 26 years of experience, we have crafted more than 150 websites for businesses spanning aviation, e-commerce, healthcare, home appliances, hospitality, NGOs, technology, real estate, and retail.
                                 </p>
 
                                 <p className="text-black para-text pe-lg-0 pe-3">
-                                As a leading website development company in Bangalore, we prioritise user-centricity in our web design and development process and delve into questions on behalf of your users: &quot; How easily can they access information?&quot;  and &quot; How many steps are required from discovery to inquiry?&quot;  This approach embodies User Experience (UX) principles, encompassing design, interface, information architecture, navigation, and content.
+                                    As a leading website development company in Bangalore, we prioritise user-centricity in our web design and development process and delve into questions on behalf of your users: &quot; How easily can they access information?&quot;  and &quot; How many steps are required from discovery to inquiry?&quot;  This approach embodies User Experience (UX) principles, encompassing design, interface, information architecture, navigation, and content.
                                 </p>
 
                                 <p className="text-black para-text pe-lg-0 pe-3">
-                                Whether you need a B2B website, an e-commerce website development platform, a compelling website for your NGO, or a solution from a mobile app development company, we tailor our designs to align with your digital marketing objectives while optimising user experience.
+                                    Whether you need a B2B website, an e-commerce website development platform, a compelling website for your NGO, or a solution from a mobile app development company, we tailor our designs to align with your digital marketing objectives while optimising user experience.
                                 </p>
                             </Container>
                         </div>
