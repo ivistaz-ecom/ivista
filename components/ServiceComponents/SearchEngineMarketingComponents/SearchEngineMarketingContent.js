@@ -36,15 +36,15 @@ const SearchEngineMarketingContent = () => {
                                 </p>
 
                                 <p className="text-black para-text">
-                                    When customers leave footprints online about what they are looking for, search engine marketing (SEM) becomes essential. It helps businesses to showcase the right product or solution to the right target audience at the right time. With expert pricing, bidding, and targeting strategies, we can help your product or service ad be placed at the top of Search Engine Results Pages (SERP).
+                                When customers leave footprints online about what they are looking for, search engine marketing (SEM) becomes essential. It helps businesses to showcase the right product or solution to the right target audience at the right time. With expert pricing, bidding, and targeting strategies, we can help your product or service advertisements be placed at the top of Search Engine Results Pages (SERP).
                                 </p>
 
                                 <p className="text-black para-text">
-                                    Bidding and competition on top search engines like Google, Bing, and Yahoo! are intense. Imagine thousands of brands vying for the same space to get the attention and eyeballs of the same audience! To get top placements for your ad on the Search Engine Results Page (SERP), you will need an expert partner to craft your message, include the right keywords, exclude negative words, and deploy the right bidding strategy.
+                                Bidding and competition on top search engines like Google, Bing, and Yahoo! are intense. Imagine thousands of brands vying for the same space to get the attention and eyeballs of the same audience! To get top placements for your ad on the Search Engine Results Page (SERP), you will need an expert partner to craft your message, include the right keywords, exclude negative words, and deploy the right bidding strategy. As a leading Search Engine Marketing company, we specialise in Pay-Per-Click Advertising and Paid Search Advertising to ensure your ads reach the intended audience effectively.
                                 </p>
 
                                 <p className="text-black para-text">
-                                    Depending on your needs, we will recommend search ads, display ads, video ads, shopping ads, and discovery ads to drive traffic to your web conversion pages. While helping you with online leads, sales, or bookings, our focus will also be to optimize your Cost Per Lead (CPL).
+                                Depending on your needs, we will recommend search ads, display ads, video ads, shopping ads, and discovery ads to drive traffic to your web conversion pages. As a premier Video Advertising agency, we ensure that your video ads are compelling and targeted. While helping you with online leads, sales, or bookings, our focus will also be to optimise your Cost Per Lead (CPL).
                                 </p>
 
 

@@ -26,11 +26,11 @@ const ContentDevelopment = () => {
                                 </p>
 
                                 <p className="text-black para-text">
-                                    We understand the importance of high-quality web content and craft SEO-friendly content for organizations across the B2B and B2C sectors. We work closely with our SEO teams to ensure that the right mix of keywords and phrases is infused organically in your content to power your page to the top of Search Engine Ranking Pages (SERP).
+                                    We understand the importance of high-quality web content and craft SEO-friendly  content for B2C and B2B Content Marketing across sectors. We work closely with our SEO teams to ensure that the right mix of keywords and phrases is infused organically in your content to power your page to the top of Search Engine Ranking Pages (SERP).
                                 </p>
 
                                 <p className="text-black para-text">
-                                    Our approach extends beyond mere content creation; we strategically plan the content mix to cater to every stage of the buyer journey—top-of-the-funnel, middle-of-the-funnel, and bottom-of-the-funnel. We will craft content that will resonate with your audience at each touchpoint, bolster user engagement, foster repeat visitors, and drive traffic towards your conversion pages.
+                                    Our approach extends beyond mere Article Writing services; we strategically plan the content mix to cater to every stage of the buyer journey—top-of-the-funnel, middle-of-the-funnel, and bottom-of-the-funnel. Through SEO Content Writing, we will craft content that will resonate with your audience at each touchpoint, bolster user engagement, foster repeat visitors, and drive traffic towards your conversion pages.
                                 </p>
 
 
@@ -77,7 +77,7 @@ const ContentDevelopment = () => {
                             <div class="timeline-badge1"></div>
                             <Container className='w-80 ps-7 '>
                                 <p className='text-red fw-bold para-text'>
-                                    What is your content requirement today?
+                                    What is your content writing service requirement today?
                                     Write to us at:
                                 </p>
                             </Container>

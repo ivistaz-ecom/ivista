@@ -1,15 +1,31 @@
 "use client"
-import React from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import Header1 from '../../../../components/HeaderBlack'
 import { Col, Container, Row } from 'react-bootstrap'
 import Link from 'next/link';
 import Image from 'next/image'
 import Footer from '../../../../components/Footer';
 import ScrollAnimationIOthers from '../../../../components/SharedComponents/ScrollAnimationIOthers';
+import SeoComponents from '../../../../components/SeoComponents/Seo'
+import { usePathname } from 'next/navigation'
 
 function page() {
+  const pathname = usePathname();
+  const [domainName, setDomainName] = useState('');
+
+  useEffect(() => {
+    setDomainName(window.location.hostname);
+  }, []);
+
+  const title = " Performance-focused digital marketing services";
+  const description = "At iVistaz, digital marketing services are tailored for optimal performance for the business, ensuring results are delivered.";
+  const path = `${domainName}${pathname}`;
+  const metaImage = ""; 
+
   return (
-    <>
+    <>     
+     <SeoComponents title={title} description={description} path={path} metaImage={metaImage} />
+     
       <ScrollAnimationIOthers />
       <Container fluid className="mb-4 p-0">
         <Header1 />
@@ -30,7 +46,8 @@ function page() {
                         <h1 className="fs-19 fw-bold text-white i-link position-relative">
                           Services
                         </h1>
-                        <p className="para-text text-white">At the core of everything we do lies the art of transforming exceptional services into extraordinary results. We are dedicated to crafting and curating tailored solutions that exceed your expectations. Whether it’s a comprehensive package or a single service, we’re here to help brands achieve more than what they wish for. And the best part? We have a <Link href="/mastery/about-us" className="red">performance-focused model</Link>. This means we get paid only when we deliver results.</p>
+                        <p className="para-text text-white">
+                          At the core of everything we do lies the art of transforming exceptional services into extraordinary results with effective digital marketing techniques. We are dedicated to crafting and curating tailored digital marketing solutions that exceed your expectations. Whether it’s a comprehensive package for content creation and design or a single service, we’re here to help brands achieve more than what they wish for. And the best part? We have a <Link href="/mastery/about-us" className="red">performance-based digital marketing model.</Link>  This means we get paid only when we deliver results.</p>
                       </div>
                     </div>
 

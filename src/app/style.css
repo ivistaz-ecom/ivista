@@ -220,7 +220,7 @@ p.animation1 {
   -webkit-animation-iteration-count: 1;
   -ms-animation-iteration-count: 1;
   -moz-animation-iteration-count: 1;
-}   
+}
 
 /************************************************************************************/
 
@@ -235,7 +235,7 @@ p.animation1 {
   position: absolute;
   top: 1%;
   left: 9.9%;
-  
+
   background-color: rgb(255, 0, 0);
   /* background-color: transparent ; */
   /* border: 1px solid rgb(255, 255, 255); */
@@ -404,7 +404,7 @@ p.animation2 {
   top: 1%;
   left: 2.1%;
   background-color: rgb(255, 0, 0);
- 
+
   z-index: 100;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -1178,11 +1178,11 @@ p.animation3 {
     table-layout: fixed;
     z-index: 0 !important;
   }
-  
+
   .KW_progressBar2 {
     width: 100%;
     float: left;
-    height: 30% !important;
+    height: 20% !important;
     z-index: 0;
     max-width: 100%;
     border: 10px dashed rgb(243, 2, 2);
@@ -1241,8 +1241,8 @@ p.animation3 {
     opacity: 0;
   }
 
-  .footer-main{
-    min-height: 35vh !important ;
+  .footer-main {
+    min-height: 35vh !important;
   }
 }
 
@@ -1388,8 +1388,8 @@ p.animation3 {
     opacity: 0;
   }
 
-  .footer-main{
-    min-height: 35vh !important ;
+  .footer-main {
+    min-height: 35vh !important;
   }
 
 }

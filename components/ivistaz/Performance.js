@@ -12,8 +12,7 @@ function Performance() {
             </Container>
             <Container className='p-0'>
                 <p className="fs-20 fw-bold red-50 ps-4">
-                    Over the years, iVistaz has excelled by partnering with clients to craft unforgettable digital journeys, consistently striving to surpass expectations with every performance.
-                </p>
+                Over the years, iVistaz has excelled by partnering with clients to craft unforgettable digital journeys. As a revenue-driven digital marketing agency, we consistently strive to surpass expectations with every performance.                </p>
             </Container>
             <Container className="p-0 mb-5">
                 <Link className="btn ms-4 btn-11" href="/performance">Know More</Link>
