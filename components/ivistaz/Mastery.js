@@ -7,7 +7,7 @@ function Mastery({ handleScrollToResults }) {
 
   return (
     <Container className="w-80 mt-4 mb-5">
-      <Container className='p-0'>
+      <Container className='p-0' id="mastery">
         <h1 className="fs-80 fw-bold ps-4">Mastery</h1>
       </Container>
       <Container className='p-0'>
