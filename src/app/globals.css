@@ -1677,3 +1677,24 @@ cursor: pointer;
   background : red;
   color: white !important;
 }
+
+.demo {
+  position: fixed;
+  top: 15px;
+  z-index: 99;
+  right: 100px;
+  background: #ffffff !important;
+  padding: 11px;
+  color: #000000;
+  text-decoration: none;
+  font-size: 19px;
+  cursor: pointer; 
+  -webkit-transition: -webkit-transform ease-out 0.1s, background 0.2s;
+	-moz-transition: -moz-transform ease-out 0.1s, background 0.2s;
+	transition: transform ease-out 0.1s, background 0.2s;
+}
+
+.demo:hover {
+  background: rgb(217, 217, 217);
+	color: #fff;
+}

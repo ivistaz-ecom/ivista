@@ -755,6 +755,8 @@ p.animation3 {
 }
 
 
+
+
 /**********************| Desktop view |**********************/
 
 /******************** Screen size - 150% ********************/
@@ -793,6 +795,35 @@ p.animation3 {
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
     opacity: 0;
+  }
+
+  .KW_progressContainer2 {
+    left: 10.8%;
+    width: 0.5em;
+    height: 100%;
+    margin-bottom: 0px;
+    position: fixed;
+    bottom: 0px;
+    top: 2%;
+    overflow: hidden;
+    background-color: #fff0;
+    content: "";
+    display: table;
+    table-layout: fixed;
+    z-index: 0 !important;
+  }
+
+  .KW_progressBar2 {
+    width: 100%;
+    float: left;
+    height: 20% !important;
+    z-index: 0;
+    max-width: 100%;
+    border: 10px dashed rgb(243, 2, 2);
+    background-color: #ff000000;
+    -webkit-transition: width .6s ease;
+    -o-transition: width .6s ease;
+    transition: width .6s ease;
   }
 
   .KW_progressContainer3 {
@@ -904,6 +935,35 @@ p.animation3 {
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
     opacity: 0;
+  }
+
+  .KW_progressContainer2 {
+    left: 10.4%;
+    width: 0.5em;
+    height: 100%;
+    margin-bottom: 0px;
+    position: fixed;
+    bottom: 0px;
+    top: 2%;
+    overflow: hidden;
+    background-color: #fff0;
+    content: "";
+    display: table;
+    table-layout: fixed;
+    z-index: 0 !important;
+  }
+
+  .KW_progressBar2 {
+    width: 100%;
+    float: left;
+    height: 20% !important;
+    z-index: 0;
+    max-width: 100%;
+    border: 10px dashed rgb(243, 2, 2);
+    background-color: #ff000000;
+    -webkit-transition: width .6s ease;
+    -o-transition: width .6s ease;
+    transition: width .6s ease;
   }
 
   .KW_progressContainer3 {
@@ -1024,7 +1084,7 @@ p.animation3 {
   .KW_progressContainer2 {
     left: 13.8%;
     width: 0.5em;
-    height: 50%;
+    height: 100%;
     margin-bottom: 0px;
     position: fixed;
     bottom: 0px;
@@ -1035,6 +1095,19 @@ p.animation3 {
     display: table;
     table-layout: fixed;
     z-index: 0 !important;
+  }
+
+  .KW_progressBar2 {
+    width: 100%;
+    float: left;
+    height: 20% !important;
+    z-index: 0;
+    max-width: 100%;
+    border: 10px dashed rgb(243, 2, 2);
+    background-color: #ff000000;
+    -webkit-transition: width .6s ease;
+    -o-transition: width .6s ease;
+    transition: width .6s ease;
   }
 
   .KW_progressContainer3 {
@@ -1081,11 +1154,11 @@ p.animation3 {
   .KW_progressContainer {
     left: 13.3%;
     width: 0.5em;
-    height: 50%;
+    height: 60%;
     margin-bottom: 0px;
     position: fixed;
     bottom: 0px;
-    top: 2%;
+    top: -3%;
     overflow: hidden;
     background-color: #fff0;
     content: "";

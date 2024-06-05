@@ -10,6 +10,8 @@ function HomePage() {
 
     return (
         <>
+    <Link href="/home" className="demo">Take Me to Homepage</Link>
+
             <Container className="iv-bg pt-5 h-100vh" fluid >
                 <Row className="d-flex flex-column align-items-center" >
                     <Col className="d-flex flex-column justify-content-center align-items-center ">

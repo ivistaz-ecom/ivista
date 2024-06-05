@@ -32,7 +32,7 @@ function HeroBanner() {
     url: '/industrie/mobile_industries_banner/jewelry_mob_banner.jpg'
   }
 
-  const bannerHeading = 'JEWELLRY'
+  const bannerHeading = 'JEWELRY'
 
   return (
     <>

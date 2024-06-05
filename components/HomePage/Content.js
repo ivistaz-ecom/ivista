@@ -50,6 +50,9 @@ const HomePage = () => {
 
   return (
     <>
+
+<Link href="/home" className="demo rounded-3 z-5">Take Me to Homepage</Link>
+
       <Container className="iv-bg z-0" fluid>
         <Row className="d-flex flex-column align-items-center justify-content-between h-100vh" >
           <Col className="d-flex flex-column justify-content-center align-items-center z-index-100">
@@ -127,9 +130,11 @@ const HomePage = () => {
                 </Link>
               </Col>
             </Row>
+            
           </Col>
         </Row>
       </Container>
+      
     </>
   )
 }
