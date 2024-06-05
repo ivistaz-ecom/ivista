@@ -67,7 +67,7 @@ function Footer() {
                                 </li>
                                 <li>
                                     <Link href="/privacy-policy" className='text-decoration-none text-white custom-footer-font'>
-                                        Privacy
+                                        Privacy Policy
                                     </Link>
                                 </li>
                                 {/* <li>

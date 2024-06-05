@@ -50,6 +50,9 @@ const MasteryArtsPerfomancePage = () => {
 
     return (
         <>
+
+            <ScrollAnimation />
+
             {isMainSectionVisible && (
                 <Container className="bg-black h-100vh d-flex flex-column justify-content-center" fluid>
                     <Row className='h-100vh d-flex flex-lg-row flex-column'>

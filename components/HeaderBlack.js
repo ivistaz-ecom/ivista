@@ -192,7 +192,7 @@ function Header1() {
                     <NavDropdown.Item href="/our-team">Team</NavDropdown.Item>
                     <NavDropdown.Item href="/mastery/about-us">About Us</NavDropdown.Item>
                     <NavDropdown.Item href="/careers">Careers</NavDropdown.Item>
-                    <NavDropdown.Item href="/map-philosophy">Map Philosophy</NavDropdown.Item>
+                    {/* <NavDropdown.Item href="/map-philosophy">Map Philosophy</NavDropdown.Item> */}
                   </NavDropdown>
                   {/* <li className="divider-center">
               <hr class="m-divider" />
@@ -209,8 +209,6 @@ function Header1() {
                   </li>
                 </ul>
               </Col>
-
-
             </Row>
           </Offcanvas.Body>
 
