@@ -41,9 +41,9 @@ function Footer() {
                                     </Link>
                                 </li> */}
                                 <li>
-                                    <Link href="#" className='text-decoration-none text-white custom-footer-font'>
+                                    {/* <Link href="#" className='text-decoration-none text-white custom-footer-font'>
                                         Company
-                                    </Link>
+                                    </Link> */}
                                 </li>
                                 <li>
                                     <Link href="/our-team" className='text-decoration-none text-white custom-footer-font'>
@@ -62,7 +62,7 @@ function Footer() {
                                 </li>
                                 <li>
                                     <Link href="/blogs" className='text-decoration-none text-white custom-footer-font'>
-                                        Blog
+                                        Blogs
                                     </Link>
                                 </li>
                                 <li>
@@ -104,7 +104,7 @@ function Footer() {
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="/service/social-media-organic" className='text-decoration-none text-white custom-footer-font'>
+                                    <Link href="/service/organic-social-media" className='text-decoration-none text-white custom-footer-font'>
                                         Social Media - Organic
                                     </Link>
                                 </li>
@@ -147,12 +147,12 @@ function Footer() {
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="/industries/beauty" className='text-decoration-none text-white custom-footer-font'>
+                                    <Link href="/industries/beauty-wellness" className='text-decoration-none text-white custom-footer-font'>
                                         Beauty & Wellness
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="/industries/fashion" className='text-decoration-none text-white custom-footer-font'>
+                                    <Link href="/industries/fashion-accessories" className='text-decoration-none text-white custom-footer-font'>
                                         Fashion & Accessories
                                     </Link>
                                 </li>
@@ -167,12 +167,12 @@ function Footer() {
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="/industries/ngo" className='text-decoration-none text-white custom-footer-font'>
+                                    <Link href="/industries/ngos" className='text-decoration-none text-white custom-footer-font'>
                                         Not-for-Profit
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="/industries/tech" className='text-decoration-none text-white custom-footer-font'>
+                                    <Link href="/industries/technology-IT" className='text-decoration-none text-white custom-footer-font'>
                                         Tech
                                     </Link>
                                 </li>
@@ -190,11 +190,17 @@ function Footer() {
                                 </li>
                                 <li>
                                     <Link href="/mastery/solutions#traffic" className='text-decoration-none text-white custom-footer-font'>
-                                        Traffic Lead-gen
+                                        Traffic 
+                                    </Link>
+                                </li>
+                                
+                                <li>
+                                    <Link href="/mastery/solutions#leadgen" className='text-decoration-none text-white custom-footer-font'>
+                                    Lead-gen
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="/mastery/solutions#leadgen" className='text-decoration-none text-white custom-footer-font'>
+                                    <Link href="/mastery/solutions#onlinesales" className='text-decoration-none text-white custom-footer-font'>
                                         Online Sales
                                     </Link>
                                 </li>

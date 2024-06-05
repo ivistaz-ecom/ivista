@@ -30,7 +30,7 @@ const HomeBanner = () => {
     }
 
     const bannerSubHeading = "SEARCH ENGINE"
-    const bannerHeading = "OPTIMISATION"
+    const bannerHeading = "OPTIMIZATION"
     return (
         <>
              <SeoComponents title={title} description={description} path={path} metaImage={metaImage} />
