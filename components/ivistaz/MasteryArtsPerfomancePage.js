@@ -51,7 +51,7 @@ const MasteryArtsPerfomancePage = () => {
     return (
         <>
 
-            <ScrollAnimation />
+            {/* <ScrollAnimation /> */}
 
             {isMainSectionVisible && (
                 <Container className="bg-black h-100vh d-flex flex-column justify-content-center" fluid>
