@@ -10,15 +10,15 @@ const HomeBanner = () => {
 
     const pathname = usePathname();
     const [domainName, setDomainName] = useState('');
-  
+
     useEffect(() => {
-      setDomainName(window.location.hostname);
+        setDomainName(window.location.hostname);
     }, []);
-  
+
     const title = " Tailored User-Friendly Web Design Services";
     const description = "Discover iVistaz tailored web design services that are not only meticulously crafted to capture brand essence but also prioritises user and mobile friendliness.";
     const path = `${domainName}${pathname}`;
-    const metaImage = ""; 
+    const metaImage = "";
 
     // const backgroundImage = "/services/seo_banner.jpg"
 
@@ -34,7 +34,7 @@ const HomeBanner = () => {
     const bannerHeading = "DESIGN"
     return (
         <>
-        <SeoComponents title={title} description={description} path={path} metaImage={metaImage} />
+            <SeoComponents title={title} description={description} path={path} metaImage={metaImage} />
 
             <Container className='bg-white z-3 position-relative' fluid>
                 <Container className="w-80 custom-container z-index-100" >

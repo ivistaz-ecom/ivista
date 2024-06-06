@@ -20,13 +20,13 @@ function page() {
   const title = " Performance-focused digital marketing services";
   const description = "At iVistaz, digital marketing services are tailored for optimal performance for the business, ensuring results are delivered.";
   const path = `${domainName}${pathname}`;
-  const metaImage = ""; 
+  const metaImage = "";
 
   return (
-    <>     
-     <SeoComponents title={title} description={description} path={path} metaImage={metaImage} />
-     
-      <ScrollAnimationArt/>
+    <>
+      <SeoComponents title={title} description={description} path={path} metaImage={metaImage} />
+
+      <ScrollAnimationArt />
       <Container fluid className="mb-4 p-0">
         <Header1 />
         <img src="/images/h-icon.svg" className="header-icon " />

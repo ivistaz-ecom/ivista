@@ -190,13 +190,13 @@ function Footer() {
                                 </li>
                                 <li>
                                     <Link href="/mastery/solutions#traffic" className='text-decoration-none text-white custom-footer-font'>
-                                        Traffic 
+                                        Traffic
                                     </Link>
                                 </li>
-                                
+
                                 <li>
                                     <Link href="/mastery/solutions#leadgen" className='text-decoration-none text-white custom-footer-font'>
-                                    Lead-gen
+                                        Lead-gen
                                     </Link>
                                 </li>
                                 <li>

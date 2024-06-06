@@ -36,7 +36,7 @@ function HeroBanner() {
 
   return (
     <>
-     <SeoComponents title={title} description={description} path={path} metaImage={metaImage} />
+      <SeoComponents title={title} description={description} path={path} metaImage={metaImage} />
 
       <Container fluid className='bg-black p-0 position-relative z-3'>
         <Container className="w-80 custom-container">

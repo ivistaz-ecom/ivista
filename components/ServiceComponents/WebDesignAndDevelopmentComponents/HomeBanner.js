@@ -11,11 +11,11 @@ const HomeBanner = () => {
 
     const pathname = usePathname();
     const [domainName, setDomainName] = useState('');
-  
+
     useEffect(() => {
-      setDomainName(window.location.hostname);
+        setDomainName(window.location.hostname);
     }, []);
-  
+
     const title = " Crafting Digital Excellence: Mastery, Art, and Performance in Digital Marketing";
     const description = "Explore the expertise of iVistaz, a digital marketing agency mastering the intricacies of performance marketing, crafting captivating digital art, and delivering unforgettable digital journeys with precision and excellence.";
     const path = `${domainName}${pathname}`;
@@ -36,7 +36,7 @@ const HomeBanner = () => {
     return (
 
         <>
-     <SeoComponents title={title} description={description} path={path} metaImage={metaImage} />
+            <SeoComponents title={title} description={description} path={path} metaImage={metaImage} />
 
             <Container className='bg-white z-3 position-relative' fluid>
                 <Container className="w-80 custom-container z-index-100" >

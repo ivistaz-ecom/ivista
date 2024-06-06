@@ -8,9 +8,9 @@ const AutoMobileContent = () => {
 
     const categoryId = 10;
 
-    return ( 
+    return (
         <>
-            <ScrollAnimationIndustries/>
+            <ScrollAnimationIndustries />
             <Container fluid className="p-0">
                 <Container fluid className="bg-black p-0">
                     <article>
@@ -27,7 +27,7 @@ const AutoMobileContent = () => {
                                 <div className='timeline-badge3 mt-5'></div>
                                 <Container className="iv-bg w-80 banner pt-5 pb-5 pe-5 ps-7 ">
                                     <p className="fw-bold text-white fs-3">
-                                    Your focus would be on strengthening your market share in India by growing your sales and dealer network through digital marketing for the automotive industry. Through our Online marketing service for automobile companies, iVistaz can support you in this journey and help
+                                        Your focus would be on strengthening your market share in India by growing your sales and dealer network through digital marketing for the automotive industry. Through our Online marketing service for automobile companies, iVistaz can support you in this journey and help
                                     </p>
                                     <ul>
                                         <li className='industry-bullet'>

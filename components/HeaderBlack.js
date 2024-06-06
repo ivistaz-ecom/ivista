@@ -169,8 +169,8 @@ function Header1() {
               <NavDropdown.Item href="#action5">
                 Something else here
               </NavDropdown.Item> */}
-                  </NavDropdown>
 
+                  </NavDropdown>
 
                   <li className="divider-center">
                     <hr class="m-divider" />
@@ -182,7 +182,7 @@ function Header1() {
                     <hr class="m-divider" />
                   </li>
                   <li class="nav-item">
-                    <Link class="nav-link active" aria-current="page" href="/blogs">Blog</Link>
+                    <Link class="nav-link active" aria-current="page" href="/blogs">Blogs</Link>
                   </li>
                   <li className="divider-center">
                     <hr class="m-divider" />
