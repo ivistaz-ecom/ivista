@@ -1416,13 +1416,26 @@ p.animation3 {
     margin-bottom: 0px;
     position: fixed;
     bottom: 0px;
-    top: 2%;
+    top: -8%;
     overflow: hidden;
     background-color: #fff0;
     content: "";
     display: table;
     table-layout: fixed;
     z-index: 0 !important;
+  }
+
+  .KW_progressBar2 {
+    width: 100%;
+    float: left;
+    height: 50% !important;
+    z-index: 99;
+    max-width: 100%;
+    border: 10px dashed rgb(243, 2, 2);
+    background-color: #ff000000;
+    -webkit-transition: width .6s ease;
+    -o-transition: width .6s ease;
+    transition: width .6s ease;
   }
 
   .KW_progressContainer3 {

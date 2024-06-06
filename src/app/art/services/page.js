@@ -5,7 +5,7 @@ import { Col, Container, Row } from 'react-bootstrap'
 import Link from 'next/link';
 import Image from 'next/image'
 import Footer from '../../../../components/Footer';
-import ScrollAnimationIOthers from '../../../../components/SharedComponents/ScrollAnimationIOthers';
+import ScrollAnimationArt from '../../../../components/SharedComponents/ScrollAnimationArt';
 import SeoComponents from '../../../../components/SeoComponents/Seo'
 import { usePathname } from 'next/navigation'
 
@@ -26,13 +26,13 @@ function page() {
     <>     
      <SeoComponents title={title} description={description} path={path} metaImage={metaImage} />
      
-      <ScrollAnimationIOthers />
+      <ScrollAnimationArt/>
       <Container fluid className="mb-4 p-0">
         <Header1 />
         <img src="/images/h-icon.svg" className="header-icon " />
         <Container fluid className='bg-white z-3 p-0'>
           <article>
-            <div className='timeline2'>
+            <div className='timeline4'>
               <Container className="w-80 custom-container position-relative bg-white">
                 <h1 className="fs-70 fw-bold ps-6">ART</h1>
               </Container>
@@ -41,7 +41,7 @@ function page() {
                 <Row className="d-flex align-items-start">
                   <Col lg={12} className="mt-5 position-relative">
                     <div className=' position-relative'>
-                      <div className='timeline-badge2 mt-4'></div>
+                      <div className='timeline-badge4 mt-4'></div>
                       <div className='ps-6'>
                         <h1 className="fs-19 fw-bold text-white i-link position-relative">
                           Services
@@ -54,7 +54,7 @@ function page() {
                   </Col>
                   <Col lg={12} className="mt-5">
                     <div className='position-relative'>
-                      <div className='timeline-badge2 mt-2'></div>
+                      <div className='timeline-badge4 mt-2'></div>
                       <Link
                         className="fs-2 fw-semibold r-link position-relative ps-6"
                         href="/service/website-design-and-development">
@@ -65,7 +65,7 @@ function page() {
 
                   <Col lg={12} className="mt-5">
                     <div className='position-relative'>
-                      <div className='timeline-badge2 mt-2'></div>
+                      <div className='timeline-badge4 mt-2'></div>
                       <Link className="fs-2 fw-semibold r-link ps-6" href="/service/search-engine-optimization">
                         Search Engine Optimization
                       </Link>
@@ -74,7 +74,7 @@ function page() {
 
                   <Col lg={12} className="mt-5">
                     <div className='position-relative'>
-                      <div className='timeline-badge2 mt-2'></div>
+                      <div className='timeline-badge4 mt-2'></div>
                       <Link className="fs-2 fw-semibold r-link ps-6" href="/service/search-engine-marketing">
                         Search Engine Marketing
                       </Link>
@@ -83,7 +83,7 @@ function page() {
 
                   <Col lg={12} className="mt-5">
                     <div className='position-relative'>
-                      <div className='timeline-badge2 mt-2'></div>
+                      <div className='timeline-badge4 mt-2'></div>
                       <Link className="fs-2 fw-semibold r-link ps-6" href="/service/organic-social-media">
                         Social Media - Organic
                       </Link>
@@ -92,7 +92,7 @@ function page() {
 
                   <Col lg={12} className="mt-5">
                     <div className='position-relative'>
-                      <div className='timeline-badge2 mt-2'></div>
+                      <div className='timeline-badge4 mt-2'></div>
                       <Link className="fs-2 fw-semibold r-link ps-6" href="/service/social-media-marketing">
                         Social Media Marketing
                       </Link>
@@ -100,7 +100,7 @@ function page() {
                   </Col>
                   <Col lg={12} className="mt-5">
                     <div className='position-relative'>
-                      <div className='timeline-badge2 mt-2'></div>
+                      <div className='timeline-badge4 mt-2'></div>
                       <Link className="fs-2 fw-semibold r-link ps-6" href="/service/content-development-b2b-b2c">
                         Content Development (B2B & B2C)
                       </Link>
@@ -108,7 +108,7 @@ function page() {
                   </Col>
                   <Col lg={12} className="mt-5">
                     <div className='position-relative'>
-                      <div className='timeline-badge2 mt-2'></div>
+                      <div className='timeline-badge4 mt-2'></div>
                       <Link className="fs-2 fw-semibold r-link ps-6" href="/service/design">
                         Design
                       </Link>

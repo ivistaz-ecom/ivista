@@ -51,12 +51,15 @@ const HomePage = () => {
   return (
     <>
 
-<Link href="/home" className="demo rounded-3 z-5">Take Me to Homepage</Link>
+
 
       <Container className="iv-bg z-0" fluid>
         <Row className="d-flex flex-column align-items-center justify-content-between h-100vh" >
           <Col className="d-flex flex-column justify-content-center align-items-center z-index-100">
             <Image src="/images/ivista_logo.svg" width={300} height={80} className="img-fluid" alt="" />
+
+            {/* Take Me to Homepage Button  */}
+            <Link href="/home" className="demo rounded-3">Take Me to Homepage</Link>
           </Col>
 
           <Col className="d-flex flex-column justify-content-center align-items-center">
@@ -130,11 +133,11 @@ const HomePage = () => {
                 </Link>
               </Col>
             </Row>
-            
+
           </Col>
         </Row>
       </Container>
-      
+
     </>
   )
 }

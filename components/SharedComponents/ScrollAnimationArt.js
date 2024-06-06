@@ -1,15 +1,14 @@
 import React, { useEffect, useRef } from 'react';
 import $ from 'jquery';
 
-
-const ScrollAnimationIOthers = () => {
+const ScrollAnimationArt = () => {
     const nodesRef = useRef([]);
     const myNodesRef = useRef([]);
 
     useEffect(() => {
-        const nodes1 = Array.from(document.getElementsByClassName("timeline-badge2"));
-        const nodes2 = Array.from(document.getElementsByClassName("timeline-panel2"));
-        const nodes3 = Array.from(document.getElementsByClassName("timeline-panel-img2"));
+        const nodes1 = Array.from(document.getElementsByClassName("timeline-badge4"));
+        const nodes2 = Array.from(document.getElementsByClassName("timeline-panel4"));
+        const nodes3 = Array.from(document.getElementsByClassName("timeline-panel-img4"));
         const nodes = nodes1.concat(nodes2, nodes3);
         nodesRef.current = nodes;
 
@@ -40,10 +39,10 @@ const ScrollAnimationIOthers = () => {
 
         function scrollCheck() {
             const offset = getScrollOffset();
-            const midline = cache.viewport.height * 0.2;
+            const midline = cache.viewport.height * 0.5;
             cache.rects.forEach((rect, i) => {
                 nodesRef.current[i].classList.toggle("active", rect.y - offset.y < midline);
-                myNodesRef.current[i].classList.toggle("animation2", rect.y - offset.y < midline);
+                myNodesRef.current[i].classList.toggle("animation1", rect.y - offset.y < midline);
             });
 
             // Progress bar logic
@@ -51,7 +50,7 @@ const ScrollAnimationIOthers = () => {
             const docheight = $('article').height();
             const winheight = $(window).height();
             const totalScroll = (wintop / (docheight - winheight)) * 100;
-            $(".KW_progressBar2").css("height", totalScroll + "%");
+            $(".KW_progressBar4").css("height", totalScroll + "%");
         }
 
         function getScrollOffset() {
@@ -108,11 +107,11 @@ const ScrollAnimationIOthers = () => {
     }, []);
 
     return (
-        <div class="KW_progressContainer2">
-            <div class="KW_progressBar2">
+        <div class="KW_progressContainer4">
+            <div class="KW_progressBar4">
             </div>
         </div>
-    );
+    ); // This component doesn't render anything visible
 };
 
-export default ScrollAnimationIOthers
+export default ScrollAnimationArt;
