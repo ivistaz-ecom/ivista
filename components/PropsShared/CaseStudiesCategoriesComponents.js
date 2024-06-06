@@ -76,13 +76,13 @@ const CaseStudiesCategoriesComponents = ({ categoryId }) => {
                                     className='w-100 img-fluid'
                                     width={200}
                                 />
-                                <div class="card-body d-flex flex-column justify-content-between mb-0">
+                                <div className="card-body d-flex flex-column justify-content-between mb-0">
                                     <div>
-                                        <div class="card-title" dangerouslySetInnerHTML={{ __html: items.title.rendered }} />
-                                        <p class="card-text three-line-show mt-2" dangerouslySetInnerHTML={{ __html: items.excerpt.rendered }} />
+                                        <div className="card-title" dangerouslySetInnerHTML={{ __html: items.title.rendered }} />
+                                        <p className="card-text three-line-show mt-2" dangerouslySetInnerHTML={{ __html: items.excerpt.rendered }} />
                                     </div>
                                     <div className='mt-3'>
-                                        <div class="iv-link-1 cursor-pointer d-inline-block" onClick={() => handleShowModal(items)}>
+                                        <div className="iv-link-1 cursor-pointer d-inline-block" onClick={() => handleShowModal(items)}>
                                             Read more
                                             <FaArrowRight className="icons ms-1" />
                                         </div>
@@ -92,9 +92,9 @@ const CaseStudiesCategoriesComponents = ({ categoryId }) => {
                         ))
                     ) : (
                         <div className='text-white'>
-                            <div class="spinner-border text-danger" role="status">
+                            <div className="spinner-border text-danger" role="status">
                             </div>
-                            <span class=" text-white">Loading...</span>
+                            <span className="text-white">Loading...</span>
                         </div>
                         // Render loading message while data is being fetched
                     )}
@@ -133,41 +133,44 @@ const CaseStudiesCategoriesComponents = ({ categoryId }) => {
             </Container>
 
             <Container className="mt-5 d-flex justify-content-center">
-                {/* <Link className="btn-13" href="/ivistaz">Enter website</Link> */}
-                {
-                    (
-                        pathname === '/leads' ||
-                        pathname === '/sales' ||
-                        pathname === '/traffic' ||
-                        pathname === '/keyword-ranking' ||
-                        pathname === '/engagement'
-                    )
-                    && (
-                        <Link href="/home" className="btn-13">Enter website</Link>
-                    )
-                }
-                {
-                    (
-                        pathname === '/industries/appliances' ||
-                        pathname === '/industries/automobiles' ||
-                        pathname === '/industries/beauty-wellness' ||
-                        pathname === '/industries/fashion-accessories' ||
-                        pathname === '/industries/hospitality' ||
-                        pathname === '/industries/jewellery' ||
-                        pathname === '/industries/ngos' ||
-                        pathname === '/industries/technology-IT'
-                    )
-                    && (
-                        <Link href="/case-studies" className="btn-13 z-0">View All Case Studies</Link>
-                    )
-                }
-
+                {!isOpen && (
+                    <>
+                        {
+                            (
+                                pathname === '/leads' ||
+                                pathname === '/sales' ||
+                                pathname === '/traffic' ||
+                                pathname === '/keyword-ranking' ||
+                                pathname === '/engagement'
+                            )
+                            && (
+                                <Link href="/home" className="btn-13">Enter website</Link>
+                            )
+                        }
+                        {
+                            (
+                                pathname === '/industries/appliances' ||
+                                pathname === '/industries/automobiles' ||
+                                pathname === '/industries/beauty-wellness' ||
+                                pathname === '/industries/fashion-accessories' ||
+                                pathname === '/industries/hospitality' ||
+                                pathname === '/industries/jewellery' ||
+                                pathname === '/industries/ngos' ||
+                                pathname === '/industries/technology-IT'
+                            )
+                            && (
+                                <Link href="/case-studies" className="btn-13 z-0">View All Case Studies</Link>
+                            )
+                        }
+                    </>
+                )}
             </Container>
         </>
     )
 }
 
 export default CaseStudiesCategoriesComponents
+
 
 // {router.pathname === '/leads' ||
 // router.pathname === '/about-us' ||
