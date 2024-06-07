@@ -1904,6 +1904,7 @@ background: rgba(255, 255, 255, 0) !important; */
   color: white !important;
 }
 
+/* Home page enter website button */
 .demo {
   position: fixed;
   top: 25px;
@@ -1927,4 +1928,19 @@ background: rgba(255, 255, 255, 0) !important; */
   color: #000000;
   box-shadow: 0 0 10px 2px #ffffff;
 
+}
+
+.display-lg-hide{
+  display: none;
+}
+
+/************| Mobile view |************/
+@media screen and (min-width:360px) and (max-width:412px) {
+  
+  .demo{
+    display: none;
+  }
+  /* .display-hide{
+    display: none;
+  } */
 }

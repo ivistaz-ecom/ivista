@@ -47,7 +47,7 @@ function Footer() {
                                 </li>
                                 <li>
                                     <Link href="/our-team" className='text-decoration-none text-white custom-footer-font'>
-                                        Team
+                                        Our Team
                                     </Link>
                                 </li>
                                 <li>
