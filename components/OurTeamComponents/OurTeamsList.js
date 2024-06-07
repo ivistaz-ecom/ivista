@@ -12,6 +12,7 @@ const OurTeamsList = () => {
     const [develomentData, setDevelopmentData] = useState([]);
     const [fianceData, setFianceData] = useState([]);
     const [strategyData, setStrategyData] = useState([]);
+    const [ceoData, setceoData] = useState([]);
 
     const siteUrl = ConfigData.wpApiUrl;
     const serverUrl = ConfigData.SERVER;
@@ -38,6 +39,7 @@ const OurTeamsList = () => {
         fetchData(32, setDevelopmentData);
         fetchData(34, setFianceData);
         fetchData(33, setStrategyData);
+        fetchData(35, setceoData);
 
     }, [siteUrl, serverUrl]); // Run useEffect only when URLs change
 
@@ -300,6 +302,35 @@ const OurTeamsList = () => {
 
                                 <div className='d-flex flex-lg-row flex-column flex-wrap'>
                                     {strategyData.map((team) => (
+                                        <div key={team.id} className='col-lg-3 d-flex flex-column p-3 gap-2'>
+                                            <div className='image-container'>
+                                                <Image src={team.acf.profile_image.url}
+                                                    alt={team.title.rendered}
+                                                    fluid
+                                                    className='rounded-4 z-1'
+                                                />
+                                                <div class="overlay"></div>
+                                            </div>
+                                            <div>
+                                                <h4 className='text-white mb-0 '>{team.title.rendered}</h4>
+                                            </div>
+                                        </div>
+                                    ))}
+                                </div>
+                            </>
+                        )}
+                    </Col>
+
+                     {/* FOUNDER & CEO */}
+                     <Col className='mt-5'>
+                        {ceoData.length > 0 && (
+                            <>
+                                <h3 className='text-white mt-4'>
+                                FOUNDER & CEO
+                                </h3>
+
+                                <div className='d-flex flex-lg-row flex-column flex-wrap'>
+                                    {ceoData.map((team) => (
                                         <div key={team.id} className='col-lg-3 d-flex flex-column p-3 gap-2'>
                                             <div className='image-container'>
                                                 <Image src={team.acf.profile_image.url}

@@ -1930,9 +1930,6 @@ background: rgba(255, 255, 255, 0) !important; */
 
 }
 
-.display-lg-hide{
-  display: none;
-}
 
 /************| Mobile view |************/
 @media screen and (min-width:360px) and (max-width:412px) {
@@ -1940,7 +1937,5 @@ background: rgba(255, 255, 255, 0) !important; */
   .demo{
     display: none;
   }
-  /* .display-hide{
-    display: none;
-  } */
+
 }
