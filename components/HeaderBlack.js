@@ -45,7 +45,7 @@ function Header1() {
         }
       </style>
 
-      <Container className="p-0 position-fixed z-index-100" fluid>
+      <Container className="p-0 position-fixed z-index-100 bg-black m-0" fluid>
         <Container className='w-80'>
           <nav class="navbar bg-color z-index-100">
             <div class="container-fluid ">

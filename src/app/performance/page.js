@@ -28,7 +28,7 @@ function performance() {
 
      <SeoComponents title={title} description={description} path={path} metaImage={metaImage} />
 
-      <Container fluid className="iv-bg border-bottom d-flex flex-column justify-content-between min-vh-100">
+      <Container fluid className="iv-bg border-bottom d-flex flex-column justify-content-between min-vh-100 p-0 m-0">
         <Header1 />
         <Container className="w-80 mb-5 custom-container">
           <Col>
@@ -49,7 +49,7 @@ function performance() {
                 <Container className="mt-3 pb-5 margin-left d-flex flex-column justify-content-center">
                   <div className='d-flex flex-lg-row flex-column gap-3'>
                     <div className='text-start'>
-                      <Link href="/industries" className="btn btn-13 b-width z-0">Industries</Link>
+                      <Link href="/performance/industries" className="btn btn-13 b-width z-0">Industries</Link>
                     </div>
                     <div className='text-start'>
                       <Link href="/case-studies" className="btn btn-13 b-width z-0">Case Studies</Link>

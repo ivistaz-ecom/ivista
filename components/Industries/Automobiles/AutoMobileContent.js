@@ -42,7 +42,7 @@ const AutoMobileContent = () => {
                                     </ul>
                                     <Container className="">
                                         <Col className='d-flex flex-column align-items-center'>
-                                            <Link className="btn-14 z-0" href="/contact-us">Contact us</Link>
+                                            <Link className="btn-14 z-0" href="/contact-us">Contact Us</Link>
                                         </Col>
                                     </Container>
                                 </Container>

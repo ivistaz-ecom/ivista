@@ -31,7 +31,7 @@ const JewellryContent = () => {
                                 <p className="text-white para-text">Curate keywords that will ensure a lower cost of acquisition. Our paid marketing services for jewelry brandsp employ strategic keyword targeting to optimize ad campaigns and drive qualified traffic to your online store.</p>
                                 <Container className="text-center">
                                     <Col className='d-flex flex-column align-items-center'>
-                                        <Link className="btn-14 z-0" href="/contact-us">Contact us</Link>
+                                        <Link className="btn-14 z-0" href="/contact-us">Contact Us</Link>
                                     </Col>
                                 </Container>
                             </Container>

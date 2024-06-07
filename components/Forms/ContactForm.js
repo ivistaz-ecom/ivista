@@ -1,29 +1,27 @@
 'use client'
 import React, { useState } from 'react';
 import { Container } from 'react-bootstrap';
-import axios from 'axios'; // Don't forget to import axios
+import axios from 'axios';
 
 import ConfigData from '../../config';
-
 
 const ContactForm = () => {
     const siteUrl = ConfigData.apiDomainUrl;
 
-    const [post, setPost] = React.useState(null);
+    const [post, setPost] = useState(null);
     const [errors, setErrors] = useState({});
 
-    const [yourName, setyourName] = React.useState(null);
-    const [yourEmail, setyourEmail] = React.useState(null);
-    const [yourPhone, setyourPhone] = React.useState(null);
-    const [yourCompany, setyourCompany] = React.useState(null);
-    const [yourMessage, setyourMessage] = React.useState(null);
+    const [yourName, setyourName] = useState('');
+    const [yourEmail, setyourEmail] = useState('');
+    const [yourPhone, setyourPhone] = useState('');
+    const [yourCompany, setyourCompany] = useState('');
+    const [yourMessage, setyourMessage] = useState('');
     const [loading, setLoading] = useState(false);
 
     const [submitted, setSubmitted] = useState(false);
 
-
     // Email Validation
-    const emailRegex = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i;
+    const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
     const customErrors = {
         field: 'yourEmail',
         message: 'Please enter a valid email address.'
@@ -34,11 +32,10 @@ const ContactForm = () => {
     };
     const notAllowedDomains = ['test.com', 'sample.com', 'example.com', 'testing.com', 'gmail.co', 'gmail.c', 'gmail.'];
 
-    const isValidEmail = (email) => {
+    const isNotAllowedDomain = (email) => {
         const [, domain] = email.split('@');
         return notAllowedDomains.includes(domain);
     };
-    // Email validaion end
 
     // Name Validation
     const nameRegex = /^[a-zA-Z\s]*$/;
@@ -47,75 +44,63 @@ const ContactForm = () => {
         message: 'Invalid character in name'
     };
 
-    const numRegex = /^[0-9]*$/;
-    const numErrors = {
+    // Phone Number Validation
+    const phoneRegex = /^[0-9]*$/;
+    const phoneErrors = {
         field: 'yourPhone',
         message: 'Invalid phone number'
     };
 
-    const handleTextChange = e => {
+    const handleTextChange = (e) => {
         const { name, value } = e.target;
 
-        if (name === 'yourName') {
-            if (!nameRegex.test(value)) {
-                const fieldErrors = {};
-                const { field, message } = nameErrors;
-                fieldErrors[field] = message;
-                setErrors(fieldErrors);
-            } else {
-                // Name format is valid, clear any previous errors
-                setErrors({});
-                // Update the name state
+        switch (name) {
+            case 'yourName':
                 setyourName(value);
-                console.log(value);
-            }
-        }
-
-        if (name === 'yourEmail') {
-            if (!emailRegex.test(value)) {
-                const fieldErrors = {};
-                const { field, message } = customErrors;
-                fieldErrors[field] = message;
-                setErrors(fieldErrors);
-            } else if (isValidEmail(value)) {
-                const fieldErrors = {};
-                const { field, message } = customDomainErrors;
-                fieldErrors[field] = message;
-                setErrors(fieldErrors);
-            } else {
-                // Email format and domain are valid, clear any previous errors
-                setErrors({});
-            }
-            // Always update the email state
-            setyourEmail(value);
-        }
-
-        if (name === 'yourPhone') {
-            if (!numRegex.test(value)) {
-                const fieldErrors = {};
-                const { field, message } = numErrors;
-                fieldErrors[field] = message;
-                setErrors(fieldErrors);
-            } else {
-                // Phone number format is valid, clear any previous errors
-                setErrors({});
+                if (!nameRegex.test(value)) {
+                    setErrors(prevErrors => ({ ...prevErrors, [name]: nameErrors.message }));
+                } else {
+                    setErrors(prevErrors => ({ ...prevErrors, [name]: null }));
+                }
+                break;
+            case 'yourEmail':
+                setyourEmail(value);
+                if (!emailRegex.test(value)) {
+                    setErrors(prevErrors => ({ ...prevErrors, [name]: customErrors.message }));
+                } else if (isNotAllowedDomain(value)) {
+                    setErrors(prevErrors => ({ ...prevErrors, [name]: customDomainErrors.message }));
+                } else {
+                    setErrors(prevErrors => ({ ...prevErrors, [name]: null }));
+                }
+                break;
+            case 'yourPhone':
                 setyourPhone(value);
-                console.log(value)
-            }
-        }
-
-        if (name === 'yourCompany') {
-            setyourCompany(value)
-            console.log(value);
-        }
-        if (name === 'yourMessage') {
-            setyourMessage(value)
-            console.log(value)
+                if (!phoneRegex.test(value)) {
+                    setErrors(prevErrors => ({ ...prevErrors, [name]: phoneErrors.message }));
+                } else {
+                    setErrors(prevErrors => ({ ...prevErrors, [name]: null }));
+                }
+                break;
+            case 'yourCompany':
+                setyourCompany(value);
+                break;
+            case 'yourMessage':
+                setyourMessage(value);
+                break;
+            default:
+                break;
         }
     };
 
     const handleSubmit = async (e) => {
         e.preventDefault();
+
+        // Check for any errors before submitting
+        if (Object.values(errors).some(error => error !== null)) {
+            return;
+        }
+
+        setLoading(true);
         createPost();
     };
 
@@ -127,80 +112,66 @@ const ContactForm = () => {
         setyourMessage('');
     };
 
-    function createPost() {
-        setErrors({});
-        axios.post(`https://docs.ivistaz.com/wp-json/contact-form-7/v1/contact-forms/271/feedback`,
-            // axios.post(`https://docs.walmartvriddhi.org/wp-json/contact-form-7/v1/contact-forms/239/feedback`,
-            {
-                'yourName': { yourName },
-                'yourEmail': { yourEmail },
-                'yourPhone': { yourPhone },
-                'yourCompany': { yourCompany },
-                'yourMessage': { yourMessage },
+    const createPost = async () => {
+        try {
+            const response = await axios.post(`${siteUrl}/wp-json/contact-form-7/v1/contact-forms/271/feedback`, {
+                yourName,
+                yourEmail,
+                yourPhone,
+                yourCompany,
+                yourMessage
             }, {
-            headers: {
-                "Content-Type": 'multipart/form-data',
-            }
-        })
-
-            .then((response) => {
-                setPost(response.data.message);
-                const msg = response.data.status;
-                if (msg == 'mail_sent') {
-                    setLoading(true);
-                    console.log(msg)
-                    resetForm();
-
-                    document.getElementById("yourEmail").value = "";
-                    document.getElementById("yourName").value = "";
-                    document.getElementById("yourPhone").value = "";
-                    document.getElementById("yourCompany").value = "";
-                    document.getElementById("yourMessage").value = "";
+                headers: {
+                    "Content-Type": 'multipart/form-data',
                 }
-                else if (msg == 'validation_failed') {
-                    const fieldErrors = {};
-                    const { status, invalid_fields } = response.data;
-                    invalid_fields.forEach((field) => {
-                        fieldErrors[field.field] = field.message;
-                    });
-                    setErrors(fieldErrors);
-                    console.log(fieldErrors);
-                }
-                console.log(response.data)
             });
-    }
+
+            const msg = response.data.status;
+            if (msg === 'mail_sent') {
+                setPost(response.data.message);
+                resetForm();
+                setSubmitted(true);
+            } else if (msg === 'validation_failed') {
+                const fieldErrors = {};
+                response.data.invalid_fields.forEach(field => {
+                    fieldErrors[field.field] = field.message;
+                });
+                setErrors(fieldErrors);
+            }
+        } catch (error) {
+            console.error("There was an error submitting the form", error);
+        } finally {
+            setLoading(false);
+        }
+    };
 
     return (
         <Container>
-
             <style>
-                {
-                    `
-                h1.reg-success.mt-4 {
-                    color: green !important;
-                    font-size: 22px !important;
-                    font-weight: 700 !important;
-                }
-                `
-                }
+                {`
+                    h1.reg-success.mt-4 {
+                        color: green !important;
+                        font-size: 22px !important;
+                        font-weight: 700 !important;
+                    }
+                `}
             </style>
 
             {!submitted ? (
-                <form className="row p-0 z-index-100">
+                <form className="row p-0 z-index-100" onSubmit={handleSubmit}>
                     {/* Name */}
                     <div className="mb-3">
                         <label htmlFor="yourName" className="form-label text-white">Full Name <sup className='text-danger'>*</sup></label>
                         <input
                             type="text"
-                            className={`form-control ${errors && errors.yourName ? 'is-invalid' : ''}`}
+                            className={`form-control ${errors.yourName ? 'is-invalid' : ''}`}
                             required
                             id="yourName"
                             name="yourName"
                             value={yourName}
-
                             onChange={handleTextChange}
                         />
-                        {errors && errors.yourName && <div className="invalid-feedback">{errors.yourName}</div>}
+                        {errors.yourName && <div className="invalid-feedback">{errors.yourName}</div>}
                     </div>
 
                     {/* Email */}
@@ -208,50 +179,50 @@ const ContactForm = () => {
                         <label htmlFor="yourEmail" className="form-label text-white">Email <sup className='text-danger'>*</sup></label>
                         <input
                             type="email"
-                            className={`form-control ${errors && errors.yourEmail ? 'is-invalid' : ''}`}
+                            className={`form-control ${errors.yourEmail ? 'is-invalid' : ''}`}
                             required
                             id="yourEmail"
                             name="yourEmail"
                             value={yourEmail}
                             onChange={handleTextChange}
                         />
-                        {errors && errors.yourEmail && <div className="invalid-feedback">{errors.yourEmail}</div>}
+                        {errors.yourEmail && <div className="invalid-feedback">{errors.yourEmail}</div>}
                     </div>
 
-                    {/*  Mobile */}
+                    {/* Phone */}
                     <div className="mb-3">
                         <label htmlFor="yourPhone" className="form-label text-white">Phone <sup className='text-danger'>*</sup></label>
                         <input
                             type="text"
-                            className={`form-control ${errors && errors.yourPhone ? 'is-invalid' : ''}`}
+                            className={`form-control ${errors.yourPhone ? 'is-invalid' : ''}`}
                             required
                             id="yourPhone"
                             name="yourPhone"
                             value={yourPhone}
                             onChange={handleTextChange}
                         />
-                        {errors && errors.yourPhone && <div className="invalid-feedback">{errors.yourPhone}</div>}
+                        {errors.yourPhone && <div className="invalid-feedback">{errors.yourPhone}</div>}
                     </div>
 
-                    {/* Your Company */}
+                    {/* Company */}
                     <div className="mb-3">
                         <label htmlFor="yourCompany" className="form-label text-white">Company <sup className='text-danger'>*</sup></label>
                         <input
                             type="text"
-                            className={`form-control ${errors && errors.yourCompany ? 'is-invalid' : ''}`}
+                            className={`form-control ${errors.yourCompany ? 'is-invalid' : ''}`}
                             required
                             id="yourCompany"
                             name="yourCompany"
                             value={yourCompany}
                             onChange={handleTextChange}
                         />
-                        {errors && errors.yourCompany && <div className="invalid-feedback">{errors.yourCompany}</div>}
+                        {errors.yourCompany && <div className="invalid-feedback">{errors.yourCompany}</div>}
                     </div>
 
+                    {/* Message */}
                     <div className="mb-3">
                         <label htmlFor="yourMessage" className="form-label text-white">Message</label>
                         <textarea
-                            type="text"
                             className="form-control"
                             id="yourMessage"
                             name="yourMessage"
@@ -259,29 +230,24 @@ const ContactForm = () => {
                             onChange={handleTextChange}
                             rows="5"
                         />
-                        {errors && errors.yourMessage && <div className="invalid-feedback">{errors.yourMessage}</div>}
+                        {errors.yourMessage && <div className="invalid-feedback">{errors.yourMessage}</div>}
                     </div>
 
                     {/* Submit Button */}
                     <div className="mt-3 text-center">
-                        <div class="text-center">
-                            <button
-                                type="button"
-                                class="btn btn-15"
-                                onClick={handleSubmit}
-                            >
-                                Submit
-                            </button>
-                        </div>
-                        {loading && <h1 class="reg-success mt-4">{post}</h1>}
-                    </div>
+                        <button type="submit" className="btn btn-15">
+                            Submit
+                        </button>
+                        {loading && <h1 className="reg-success mt-4">{post}</h1>}
+                    </div> 
                 </form>
             ) : (
-                <div>
-                    <p>Thank you for your submission!</p>
+                <div className='py-4 text-white'>
+                    <h3>Thank you for your submission!</h3>
                 </div>
             )}
         </Container>
     );
 };
+
 export default ContactForm;
