@@ -18,7 +18,7 @@ function HeroBanner() {
   const title = "Enhancing digital experience for customers in hospitality sector";
   const description = " Leveraging twelve years of expertise with digital marketing in the hospitality sector, iVistaz ensures content is fine-tuned to customer expectations.";
   const path = `${domainName}${pathname}`;
-  const metaImage = ""; 
+  const metaImage = "";
 
   const backgroundImage = {
     url: '/industrie/hospitality_banner.jpg'
@@ -32,7 +32,7 @@ function HeroBanner() {
 
   return (
     <>
-    <SeoComponents title={title} description={description} path={path} metaImage={metaImage} />
+      <SeoComponents title={title} description={description} path={path} metaImage={metaImage} />
 
       <Container fluid className='p-0 bg-black position-relative z-3'>
         <Container className="w-80 custom-container">

@@ -24,7 +24,7 @@ const page = () => {
                     </p>
                 </Container>
             </Container>
-            
+
             {/* <Footer/> */}
         </>
     )

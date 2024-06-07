@@ -169,8 +169,8 @@ function Header1() {
               <NavDropdown.Item href="#action5">
                 Something else here
               </NavDropdown.Item> */}
-                  </NavDropdown>
 
+                  </NavDropdown>
 
                   <li className="divider-center">
                     <hr class="m-divider" />
@@ -182,14 +182,14 @@ function Header1() {
                     <hr class="m-divider" />
                   </li>
                   <li class="nav-item">
-                    <Link class="nav-link active" aria-current="page" href="/blogs">Blog</Link>
+                    <Link class="nav-link active" aria-current="page" href="/blogs">Blogs</Link>
                   </li>
                   <li className="divider-center">
                     <hr class="m-divider" />
                   </li>
 
                   <NavDropdown title="Company" id="navbarScrollingDropdown" className='custom-nav-company'>
-                    <NavDropdown.Item href="/our-team">Team</NavDropdown.Item>
+                    <NavDropdown.Item href="/our-team">Our Team</NavDropdown.Item>
                     <NavDropdown.Item href="/mastery/about-us">About Us</NavDropdown.Item>
                     <NavDropdown.Item href="/careers">Careers</NavDropdown.Item>
                     {/* <NavDropdown.Item href="/map-philosophy">Map Philosophy</NavDropdown.Item> */}

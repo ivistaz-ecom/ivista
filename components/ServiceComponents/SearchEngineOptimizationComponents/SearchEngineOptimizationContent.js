@@ -20,7 +20,7 @@ const SearchEngineOptimizationContent = () => {
                             </Container>
                         </h1> */}
 
-                    
+
                         <Col className='position-relative'>
                             <div class="timeline-badge1"></div>
                             <Container className='w-80 ps-7 pe-lg-0 pe-3'>
@@ -37,11 +37,11 @@ const SearchEngineOptimizationContent = () => {
                                 </p>
 
                                 <p className="text-black para-text">
-                                There are 2 trillion global searches per year, translating to 8.5 billion searches per day. A staggering 75% of users never scroll past the first page of search results. These stark statistics underscore the critical importance of Search Engine Optimization (SEO) services in driving organic traffic and maximising online visibility.
+                                    There are 2 trillion global searches per year, translating to 8.5 billion searches per day. A staggering 75% of users never scroll past the first page of search results. These stark statistics underscore the critical importance of Search Engine Optimization (SEO) services in driving organic traffic and maximising online visibility.
                                 </p>
 
                                 <p className="text-black para-text">
-                                At iVistaz, we recognize the dynamic nature and intricacies of the SEO landscape. As a leading SEO agency in Bangalore, we navigate evolving algorithms and ranking factors with proven SEO practices to deliver on your traffic and SEO goals.                                </p>
+                                    At iVistaz, we recognize the dynamic nature and intricacies of the SEO landscape. As a leading SEO agency in Bangalore, we navigate evolving algorithms and ranking factors with proven SEO practices to deliver on your traffic and SEO goals.                                </p>
 
                                 {/* <p className="text-black para-text">
                                     There are 2 trillion global searches per year, translating to 8.5 billion searches per day. A staggering 75% of users never scroll past the first page of search results. These stark statistics underscore the critical importance of Search Engine Optimization (SEO) in driving organic traffic and maximizing online visibility.

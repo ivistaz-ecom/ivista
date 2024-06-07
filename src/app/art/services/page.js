@@ -20,13 +20,13 @@ function page() {
   const title = " Performance-focused digital marketing services";
   const description = "At iVistaz, digital marketing services are tailored for optimal performance for the business, ensuring results are delivered.";
   const path = `${domainName}${pathname}`;
-  const metaImage = ""; 
+  const metaImage = "";
 
   return (
-    <>     
-     <SeoComponents title={title} description={description} path={path} metaImage={metaImage} />
-     
-      <ScrollAnimationArt/>
+    <>
+      <SeoComponents title={title} description={description} path={path} metaImage={metaImage} />
+
+      <ScrollAnimationArt />
       <Container fluid className="mb-4 p-0">
         <Header1 />
         <img src="/images/h-icon.svg" className="header-icon " />
@@ -53,10 +53,10 @@ function page() {
 
                   </Col>
                   <Col lg={12} className="mt-5">
-                    <div className='position-relative'>
+                    <div className=' ps-6 position-relative'>
                       <div className='timeline-badge4 mt-2'></div>
                       <Link
-                        className="fs-2 fw-semibold r-link position-relative ps-6"
+                        className="fs-2 fw-semibold r-link position-relative"
                         href="/service/website-design-and-development">
                         Web Design & Development
                       </Link>
@@ -64,52 +64,52 @@ function page() {
                   </Col>
 
                   <Col lg={12} className="mt-5">
-                    <div className='position-relative'>
+                    <div className='ps-6 position-relative'>
                       <div className='timeline-badge4 mt-2'></div>
-                      <Link className="fs-2 fw-semibold r-link ps-6" href="/service/search-engine-optimization">
+                      <Link className="fs-2 fw-semibold r-link" href="/service/search-engine-optimization">
                         Search Engine Optimization
                       </Link>
                     </div>
                   </Col>
 
                   <Col lg={12} className="mt-5">
-                    <div className='position-relative'>
+                    <div className='ps-6 position-relative'>
                       <div className='timeline-badge4 mt-2'></div>
-                      <Link className="fs-2 fw-semibold r-link ps-6" href="/service/search-engine-marketing">
+                      <Link className="fs-2 fw-semibold r-link" href="/service/search-engine-marketing">
                         Search Engine Marketing
                       </Link>
                     </div>
                   </Col>
 
                   <Col lg={12} className="mt-5">
-                    <div className='position-relative'>
+                    <div className='ps-6 position-relative'>
                       <div className='timeline-badge4 mt-2'></div>
-                      <Link className="fs-2 fw-semibold r-link ps-6" href="/service/organic-social-media">
+                      <Link className="fs-2 fw-semibold r-link" href="/service/organic-social-media">
                         Social Media - Organic
                       </Link>
                     </div>
                   </Col>
 
                   <Col lg={12} className="mt-5">
-                    <div className='position-relative'>
+                    <div className='ps-6 position-relative'>
                       <div className='timeline-badge4 mt-2'></div>
-                      <Link className="fs-2 fw-semibold r-link ps-6" href="/service/social-media-marketing">
+                      <Link className="fs-2 fw-semibold r-link" href="/service/social-media-marketing">
                         Social Media Marketing
                       </Link>
                     </div>
                   </Col>
                   <Col lg={12} className="mt-5">
-                    <div className='position-relative'>
+                    <div className='ps-6 position-relative'>
                       <div className='timeline-badge4 mt-2'></div>
-                      <Link className="fs-2 fw-semibold r-link ps-6" href="/service/content-development-b2b-b2c">
+                      <Link className="fs-2 fw-semibold r-link" href="/service/content-development-b2b-b2c">
                         Content Development (B2B & B2C)
                       </Link>
                     </div>
                   </Col>
                   <Col lg={12} className="mt-5">
-                    <div className='position-relative'>
+                    <div className='ps-6 position-relative'>
                       <div className='timeline-badge4 mt-2'></div>
-                      <Link className="fs-2 fw-semibold r-link ps-6" href="/service/design">
+                      <Link className="fs-2 fw-semibold r-link" href="/service/design">
                         Design
                       </Link>
                     </div>

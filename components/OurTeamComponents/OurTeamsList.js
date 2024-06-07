@@ -270,7 +270,7 @@ const OurTeamsList = () => {
                                 </h3>
 
                                 <div className='d-flex flex-lg-row flex-column flex-wrap'>
-                                    {copyContentData.map((team) => (
+                                    {fianceData.map((team) => (
                                         <div key={team.id} className='col-lg-3 d-flex flex-column p-3 gap-2'>
                                             <div className='image-container'>
                                                 <Image src={team.acf.profile_image.url}
@@ -299,7 +299,7 @@ const OurTeamsList = () => {
                                 </h3>
 
                                 <div className='d-flex flex-lg-row flex-column flex-wrap'>
-                                    {copyContentData.map((team) => (
+                                    {strategyData.map((team) => (
                                         <div key={team.id} className='col-lg-3 d-flex flex-column p-3 gap-2'>
                                             <div className='image-container'>
                                                 <Image src={team.acf.profile_image.url}

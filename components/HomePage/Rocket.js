@@ -10,20 +10,20 @@ import { Howl, Howler } from 'howler';
 
 
 function Rocket() {
-//     function handleScroll() {
-//         window.scroll({
-//           top: document.body.offsetHeight,
-//           left: 0, 
-//           behavior: 'smooth',
-//         });
-//      // sound.play();
-//     }
+  //     function handleScroll() {
+  //         window.scroll({
+  //           top: document.body.offsetHeight,
+  //           left: 0, 
+  //           behavior: 'smooth',
+  //         });
+  //      // sound.play();
+  //     }
 
 
-    return (
-      <>
-    
-      </>
+  return (
+    <>
+
+    </>
   )
 }
 

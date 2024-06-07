@@ -5,19 +5,19 @@ import { Howl, Howler } from 'howler';
 
 
 var sound = new Howl({
-    //src: ['../sound/rocket.mp3'],
-    volume: 0.8
-  });
- // sound.play(); 
+  //src: ['../sound/rocket.mp3'],
+  volume: 0.8
+});
+// sound.play(); 
 
 const ScrollSound = () => {
-   // const [play] = useSound(boopSfx);
-const [isPlaying, setIsPlaying] = useState(false);
+  // const [play] = useSound(boopSfx);
+  const [isPlaying, setIsPlaying] = useState(false);
 
   useEffect(() => {
     sound = new Howl({
       //  src: ['../sound/rocket.mp3'],
-        volume: 0.8
+      volume: 0.8
     });
 
     const handleScroll = () => {
@@ -32,20 +32,20 @@ const [isPlaying, setIsPlaying] = useState(false);
       }
     };
 
-window.addEventListener('scroll', handleScroll);
-return () => {        
-window.removeEventListener('scroll', handleScroll);
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
       // Unload the sound when the component is unmounted
-        //alert('scrolled');
-        
-console.log('scrolled')
-sound.unload();
-        
+      //alert('scrolled');
+
+      console.log('scrolled')
+      sound.unload();
+
     };
   }, [isPlaying]);
 
 
-    return <></>;
+  return <></>;
 };
 
 export default ScrollSound;

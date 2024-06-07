@@ -33,7 +33,7 @@ const HomeBanner = () => {
     const bannerHeading = "OPTIMIZATION"
     return (
         <>
-             <SeoComponents title={title} description={description} path={path} metaImage={metaImage} />
+            <SeoComponents title={title} description={description} path={path} metaImage={metaImage} />
 
             <Container className='bg-white z-3 position-relative' fluid>
                 <Container className="w-80 custom-container z-index-100" >

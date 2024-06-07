@@ -432,7 +432,7 @@ p.animation2 {
     -moz-transform: scale(1.5, 1.5);
     box-shadow: 0 0 10px 5px red;
     /* Add a glow effect with hex code */
-    /* animation-timing-function: ease-in-out;  */
+    /* animation-timing-function: ease-in-out; */
 
   }
 
@@ -814,7 +814,7 @@ p.animation4 {
 
 @media(max-width:767px) {
   .KW_progressContainer4 {
-    left: 19px;
+    left: 30px;
     width: 0.6em;
     height: 45%;
     margin-bottom: 0px;
@@ -966,7 +966,7 @@ p.animation4 {
   }
 
   .KW_progressContainer2 {
-    left: 10.8%;
+    left: 10.5%;
     width: 0.5em;
     height: 100%;
     margin-bottom: 0px;
@@ -1029,6 +1029,7 @@ p.animation4 {
     -o-border-radius: 50%;
     opacity: 0;
   }
+
   .KW_progressContainer4 {
     left: 10.6%;
     width: 0.5em;
@@ -1044,7 +1045,7 @@ p.animation4 {
     table-layout: fixed;
     z-index: 0 !important;
   }
- 
+
   .timeline-badge4 {
     color: rgb(255, 255, 255);
     width: 20px;
@@ -1204,6 +1205,7 @@ p.animation4 {
     -o-border-radius: 50%;
     opacity: 0;
   }
+
   .KW_progressContainer4 {
     left: 10.3%;
     width: 0.5em;
@@ -1219,7 +1221,7 @@ p.animation4 {
     table-layout: fixed;
     z-index: 0 !important;
   }
- 
+
   .timeline-badge4 {
     color: rgb(255, 255, 255);
     width: 20px;
@@ -1244,6 +1246,7 @@ p.animation4 {
 }
 
 /******************** Screen size - 110% ********************/
+
 @media screen and (min-width:1745px) and (max-width:1919px) {
 
   .KW_progressContainer {
@@ -1319,7 +1322,7 @@ p.animation4 {
   }
 
   .KW_progressContainer2 {
-    left: 13.8%;
+    left: 14.1%;
     width: 0.5em;
     height: 100%;
     margin-bottom: 0px;
@@ -1382,6 +1385,7 @@ p.animation4 {
     -o-border-radius: 50%;
     opacity: 0;
   }
+
   .KW_progressContainer4 {
     left: 14.4%;
     width: 0.5em;
@@ -1397,7 +1401,7 @@ p.animation4 {
     table-layout: fixed;
     z-index: 0 !important;
   }
- 
+
   .timeline-badge4 {
     color: rgb(255, 255, 255);
     width: 20px;
@@ -1421,7 +1425,8 @@ p.animation4 {
 }
 
 /******************** Screen size - 100% ********************/
-@media screen and (min-width:1920px) and (max-width:2132px) {
+
+@media screen and (min-width:1920px) and (max-width:2132px) { 
 
   .KW_progressContainer {
     left: 13.3%;
@@ -1509,7 +1514,7 @@ p.animation4 {
   }
 
   .KW_progressContainer2 {
-    left: 17.1%;
+    left: 17.4%;
     width: 0.5em;
     height: 100%;
     margin-bottom: 0px;
@@ -1588,7 +1593,21 @@ p.animation4 {
     table-layout: fixed;
     z-index: 0 !important;
   }
- 
+
+  .KW_progressBar4 {
+    width: 100%;
+    float: left;
+    height: 0%;
+    z-index: 99;
+    max-width: 100%;
+    border: 10px dashed rgb(243, 2, 2);
+    background-color: #ff000000;
+    ;
+    -webkit-transition: width .6s ease;
+    -o-transition: width .6s ease;
+    transition: width .6s ease;
+  }
+
   .timeline-badge4 {
     color: rgb(255, 255, 255);
     width: 20px;
@@ -1611,11 +1630,7 @@ p.animation4 {
 
   .footer-main {
     min-height: 35vh !important;
-  }
-
- /* .enter-website{
-  margin-top: 50px;
- } */
+  }   
 }
 
 /******************** Screen size - 90% ********************/
@@ -1709,7 +1724,7 @@ p.animation4 {
 
 
   .KW_progressContainer2 {
-    left: 20.4%;
+    left: 20.6%;
     width: 0.5em;
     height: 50%;
     margin-bottom: 0px;
@@ -1774,7 +1789,7 @@ p.animation4 {
   }
 
   .KW_progressContainer4 {
-    left: 20.9%;
+    left: 21.2%;
     width: 0.5em;
     height: 50%;
     margin-bottom: 0px;
@@ -1788,7 +1803,7 @@ p.animation4 {
     table-layout: fixed;
     z-index: 0 !important;
   }
- 
+
   .timeline-badge4 {
     color: rgb(255, 255, 255);
     width: 20px;
@@ -1892,7 +1907,7 @@ p.animation4 {
   }
 
   .KW_progressContainer2 {
-    left: 23.7%;
+    left: 23.9%;
     width: 0.5em;
     height: 50%;
     margin-bottom: 0px;
@@ -1958,6 +1973,7 @@ p.animation4 {
     table-layout: fixed;
     z-index: 0 !important;
   }
+
   .timeline-badge4 {
     color: rgb(255, 255, 255);
     width: 20px;
@@ -1977,6 +1993,7 @@ p.animation4 {
     -o-border-radius: 50%;
     opacity: 0;
   }
+
   .footer-main {
     min-height: 35vh !important;
   }
@@ -2044,3 +2061,5 @@ p.animation4 {
   }
 
 }
+
+/* test  */
