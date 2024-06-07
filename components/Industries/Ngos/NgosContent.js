@@ -43,7 +43,7 @@ const NgosContent = () => {
                                 <p className="text-white para-text">We specialize in social media marketing for non-profit organizations to enhance your social presence and engagement. Additionally, our digital marketing for NGOs ensures your campaigns are effective and far-reaching. For those needing a stronger online presence, our web design for NGOs will create a user-friendly and impactful website to support your mission.</p>
                                 <Container className="text-center">
                                     <Col className='d-flex flex-column align-items-center'>
-                                        <Link className="btn-14 z-0" href="/contact-us">Contact us</Link>
+                                        <Link className="btn-14 z-0" href="/contact-us">Contact Us</Link>
                                     </Col>
                                 </Container>
                             </Container>

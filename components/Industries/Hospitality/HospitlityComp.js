@@ -27,7 +27,7 @@ const HospitlityComp = () => {
                                 <p className="text-white para-text">We can leverage our experience in digital marketing for the hospitality industry <span className='fw-bold'> to grow and sustain online room revenues</span> for your properties and in turn, help to increase your<span className='fw-bold'> room occupancy, RevPAR (Revenue Per Available Room) and ADR (Average Daily Rate)</span>. We are also deeply aware that the customers of luxury hospitality brands are highly discerning, and our focus will also be to enhance their overall digital experience with engaging UX/UI and content.</p>
                                 <Container className="">
                                     <Col className='d-flex flex-column align-items-center mt-3'>
-                                        <Link className="btn-14 z-0" href="/contact-us">Contact us</Link>
+                                        <Link className="btn-14 z-0" href="/contact-us">Contact Us</Link>
                                     </Col>
                                 </Container>
                             </Container>

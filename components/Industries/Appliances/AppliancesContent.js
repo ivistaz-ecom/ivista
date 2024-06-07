@@ -32,7 +32,7 @@ const AppliancesContent = () => {
                                 <p className="text-white para-text">We focus on strategies that optimise online sales for home appliances brands, leveraging targeted campaigns and data-driven insights to reach your ideal customers. Our approach will help you capture the growing market of online shoppers and drive significant sales growth.</p>
                                 <Container className="text-center">
                                     <Col className='d-flex flex-column justify-content-center align-items-center'>
-                                        <Link className="btn-14 z-0" href="/contact-us">Contact us</Link>
+                                        <Link className="btn-14 z-0" href="/contact-us">Contact Us</Link>
                                     </Col>
                                 </Container>
                             </Container>

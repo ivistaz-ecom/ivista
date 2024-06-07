@@ -24,15 +24,15 @@ const ContactusContent = () => {
                     <Col lg={6} className='py-4'>
                         <ContactForm />
                     </Col>
-                    <Col lg={6} className="d-flex justify-content-center align-items-center">
-                        <Container className="iv-bg contact py-lg-0 py-3">
+                    <Col lg={6} className="d-flex justify-content-center py-5">
+                        <Container className="iv-bg contact py-lg-0 py-4 mt-0">
                             <h1 className="contact-head pb-4">iVistaz Ecom Services Pvt Ltd</h1>
                             <p className="contact-text text-center">4th Floor, 16 & 16/1,</p>
-                            <p className="contact-text text-center">Reliaable, Phoenix Towers,</p>
-                            <p className="contact-text text-center"> Museum Rd,</p>
+                            <p className="contact-text text-center">Reliaable Phoenix Towers,</p>
+                            <p className="contact-text text-center"> Museum Road,</p>
                             <p className="contact-text text-center"> Shanthala Nagar, Ashok Nagar</p>
                             <p className="contact-text text-center">Bengaluru, Karnataka 560025</p>
-                            <p className="contact-text text-center pt-3">Phone number : +91 80 41966600</p>
+                            <p className="contact-text text-center">+91 80 41966600</p>
 
                             <Container className="text-center pt-5">
                                 <Row className="g-0">
