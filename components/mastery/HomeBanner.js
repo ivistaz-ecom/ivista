@@ -44,7 +44,7 @@ function HeroBanner() {
               <Col lg={12} className=" mt-2 position-relative" id='value'>
                 <div className='timeline-badge2 mt-1'></div>
                 <h3 className="fs-3 red fw-semibold ps-6">Value Creation</h3>
-                <p className="para-text ps-6 pe-lg-2 pe-3">z
+                <p className="para-text ps-6 pe-lg-2 pe-3">
                   We understand that creating value for your company/brand lies primarily in how you communicate your value proposition. Our strategy and copy team will collaborate with you to craft the messaging and narrative for your company/brand, working to increase brand value with Digital Marketing.
                 </p>
               </Col>

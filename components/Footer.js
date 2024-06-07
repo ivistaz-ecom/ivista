@@ -173,7 +173,7 @@ function Footer() {
                                 </li>
                                 <li>
                                     <Link href="/industries/technology-IT" className='text-decoration-none text-white custom-footer-font'>
-                                        Tech
+                                        Tech/IT
                                     </Link>
                                 </li>
                             </ul>

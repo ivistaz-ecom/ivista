@@ -32,6 +32,8 @@ const ContactusContent = () => {
                             <p className="contact-text text-center"> Museum Rd,</p>
                             <p className="contact-text text-center"> Shanthala Nagar, Ashok Nagar</p>
                             <p className="contact-text text-center">Bengaluru, Karnataka 560025</p>
+                            <p className="contact-text text-center pt-3">Phone number : +91 80 41966600</p>
+
                             <Container className="text-center pt-5">
                                 <Row className="g-0">
                                     <Col className="d-flex align-items-center justify-content-end">

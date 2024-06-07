@@ -814,7 +814,7 @@ p.animation4 {
 
 @media(max-width:767px) {
   .KW_progressContainer4 {
-    left: 19px;
+    left: 30px;
     width: 0.6em;
     height: 45%;
     margin-bottom: 0px;
@@ -966,7 +966,7 @@ p.animation4 {
   }
 
   .KW_progressContainer2 {
-    left: 10.8%;
+    left: 10.5%;
     width: 0.5em;
     height: 100%;
     margin-bottom: 0px;
@@ -1322,7 +1322,7 @@ p.animation4 {
   }
 
   .KW_progressContainer2 {
-    left: 13.8%;
+    left: 14.1%;
     width: 0.5em;
     height: 100%;
     margin-bottom: 0px;
@@ -1514,7 +1514,7 @@ p.animation4 {
   }
 
   .KW_progressContainer2 {
-    left: 17.1%;
+    left: 17.4%;
     width: 0.5em;
     height: 100%;
     margin-bottom: 0px;
@@ -1532,7 +1532,7 @@ p.animation4 {
   .KW_progressBar2 {
     width: 100%;
     float: left;
-    height: 0% !important;
+    height: 20% !important;
     z-index: 0;
     max-width: 100%;
     border: 10px dashed rgb(243, 2, 2);
@@ -1724,7 +1724,7 @@ p.animation4 {
 
 
   .KW_progressContainer2 {
-    left: 20.4%;
+    left: 20.6%;
     width: 0.5em;
     height: 50%;
     margin-bottom: 0px;
@@ -1789,7 +1789,7 @@ p.animation4 {
   }
 
   .KW_progressContainer4 {
-    left: 20.9%;
+    left: 21.2%;
     width: 0.5em;
     height: 50%;
     margin-bottom: 0px;
@@ -1907,7 +1907,7 @@ p.animation4 {
   }
 
   .KW_progressContainer2 {
-    left: 23.7%;
+    left: 23.9%;
     width: 0.5em;
     height: 50%;
     margin-bottom: 0px;

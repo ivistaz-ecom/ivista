@@ -17,7 +17,7 @@ function Arts() {
                     </Container>
                     <Container className='p-0'>
                         <p className="fs-20 fw-bold text-white-50 timeline-item" >
-                            We’ve been crafting and creating art that captivates and resonates with our clients and their audiences. As the digital world continues to evolve, we have kept pace. As the digital world continues to evolve, we have kept pace, adapting our digital branding strategy and other strategies to the ever-changing landscape. With personalised solutions and a commitment to meet clients’ expectations, we delivered what was expected of us. Our point of differentiation was the performance-focused model, which earned us a reputation for excellence making us a trusted choice for over 300 brands.                        </p>
+                            We’ve been crafting and creating art that captivates and resonates with our clients and their audiences. As the digital world continues to evolve, we have kept pace, adapting our digital branding strategy and other strategies to the ever-changing landscape. With personalised solutions and a commitment to meet clients’ expectations, we delivered what was expected of us. Our point of differentiation was the performance-focused model, which earned us a reputation for excellence making us a trusted choice for over 300 brands.                        </p>
                     </Container>
                     <Container className='p-0'>
                         <Link className="btn btn-12" href="/art">Know More</Link>
