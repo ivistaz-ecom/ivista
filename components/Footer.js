@@ -46,13 +46,13 @@ function Footer() {
                                     </Link> */}
                                 </li>
                                 <li>
-                                    <Link href="/our-team" className='text-decoration-none text-white custom-footer-font'>
-                                        Our Team
+                                    <Link href="/mastery/about-us" className='text-decoration-none text-white custom-footer-font'>
+                                        About Us
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="/contact-us" className='text-decoration-none text-white custom-footer-font'>
-                                        Contact
+                                    <Link href="/our-team" className='text-decoration-none text-white custom-footer-font'>
+                                        Our Team
                                     </Link>
                                 </li>
                                 <li>
@@ -66,15 +66,21 @@ function Footer() {
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="/privacy-policy" className='text-decoration-none text-white custom-footer-font'>
-                                        Privacy Policy
-                                    </Link>
-                                </li>
-                                <li>
                                     <Link href="/our-clients" className='text-decoration-none text-white custom-footer-font'>
                                         Our Clients
                                     </Link>
                                 </li>
+                                <li>
+                                    <Link href="/contact-us" className='text-decoration-none text-white custom-footer-font'>
+                                        Contact
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link href="/privacy-policy" className='text-decoration-none text-white custom-footer-font'>
+                                        Privacy Policy
+                                    </Link>
+                                </li>
+                              
                                 {/* <li>
                                     <Link href="#" className='text-decoration-none text-white custom-footer-font'>
                                         Statement
