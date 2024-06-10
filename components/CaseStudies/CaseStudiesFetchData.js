@@ -42,7 +42,7 @@ const CaseStudiesFetchData = () => {
             <p className="para-text text-white">Dive into our collection of compelling case studies that showcase how our strategies and expertise have propelled businesses to achieve remarkable results in the digital realm.</p>
             <Col>
                 {data.slice(0, visibleItems).map((item) => (
-                    <Col className='list-group' key={item.id} style={{ borderBottom: '3px dotted white' }}>
+                    <Col className='list-group mb-2' key={item.id} style={{ borderBottom: '3px dotted white' }}>
                         <Link href={`/case-studies/${item.slug}`} class="iv-link">
                             <div className="list-group-item d-flex justify-content-between align-items-center">
                                 <div className="ms-2 me-auto">
