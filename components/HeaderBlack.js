@@ -190,8 +190,10 @@ function Header1() {
 
                   <NavDropdown title="Company" id="navbarScrollingDropdown" className='custom-nav-company'>
                     <NavDropdown.Item href="/our-team">Our Team</NavDropdown.Item>
+                    <NavDropdown.Item href="/our-clients">Our Clients</NavDropdown.Item>
                     <NavDropdown.Item href="/mastery/about-us">About Us</NavDropdown.Item>
                     <NavDropdown.Item href="/careers">Careers</NavDropdown.Item>
+                   
                     {/* <NavDropdown.Item href="/map-philosophy">Map Philosophy</NavDropdown.Item> */}
                   </NavDropdown>
                   {/* <li className="divider-center">
