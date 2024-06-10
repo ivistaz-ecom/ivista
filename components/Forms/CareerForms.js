@@ -275,7 +275,7 @@ const CareerForms = () => {
                     <div class="text-center">
                         <button
                             type="button"
-                            class="btn btn-16 text-white"
+                            class="btn btn-16"
                             onClick={handleSubmit}
                         >
                             Submit

@@ -1493,7 +1493,7 @@ background: rgba(255, 255, 255, 0) !important; */
 
 .btn-16 {
   position: relative;
-  color: #ED2225 !important;
+  color: #ffffff !important;
   position: relative;
   display: block;
   overflow: hidden;
@@ -1507,7 +1507,7 @@ background: rgba(255, 255, 255, 0) !important; */
   text-align: center !important;
   font-size: 24px !important;
   z-index: 9999;
-  background: #000000 !important;
+  background: #ED2225 !important;
 }
 
 .btn-16:before,
@@ -1517,15 +1517,15 @@ background: rgba(255, 255, 255, 0) !important; */
   content: "";
   width: 20px;
   height: 20px;
-  background-color: #ED2225;
+  background-color: #ffffff;
   border-radius: 50%;
-  color: #ED2225 !important;
+  color: #000000 !important;
   z-index: -17 !important;
 }
 
 .btn-16:before {
   left: -20px;
-  transform: translate(-50%, -50%); 
+  transform: translate(-50%, -50%);
 }
 
 .btn-16:after {
@@ -1534,8 +1534,8 @@ background: rgba(255, 255, 255, 0) !important; */
 }
 
 .btn-16:hover {
-  color: #fff !important;
-  border: 0px solid #fff !important;
+  color: #ED2225 !important;
+  border: 0px solid #ed2a2a !important;
 }
 
 .btn-16:hover:before {
