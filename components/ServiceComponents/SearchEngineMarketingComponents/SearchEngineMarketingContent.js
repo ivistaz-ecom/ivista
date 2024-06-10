@@ -31,10 +31,7 @@ const SearchEngineMarketingContent = () => {
                                     Buyers are continuously tapping, scrolling, and clicking. <br />
                                     Will you be noticed or passed over?
                                 </p>
-                                <p className="text-black para-text">
-                                    Digital journeys and buying decisions are unpredictable, impulsive, and fragmented. Buying decisions take place in micro-moments.
-                                </p>
-
+                            
                                 <p className="text-black para-text">
                                     When customers leave footprints online about what they are looking for, search engine marketing (SEM) becomes essential. It helps businesses to showcase the right product or solution to the right target audience at the right time. With expert pricing, bidding, and targeting strategies, we can help your product or service advertisements be placed at the top of Search Engine Results Pages (SERP).
                                 </p>

@@ -28,7 +28,7 @@ const DesignContentComponents = () => {
                                 </p>
 
                                 <p className="text-black para-text pe-lg-0 pe-3">
-                                    At iVistaz, we understand the critical role that design plays in captivating audiences and conveying your brand's message effectively. As a leading Website design agency, our design services encompass various facets, including web design, logo design, collateral creation (brochures, white papers, case studies, etc.), infographic design, PowerPoint presentations, and newsletter design.
+                                    At iVistaz, we understand the critical role that design plays in captivating audiences and conveying your brand's message effectively. As a leading website design agency, our design services encompass various facets, including web design, logo design, collateral creation (brochures, white papers, case studies, etc.), infographic design, PowerPoint presentations, and newsletter design.
                                 </p>
                             </Container>
                         </Col>
@@ -53,7 +53,7 @@ const DesignContentComponents = () => {
                                 </p>
 
                                 <p className="text-black para-text pe-lg-0 pe-3">
-                                    Our mobile-first approach goes beyond mere responsiveness; it prioritises seamless navigation, minimises scrolling requirements, integrates intuitive search functionality, and streamlines form-filling processes for enhanced user convenience. By placing mobile users at the forefront of our design process, we endeavour to make your website not only visually stunning but also function seamlessly across devices to maximise engagement and conversions.
+                                    Our mobile-first approach goes beyond mere responsiveness; it prioritises seamless navigation, minimises scrolling requirements, integrates intuitive search functionality, and streamlines form-filling processes for enhanced user convenience. By placing mobile users at the forefront of our design process, we endeavor to make your website not only visually stunning but also function seamlessly across devices to maximize engagement and conversions.
                                 </p>
                             </Container>
                         </Col>

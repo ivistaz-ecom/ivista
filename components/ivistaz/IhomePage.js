@@ -62,7 +62,7 @@ function IhomePage() {
                 /></h2>
               <h2 className="text-white fs-80 fw-bold">OF PERFORMANCE</h2>
               <h2 className="text-white fs-80 fw-bold">BACKED BY</h2>
-              <h2 className="text-white fs-80 fw-bold">MASTERY AND ART.</h2>
+              <h2 className="text-white fs-80 fw-bold">MASTERY AND ART</h2>
               {/* <div className='icon-scroll' onClick={handleScrollToResults}></div>
             <div class="scroll-down"></div> */}
 

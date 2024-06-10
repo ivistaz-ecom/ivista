@@ -52,7 +52,7 @@ function HeroBanner() {
                 <div className='timeline-badge2 mt-1'></div>
                 <h3 className="fs-3 red fw-semibold ps-6">Traffic</h3>
                 <p className="para-text ps-6 pe-lg-2 pe-3">
-                  Web traffic is a function of SEO, content, and UX/UI coming together. We will research and create a repository of keywords to match the search intent of your customers. A robust combination of primary, secondary, and tertiary keywords and long-tail phrases will be infused into your web content to maximise Page 1 ranking for your keywords. Your traffic will be further boosted with off-page SEO, social bookmarking, directory, blog page, Quora, and video submissions.
+                  Web traffic is a function of SEO, content, and UX/UI coming together. We will research and create a repository of keywords to match the search intent of your customers. A robust combination of primary, secondary, and tertiary keywords and long-tail phrases will be infused into your web content to maximize Page 1 ranking for your keywords. Your traffic will be further boosted with off-page SEO, social bookmarking, directory, blog page, Quora, and video submissions.
                 </p>
               </Col>
               <Col lg={12} className="mt-2 position-relative" id='leadgen'>

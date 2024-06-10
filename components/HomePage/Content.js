@@ -51,14 +51,14 @@ const HomePage = () => {
   return (
     <>
 
-
-
       <Container className="iv-bg z-0" fluid>
         <Row className="d-flex flex-column align-items-center justify-content-between h-100vh" >
           <Col className="d-flex flex-column justify-content-center align-items-center z-index-100">
             <Image src="/images/ivista_logo.svg" width={300} height={80} className="img-fluid" alt="" />
-
+               {/* Take Me to Homepage Button  */}
+      <Link href="/home" className="demo rounded-3">Skip</Link>
           </Col>
+          
 
           <Col className="d-flex flex-column justify-content-center align-items-center">
             <h2 className="text-white fs-60 fw-bold">WHAT DOES</h2>

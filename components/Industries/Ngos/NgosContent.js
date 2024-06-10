@@ -18,7 +18,7 @@ const NgosContent = () => {
                             <div className='timeline-badge3 mt-4'></div>
                             <Container className="pt-4 w-80 pb-4 ps-7" >
 
-                                <p className="text-white para-text pe-lg-2 pe-3">As social developments produce both new possibilities and fresh challenges, active attempts to establish a better future for monitoring, assessment, and learning will become increasingly more crucial in the coming years. These changes in the philanthropic landscape—and the world around it—are profoundly altering the backdrop for decision-making inside social sector organizations as well as the larger practice of monitoring, evaluation, and learning.</p>
+                                <p className="text-white para-text pe-lg-2 pe-3">As social developments produces both new possibilities and fresh challenges, active attempts to establish a better future for monitoring, assessment, and learning will become increasingly more crucial in the coming years. These changes in the philanthropic landscape—and the world around it—are profoundly altering the backdrop for decision-making inside social sector organizations as well as the larger practice of monitoring, evaluation, and learning.</p>
                             </Container>
                         </div>
 

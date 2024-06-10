@@ -35,7 +35,7 @@ const SocialMediaOrganicComponents = () => {
                                 </p>
 
                                 <p className="text-black para-text">
-                                    Our approach to Social Media Management will be directly linked to measurable metrics such as engagement and follower growth. This will provide you with invaluable insights into the effectiveness of your social media marketing endeavours. As a leading social media marketing agency in Bangalore, we focus on these key performance indicators, ensuring you gain a comprehensive understanding of how your brand resonates with your audience and the impact of your online presence.
+                                    Our approach to Social Media Management will be directly linked to measurable metrics such as engagement and follower growth. This will provide you with invaluable insights into the effectiveness of your social media marketing endeavors. As a leading social media marketing agency in Bangalore, we focus on these key performance indicators, ensuring you gain a comprehensive understanding of how your brand resonates with your audience and the impact of your online presence.
                                 </p>
                             </Container>
                         </Col>
