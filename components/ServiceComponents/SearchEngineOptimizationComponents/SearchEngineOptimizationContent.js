@@ -37,7 +37,7 @@ const SearchEngineOptimizationContent = () => {
                                 </p>
 
                                 <p className="text-black para-text">
-                                    There are 2 trillion global searches per year, translating to 8.5 billion searches per day. A staggering 75% of users never scroll past the first page of search results. These stark statistics underscore the critical importance of Search Engine Optimization (SEO) services in driving organic traffic and maximising online visibility.
+                                    There are 2 trillion global searches per year, translating to 8.5 billion searches per day. A staggering 75% of users never scroll past the first page of search results. These stark statistics underscore the critical importance of Search Engine Optimization (SEO) services in driving organic traffic and maximizing online visibility.
                                 </p>
 
                                 <p className="text-black para-text">
@@ -48,7 +48,7 @@ const SearchEngineOptimizationContent = () => {
                                 </p> */}
 
                                 <p className="text-black para-text">
-                                    Our experts understand that SEO requires a nuanced understanding of your target audience, industry trends, and competitive landscape. We employ a holistic approach that encompasses both on-page and off-page optimization strategies. From keyword research and content optimization to link building and technical SEO audits, we address each factor with a meticulous approach to elevate your brand&apos;s digital presence. By analysing user intent and behaviour, we recommend and craft tailored content to align with SEO strategies that resonate with your audience and drive meaningful engagement with your web pages. Additionally, our local SEO services ensure that your business stands out in local search results, further enhancing your visibility and reach.
+                                    Our experts understand that SEO requires a nuanced understanding of your target audience, industry trends, and competitive landscape. We employ a holistic approach that encompasses both on-page and off-page optimization strategies. From keyword research and content optimization to link building and technical SEO audits, we address each factor with a meticulous approach to elevate your brand&apos;s digital presence. By analyzing user intent and behaviour, we recommend and craft tailored content to align with SEO strategies that resonate with your audience and drive meaningful engagement with your web pages. Additionally, our local SEO services ensure that your business stands out in local search results, further enhancing your visibility and reach.
                                 </p>
 
                                 <p className="text-black para-text">

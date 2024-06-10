@@ -67,12 +67,12 @@ const CareerCom = () => {
                     <Col className='mb-4 text-black'>
                         <h1 className="fs-21 text-black fw-bold">CAREERS</h1>
                         <p className="text-black para-text">
-                            Discover the exceptional career opportunities at iVista. Join our dynamic team and collaborate with talented professionals and esteemed clients. Engage in innovative projects that make a significant impact, while embracing a professional work culture characterized by positivity and dedication. Unleash your full potential and together, let&apos;s redefine the possibilities in the digital marketing industry.
+                            Discover the exceptional career opportunities at iVistaz. Join our dynamic team and collaborate with talented professionals and esteemed clients. Engage in innovative projects that make a significant impact, while embracing a professional work culture characterized by positivity and dedication. Unleash your full potential and together, let&apos;s redefine the possibilities in the digital marketing industry.
                         </p>
                     </Col>
 
                     <Col>
-                        <h2 className="fs-21 text-black fw-bold">CURRENT OPENING</h2>
+                        <h2 className="fs-21 text-black fw-bold">CURRENT OPENINGS</h2>
                     </Col>
                 </Row>
 
@@ -147,7 +147,7 @@ const CareerCom = () => {
                 </Row>
 
                 <p className="para-text text-black mt-5">
-                    For inquiries about any positions not listed, please email <a href="mailto:hr@ivistasolutions.com" target='_blank' className='text-red'> hr@ivistasolutions.com</a>
+                    For enquiries about any positions not listed, please email <a href="mailto:hr@ivistasolutions.com" target='_blank' className='text-red'> hr@ivistasolutions.com</a>
                 </p>
                 <p className="para-text text-black ">We value your privacy and will handle your information with utmost confidentiality. By submitting this form, you agree to our Privacy Policy.</p>
             </Container>

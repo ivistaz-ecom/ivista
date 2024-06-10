@@ -28,7 +28,7 @@ const JewellryContent = () => {
                             <Container className="iv-bg w-80 banner pt-5 pe-5 pb-5 ps-7">
                                 <p className="text-white para-text">Creating and improving the connection between online visitors and sales, through end-to-end services, in order to increase online sales for jewelry brands and boost online conversions and sales both in-store and online.</p>
                                 <p className="text-white para-text">Develop compelling and personalized online experiences that will strengthen customers’ loyalty to your brand, thus creating a more curated online experience. Our digital marketing for jewelry brands focuses on creating engaging content and leveraging social media platforms to enhance brand visibility and drive sales.</p>
-                                <p className="text-white para-text">Curate keywords that will ensure a lower cost of acquisition. Our paid marketing services for jewelry brandsp employ strategic keyword targeting to optimize ad campaigns and drive qualified traffic to your online store.</p>
+                                <p className="text-white para-text">Curate keywords that will ensure a lower cost of acquisition. Our paid marketing services for jewelry brands employ strategic keyword targeting to optimize ad campaigns and drive qualified traffic to your online store.</p>
                                 <Container className="text-center">
                                     <Col className='d-flex flex-column align-items-center'>
                                         <Link className="btn-14 z-0" href="/contact-us">Contact Us</Link>
