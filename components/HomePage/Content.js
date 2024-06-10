@@ -58,8 +58,6 @@ const HomePage = () => {
           <Col className="d-flex flex-column justify-content-center align-items-center z-index-100">
             <Image src="/images/ivista_logo.svg" width={300} height={80} className="img-fluid" alt="" />
 
-            {/* Take Me to Homepage Button  */}
-            <Link href="/home" className="demo rounded-3">Take Me to Homepage</Link>
           </Col>
 
           <Col className="d-flex flex-column justify-content-center align-items-center">
