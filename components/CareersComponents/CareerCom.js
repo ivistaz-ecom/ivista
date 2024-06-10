@@ -94,7 +94,7 @@ const CareerCom = () => {
                                             </div>
                                         </Col>
                                         <Col className='d-flex flex-column justify-content-center align-items-center p-3'>
-                                            <button type="button" class="btn btn-15 bg-black text-white z-0" onClick={() => handleShowModal(item)}>Apply</button>
+                                            <button type="button" class="btn btn-12 bg-black text-white z-0" onClick={() => handleShowModal(item)}>Apply</button>
                                         </Col>
                                     </Row>
                                 </>
