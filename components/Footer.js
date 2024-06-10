@@ -70,6 +70,11 @@ function Footer() {
                                         Privacy Policy
                                     </Link>
                                 </li>
+                                <li>
+                                    <Link href="/our-clients" className='text-decoration-none text-white custom-footer-font'>
+                                        Our Clients
+                                    </Link>
+                                </li>
                                 {/* <li>
                                     <Link href="#" className='text-decoration-none text-white custom-footer-font'>
                                         Statement

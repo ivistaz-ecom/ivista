@@ -1911,14 +1911,14 @@ background: rgba(255, 255, 255, 0) !important; */
   z-index: 99;
   right: 100px;
   background: #ffffff;
-  padding: 16px;
+  padding: 12px;
   color: #000000;
   text-decoration: none;
   cursor: pointer;
   -webkit-transition: -webkit-transform ease-out 0.1s, background 0.2s;
   -moz-transition: -moz-transform ease-out 0.1s, background 0.2s;
   transition: transform ease-out 0.1s, background 0.2s;
-  font-size: 21px;
+  font-size: 13px;
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
 }
