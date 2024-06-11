@@ -2,6 +2,7 @@
 import React from 'react'
 import { Col, Container } from 'react-bootstrap'
 import ScrollAnimationService from '../../SharedComponents/ScrollAnimationServices'
+import Link from 'next/link'
 
 
 const SearchEngineMarketingContent = () => {
@@ -20,9 +21,7 @@ const SearchEngineMarketingContent = () => {
                         <Col className='position-relative'>
                             <div class="timeline-badge1"></div>
                             <Container className='w-80 ps-7 pe-lg-0 pe-3'>
-                                <p className="text-black para-text fw-semibold">
-                                    Digital journeys and buying decisions are unpredictable, impulsive, and fragmented. Buying decisions take place in micro-moments.
-                                </p>
+                               
                                 <p className="text-black para-text fw-semibold">
                                     Customers are continuously online and on the move, responding to stimuli and searching online. <br />
                                     Are you there, or will you be missed?
@@ -33,7 +32,7 @@ const SearchEngineMarketingContent = () => {
                                 </p>
                             
                                 <p className="text-black para-text">
-                                    When customers leave footprints online about what they are looking for, search engine marketing (SEM) becomes essential. It helps businesses to showcase the right product or solution to the right target audience at the right time. With expert pricing, bidding, and targeting strategies, we can help your product or service advertisements be placed at the top of Search Engine Results Pages (SERP).
+                                Digital journeys and buying decisions are unpredictable, impulsive, and fragmented. Buying decisions take place in micro-moments. However, when customers leave footprints online about what they are looking for, search engine marketing (SEM) becomes essential. It helps businesses to showcase the right product or solution to the right target audience at the right time. With expert pricing, bidding, and targeting strategies, we can help your product or service advertisements be placed at the top of Search Engine Results Pages (SERP).
                                 </p>
 
                                 <p className="text-black para-text">
@@ -51,12 +50,10 @@ const SearchEngineMarketingContent = () => {
                         <div className='position-relative mb-5 '>
                             <div class="timeline-badge1"></div>
                             <Container className='w-80 ps-7'>
-                                <h1 className='fs-3 text-red fw-bold'>
-                                    Need help with your Search Engine Marketing?
+                                <h1 className='fs-5 text-red fw-bold'>
+                                    Need help with your Search Engine Marketing? <Link href="/contact-us" className='red'> Contact us</Link> today.
                                 </h1>
-                                <h1 className='fs-3 text-red fw-bold'>
-                                    Let us know your requirements.
-                                </h1>
+                            
                             </Container>
                         </div>
                     </div>

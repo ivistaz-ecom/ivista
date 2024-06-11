@@ -2,6 +2,7 @@
 import React from 'react'
 import { Col, Container } from 'react-bootstrap'
 import ScrollAnimationServiceˀ from '../../SharedComponents/ScrollAnimationServices'
+import Link from 'next/link'
 
 
 const SocialMediaMarketingContent = () => {
@@ -39,7 +40,7 @@ const SocialMediaMarketingContent = () => {
                         <Col className='position-relative'>
                             <div class="timeline-badge1"></div>
                             <Container className='w-80 ps-7'>
-                                <h1 className='fs-4 text-red fw-bold'>
+                                <h1 className='fs-5 text-red fw-bold'>
                                     Leads, online sales, enquiries, room bookings—what goals do you want to achieve with social media marketing?
                                 </h1>
 
@@ -48,8 +49,8 @@ const SocialMediaMarketingContent = () => {
                         <Col className='position-relative mb-5'>
                             <div class="timeline-badge1"></div>
                             <Container className='w-80 ps-7'>
-                                <h1 className='fs-4 text-red fw-bold'>
-                                    Write to us at:
+                                <h1 className='fs-5 text-red fw-bold'>
+                                <Link href="/contact-us" className='red'> Contact us</Link> today.
                                 </h1>
                             </Container>
                         </Col>

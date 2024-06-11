@@ -155,7 +155,7 @@ function Header1() {
                     {/* <NavDropdown.Divider /> */}
                     <NavDropdown.Item href="/industries/hospitality">Hospitality</NavDropdown.Item>
                     {/* <NavDropdown.Divider /> */}
-                    <NavDropdown.Item href="/industries/jewellery">Jewellery</NavDropdown.Item>
+                    <NavDropdown.Item href="/industries/jewellery">Jewelry</NavDropdown.Item>
                     {/* <NavDropdown.Divider /> */}
                     <NavDropdown.Item href="/industries/ngos">Not-for-Profits/NGOs</NavDropdown.Item>
                     {/* <NavDropdown.Divider /> */}

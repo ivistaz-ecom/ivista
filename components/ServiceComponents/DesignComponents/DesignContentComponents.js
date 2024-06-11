@@ -3,6 +3,7 @@
 import React from 'react'
 import { Col, Container } from 'react-bootstrap'
 import ScrollAnimationService from '../../SharedComponents/ScrollAnimationServices'
+import Link from 'next/link'
 
 
 const DesignContentComponents = () => {
@@ -113,8 +114,8 @@ const DesignContentComponents = () => {
                         <Col className='position-relative'>
                             <div class="timeline-badge1 mt-1"></div>
                             <Container className='w-80 ps-7'>
-                                <h1 className='fs-4 text-red fw-bold'>
-                                    What is your design requirement today?
+                                <h1 className='fs-5 text-red fw-bold'>
+                                    What is your design requirement? <Link href="/contact-us" className='red'> Contact us</Link> today.
                                 </h1>
                             </Container>
                         </Col>
@@ -123,7 +124,7 @@ const DesignContentComponents = () => {
                             <div class="timeline-badge1 mt-1"></div>
                             <Container className='w-80 ps-7'>
                                 <h1 className='fs-4 text-red fw-bold'>
-                                    Write to us at:
+                                    
                                 </h1>
                             </Container>
                         </Col>

@@ -2,6 +2,7 @@
 import React from 'react'
 import { Col, Container } from 'react-bootstrap'
 import ScrollAnimationService from '../../SharedComponents/ScrollAnimationServices'
+import Link from 'next/link'
 
 
 const ContentDevelopment = () => {
@@ -77,8 +78,8 @@ const ContentDevelopment = () => {
                             <div class="timeline-badge1"></div>
                             <Container className='w-80 ps-7 '>
                                 <p className='text-red fw-bold para-text'>
-                                    What is your content writing service requirement today?
-                                    Write to us at:
+                                    What is your content requirement?
+                                     <Link href="/contact-us" className='red'> Contact us</Link> today.
                                 </p>
                             </Container>
                         </Col>
