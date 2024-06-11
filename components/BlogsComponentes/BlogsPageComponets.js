@@ -32,7 +32,7 @@ const BlogsPageComponets = () => {
             <Container className="bg-black pb-5 custom-container" fluid>
                 <Container className="w-80">
                     <h1 className="fs-21 text-white fw-bold">BLOGS</h1>
-                    <p className="fw-bold text-white fs-3">Stay Informed with Our Latest Insights</p>
+                    <p className="fw-bold text-white fs-3">Stay Informed with Our Latest Insights on Digital Marketing</p>
                     <p className="text-white para-text">Explore our blog page to gain valuable insights, industry trends, and expert advice on digital marketing, helping you stay ahead of the curve and make informed decisions for your business.</p>
                 </Container>
 

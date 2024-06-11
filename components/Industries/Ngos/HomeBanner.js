@@ -30,7 +30,7 @@ function HeroBanner() {
     url: '/industrie/mobile_industries_banner/NGOs_mob_banner.jpg'
   }
 
-  const bannerHeading = 'NOT-FOR-PROFITS/ NGOS'
+  const bannerHeading = 'NOT-FOR-PROFITS/NGOS' 
 
   return (
     <>

@@ -67,7 +67,7 @@ const WebDesignAndDevelopmentContent = () => {
                             <div class="timeline-badge1"></div>
                             <Container className='w-80 ps-7'>
                                 <h1 className='fs-3 text-red fw-bold'>
-                                    Technological Proficiency:
+                                    Technology Proficiency:
                                 </h1>
                                 <ul>
                                     <li className="text-black para-text mb-0">
