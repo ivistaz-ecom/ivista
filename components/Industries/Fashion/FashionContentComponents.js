@@ -18,7 +18,7 @@ const FashionContentComponents = () => {
                             <div className='timeline-badge3 mt-4'></div>
                             <Container className="w-80 pb-4 pt-4 ps-7" >
                                 <p className="text-white para-text">
-                                    According to an article by the Times of India, the fashion industry<Link href="https://timesofindia.indiatimes.com/blogs/voices/indian-apparel-and-fashion-market-in-next-five-years-industry-growth-challenges-and-opportunities/" target='_blank' className='hyper-link-red cursor-pointer'> is poised to grow into a $106 billion industry by 2026</Link>, bringing up the Indian fashion market on maps.</p>
+                                    According to an article by the Times of India, the fashion industry is poised to <Link href="https://timesofindia.indiatimes.com/blogs/voices/indian-apparel-and-fashion-market-in-next-five-years-industry-growth-challenges-and-opportunities/" target='_blank' className='hyper-link-red cursor-pointer'>grow into a $106 billion industry by 2026,</Link> bringing up the Indian fashion market on maps.</p>
                             </Container>
                         </div>
 

@@ -27,7 +27,7 @@ const JewellryContent = () => {
                             <div className='timeline-badge3 mt-5'></div>
                             <Container className="iv-bg w-80 banner pt-5 pe-5 pb-5 ps-7">
 
-                                <p className="fw-bold text-white fs-3"> We will help your business keep up with this dynamic industry.</p>
+                                <p className="fw-bold text-white fs-3"> We will help your business keep up with this dynamic industry by:</p>
                                 <ul>
                                     <li className='industry-bullet'>
                                         <p className="text-white para-text">Creating and improving the connection between online visitors and sales, through end-to-end services, in order to increase online sales for jewelry brands and boost online conversions and sales both in-store and online.</p>

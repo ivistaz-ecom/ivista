@@ -18,15 +18,15 @@ const AutoMobileContent = () => {
                             <div className='position-relative'>
                                 <div className='timeline-badge3 mt-4'></div>
                                 <Container className="pt-4 w-80 pb-4 ps-7" >
-                                    <p className="text-white para-text pe-lg-2 pe-3"><Link href='/pdf/e6b37619-1d69-4cad-b1ed-49d31f8e3719.pdf' target='_blank' className='hyper-link-red cursor-pointer'>According to the Ministry of Heavy Industries</Link>, Government of India, the automotive industry is likely to see significant transformations at a global level in the next ten years. Among the notable changes will be the shift of growth in demand for automobiles from developed nations to developing nations (mainly BRICS).</p>
-                                    <p className="text-white para-text pe-lg-2 pe-3">India aims to double its auto industry size to Rs. 15 lakh crores by end of the year 2024 (Source: Ministry of Heavy Industries).</p>
+                                    <p className="text-white para-text pe-lg-2 pe-3"><Link href='public/pdf/https://static.pib.gov.in/WriteReadData/specificdocs/documents/2023/feb/doc2023217160601.pdf' target='_blank' className='hyper-link-red cursor-pointer'>According to the Ministry of Heavy Industries,</Link> Government of India, the automotive industry is likely to see significant transformations at a global level in the next ten years. Among the notable changes will be the shift of growth in demand for automobiles from developed nations to developing nations (mainly BRICS).</p>
+                                    <p className="text-white para-text pe-lg-2 pe-3">India aims to double its auto industry size to Rs. 15 trillion by end of the year 2024 (Source: Ministry of Heavy Industries).</p>
                                 </Container>
                             </div>
 
                             <div className='position-relative'>
                                 <div className='timeline-badge3 mt-5'></div>
                                 <Container className="iv-bg w-80 banner pt-5 pb-5 pe-5 ps-7 ">
-                                    <p className="fw-bold text-white fs-3">
+                                    <p className="fw-bold text-white fs-4">
                                         Your focus would be on strengthening your market share in India by growing your sales and dealer network through digital marketing for the automotive industry. Through our online marketing service for automobile companies, iVistaz can support you in this journey and help
                                     </p>
                                     <ul>

@@ -24,15 +24,15 @@ const WebDesignAndDevelopmentContent = () => {
                                 </p>
 
                                 <p className="text-black para-text pe-lg-0 pe-3">
-                                    With over 26 years of experience, we have crafted more than 500 websites for businesses spanning aviation, e-commerce, healthcare, home appliances, hospitality, NGOs, technology, real estate, and retail.
+                                    With over 28 years of experience, we have crafted more than 500 websites for businesses spanning aviation, e-commerce, healthcare, home appliances, hospitality, NGOs, technology, real estate, and retail.
                                 </p>
 
                                 <p className="text-black para-text pe-lg-0 pe-3">
-                                    As a leading website development company in Bangalore, we prioritize user-centricity in our web design and development process and delve into questions on behalf of your users: &quot; How easily can they access information?&quot;  and &quot; How many steps are required from discovery to enquiry?&quot;  This approach embodies User Experience (UX) principles, encompassing design, interface, information architecture, navigation, and content.
+                                    As a leading website development company in Bangalore, we prioritize user-centricity in our web design and development process and delve into questions on behalf of your users: &quot;How easily can they access information?&quot;  and &quot;How many steps are required from discovery to enquiry?&quot;  This approach embodies User Experience (UX) principles, encompassing design, interface, information architecture, navigation, and content.
                                 </p>
 
                                 <p className="text-black para-text pe-lg-0 pe-3">
-                                    Whether you need a B2B website, an e-commerce website development platform, a compelling website for your NGO, or a solution from a mobile app development company, we tailor our designs to align with your digital marketing objectives while optimizing user experience.
+                                    Whether you need a B2B website, a compelling website for your NGO, or a solution from a mobile app development company, we tailor our designs to align with your digital marketing objectives while optimizing user experience.
                                 </p>
                             </Container>
                         </div>
@@ -40,9 +40,9 @@ const WebDesignAndDevelopmentContent = () => {
                         <div className='position-relative mt-3  px-0'>
                             <div class="timeline-badge1"></div>
                             <Container className='w-80 ps-7'>
-                                <h1 className='fs-3 text-red fw-bold p-0'>
+                                <h3 className='fs-4 text-red fw-bold p-0'>
                                     Our expertise in web and mobile app design includes:
-                                </h1>
+                                </h3>
                                 <ul>
                                     <li className="text-black para-text mb-0">
                                         User Interface (UI) and User Experience (UX) design
@@ -66,9 +66,9 @@ const WebDesignAndDevelopmentContent = () => {
                         <div className='position-relative mt-3 px-0'>
                             <div class="timeline-badge1"></div>
                             <Container className='w-80 ps-7'>
-                                <h1 className='fs-3 text-red fw-bold'>
+                                <p className='fs-4 text-red fw-bold'>
                                     Technology Proficiency:
-                                </h1>
+                                </p>
                                 <ul>
                                     <li className="text-black para-text mb-0">
                                         WordPress

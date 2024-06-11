@@ -28,7 +28,7 @@ const HomeBanner = () => {
         url: '/service/mobile_service_banner/content_development_banner.jpg'
     }
 
-    const bannerSubHeading = "Content Development"
+    const bannerSubHeading = "CONTENT DEVELOPMENT"
     const bannerHeading = "B2B & B2C"
     return (
         <>

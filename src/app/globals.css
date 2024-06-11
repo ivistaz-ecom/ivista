@@ -1967,6 +1967,13 @@ background: rgba(255, 255, 255, 0) !important; */
   color: white !important;
 }
 
+/* .red-color{
+  color: #000;
+}
+.red-color:hover{
+  color: #ED2225;
+} */
+
 /* Home page enter website button */
 .demo {
   position: fixed;
@@ -1993,6 +2000,9 @@ background: rgba(255, 255, 255, 0) !important; */
 
 }
 
+.font-size{
+  font-size: 60px;
+}
 /* .fade-in {
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
@@ -2034,6 +2044,10 @@ background: rgba(255, 255, 255, 0) !important; */
   
   .demo{
     display: none;
+  }
+
+  .font-size{
+    font-size: 40px;
   }
 
 }

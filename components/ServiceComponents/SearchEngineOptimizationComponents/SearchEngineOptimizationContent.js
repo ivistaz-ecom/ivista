@@ -62,7 +62,8 @@ const SearchEngineOptimizationContent = () => {
                             <div class="timeline-badge1"></div>
                             <Container className='w-80 ps-7'>
                                 <h1 className='para-text text-red fw-bold pb-5'>
-                                    <Link href="/contact-us" className='red'>Contact us</Link> today to embark on your journey to digital success.
+                                Elevate your business with proven SEO strategies – <Link href="/contact-us" className='red'>Contact us</Link> today to start seeing real results.
+                                    
                                 </h1>
                             </Container>
                         </div>
