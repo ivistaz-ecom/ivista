@@ -42,7 +42,7 @@ const BannerAllPage = ({ backgroundImage, bannerHeading, mobileBackgroundImage }
             >
 
                 <Col lg={7} className="pl-8 d-flex flex-column text-align-start">
-                    <h1 className="fs-23 fw-bold lh-1 py-5 ">{bannerHeading}</h1>
+                    <p className=" fw-bold lh-1 py-4 font-size">{bannerHeading}</p>
                 </Col>
             </div>
         </>

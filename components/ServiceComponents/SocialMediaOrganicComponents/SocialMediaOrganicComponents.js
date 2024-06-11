@@ -28,15 +28,15 @@ const SocialMediaOrganicComponents = () => {
                                 </p>
 
                                 <p className="text-black para-text">
-                                    Organic Social Media Marketing helps to humanise your brand, transforming it from a faceless entity into a relatable personality. By tapping into the emotional pulse of your audience, we will help your business cultivate loyalty that extends beyond transactional interactions. This also lays the groundwork for enduring brand advocacy and word-of-mouth promotion and helps to develop brand credibility and authority in an era where trust reigns supreme.
+                                    Organic Social Media Marketing helps to humanize your brand, transforming it from a faceless entity into a relatable personality. By tapping into the emotional pulse of your audience, we will help your business cultivate loyalty that extends beyond transactional interactions. This also lays the groundwork for enduring brand advocacy and word-of-mouth promotion and helps to develop brand credibility and authority in an era where trust reigns supreme.
                                 </p>
 
                                 <p className="text-black para-text">
-                                    Developing your brand's organic presence on social media demands a well-defined strategy that evolves and matures with time. As your digital marketing partner, we will provide comprehensive Social Media Management services, crafting compelling content that sparks authentic interactions among your audience. Towards this, we will curate a meticulously designed content calendar that will be a fine mosaic of your strengths, industry expertise, and thought leadership.
+                                    Developing your brand's organic presence on social media demands a well-defined strategy that evolves and matures with time. As your digital marketing partner, we will provide comprehensive Social Media Management services, crafting compelling content that sparks authentic interactions among your audience. Towards this, we will curate a meticulously designed content calendar that will be a fine mosaic of your strengths, industry expertize, and thought leadership.
                                 </p>
 
                                 <p className="text-black para-text">
-                                    Our approach to Social Media Management will be directly linked to measurable metrics such as engagement and follower growth. This will provide you with invaluable insights into the effectiveness of your social media marketing endeavors. As a leading social media marketing agency in Bangalore, we focus on these key performance indicators, ensuring you gain a comprehensive understanding of how your brand resonates with your audience and the impact of your online presence.
+                                    Our approach to social media management will be directly linked to measurable metrics such as engagement and follower growth. This will provide you with invaluable insights into the effectiveness of your social media marketing endeavors. As a leading social media marketing agency in Bangalore, we focus on these key performance indicators, ensuring you gain a comprehensive understanding of how your brand resonates with your audience and the impact of your online presence.
                                 </p>
                             </Container>
                         </Col>

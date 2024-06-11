@@ -14,7 +14,7 @@ const DesignContentComponents = () => {
             <Container fluid className="mt-4 p-0">
                 <article>
                     <div className='timeline1'>
-                        {/* <h1 className='fs-3 text-red fw-bold ps-7 position-relative'>
+                        {/* <h1 className='fs-4 text-red fw-bold ps-7 position-relative'>
                             <div class="timeline-badge1"></div>
                             <Container className='w-80'>
                                 Design
@@ -38,7 +38,7 @@ const DesignContentComponents = () => {
                             <div class="timeline-badge1 mt-1"></div>
                             <Container className='w-80 ps-7'>
                                 <h1 className='fs-3 text-red fw-bold'>
-                                    Web design services
+                                    Web Design Services
                                 </h1>
                             </Container>
                         </Col>
@@ -46,15 +46,15 @@ const DesignContentComponents = () => {
                         <Col>
                             <Container className='w-80 ps-7 '>
                                 <p className="text-black para-text pe-lg-0 pe-3">
-                                    Our web design services are tailored to create visually appealing and user-friendly websites that align with your brand identity and objectives. As a user experience design agency, we prioritise not only aesthetic appeal but also user experience (UX) and user interface (UI) design to ensure that your website delivers an engaging and intuitive browsing experience for your visitors. Our designers meticulously craft each element of your website, focusing on navigation ease, page load speed, and mobile responsiveness to enhance user satisfaction and encourage prolonged engagement.
+                                    Our web design services are tailored to create visually appealing and user-friendly websites that align with your brand identity and objectives. As a user experience design agency, we prioritize not only aesthetic appeal but also user experience (UX) and user interface (UI) design to ensure that your website delivers an engaging and intuitive browsing experience for your visitors. Our designers meticulously craft each element of your website, focusing on navigation ease, page load speed, and mobile responsiveness to enhance user satisfaction and encourage prolonged engagement.
                                 </p>
 
                                 <p className="text-black para-text pe-lg-0 pe-3">
-                                    Today, mobile devices contribute to the majority of web traffic. Recognizing this shift, our web design philosophy revolves around a mobile-first approach to ensure an optimal user experience across all devices. As a premier UI UX design company in Bangalore, unlike traditional methods that merely adapt desktop designs for mobile screens, we take a proactive stance by crafting Mobile Responsive Web Designs from the ground up.
+                                    Today, mobile devices contribute to the majority of web traffic. Recognizing this shift, our web design philosophy revolves around a mobile-first approach to ensure an optimal user experience across all devices. As a premier UI UX design company in Bangalore, unlike traditional methods that merely adapt desktop designs for mobile screens, we take a proactive stance by crafting mobile responsive web designs from the ground up.
                                 </p>
 
                                 <p className="text-black para-text pe-lg-0 pe-3">
-                                    Our mobile-first approach goes beyond mere responsiveness; it prioritises seamless navigation, minimises scrolling requirements, integrates intuitive search functionality, and streamlines form-filling processes for enhanced user convenience. By placing mobile users at the forefront of our design process, we endeavor to make your website not only visually stunning but also function seamlessly across devices to maximize engagement and conversions.
+                                    Our mobile-first approach goes beyond mere responsiveness; it prioritizes seamless navigation, minimises scrolling requirements, integrates intuitive search functionality, and streamlines form-filling processes for enhanced user convenience. By placing mobile users at the forefront of our design process, we endeavor to make your website not only visually stunning but also function seamlessly across devices to maximize engagement and conversions.
                                 </p>
                             </Container>
                         </Col>
@@ -62,7 +62,7 @@ const DesignContentComponents = () => {
                         <Col className='position-relative'>
                             <div class="timeline-badge1 mt-1"></div>
                             <Container className='w-80 ps-7'>
-                                <h1 className='fs-3 text-red fw-bold'>
+                                <h1 className='fs-4 text-red fw-bold'>
                                     Logo Design
                                 </h1>
                             </Container>
@@ -79,7 +79,7 @@ const DesignContentComponents = () => {
                         <Col className='position-relative'>
                             <div class="timeline-badge1 mt-2"></div>
                             <Container className='w-80 ps-7'>
-                                <h1 className='fs-3 text-red fw-bold'>
+                                <h1 className='fs-4 text-red fw-bold'>
                                     Infographics
                                 </h1>
                             </Container>
@@ -96,7 +96,7 @@ const DesignContentComponents = () => {
                         <Col className='position-relative'>
                             <div class="timeline-badge1 mt-2"></div>
                             <Container className='w-80 ps-7'>
-                                <h1 className='fs-3 text-red fw-bold'>
+                                <h1 className='fs-4 text-red fw-bold'>
                                     Collateral Design
                                 </h1>
                             </Container>
@@ -120,14 +120,14 @@ const DesignContentComponents = () => {
                             </Container>
                         </Col>
 
-                        <Col className='position-relative mb-5'>
+                        {/* <Col className='position-relative mb-5'>
                             <div class="timeline-badge1 mt-1"></div>
                             <Container className='w-80 ps-7'>
                                 <h1 className='fs-4 text-red fw-bold'>
                                     
                                 </h1>
                             </Container>
-                        </Col>
+                        </Col> */}
                     </div>
                 </article>
             </Container>

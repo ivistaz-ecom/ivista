@@ -23,8 +23,10 @@ const SocialMediaMarketingContent = () => {
                         <Col className='position-relative'>
                             <div class="timeline-badge1"></div>
                             <Container className='w-80 ps-7 pe-lg-0 pe-4'>
-                                <p className="text-black para-text">
-                                    From targeting and retargeting to leveraging look-alike and custom audiences, as well as diving into demographics, behaviours, attributes, and interests – the power of precise targeting with social media advertising can be invaluable in helping businesses generate leads or sell online.
+                                <p className="text-black para-text fw-bold">
+                                “Social media is not just a spoke on the wheel of marketing. It’s becoming the way entire bicycles are built.” – Ryan Lilly.
+                                </p> 
+                                <p className="text-black para-text">From targeting and retargeting to leveraging look-alike and custom audiences, as well as diving into demographics, behaviours, attributes, and interests – the power of precise targeting with social media advertising can be invaluable in helping businesses generate leads or sell online.
                                 </p>
 
                                 <p className="text-black para-text">
@@ -43,17 +45,21 @@ const SocialMediaMarketingContent = () => {
                                 <h1 className='fs-5 text-red fw-bold'>
                                     Leads, online sales, enquiries, room bookings—what goals do you want to achieve with social media marketing?
                                 </h1>
+                                <h1 className='fs-5 text-red fw-bold'>
+                                <Link href="/contact-us" className='red'> Contact us</Link> today.
+                                </h1>
 
                             </Container>
                         </Col>
-                        <Col className='position-relative mb-5'>
+                     
+                        {/* <Col className='position-relative mb-5'>
                             <div class="timeline-badge1"></div>
                             <Container className='w-80 ps-7'>
                                 <h1 className='fs-5 text-red fw-bold'>
                                 <Link href="/contact-us" className='red'> Contact us</Link> today.
                                 </h1>
                             </Container>
-                        </Col>
+                        </Col> */}
                     </div>
 
                 </article>
