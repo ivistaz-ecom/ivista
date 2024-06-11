@@ -15,7 +15,7 @@ function Mastery() {
         </p>
       </Container>
       <Container className='p-0'>
-        <Link className="btn btn-11 ms-4" href="/mastery">Know More</Link>
+        <Link className="btn btn-11 ms-4 z-0" href="/mastery">Know More</Link>
       </Container>
     </Container>
   );
