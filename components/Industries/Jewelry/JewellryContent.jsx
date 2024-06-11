@@ -48,7 +48,7 @@ const JewellryContent = () => {
                         </div>
 
                         <Container className="mt-5 mb-5 w-80 ps-7 ">
-                            <p className="fs-2 text-white">Here’s how we have helped appliance brands to win in the e-commerce channel:</p>
+                            <p className="fs-2 text-white">Here’s how we have helped jewelry brands to win in the e-commerce channel:</p>
                         </Container>
                     </Col>
 

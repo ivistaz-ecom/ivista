@@ -31,10 +31,10 @@ const NgosContent = () => {
                                         <p className="text-white para-text">Providing end-to-end services that will bring in more attention from the identified target group.</p>
                                     </li>
                                     <li className='industry-bullet'>
-                                        <p className="text-white para-text">For value creation, evaluate or reframe the current positioning, message, and narrative.</p>
+                                        <p className="text-white para-text">Evaluating or reframing the current positioning, message, and narrative for value creation.</p>
                                     </li>
                                     <li className='industry-bullet'>
-                                        <p className="text-white para-text">With captivating content and SEO, generate traction for your website and offerings.</p>
+                                        <p className="text-white para-text">Generating traction for your website and offerings with captivating content and SEO.</p>
                                     </li>
                                     <li className='industry-bullet'>
                                         <p className="text-white para-text">Using email marketing, generate Marketing Qualified Leads (MQLs).</p>

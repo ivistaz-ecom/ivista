@@ -52,7 +52,7 @@ const FashionContentComponents = () => {
                         </div>
 
                         <Container className="mt-5 mb-5 w-80 ps-7">
-                            <p className="fs-2 text-white">Here’s how we helped beauty and wellness brands secure a winning edge:</p>
+                            <p className="fs-2 text-white">Here’s how we helped fashion and accessories brands secure a winning edge:</p>
                         </Container>
                     </Col>
 
