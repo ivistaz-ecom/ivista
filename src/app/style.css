@@ -1598,8 +1598,12 @@ p.animation5 {
     -o-transition: width .6s ease;
     transition: width .6s ease;
   }
-  
- 
+  .custom_height{
+    min-height: 5vh !important;
+  }
+  .footer-main {
+    min-height: 40vh !important;
+  } 
 
 }
 
@@ -1829,7 +1833,9 @@ p.animation5 {
     -o-transition: width .6s ease;
     transition: width .6s ease;
   }
-  
+  .custom_height{
+    min-height: 10vh !important;
+  }
   .footer-main {
     min-height: 40vh !important;
   }  
@@ -2042,11 +2048,11 @@ p.animation5 {
   .KW_progressContainer5 {
     left: 17.3%;
     width: 0.5em;
-    height: 60%;
+    height: 23%;
     margin-bottom: 0px;
     position: fixed;
     bottom: 0px;
-    top: 2%;
+    top: 0%;
     overflow: hidden;
     background-color: #fff0;
     content: "";
@@ -2075,7 +2081,7 @@ p.animation5 {
     opacity: 0;
   }
 
-  .KW_progressBar5 {
+  /* .KW_progressBar5 {
     width: 100%;
     float: left;
     height: 30% !important; 
@@ -2087,12 +2093,14 @@ p.animation5 {
     -webkit-transition: width .6s ease;
     -o-transition: width .6s ease;
     transition: width .6s ease;
+  } */
+  .custom_height{
+    min-height: 20vh !important;
   }
-  
 
-  .footer-main {
+  /* .footer-main {
     min-height: 45vh !important;
-  }   
+  }    */
 }
 
 /******************** Screen size - 90% ********************/
@@ -2251,7 +2259,7 @@ p.animation5 {
   }
 
   .KW_progressContainer4 {
-    left: 21.2%;
+    left: 20.9%;
     width: 0.5em;
     height: 50%;
     margin-bottom: 0px;

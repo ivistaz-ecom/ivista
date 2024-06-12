@@ -27,7 +27,7 @@ function page() {
       <Container fluid className="iv-bg pb-5 border-bottom z-3 p-0">
         <Header1 />
         <Container className="w-80 custom-container position-relative iv-bg z-3">
-          <h1 className="text-offwhite fs-70 fw-bold z-3">
+          <h1 className="text-offwhite fs-70 fw-bold z-3 pt-4">
             PERFORMANCE
           </h1>
         </Container>

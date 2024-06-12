@@ -56,7 +56,6 @@ const ourclients = {
             clientlogos: '/our_clients_logo/imagination_at_work.png',
         },
 
-
         {
             clientlogos: '/our_clients_logo/cellstream.png',
         },
@@ -197,6 +196,50 @@ const ourclients = {
             clientlogos: '/our_clients_logo/suntec.png',
         },
 
+        {
+            clientlogos: '/our_clients_logo/Adarsh_Hamilton.jpg',
+        },
+
+        {
+            clientlogos: '/our_clients_logo/Blestar.jpg',
+        },
+
+        {
+            clientlogos: '/our_clients_logo/Catalyst-foundation-Logo.jpg',
+        },
+
+        {
+            clientlogos: '/our_clients_logo/Charter-1-LOGO.jpg',
+        },
+
+        {
+            clientlogos: '/our_clients_logo/cry-logo-1.jpg',
+        },
+
+        {
+            clientlogos: '/our_clients_logo/Eureka-1-.jpg',
+        },
+
+        {
+            clientlogos: '/our_clients_logo/Niyogin-Logo.jpg',
+        },
+
+        {
+            clientlogos: '/our_clients_logo/Plan-Logo.jpg',
+        },
+
+        {
+            clientlogos: '/our_clients_logo/Taj.jpg',
+        },
+
+        {
+            clientlogos: '/our_clients_logo/The-executive-center-logo-.jpg',
+        },
+        
+        {
+            clientlogos: '/our_clients_logo/Zuri-Logo.jpg',
+        },
+      
 
     ]
 };

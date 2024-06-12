@@ -59,6 +59,9 @@ function HeroBanner() {
               <div className='timeline-badge5 mt-2'></div>
               <Link className="fs-3 i-link fw-semibold" href="/industries/fashion-accessories">Fashion & Accessories</Link></Col>
           </Row>
+          <div className='custom_height'>
+            {/* FOE ANIMATION HEIGHT  */}
+          </div>
         </article>
       </Container>
 

@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import ConfigData from '../../config';
 import { Col, Container, Image, Row } from 'react-bootstrap';
+import Link from 'next/link';
 
 const OurTeamsList = () => {
     const [clientServicingData, setClientServicingData] = useState([]);
@@ -88,7 +89,7 @@ const OurTeamsList = () => {
                 <Container className='w-80 custom-container'>
                     <h1 className="text-white fs-70 fw-bold d-inline-block">
                         {/* MEET THE TEAM */}
-                       MEET OUR TEAM
+                        MEET OUR TEAM
                     </h1>
 
                     {/* CLIENT SERVICING */}
@@ -112,8 +113,17 @@ const OurTeamsList = () => {
                                             <div>
                                                 <h4 className='text-white mb-0 '>{team.title.rendered}</h4>
                                             </div>
+
                                         </div>
+
                                     ))}
+                                    <div class="card custom-card m-3" >
+                                        <div class="card-body text-white">
+                                            <p class="card-title d-flex justify-content-center fs-3"><Link className='text-white text-line
+                                            ' target='_blank' href={"/careers"}>Want to claim this spot? We’re Hiring</Link></p>
+                                            
+                                        </div>
+                                    </div>
                                 </div>
                             </>
                         )}
@@ -321,12 +331,12 @@ const OurTeamsList = () => {
                         )}
                     </Col>
 
-                     {/* FOUNDER & CEO */}
-                     <Col className='mt-5'>
+                    {/* FOUNDER & CEO */}
+                    <Col className='mt-5'>
                         {ceoData.length > 0 && (
                             <>
                                 <h3 className='text-white mt-4'>
-                                FOUNDER & CEO
+                                    FOUNDER & CEO
                                 </h3>
 
                                 <div className='d-flex flex-lg-row flex-column flex-wrap'>

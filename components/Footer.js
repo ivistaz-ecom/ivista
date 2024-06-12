@@ -3,6 +3,7 @@ import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
 import Image from 'next/image'
 import Link from 'next/link';
+import CollectChatScript from '../components/ChatBot'
 
 function Footer() {
 
@@ -255,6 +256,7 @@ function Footer() {
                     <p className='mb-0'>© {currentYear} iVistaz Ecom Services Pvt Ltd</p>
                 </Container>
             </Container>
+            <CollectChatScript/>
         </>
     )
 }
