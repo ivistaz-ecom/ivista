@@ -30,8 +30,13 @@ const AppliancesContent = () => {
                                 <p className="text-white para-text">The size of customers doing research online and buying offline is rapidly shrinking. More and more buyers are now comfortable buying even large appliances online. Undoubtedly, you would be looking to capitalize on this opportunity.</p>
                                 <p className="text-white para-text">Our carefully tailored digital marketing strategies will help to increase online sales for appliances brands, boosting visibility and engagement both on your brand e-store as well as on marketplaces. With our expertise in digital marketing for the appliances industry, we ensure your brand stands out in a competitive market.</p>
                                 <p className="text-white para-text">We focus on strategies that optimize online sales for home appliances brands, leveraging targeted campaigns and data-driven insights to reach your ideal customers. Our approach will help you capture the growing market of online shoppers and drive significant sales growth.</p>
-                                <Container className="text-center">
-                                    <Col className='d-flex flex-column justify-content-center align-items-center'>
+                                <Container className="">
+                                    <Col className='d-flex flex-column align-items-center d-none d-lg-flex'>
+                                        <Link className="btn-14 z-0" href="/contact-us">Contact Us</Link>
+                                    </Col>
+
+                                    {/* Mobile view  */}
+                                    <Col className='d-flex flex-column justify-content-center d-flex d-lg-none'>
                                         <Link className="btn-14 z-0" href="/contact-us">Contact Us</Link>
                                     </Col>
                                 </Container>
