@@ -18,7 +18,7 @@ const AutoMobileContent = () => {
                             <div className='position-relative'>
                                 <div className='timeline-badge3 mt-4'></div>
                                 <Container className="pt-4 w-80 pb-4 ps-7" >
-                                    <p className="text-white para-text pe-lg-2 pe-3"><Link href='public/pdf/https://static.pib.gov.in/WriteReadData/specificdocs/documents/2023/feb/doc2023217160601.pdf' target='_blank' className='hyper-link-red cursor-pointer'>According to the Ministry of Heavy Industries,</Link> Government of India, the automotive industry is likely to see significant transformations at a global level in the next ten years. Among the notable changes will be the shift of growth in demand for automobiles from developed nations to developing nations (mainly BRICS).</p>
+                                    <p className="text-white para-text pe-lg-2 pe-3"><Link href='/pdf/THE_AUTOMOBILE_SECTOR_IN_INDIA.pdf' target='_blank' className='hyper-link-red cursor-pointer'>According to the Ministry of Heavy Industries,</Link> Government of India, the automotive industry is likely to see significant transformations at a global level in the next ten years. Among the notable changes will be the shift of growth in demand for automobiles from developed nations to developing nations (mainly BRICS).</p>
                                     <p className="text-white para-text pe-lg-2 pe-3">India aims to double its auto industry size to Rs. 15 trillion by end of the year 2024 (Source: Ministry of Heavy Industries).</p>
                                 </Container>
                             </div>
@@ -41,7 +41,12 @@ const AutoMobileContent = () => {
                                         </li>
                                     </ul>
                                     <Container className="">
-                                        <Col className='d-flex flex-column align-items-center'>
+                                        <Col className='d-flex flex-column align-items-center d-none d-lg-flex'>
+                                            <Link className="btn-14 z-0" href="/contact-us">Contact Us</Link>
+                                        </Col>
+
+                                        {/* Mobile view  */}
+                                        <Col className='d-flex flex-column justify-content-center d-flex d-lg-none'>
                                             <Link className="btn-14 z-0" href="/contact-us">Contact Us</Link>
                                         </Col>
                                     </Container>
@@ -51,7 +56,6 @@ const AutoMobileContent = () => {
                                 <p className="fs-2 text-white">Here’s how we have helped brands win over the dynamic and highly competitive industry through digital marketing for automobile brands:</p>
                             </Container>
                         </Col>
-
 
                         {/* case studies Props */}
                         <Container className="w-80 pb-5">

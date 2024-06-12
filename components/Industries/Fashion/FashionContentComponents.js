@@ -27,7 +27,7 @@ const FashionContentComponents = () => {
                             <div className='timeline-badge3 mt-5'></div>
                             <Container className="iv-bg w-80 banner pt-5 pe-5 pb-5 ps-7">
                                 <p className="fw-bold text-white fs-3">
-                                     We will help you to capitalize on this market opportunity with robust digital solutions that include:</p>
+                                    We will help you to capitalize on this market opportunity with robust digital solutions that include:</p>
                                 <ul>
                                     <li className='industry-bullet'>
                                         <p className="text-white para-text">Bridging the gap between online visitors and sales (in-store and online) both on your e-store, as well as on marketplaces and<span className='fw-bold'> increasing online sales for fashion accessories.</span></p>
@@ -43,8 +43,13 @@ const FashionContentComponents = () => {
                                         </p>
                                     </li>
                                 </ul>
-                                <Container className="text-center">
-                                    <Col className='d-flex flex-column align-items-center'>
+                                <Container className="">
+                                    <Col className='d-flex flex-column align-items-center d-none d-lg-flex'>
+                                        <Link className="btn-14 z-0" href="/contact-us">Contact Us</Link>
+                                    </Col>
+
+                                    {/* Mobile view  */}
+                                    <Col className='d-flex flex-column justify-content-center d-flex d-lg-none'>
                                         <Link className="btn-14 z-0" href="/contact-us">Contact Us</Link>
                                     </Col>
                                 </Container>
