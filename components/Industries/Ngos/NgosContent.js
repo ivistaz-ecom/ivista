@@ -37,7 +37,7 @@ const NgosContent = () => {
                                         <p className="text-white ">Generating traction for your website and offerings with captivating content and SEO.</p>
                                     </li>
                                     <li className='industry-bullet'>
-                                        <p className="text-white ">Using email marketing, generate Marketing Qualified Leads (MQLs).</p>
+                                        <p className="text-white ">Generating enquiries for your projects with email marketing</p>
                                     </li>
                                 </ul>
                                 <p className="text-white ">We specialize in social media marketing for non-profit organizations to enhance your social presence and engagement. Additionally, our digital marketing for NGOs ensures your campaigns are effective and far-reaching. For those needing a stronger online presence, our web design for NGOs will create a user-friendly and impactful website to support your mission.</p>

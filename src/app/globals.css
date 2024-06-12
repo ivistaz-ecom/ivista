@@ -1264,9 +1264,9 @@ background: rgba(255, 255, 255, 0) !important; */
   content: "";
   width: 20px;
   height: 20px;
-  background-color: #626262;
+  background-color: #fffefe;
   border-radius: 50%;
-  color: #626262 !important;
+  color: #ffffff !important;
   z-index: -17 !important;
 }
 
@@ -1281,7 +1281,7 @@ background: rgba(255, 255, 255, 0) !important; */
 }
 
 .btn-12:hover {
-  color: #ffffff !important;
+  color: #626262 !important;
 }
 
 .btn-12:hover:before {
@@ -1678,6 +1678,25 @@ background: rgba(255, 255, 255, 0) !important; */
   /* Color when hovered */
 }
 
+.custom-art-text {
+  color: #808080; /* Original color */
+}
+
+.custom-performance-text {
+  color: #F36669; /* Original color */
+}
+
+.active-text_mastery {
+  color: #888282; /* Active color (example: red) */
+}
+
+.active-text_art {
+  color: #ffffff; /* Active color (example: red) */
+}
+.active-text_performance {
+  color: #FF0000; /* Active color (example: red) */
+}
+
 
 @media(max-width:767px) {
 
@@ -1873,6 +1892,7 @@ background: rgba(255, 255, 255, 0) !important; */
 
 .wb-marker-red::marker {
   color: #ED2225 !important;
+  
 
 }
 
@@ -1997,46 +2017,33 @@ background: rgba(255, 255, 255, 0) !important; */
   background: #ffffff;
   color: #000000;
   box-shadow: 0 0 10px 2px #ffffff;
-
 }
 
 .font-size{
   font-size: 60px;
 }
-/* .fade-in {
-  opacity: 0;
-  transition: opacity 0.5s ease-in-out;
+
+.line_space {
+  line-height: 1.5;
+}
+/* TEAMS CARD IMAGE */
+.custom-card {
+  width: 310px;
+  height: 435px !important;
+  background-color: #ff0000 !important; /* Example background color, change as needed */
+  border-radius: 28px; /* Adjust as needed */
+  position: relative;
+  overflow: hidden;
+  padding: 20px; /* Adjust as needed */
 }
 
-.fade-in.visible {
-  opacity: 1;
-} */
-
-.custom-text-clr {
-  color: #212529; /* Original color */
-  transition: color 0.3s ease; /* Smooth transition */
+.card-body {
+  padding: 20px; /* Adjust padding as needed */
+  position: relative;
+  top: 0;
 }
-
-.custom-text-clr:hover {
-  color: #000000; /* New color on hover */
-}
-
-.custom-art-text {
-  color: #808080; /* Original color */
-  transition: color 0.3s ease; /* Smooth transition */
-}
-
-.custom-art-text:hover {
-  color: #ffffff; /* New color on hover */
-}
-
-.custom-performance-text {
-  color: #F36669; /* Original color */
-  transition: color 0.3s ease; /* Smooth transition */
-}
-
-.custom-performance-text:hover {
-  color: #ED2225; /* New color on hover */
+.text-line{
+  text-decoration: none !important;
 }
 
 /************| Mobile view |************/

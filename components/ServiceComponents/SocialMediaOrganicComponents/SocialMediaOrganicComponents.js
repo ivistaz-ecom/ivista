@@ -24,7 +24,7 @@ const SocialMediaOrganicComponents = () => {
                             <div class="timeline-badge1"></div>
                             <Container className='w-80 ps-7 pe-lg-0 pe-3    '>
                                 <p className="text-black para-text fw-semibold">
-                                    “Online is old news. Online in social media is today’s news... Social media is not a subset of the internet. Social media is the internet.” Sean Case, Nielsen Social President
+                                “Social media is the modern-day word of mouth. It can make or break a brand, so it’s crucial to use it wisely.” – Daniel Zhang, CEO of Alibaba Group
                                 </p>
 
                                 <p className="text-black para-text">

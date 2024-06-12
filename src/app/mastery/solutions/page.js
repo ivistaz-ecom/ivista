@@ -15,6 +15,9 @@ function page() {
         <h1 className="text-offwhite fs-70 fw-bold text-start ps-5 mb-0">MASTERY</h1>
       </Container>
       <HomeBanner /> 
+      <div className='custom_height'>
+          {/* FOR DOT LINE  */}
+        </div>
       <Footer />
     </Container>
 
