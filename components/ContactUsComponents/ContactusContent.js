@@ -27,7 +27,7 @@ const ContactusContent = () => {
 
                     {/* New Contact us */}
 
-                    <Col lg={6} className="d-flex flex-column justify-content-center iv-bg my-5 rounded-4">
+                    <Col lg={6} className="d-flex flex-column justify-content-center iv-bg my-5 rounded-4 h-50">
                         <Container className='contact'>
                             <h1 className="contact-head pb-4">iVistaz Ecom Services Pvt Ltd</h1>
                             <p className="contact-text text-center">Business Enquiries</p>
@@ -99,7 +99,7 @@ const ContactusContent = () => {
                     <Col className="d-flex justify-content-center py-4 mb-5">
                         <div className='map-container'>
                             <div className='p-3 text-white iv-bg shadow-3 rounded-top-4'>
-                                <p className='fs-3'>iVistaz Ecom Services Pvt Ltd</p>
+                                <p className='fs-3'>Address</p>
                                 <p className="">4th Floor, 16 & 16/1, Reliaable Phoenix Towers, Museum Road, Shanthala Nagar, Ashok Nagar, Bengaluru, Karnataka 560025</p>
                             </div>
                             <iframe

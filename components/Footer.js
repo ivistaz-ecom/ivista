@@ -53,7 +53,7 @@ function Footer() {
                                 </li>
                                 <li>
                                     <Link href="/our-team" className='text-decoration-none text-white custom-footer-font'>
-                                        Our Team
+                                        Team
                                     </Link>
                                 </li>
                                 <li>
@@ -68,12 +68,12 @@ function Footer() {
                                 </li>
                                 <li>
                                     <Link href="/our-clients" className='text-decoration-none text-white custom-footer-font'>
-                                        Our Clients
+                                        Clients
                                     </Link>
                                 </li>
                                 <li>
                                     <Link href="/contact-us" className='text-decoration-none text-white custom-footer-font'>
-                                        Contact
+                                        Contact Us
                                     </Link>
                                 </li>
                                 <li>
