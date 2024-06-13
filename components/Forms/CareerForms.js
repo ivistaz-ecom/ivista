@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import { Container } from 'react-bootstrap';
 import axios from 'axios'; // Don't forget to import axios
 import Link from 'next/link';
+// text 
 import ConfigData from '../../config';
 
 const CareerForms = () => {
