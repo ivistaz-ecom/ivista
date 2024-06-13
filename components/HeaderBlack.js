@@ -173,8 +173,8 @@ function Header1() {
                     <hr className="m-divider" />
                   </li>
                   <NavDropdown title="Company" id="navbarScrollingDropdown" className='custom-nav-company'>
-                    <NavDropdown.Item href="/our-team">Our Team</NavDropdown.Item>
-                    <NavDropdown.Item href="/our-clients">Our Clients</NavDropdown.Item>
+                    <NavDropdown.Item href="/our-team">Team</NavDropdown.Item>
+                    <NavDropdown.Item href="/our-clients">Clients</NavDropdown.Item>
                     <NavDropdown.Item href="/mastery/about-us">About Us</NavDropdown.Item>
                     <NavDropdown.Item href="/careers">Careers</NavDropdown.Item>
                   </NavDropdown>
@@ -182,7 +182,7 @@ function Header1() {
                     <hr className="m-divider" />
                   </li>
                   <li className="nav-item">
-                    <Link className="nav-link active" aria-current="page" href="/contact-us">Contact</Link>
+                    <Link className="nav-link active" aria-current="page" href="/contact-us">Contact Us</Link>
                   </li>
                 </ul>
               </Col>
