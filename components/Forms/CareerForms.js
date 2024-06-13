@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import { Container } from 'react-bootstrap';
 import axios from 'axios'; // Don't forget to import axios
 import Link from 'next/link';
+// text 
 import ConfigData from '../../config';
 
 const CareerForms = () => {
@@ -14,7 +15,7 @@ const CareerForms = () => {
     const [yourEmail, setyourEmail] = React.useState('');
     const [yourPhone, setyourPhone] = React.useState('');
     const [yourJobType, setyourJobType] = React.useState('');
-    const [yourResume, setResume] = React.useState(null);
+    const [resume, setResume] = React.useState(null);
     const [loading, setLoading] = useState(false);
 
     const options = [
@@ -56,14 +57,6 @@ const CareerForms = () => {
     const numErrors = {
         field: 'yourPhone',
         message: 'Please enter a valid phone number.'
-    };
-
-    // Resume Validation
-    const validFileTypes = ['application/pdf', 'application/msword', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document'];
-    const fileSizeLimit = 2 * 1024 * 1024; // 2MB
-    const fileErrors = {
-        field: 'yourResume',
-        message: 'Please upload a valid resume (PDF or Word document) with a size of 2MB or less.'
     };
 
     const handleTextChange = e => {
@@ -123,17 +116,7 @@ const CareerForms = () => {
     };
 
     const handleFileChange = e => {
-        const file = e.target.files[0];
-        if (file && (!validFileTypes.includes(file.type) || file.size > fileSizeLimit)) {
-            const fieldErrors = {};
-            const { field, message } = fileErrors;
-            fieldErrors[field] = message;
-            setErrors(fieldErrors);
-            setResume(null);
-        } else {
-            setErrors({});
-            setResume(file);
-        }
+        setResume(e.target.files[0]);
     };
 
     const handleSubmit = async (e) => {
@@ -156,8 +139,8 @@ const CareerForms = () => {
         formData.append('yourEmail', yourEmail);
         formData.append('yourPhone', yourPhone);
         formData.append('yourJobType', yourJobType);
-        if (yourResume) {
-            formData.append('yourResume', yourResume);
+        if (resume) {
+            formData.append('resume', resume);
         }
 
         axios.post(`https://docs.ivistaz.com/wp-json/contact-form-7/v1/contact-forms/239/feedback`, formData, {
@@ -197,7 +180,7 @@ const CareerForms = () => {
                 `}
             </style>
 
-            <form className="row p-0 z-index-100" onSubmit={handleSubmit}>
+            <form className="row p-0 z-index-100">
                 {/* Name */}
                 <div className="mb-3">
                     <label htmlFor="yourName" className="form-label text-black">Full Name *</label>
@@ -247,7 +230,7 @@ const CareerForms = () => {
                     <select
                         value={yourJobType}
                         onChange={handleTextChange}
-                        className={`form-select ${errors && errors.yourJobType ? 'is-invalid' : ''}`}
+                        className={`form-select ${errors && errors.yourEmail ? 'is-invalid' : ''}`}
                         name='yourJobType'
                     >
                         <option value="Job Type">Job Type</option>
@@ -262,15 +245,15 @@ const CareerForms = () => {
 
                 {/* Add Resume */}
                 <div className="mb-3">
-                    <label htmlFor="yourResume" className="form-label text-black">Upload Resume</label>
+                    <label htmlFor="resume" className="form-label text-black">Upload Resume</label>
                     <input
                         type="file"
-                        className={`form-control ${errors && errors.yourResume ? 'is-invalid' : ''}`}
-                        id="yourResume"
-                        name="yourResume"
+                        className="form-control"
+                        id="resume"
+                        name="resume"
+                        placeholder=""
                         onChange={handleFileChange}
                     />
-                    {errors && errors.yourResume && <div className="invalid-feedback">{errors.yourResume}</div>}
                 </div>
                 {/* Privacy policy */}
                 <div>
@@ -278,17 +261,19 @@ const CareerForms = () => {
                 </div>
                 {/* Submit Button */}
                 <div className="mt-3 text-center">
-                    <div className="text-center">
+                    <div class="text-center">
                         <button
-                            type="submit"
-                            className="btn btn-16"
+                            type="button"
+                            class="btn btn-16"
+                            onClick={handleSubmit}
                         >
                             Submit
                         </button>
                     </div>
-                    {loading && <h1 className="reg-success mt-4">{post}</h1>}
+                    {loading && <h1 class="reg-success mt-4">{post}</h1>}
                 </div>
             </form>
+
         </Container>
     );
 };
