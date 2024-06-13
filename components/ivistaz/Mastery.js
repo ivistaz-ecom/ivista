@@ -2,7 +2,6 @@
 import Link from 'next/link';
 import React, { useEffect, useRef, useState } from 'react';
 import { Container } from 'react-bootstrap';
-// import './styles.css'; // Import the CSS file
 
 function Mastery() {
   const [isActive, setIsActive] = useState(false);
@@ -34,6 +33,7 @@ function Mastery() {
   }, []);
 
   return (
+
     <Container className="w-80 mt-4 mb-5">
       <Container className='p-0' id="mastery" ref={masteryRef}>
         <h1 className="fs-80 fw-bold ps-5">Mastery</h1>

@@ -11,8 +11,9 @@ import Header1 from '../../../components/HeaderBlack';
 function page() {
   return (
     <>
+     <Header1 />
       <Container fluid className=" d-flex flex-column justify-content-between min-vh-100">
-        <Header1 />
+       
         <Image src="/images/h-icon.svg" className="header-icon d-lg-flex d-none overflow-hidden" alt='' />
 
         <Container className="w-80 custom-container">
