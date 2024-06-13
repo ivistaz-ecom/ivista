@@ -67,12 +67,12 @@ const CareerCom = () => {
                     <Col className='mb-4 text-black'>
                         <h1 className="fs-21 text-black fw-bold">CAREERS</h1>
                         <p className="text-black para-text">
-                            Discover the exceptional career opportunities at iVistaz. Join our dynamic team and collaborate with talented professionals and esteemed clients. Engage in innovative projects that make a significant impact, while embracing a professional work culture characterized by positivity and dedication. Unleash your full potential and together, let&apos;s redefine the possibilities in the digital marketing industry.
+                        We are a vibrant digital marketing agency with a team that brings diverse perspectives and creative energy to our projects. At iVistaz, we take pride in our collaborative and supportive environment where work and learning go hand-in-hand. Our projects range from web development, paid marketing, social media campaigns and email marketing, offering you the chance to build on your experience and develop a broad skill set. Located in the heart of the city, our office is easily accessible and surrounded by a vibrant mix of offices, shopping streets, restaurants, and parks. Check out our current openings and take the next step in your career with iVistaz.
                         </p>
                     </Col>
 
                     <Col>
-                        <h2 className="fs-21 text-black fw-bold">CURRENT OPENINGS</h2>
+                        <h2 className="fs-1 text-black fw-bold">CURRENT OPENINGS</h2>
                     </Col>
                 </Row>
 
@@ -82,7 +82,7 @@ const CareerCom = () => {
                             data.slice(0, visibleItems).map((item) => (
                                 <>
                                     <Row className='border-0 custom-career d-flex flex-lg-row flex-column mt-3 shadow-sm' key={item.id}>
-                                        <Col className='list-group-1 border-0' lg={10}>
+                                        <Col className='list-group-1 border-0' lg={12}>
                                             <div className="d-flex justify-content-between align-items-center border-0">
                                                 <div className="ms-2 me-auto">
                                                     <p className="fw-bold fs-3 m-3 text-black" dangerouslySetInnerHTML={{ __html: item.title.rendered }} />
@@ -93,7 +93,7 @@ const CareerCom = () => {
                                                 </div> */}
                                             </div>
                                         </Col>
-                                        <Col className='d-flex flex-column justify-content-center align-items-center p-3'>
+                                        <Col className='d-flex flex-column justify-content-start align-items-start p-3'>
                                             <button type="button" class="btn btn-16 z-0" onClick={() => handleShowModal(item)}>Apply</button>
                                         </Col>
                                     </Row>
@@ -149,7 +149,7 @@ const CareerCom = () => {
                 <p className="para-text text-black mt-5">
                     For enquiries about any positions not listed, please email <a href="mailto:hr@ivistasolutions.com" target='_blank' className='text-red'> hr@ivistasolutions.com</a>
                 </p>
-                <p className="para-text text-black ">We value your privacy and will handle your information with utmost confidentiality. By submitting this form, you agree to our Privacy Policy.</p>
+               
             </Container>
         </>
     )

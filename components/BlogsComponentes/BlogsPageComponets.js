@@ -37,35 +37,50 @@ const BlogsPageComponets = () => {
                 </Container>
 
                 <Container className="w-80">
-                    <Row className='d-flex flex-lg-row flex-column bg-black'>
-                        {data ? ( // Check if data is available
-                            data.map((post) => (
-                                <div class="iv-cards col-lg-4 d-flex flex-column p-3" key={post.id}>
-                                    <Image
-                                        src={post.acf.thumbnail_image.url}
-                                        alt={post.title.rendered}
-                                        className='w-100' height={220}
-                                    />
-                                    <div class="card-body text-white d-flex flex-column justify-content-between">
-                                        <h5 class="card-title">
-                                            {post.title.rendered}
-                                        </h5>
-                                        <div className='d-flex flex-column'>
-                                            <div>
-                                                <p class="card-text three-line-show" dangerouslySetInnerHTML={{ __html: post.content.rendered }} />
-                                            </div>
-                                            <div className='mt-3'>
-                                                <a href={`/blogs/${post.slug}`} class="iv-link">Read more <FaArrowRight className="icons" size="25" /></a>
-                                            </div>
+            <Row className='d-flex flex-lg-row flex-column bg-black'>
+                {data ? ( // Check if data is available
+                    data.map((post) => (
+                        <div className="iv-cards col-lg-4 d-flex flex-column p-3" key={post.id}>
+                            <Image
+                                src={post.acf.thumbnail_image.url}
+                                alt={post.title.rendered}
+                                className='w-100'
+                                height={220}
+                            />
+                            <div className="card-body text-white d-flex flex-column justify-content-between">
+                                <h5 className="card-title">
+                                    {post.title.rendered}
+                                </h5>
+                               
+                                <div className='d-flex flex-column'>
+                                    <div>
+                                        <p className="card-text three-line-show" dangerouslySetInnerHTML={{ __html: post.content.rendered }} />
+                                    </div>
+
+                                    <div className='mt-3 d-flex justify-content-between align-items-center'>
+                                        <div>
+                                            <a href={`/blogs/${post.slug}`} className="iv-link">Read more <FaArrowRight className="icons" size="25" /></a>
+                                        </div>
+                                        <div>
+                                            <p className="card-date mb-0">
+                                                {new Date(post.date).toLocaleDateString('en-US', {
+                                                    year: 'numeric',
+                                                    month: 'long',
+                                                    // day: 'numeric'
+                                                })}
+                                            </p>
                                         </div>
                                     </div>
+                                    
                                 </div>
-                            ))
-                        ) : (
-                            <div className='text-white'>Loading...</div> // Render loading message while data is being fetched
-                        )}
-                    </Row>
-                </Container>
+                            </div>
+                        </div>
+                    ))
+                ) : (
+                    <div className='text-white'>Loading...</div> // Render loading message while data is being fetched
+                )}
+            </Row>
+        </Container>
 
             </Container>
         </>

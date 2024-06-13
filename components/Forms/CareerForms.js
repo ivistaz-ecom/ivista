@@ -2,22 +2,19 @@
 import React, { useState } from 'react';
 import { Container } from 'react-bootstrap';
 import axios from 'axios'; // Don't forget to import axios
-
+import Link from 'next/link';
 import ConfigData from '../../config';
 
-
 const CareerForms = () => {
-
     const siteUrl = ConfigData.apiDomainUrl;
 
     const [post, setPost] = React.useState(null);
     const [errors, setErrors] = useState({});
-
-    const [yourName, setyourName] = React.useState(null);
-    const [yourEmail, setyourEmail] = React.useState(null);
-    const [yourPhone, setyourPhone] = React.useState(null);
-    const [yourJobType, setyourJobType] = React.useState(null);
-    // const [yourResume, setyourResume] = React.useState(null);
+    const [yourName, setyourName] = React.useState('');
+    const [yourEmail, setyourEmail] = React.useState('');
+    const [yourPhone, setyourPhone] = React.useState('');
+    const [yourJobType, setyourJobType] = React.useState('');
+    const [resume, setResume] = React.useState(null);
     const [loading, setLoading] = useState(false);
 
     const options = [
@@ -44,9 +41,8 @@ const CareerForms = () => {
 
     const isValidEmail = (email) => {
         const [, domain] = email.split('@');
-        return notAllowedDomains.includes(domain);
+        return !notAllowedDomains.includes(domain);
     };
-    // Email validaion end
 
     // Name Validation
     const nameRegex = /^[a-zA-Z\s]*$/;
@@ -54,17 +50,13 @@ const CareerForms = () => {
         field: 'yourName',
         message: 'Invalid character in name'
     };
-    // Name Validation End
-
 
     // Mobile Number validation
-    const numRegex = /^[0-9]+$/; // Regular expression to match any number of digits
-
+    const numRegex = /^[0-9]+$/;
     const numErrors = {
         field: 'yourPhone',
         message: 'Please enter a valid phone number.'
     };
-    // Mobile Number validation End
 
     const handleTextChange = e => {
         const { name, value } = e.target;
@@ -76,11 +68,8 @@ const CareerForms = () => {
                 fieldErrors[field] = message;
                 setErrors(fieldErrors);
             } else {
-                // Name format is valid, clear any previous errors
                 setErrors({});
-                // Update the name state
                 setyourName(value);
-                console.log(value);
             }
         }
 
@@ -90,57 +79,48 @@ const CareerForms = () => {
                 const { field, message } = customErrors;
                 fieldErrors[field] = message;
                 setErrors(fieldErrors);
-            } else if (isValidEmail(value)) {
+            } else if (!isValidEmail(value)) {
                 const fieldErrors = {};
                 const { field, message } = customDomainErrors;
                 fieldErrors[field] = message;
                 setErrors(fieldErrors);
             } else {
-                // Email format and domain are valid, clear any previous errors
                 setErrors({});
             }
-            // Always update the email state
             setyourEmail(value);
         }
 
-        if (fname === 'yourPhone') {
+        if (name === 'yourPhone') {
             if (!numRegex.test(value)) {
-                console.log('invalid Phone')
-                const fieldErrors = {}
+                const fieldErrors = {};
                 const { field, message } = numErrors;
                 fieldErrors[field] = message;
                 setErrors(fieldErrors);
-                //alert('valid email enter')
-            }
-            else {
-                console.log('characters looks valid')
-                setPhone(value)
-                setErrors();
+            } else {
+                setErrors({});
+                setyourPhone(value);
             }
         }
 
         if (name === 'yourJobType') {
             if (value === 'Job Type') {
-                // Display required error if no job type is selected
                 const fieldErrors = {};
                 fieldErrors['yourJobType'] = 'Please select a job type';
                 setErrors(fieldErrors);
             } else {
-                // Clear any previous errors if a job type is selected
                 setErrors({});
-                // Update the job type state
                 setyourJobType(value);
-                console.log(value);
             }
         }
+    };
 
-
+    const handleFileChange = e => {
+        setResume(e.target.files[0]);
     };
 
     const handleSubmit = async (e) => {
         e.preventDefault();
         createPost();
-
     };
 
     const resetForm = () => {
@@ -148,62 +128,55 @@ const CareerForms = () => {
         setyourEmail('');
         setyourPhone('');
         setyourJobType('');
+        setResume(null);
     };
 
-    function createPost() {
+    const createPost = () => {
         setErrors({});
-        axios.post(`https://docs.ivistaz.com/wp-json/contact-form-7/v1/contact-forms/239/feedback`,
-            // axios.post(`https://docs.walmartvriddhi.org/wp-json/contact-form-7/v1/contact-forms/239/feedback`,
-            {
-                'yourName': { yourName },
-                'yourEmail': { yourEmail },
-                'yourPhone': { yourPhone },
-                'yourJobType': { yourJobType },
-            }, {
+        const formData = new FormData();
+        formData.append('yourName', yourName);
+        formData.append('yourEmail', yourEmail);
+        formData.append('yourPhone', yourPhone);
+        formData.append('yourJobType', yourJobType);
+        if (resume) {
+            formData.append('resume', resume);
+        }
+
+        axios.post(`https://docs.ivistaz.com/wp-json/contact-form-7/v1/contact-forms/239/feedback`, formData, {
             headers: {
-                "Content-Type": 'multipart/form-data',
+                'Content-Type': 'multipart/form-data',
             }
         })
-
             .then((response) => {
                 setPost(response.data.message);
                 const msg = response.data.status;
-                if (msg == 'mail_sent') {
+                if (msg === 'mail_sent') {
                     setLoading(true);
-                    console.log(msg)
                     resetForm();
-
-                    document.getElementById("yourEmail").value = "";
-                    document.getElementById("yourName").value = "";
-                    document.getElementById("yourPhone").value = "";
-                    document.getElementById("yourJobType").value = "";
-                }
-                else if (msg == 'validation_failed') {
+                } else if (msg === 'validation_failed') {
                     const fieldErrors = {};
-                    const { status, invalid_fields } = response.data;
+                    const { invalid_fields } = response.data;
                     invalid_fields.forEach((field) => {
                         fieldErrors[field.field] = field.message;
                     });
                     setErrors(fieldErrors);
-                    console.log(fieldErrors);
                 }
-                console.log(response.data)
+            })
+            .catch(error => {
+                console.error('There was an error submitting the form!', error);
             });
-    }
+    };
 
     return (
         <Container>
-
             <style>
-                {
-                    `
-                h1.reg-success.mt-4 {
-                    color: green !important;
-                    font-size: 22px !important;
-                    font-weight: 700 !important;
-                }
-                `
-                }
+                {`
+                    h1.reg-success.mt-4 {
+                        color: green !important;
+                        font-size: 22px !important;
+                        font-weight: 700 !important;
+                    }
+                `}
             </style>
 
             <form className="row p-0 z-index-100">
@@ -236,7 +209,7 @@ const CareerForms = () => {
                     {errors && errors.yourEmail && <div className="invalid-feedback">{errors.yourEmail}</div>}
                 </div>
 
-                {/*  Mobile */}
+                {/* Mobile */}
                 <div className="mb-3">
                     <label htmlFor="yourPhone" className="form-label text-black">Phone</label>
                     <input
@@ -266,9 +239,24 @@ const CareerForms = () => {
                             </option>
                         ))}
                     </select>
-                    {/* {errors.yourJobType && <span>{errors.yourJobType}</span>} */}
                     {errors && errors.yourJobType && <div className="invalid-feedback">{errors.yourJobType}</div>}
+                </div>
 
+                {/* Add Resume */}
+                <div className="mb-3">
+                    <label htmlFor="resume" className="form-label text-black">Upload Resume</label>
+                    <input
+                        type="file"
+                        className="form-control"
+                        id="resume"
+                        name="resume"
+                        placeholder=""
+                        onChange={handleFileChange}
+                    />
+                </div>
+                {/* Privacy policy */}
+                <div>
+                    <p className="para-text text-black fs-6">We value your privacy and will handle your information with utmost confidentiality. By submitting this form, you agree to our<Link className='' target='_blank' href='/privacy-policy'> Privacy Policy.</Link></p>
                 </div>
                 {/* Submit Button */}
                 <div className="mt-3 text-center">
@@ -284,6 +272,7 @@ const CareerForms = () => {
                     {loading && <h1 class="reg-success mt-4">{post}</h1>}
                 </div>
             </form>
+
         </Container>
     );
 };
