@@ -21,7 +21,7 @@ function HeroBanner() {
           <Row className="d-flex align-items-start ">
             <Col lg={12} className="mt-5 position-relative  ps-6">
               <div className='timeline-badge5 mt-4'></div>
-              <h1 className="fs-19 fw-bold">
+              <h1 className="fs-19 fw-bold py-4">
                 Industries
               </h1>
               <p className="para-text pe-lg-2 ">Client expectations have taken a quantum leap, compelling individuals to adapt like never before. Brands have relentlessly pursued growth by embracing innovative solutions in Ecommerce development & growth strategies. That’s where we step in. With a passion for creating exceptional experiences and staying ahead of the curve, we’ve mastered our art. And today, we don’t just perform, we outperform.</p>
@@ -59,9 +59,7 @@ function HeroBanner() {
               <div className='timeline-badge5 mt-2'></div>
               <Link className="fs-3 i-link fw-semibold" href="/industries/fashion-accessories">Fashion & Accessories</Link></Col>
           </Row>
-          <div className='custom_height'>
-            {/* FOE ANIMATION HEIGHT  */}
-          </div>
+          
         </article>
       </Container>
 

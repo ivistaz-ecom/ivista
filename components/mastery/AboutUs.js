@@ -9,7 +9,7 @@ function HeroBanner() {
     <>
       <ScrollAnimationIOthers />
       <Container className="bg-white banner w-80 pb-5 mb-4 z-3 p-0" >
-        <Row className="d-flex align-items-start p-0">
+        <Row className="d-flex align-items-start p-0 custom_height">
           <article>
             <div className='timeline2'>
               <Col lg={12} className="mt-5 position-relative">
@@ -36,9 +36,9 @@ function HeroBanner() {
                 </div>
 
               </Col>
-              <Col lg={12} className="mt-5 position-relative">
+              <Col lg={12} className="mt-5 position-relative custom_height_about">
                 <div className='timeline-badge2 mt-lg-2'></div>
-                <div className='ps-6'>
+                <div className='ps-6 '>
                   <h1 className="fs-2 fw-semibold red">In Constant Pursuit of Measurable Outcomes</h1>
                   <p className="para-text pe-lg-2 pe-3">At iVistaz, we believe that diligent work is crucial for achieving results, success, and goals. Our approach involves carefully calculating and curating each step, ensuring that we deliver the desired outcomes that bring you closer to your digital goals.</p>
                 </div>

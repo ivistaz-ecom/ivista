@@ -1047,6 +1047,9 @@ background: rgba(255, 255, 255, 0) !important; */
   text-decoration: none;
   color: #fff;
 }
+.text:hover{
+  color: #ED2023;
+}
 
 .art-text {
   color: #000;
@@ -1678,7 +1681,9 @@ background: rgba(255, 255, 255, 0) !important; */
   color: red;
   /* Color when hovered */
 }
-
+.custom-mastery-text{
+  color: #888282; /* Original color */
+}
 .custom-art-text {
   color: #808080; /* Original color */
 }
@@ -1688,7 +1693,7 @@ background: rgba(255, 255, 255, 0) !important; */
 }
 
 .active-text_mastery {
-  color: #888282; /* Active color (example: red) */
+  color: #000000; /* Active color (example: red) */
 }
 
 .active-text_art {
@@ -1906,6 +1911,13 @@ background: rgba(255, 255, 255, 0) !important; */
   border: none !important;
 }
 
+.chat-bot{
+  position: fixed;
+  top: 25px;
+  z-index: 99;
+  right: 100px;
+}
+
 @media(max-width:767px) {
   .position-relative.p-5.bg-white.h-80vh.w-50.rounded-3.overflow-auto.z-index-100 {
     width: 100% !important;
@@ -2048,7 +2060,7 @@ background: rgba(255, 255, 255, 0) !important; */
 }
 
 /************| Mobile view |************/
-@media screen and (min-width:360px) and (max-width:412px) {
+@media screen and (min-width:360px) and (max-width:712px) {
   
   .demo{
     display: none;

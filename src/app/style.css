@@ -1219,10 +1219,47 @@ p.animation5 {
     opacity: 0;
   }
 
+  .KW_progressContainer1 {
+    left: 10.4%;
+    width: 0.5em;
+    height: 20%;
+    margin-bottom: 0px;
+    position: fixed;
+    bottom: 0px;
+    top: 7%;
+    overflow: hidden;
+    background-color: #fff0;
+    content: "";
+    display: table;
+    table-layout: fixed;
+    z-index: 0 !important;
+  }
+  
+
+  .timeline-badge1 {
+    color: rgb(255, 255, 255);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    line-height: 50px;
+    font-size: 2em;
+    text-align: center;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    background-color: rgb(255, 0, 0);
+    z-index: 100;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    opacity: 0;
+  }
+
   .KW_progressContainer2 {
     left: 10.5%;
     width: 0.5em;
-    height: 100%;
+    height: 25%;
     margin-bottom: 0px;
     position: fixed;
     bottom: 0px;
@@ -1235,7 +1272,7 @@ p.animation5 {
     z-index: 0 !important;
   }
 
-  .KW_progressBar2 {
+  /* .KW_progressBar2 {
     width: 100%;
     float: left;
     height: 20% !important;
@@ -1246,7 +1283,7 @@ p.animation5 {
     -webkit-transition: width .6s ease;
     -o-transition: width .6s ease;
     transition: width .6s ease;
-  }
+  } */
 
   .KW_progressContainer3 {
     left: 11.5%;
@@ -1373,6 +1410,13 @@ p.animation5 {
   .footer-main {
     min-height: 35vh !important;
   }   
+  .custom_height_top{
+    min-height: 6vh !important;
+  }
+  .custom_height_bottom{
+    min-height: 15vh !important;
+  }
+  
 }
 
 /******************** Screen size - 125% ********************/
@@ -1416,7 +1460,7 @@ p.animation5 {
   .KW_progressContainer1 {
     left: 10.5%;
     width: 0.5em;
-    height: 50%;
+    height: 30%;
     margin-bottom: 0px;
     position: fixed;
     bottom: 0px;
@@ -1452,7 +1496,7 @@ p.animation5 {
   .KW_progressContainer2 {
     left: 10.3%;
     width: 0.5em;
-    height: 100%;
+    height: 20%;
     margin-bottom: 0px;
     position: fixed;
     bottom: 0px;
@@ -1465,10 +1509,10 @@ p.animation5 {
     z-index: 0 !important;
   }
 
-  .KW_progressBar2 {
+  /* .KW_progressBar2 {
     width: 100%;
     float: left;
-    height: 20% !important;
+    height: 13% !important;
     z-index: 0;
     max-width: 100%;
     border: 10px dashed rgb(243, 2, 2);
@@ -1476,7 +1520,7 @@ p.animation5 {
     -webkit-transition: width .6s ease;
     -o-transition: width .6s ease;
     transition: width .6s ease;
-  }
+  } */
 
   .KW_progressContainer3 {
     left: 10.5%;
@@ -1650,7 +1694,7 @@ p.animation5 {
   .KW_progressContainer1 {
     left: 13.8%;
     width: 0.5em;
-    height: 50%;
+    height: 35%;
     margin-bottom: 0px;
     position: fixed;
     bottom: 0px;
@@ -1686,11 +1730,11 @@ p.animation5 {
   .KW_progressContainer2 {
     left: 13.8%;
     width: 0.5em;
-    height: 100%;
+    height: 20%;
     margin-bottom: 0px;
     position: fixed;
     bottom: 0px;
-    top: 2%;
+    top: 0%;
     overflow: hidden;
     background-color: #fff0;
     content: "";
@@ -1699,10 +1743,10 @@ p.animation5 {
     z-index: 0 !important;
   }
 
-  .KW_progressBar2 {
+  /* .KW_progressBar2 {
     width: 100%;
     float: left;
-    height: 20% !important;
+    height: 25% !important;
     z-index: 0;
     max-width: 100%;
     border: 10px dashed rgb(243, 2, 2);
@@ -1710,7 +1754,7 @@ p.animation5 {
     -webkit-transition: width .6s ease;
     -o-transition: width .6s ease;
     transition: width .6s ease;
-  }
+  } */
 
   .KW_progressContainer3 {
     left: 14.3%;
@@ -1836,6 +1880,11 @@ p.animation5 {
   .custom_height{
     min-height: 10vh !important;
   }
+
+  .custom_height_service{
+    min-height: 5vh !important;
+   }
+
   .footer-main {
     min-height: 40vh !important;
   }  
@@ -1849,11 +1898,11 @@ p.animation5 {
   .KW_progressContainer {
     left: 15.3%;
     width: 0.5em;
-    height: 60%;
+    height: 50%;
     margin-bottom: 0px;
     position: fixed;
     bottom: 0px;
-    top: -3%;
+    top: 0%;
     overflow: hidden;
     background-color: #fff0;
     content: "";
@@ -1861,6 +1910,18 @@ p.animation5 {
     table-layout: fixed;
     z-index: 0 !important;
   }
+  /* .KW_progressBar {
+    width: 100%;
+    float: left;
+    height: 30% !important;
+    z-index: 99;
+    max-width: 100%;
+    border: 10px dashed rgb(243, 2, 2);
+    background-color: #ff000000;
+    -webkit-transition: width .6s ease;
+    -o-transition: width .6s ease;
+    transition: width .6s ease;
+  } */
 
   .timeline-badge {
     color: rgb(255, 255, 255);
@@ -1871,7 +1932,7 @@ p.animation5 {
     font-size: 2em;
     text-align: center;
     position: absolute;
-    top: 14%;
+    top: 9%;
     left: 15%;
     background-color: rgb(255, 0, 0);
     z-index: 100;
@@ -1934,7 +1995,7 @@ p.animation5 {
   .KW_progressContainer2 {
     left: 17.1%;
     width: 0.5em;
-    height: 100%;
+    height: 22%;
     margin-bottom: 0px;
     position: fixed;
     bottom: 0px;
@@ -1947,7 +2008,7 @@ p.animation5 {
     z-index: 0 !important;
   }
 
-  .KW_progressBar2 {
+  /* .KW_progressBar2 {
     width: 100%;
     float: left;
     height: 20% !important;
@@ -1958,7 +2019,7 @@ p.animation5 {
     -webkit-transition: width .6s ease;
     -o-transition: width .6s ease;
     transition: width .6s ease;
-  }
+  } */
 
   .KW_progressContainer3 {
     left: 17.8%;
@@ -2046,9 +2107,9 @@ p.animation5 {
     opacity: 0;
   }
   .KW_progressContainer5 {
-    left: 17.3%;
+    left: 17.1%;
     width: 0.5em;
-    height: 23%;
+    height: 30%;
     margin-bottom: 0px;
     position: fixed;
     bottom: 0px;
@@ -2070,8 +2131,8 @@ p.animation5 {
     font-size: 2em;
     text-align: center;
     position: absolute;
-    top: 0%;
-    left: 2.3%;
+    top: 5%;
+    left: 2%;
     background-color: rgb(255, 0, 0);
     z-index: 100;
     -webkit-border-radius: 50%;
@@ -2094,9 +2155,19 @@ p.animation5 {
     -o-transition: width .6s ease;
     transition: width .6s ease;
   } */
-  .custom_height{
-    min-height: 20vh !important;
+  .custom_height_top{
+    min-height: 6vh !important;
   }
+  .custom_height_bottom{
+    min-height: 15vh !important;
+  }
+   .custom_height_about{
+  min-height: 20vh !important;
+ }
+
+ .custom_height_service{
+  min-height: 5vh !important;
+ }
 
   /* .footer-main {
     min-height: 45vh !important;
@@ -2511,6 +2582,10 @@ p.animation5 {
     -o-border-radius: 50%;
     opacity: 0;
   }
+  
+  .custom_height{
+    min-height: 20vh !important;
+  }
 
   .footer-main {
     min-height: 35vh !important;
@@ -2580,4 +2655,3 @@ p.animation5 {
 
 }
 
-/* test  */
