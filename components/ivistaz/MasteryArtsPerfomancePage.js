@@ -100,16 +100,17 @@ const MasteryArtsPerfomancePage = () => {
             {isNextSectionVisible &&
                 <article className='custom-container'>
                     <div className='timeline'>
-                        <h6 ref={masteryRef} id='mastery' className='position-relative'>
-                            <div className="timeline-badge"></div>
+                        {/* <h6 ref={masteryRef} id='mastery' className='position-relative'> */}
+                        <h6 id='mastery' className='position-relative'>
+                            <div className="timeline-badge "></div>
                             <Mastery />
                         </h6>
                         <h6 ref={artsRef} id="art">
-                            <div className="timeline-badge"></div>
+                            <div className="timeline-badge my-3"></div>
                             <Arts />
                         </h6>
                         <h6 ref={performanceRef} id="perf">
-                            <div className="timeline-badge"></div>
+                            <div className="timeline-badge my-3"></div>
                             <Performance />
                         </h6>
                     </div>

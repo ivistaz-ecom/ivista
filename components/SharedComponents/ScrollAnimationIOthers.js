@@ -40,7 +40,7 @@ const ScrollAnimationIOthers = () => {
 
         function scrollCheck() {
             const offset = getScrollOffset();
-            const midline = cache.viewport.height * 0.2;
+            const midline = cache.viewport.height * 0.3;
             cache.rects.forEach((rect, i) => {
                 nodesRef.current[i].classList.toggle("active", rect.y - offset.y < midline);
                 myNodesRef.current[i].classList.toggle("animation2", rect.y - offset.y < midline);

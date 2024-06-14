@@ -94,7 +94,7 @@ const WebDesignAndDevelopmentContent = () => {
                         </div>
                         <h1 className='para-text text-red fw-bold pb-5 mt-2 position-relative px-0'>
                             <div class="timeline-badge1"></div>
-                            <Container className='w-80 ps-7'>
+                            <Container className='w-80 ps-7 custom_height_service'>
                                 <Link href="/contact-us" className='red'>Contact us</Link> today to embark on your journey to digital success.
                             </Container>
                         </h1>

@@ -7,15 +7,19 @@ import Footer from '../../../../components/Footer';
 
 function page() {
   return (
+    <>
     <Container fluid className="bg-black pb-5">
       <Header1 />
+    <div className='custom_height_top'></div>
 
       <Container className='w-80 custom-container bg-black position-relative z-3 mb-0'>
         <h1 className="text-offwhite fs-70 fw-bold text-start ps-5 mb-0">MASTERY</h1>
       </Container>
       <Aboutus />
-      <Footer />
+    <div className='custom_height_top'></div>
     </Container>
+       <Footer />
+       </>
   )
 }
 

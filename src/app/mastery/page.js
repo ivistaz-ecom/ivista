@@ -98,8 +98,8 @@ function page() {
           
 
           <Container className="mt-5 margin-left d-flex d-lg-none pb-4 pb-lg-0">
-            <Link href="/art" className="text">ART</Link>
-            <Link href="/performance" className="text mx-lg-5 mx-4">PERFORMANCE</Link>
+           <p> <Link href="/art" className="text">ART</Link></p>
+            <p><Link href="/performance" className="text mx-lg-5 mx-4">PERFORMANCE</Link></p>
           </Container>
         </Container>
       </Container>
