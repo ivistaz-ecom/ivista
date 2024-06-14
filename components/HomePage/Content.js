@@ -50,11 +50,15 @@ const HomePage = () => {
 
   return (
     <>
+
       <Container className="iv-bg z-0" fluid>
         <Row className="d-flex flex-column align-items-center justify-content-between h-100vh" >
           <Col className="d-flex flex-column justify-content-center align-items-center z-index-100">
             <Image src="/images/ivista_logo.svg" width={300} height={80} className="img-fluid" alt="" />
+               {/*Homepage skip Button  */}
+      <Link href="/home" className="demo rounded-3">Skip</Link>
           </Col>
+          
 
           <Col className="d-flex flex-column justify-content-center align-items-center">
             <h2 className="text-white fs-60 fw-bold">WHAT DOES</h2>
@@ -66,7 +70,7 @@ const HomePage = () => {
           </Col>
 
           <Col className="d-flex flex-column justify-content-center align-items-center pb-4 z-0">
-            {/* <div className='icon-scroll mb-1' onClick={handleScroll}> */}
+            {/* <div className='icon-scroll mb-1' onClick={handleScroll}> */} 
             <div className='' onClick={() => setShowSecondSection(true)}>
             </div>
             <div class="scroll-down cursor-pointer" onClick={() => setShowSecondSection(true)}></div>
@@ -90,22 +94,22 @@ const HomePage = () => {
             <h2 className="text-white fs-60 fw-bold"> MEAN TO YOU?</h2>
           </Col>
 
-
+          
           <Col className="d-flex flex-column justify-content-center align-items-center animated-content">
             <Row className="d-flex flex-lg-row flex-column align-items-center justofy-content-end g-3 custom-home-row" >
-              <Col className="overflow-hidden blurb-ripple-out-wrap w-100 bg-danger" data-aos="fade-up">
+              <Col className="overflow-hidden blurb-ripple-out-wrap w-75 bg-danger" data-aos="fade-up">
                 <Link href="/sales" className="btn h-btn blurb-ripple-out d-flex flex-row gap-2 justify-content-center">
                   <Image src="/mainpage/online_sale.svg" alt="" width={30} height={30} />
                   <span>Online Sales</span>
                 </Link>
               </Col>
-              <Col className="overflow-hidden blurb-ripple-out-wrap">
+              <Col className="overflow-hidden blurb-ripple-out-wrap w-75">
                 <Link href="/leads" className="btn h-btn blurb-ripple-out  d-flex flex-row gap-2 justify-content-center" >
                   <Image src="/mainpage/leads.svg" alt="" width={30} height={30} />
                   <span>Leads</span>
                 </Link>
               </Col>
-              <Col className="overflow-hidden blurb-ripple-out-wrap" >
+              <Col className="overflow-hidden blurb-ripple-out-wrap w-75" >
                 <Link href="/traffic" className="btn h-btn blurb-ripple-out d-flex flex-row gap-2 justify-content-center">
                   <Image src="/mainpage/traffic.svg" alt="" width={30} height={30} />
                   <span>Traffic</span>
@@ -114,22 +118,24 @@ const HomePage = () => {
             </Row>
 
             <Row className="d-flex flex-lg-row flex-column align-items-center g-3 pt-3 custom-home-row">
-              <Col className="overflow-hidden blurb-ripple-out-wrap" >
+              <Col className="overflow-hidden blurb-ripple-out-wrap w-75" >
                 <Link href="/keyword-ranking" className="btn h1-btn blurb-ripple-out d-flex flex-row gap-2 justify-content-center">
                   <Image src="/mainpage/keyword.svg" alt="" width={30} height={30} />
                   <span>Keyword Ranking</span>
                 </Link>
               </Col>
-              <Col className="overflow-hidden blurb-ripple-out-wrap d-flex flex-row gap-2 justify-content-center">
+              <Col className="overflow-hidden blurb-ripple-out-wrap w-75 d-flex flex-row gap-2 justify-content-center">
                 <Link href="/engagement" className="btn h1-btn blurb-ripple-out d-flex flex-row gap-2 justify-content-center">
                   <Image src="/mainpage/engagement.svg" alt="" width={30} height={30} />
                   <span>Engagement</span>
                 </Link>
               </Col>
             </Row>
+
           </Col>
         </Row>
       </Container>
+
     </>
   )
 }
