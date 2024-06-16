@@ -69,7 +69,7 @@ const HomePage = () => {
             <h2 className="text-white fs-60 fw-bold"> MEAN TO YOU?</h2>
           </Col>
 
-          <Col className="d-flex flex-column justify-content-center align-items-center pb-4 z-0">
+          <Col className="d-flex flex-column justify-content-center align-items-center  z-0">
             {/* <div className='icon-scroll mb-1' onClick={handleScroll}> */} 
             <div className='' onClick={() => setShowSecondSection(true)}>
             </div>
@@ -78,7 +78,7 @@ const HomePage = () => {
         </Row>
       </Container>
 
-      <Container className="iv-bg  h-100vh fixed-top-custom p-0 z-3" fluid style={{ display: showSecondSection ? 'block' : 'none' }} ref={secondSectionRef}>
+      <Container className="iv-bg h-100vh fixed-top-custom p-0 z-3" fluid style={{ display: showSecondSection ? 'block' : 'none' }} ref={secondSectionRef}>
         <Row className="d-flex flex-column align-items-center justify-content-between h-100vh">
           <Col className="d-flex flex-column justify-content-center align-items-center p-0">
             {/* <Image src="/images/robot_1.svg" width={200} height={100} alt="" /> */}
