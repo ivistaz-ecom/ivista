@@ -22,7 +22,19 @@ const CollectChatScript = () => {
     };
   }, []);
 
-  return null; // This component doesn't render anything visible
+  return (
+    <>
+      <style>
+        {`
+          #chat-bot-launcher-container.chat-bot-avatar-launcher, #chat-bot-launcher-container.chat-bot-launcher-notext {
+            bottom: 15px;
+            top: 70%;
+          }
+        `}
+      </style>
+      {/* This component doesn't render anything visible */}
+    </>
+  );
 };
 
 export default CollectChatScript;
