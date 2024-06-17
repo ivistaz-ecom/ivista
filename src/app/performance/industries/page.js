@@ -24,7 +24,7 @@ function page() {
 
       <SeoComponents title={title} description={description} path={path} metaImage={metaImage} />
       <Header1 />
-      <Container fluid className="iv-bg pb-5 border-bottom z-3 p-0">
+      <Container fluid className="iv-bg border-bottom z-3 p-0">
         
         <div className='custom_height_per_top'></div>
         <Container className="w-80 custom-container position-relative iv-bg z-3">
