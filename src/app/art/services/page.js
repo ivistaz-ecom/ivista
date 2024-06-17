@@ -31,13 +31,14 @@ function page() {
         <Header1 />
         <img src="/images/h-icon.svg" className="header-icon " />
         <Container fluid className='bg-white z-3 p-0'>
+        <div className='custom_height_art_top'></div>
           <article>
             <div className='timeline4'>
               <Container className="w-80 custom-container position-relative bg-white">
-                <h1 className="fs-70 fw-bold ps-6">ART</h1>
+                <h1 className="fs-80 fw-bold ps-6">ART</h1>
               </Container>
 
-              <Container className="bg-black banner w-80 pb-5 z-3" >
+              <Container className="bg-black banner w-80 pb-5 mb-5 z-3" >
                 <Row className="d-flex align-items-start">
                   <Col lg={12} className="mt-5 position-relative">
                     <div className=' position-relative'>
@@ -116,6 +117,7 @@ function page() {
                   </Col>
                 </Row>
               </Container>
+    <div className='custom_height_art_bottom'></div>
             </div>
           </article>
         </Container>
