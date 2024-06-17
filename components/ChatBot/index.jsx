@@ -1,7 +1,7 @@
 // components/CollectChatScript.js
 import { useEffect } from 'react';
 
-const CollectChatScript = () => {
+const CollectChatScript = () => { 
   useEffect(() => {
     // Load Collect.chat script
     (function(w, d) {
@@ -27,9 +27,11 @@ const CollectChatScript = () => {
       <style>
         {`
           #chat-bot-launcher-container.chat-bot-avatar-launcher, #chat-bot-launcher-container.chat-bot-launcher-notext {
-            bottom: 15px;
-            top: 70%;
+            
+            top: 78%;
           }
+
+          
         `}
       </style>
       {/* This component doesn't render anything visible */}

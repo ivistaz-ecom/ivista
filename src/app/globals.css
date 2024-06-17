@@ -1682,7 +1682,7 @@ background: rgba(255, 255, 255, 0) !important; */
   /* Color when hovered */
 }
 .custom-mastery-text{
-  color: #888282; /* Original color */
+  color: #000000; /* Original color */
 }
 .custom-art-text {
   color: #808080; /* Original color */
@@ -1693,14 +1693,14 @@ background: rgba(255, 255, 255, 0) !important; */
 }
 
 .active-text_mastery {
-  color: #000000; /* Active color (example: red) */
+  color:#808080 ; /* Active color */
 }
 
 .active-text_art {
-  color: #ffffff; /* Active color (example: red) */
+  color: #ffffff; /* Active color */
 }
 .active-text_performance {
-  color: #FF0000; /* Active color (example: red) */
+  color: #FF0000; /* Active color */
 }
 
 

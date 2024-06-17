@@ -8,19 +8,19 @@ import Footer from '../../../../components/Footer';
 function page() {
   return (
 
-
-    <Container fluid className="bg-black pb-5">
+    <>
       <Header1 />
-      <Container className='w-80 custom-container bg-black position-relative z-3 mb-0'>
-        <h1 className="text-offwhite fs-70 fw-bold text-start ps-5 mb-0">MASTERY</h1>
+      <Container fluid className="bg-black pb-5">
+        <div className='custom_height_top'></div>
+        <Container className='w-80 custom-container bg-black position-relative z-3 mb-0'>
+          <h1 className="text-offwhite fs-70 fw-bold text-start ps-5 mb-0">MASTERY</h1>
+        </Container>
+        <HomeBanner />
+        {/*ADDING CUSTOM HEIGHT FOR DOT LINE  */}
+        <div className='custom_height_bottom'></div>
       </Container>
-      <HomeBanner /> 
-      <div className='custom_height'>
-          {/* FOR DOT LINE  */}
-        </div>
       <Footer />
-    </Container>
-
+    </>
   )
 }
 
