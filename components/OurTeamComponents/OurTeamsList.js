@@ -118,11 +118,13 @@ const OurTeamsList = () => {
                                     ))}
 
                                     {/* ADDITIONAL STATIC CARD FOR HIRING */}
-                                    <div className="card custom-card rounded-4 m-3" >
-                                        <div className="card-body text-white">
-                                            <p className="card-title d-flex flex-column align-items-center fs-3"><Link className='text-white text-line
-                                            ' target='_blank' href={"/careers"}>Want to claim this spot? We’re hiring</Link></p>
-
+                                    <div className="col-lg-3 d-flex flex-column p-3">
+                                        <div className="d-flex flex-column h-100 p-3 rounded-4 justify-content-center align-items-center text-white team-card-h">
+                                            <p className="fs-3 mb-0 text-center">
+                                                <Link className='text-white text-decoration-none' target='_blank' href={"/careers"}>
+                                                    Want to claim this spot? We’re hiring
+                                                </Link>
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
@@ -198,25 +200,29 @@ const OurTeamsList = () => {
                                 <div className='d-flex flex-lg-row flex-column flex-wrap'>
                                     {designData.map((team) => (
                                         <div key={team.id} className='col-lg-3 d-flex flex-column p-3 gap-2'>
-                                            <div className='image-container'>
-                                                <Image src={team.acf.profile_image.url}
-                                                    alt={team.title.rendered}
-                                                    fluid
-                                                    className='rounded-4 z-1'
-                                                />
-                                                <div class="overlay"></div>
-                                            </div>
-                                            <div>
-                                                <h4 className='text-white mb-0 '>{team.title.rendered}</h4>
-                                            </div>
+                                            
+                                                <div className='image-container'>
+                                                    <Image src={team.acf.profile_image.url}
+                                                        alt={team.title.rendered}
+                                                        fluid
+                                                        className='rounded-4 z-1'
+                                                    />
+                                                </div>
+                                                <div>
+                                                    <h4 className='text-white mb-0'>{team.title.rendered}</h4>
+                                                </div>
+                                            
                                         </div>
                                     ))}
 
                                     {/* ADDITIONAL STATIC CARD FOR HIRING */}
-                                    <div class="card custom-card rounded-4 m-3" >
-                                        <div class="card-body text-white">
-                                            <p class="card-title d-flex justify-content-center fs-3"><Link className='text-white text-line
-                                            ' target='_blank' href={"/careers"}>Want to claim this spot? We’re hiring</Link></p>
+                                    <div className="col-lg-3 d-flex flex-column p-3">
+                                        <div className="d-flex flex-column h-100 p-3 rounded-4 justify-content-center align-items-center text-white team-card-h">
+                                            <p className="fs-3 mb-0 text-center">
+                                                <Link className='text-white text-decoration-none' target='_blank' href={"/careers"}>
+                                                    Want to claim this spot? We’re hiring
+                                                </Link>
+                                            </p>
                                         </div>
                                     </div>
                                 </div>

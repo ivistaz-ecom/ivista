@@ -1324,7 +1324,7 @@ p.animation5 {
   .KW_progressContainer2 {
     left: 10.5%;
     width: 0.5em;
-    height: 25%;
+    height: 30%;
     margin-bottom: 0px;
     position: fixed;
     bottom: 0px;
@@ -1448,7 +1448,7 @@ p.animation5 {
     font-size: 2em;
     text-align: center;
     position: absolute;
-    top:10%;
+    top: 10%;
     left: 2.3%;
     background-color: rgb(255, 0, 0);
     z-index: 100;
@@ -1465,23 +1465,29 @@ p.animation5 {
     height: 70% !important;
     z-index: 99;
     max-width: 100%;
-    border: 10px dashed rgb(243, 2, 2);
+    border: 10px dashed #f30202;
     background-color: #ff000000;
-    ;
     -webkit-transition: width .6s ease;
     -o-transition: width .6s ease;
     transition: width .6s ease;
   }
 
+  /* Team Card Height */
+  .team-card-h {
+    height: 350px !important;
+    width: 230px;
+    background-color: #f30202;
+  }
+
   /* .footer-main {
     min-height: 55vh !important;
   }    */
-  /* .custom_height_top{
+  .custom_height_top{
     min-height: 6vh !important;
-  } */
-  /* .custom_height_bottom{
+  }
+  .custom_height_bottom{
     min-height: 10vh !important;
-  } */
+  }
 
 }
 
@@ -1662,7 +1668,7 @@ p.animation5 {
     opacity: 0;
   }
 
-   .KW_progressContainer5 {
+  .KW_progressContainer5 {
     left: 9.6%;
     width: 0.5em;
     height: 40%;
@@ -1711,11 +1717,12 @@ p.animation5 {
     -o-transition: width .6s ease;
     transition: width .6s ease;
   }
-  .custom_height_per_top{
+
+  .custom_height_per_top {
     min-height: 7vh !important;
   }
 
-  .custom_height_per_bottom{
+  .custom_height_per_bottom {
     min-height: 5vh !important;
   }
 
@@ -1744,6 +1751,13 @@ p.animation5 {
 
   .custom_height_art_bottom {
     min-height: 3vh !important;
+  }
+
+  /* Team Card Height */
+  .team-card-h {
+    height: 425px !important;
+    width: 300px;
+    background-color: #f30202;
   }
 }
 
@@ -1975,11 +1989,12 @@ p.animation5 {
     -o-transition: width .6s ease;
     transition: width .6s ease;
   }
-  .custom_height_per_top{
+
+  .custom_height_per_top {
     min-height: 7vh !important;
   }
 
-  .custom_height_per_bottom{
+  .custom_height_per_bottom {
     min-height: 10vh !important;
   }
 
@@ -2005,6 +2020,12 @@ p.animation5 {
     min-height: 40vh !important;
   }   */
 
+  /* Team Card Height */
+  .team-card-h {
+    height: 440px !important;
+    width: 300px;
+    background-color: #f30202;
+  }
 }
 
 /******************** Screen size - 100% ********************/
@@ -2251,7 +2272,7 @@ p.animation5 {
     font-size: 2em;
     text-align: center;
     position: absolute;
-    top:10%;
+    top: 10%;
     left: 2%;
     background-color: rgb(255, 0, 0);
     z-index: 100;
@@ -2261,11 +2282,12 @@ p.animation5 {
     -o-border-radius: 50%;
     opacity: 0;
   }
-  .custom_height_per_top{
+
+  .custom_height_per_top {
     min-height: 7vh !important;
   }
 
-  .custom_height_per_bottom{
+  .custom_height_per_bottom {
     min-height: 15vh !important;
   }
 
@@ -2314,6 +2336,13 @@ p.animation5 {
   /* .footer-main {
     min-height: 45vh !important;
   }    */
+
+  /* Team Card Height */
+  .team-card-h {
+    height: 440px !important;
+    width: 300px;
+    background-color: #f30202;
+  }
 }
 
 /******************** Screen size - 90% ********************/
@@ -2570,6 +2599,13 @@ p.animation5 {
 
   .custom_height_bottom {
     min-height: 7vh !important;
+  }
+
+  /* Team Card Height */
+  .team-card-h {
+    height: 440px !important;
+    width: 300px;
+    background-color: #f30202;
   }
 
 }
