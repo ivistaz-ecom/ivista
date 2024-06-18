@@ -85,7 +85,7 @@ const ContactForm = () => {
                 setyourCompany(value);
                 break;
             case 'yourMessage':
-                setyourMessage(value);
+                // setyourMessage(value);
                 break;
             default:
                 break;
@@ -119,7 +119,7 @@ const ContactForm = () => {
                 yourEmail,
                 yourPhone,
                 yourCompany,
-                yourMessage
+                // yourMessage
             }, {
                 headers: {
                     "Content-Type": 'multipart/form-data',

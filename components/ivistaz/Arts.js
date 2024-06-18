@@ -35,7 +35,7 @@ function Art() {
 
   return (
     <>
-      <ScrollAnimation />
+      {/* <ScrollAnimation /> */}
       <Container className="bg-black z-0 ps-lg-5" fluid>
         <Container className="w-80 py-5 mb-5 ps-5" ref={artRef} id="art">
           <Container className='p-0'>
