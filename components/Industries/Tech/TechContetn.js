@@ -26,7 +26,7 @@ const TechContetn = () => {
 
                         <div className='position-relative '>
                             <div className='timeline-badge3 mt-5'></div>
-                            <Container className="iv-bg w-80 banner pt-5 pe-5 pb-5 ps-7">
+                            <Container className="iv-bg w-80 banner pt-5 pb-5 ps-7">
                                 <p className='fw-bold text-white fs-3'> Our digital marketing services for Tech and IT brands include:</p>
                                 <ul>
                                     {/* <li className='industry-bullet'>

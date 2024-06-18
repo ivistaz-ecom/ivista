@@ -25,7 +25,7 @@ const AutoMobileContent = () => {
 
                             <div className='position-relative'>
                                 <div className='timeline-badge3 mt-5'></div>
-                                <Container className="iv-bg w-80 banner pt-5 pb-5 pe-5 ps-7 ">
+                                <Container className="iv-bg w-80 banner pt-5 pb-5 ps-7 ">
                                     <p className="fw-bold text-white fs-4">
                                         Your focus would be on strengthening your market share in India by growing your sales and dealer network through digital marketing for the automotive industry. Through our online marketing service for automobile companies, iVistaz can support you in this journey and help
                                     </p>
