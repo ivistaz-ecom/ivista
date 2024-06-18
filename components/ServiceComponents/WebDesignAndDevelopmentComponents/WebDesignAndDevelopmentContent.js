@@ -17,7 +17,7 @@ const WebDesignAndDevelopmentContent = () => {
                             <div class="timeline-badge1"></div>
                             <Container className='w-80 ps-7'>
                                 <p className="text-black para-text fw-semibold pe-lg-0 pe-3">
-                                    If your website could be more engaging, intuitive, and visually appealing, you're losing potential customers to competitors. That is why a professionally designed website by a top website designing company is crucial to bring back visitors for meaningful engagement. </p>
+                                    If your website is not engaging, intuitive, and visually appealing, you're losing potential customers to competitors. That is why a professionally designed website by a top website designing company is crucial to bring back visitors for meaningful engagement. </p>
 
                                 <p className="text-black para-text pe-lg-0 pe-3">
                                     Your brand&apos;s reputation hinges on your digital footprint. The website and mobile app serve as the primary showcases for your brand, products, expertise, and distinctiveness.
@@ -75,6 +75,10 @@ const WebDesignAndDevelopmentContent = () => {
                                     </li>
 
                                     <li className="text-black para-text mb-0">
+                                        Next Js
+                                    </li>
+
+                                    <li className="text-black para-text mb-0">
                                         React
                                     </li>
 
@@ -83,11 +87,15 @@ const WebDesignAndDevelopmentContent = () => {
                                     </li>
 
                                     <li className="text-black para-text mb-0">
-                                        Spotify
+                                        Shopify
                                     </li>
 
                                     <li className="text-black para-text">
-                                        PHP
+                                        PHP Framework
+                                    </li>
+
+                                    <li className="text-black para-text">
+                                        HTML (Bootstrap, Tailwind css, MUI, Shadcn)
                                     </li>
                                 </ul>
                             </Container>

@@ -36,7 +36,7 @@ const AutoMobileContent = () => {
                                             </p>
                                         </li>
                                         <li className='industry-bullet'>
-                                            <p className="text-white para-text"> To increase your<span className='fw-bold'>  qualified leads and sales</span> conversion ratios for you and for your dealers
+                                            <p className="text-white para-text">You to increase your<span className='fw-bold'>  qualified leads and sales</span> conversion ratios for you and for your dealers
                                             </p>
                                         </li>
                                     </ul>

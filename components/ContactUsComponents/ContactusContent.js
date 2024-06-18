@@ -29,7 +29,7 @@ const ContactusContent = () => {
 
                     <Col lg={6} className="d-flex flex-column justify-content-center iv-bg my-5 rounded-4 h-50">
                         <Container className='contact'>
-                            <h1 className="contact-head pb-4">iVistaz Ecom Services Pvt Ltd</h1>
+                            <h1 className="contact-head pb-4">iVistaz Ecom Services Pvt. Ltd.</h1>
                             <p className="contact-text text-center">Business Enquiries</p>
                             <p className="contact-text text-center">+91 80 41966600</p>
                             <p className="contact-text text-center" ><Link className='text-white' href={"mailto: reach@ivistasolutions.com"}>reach@ivistasolutions.com</Link></p>

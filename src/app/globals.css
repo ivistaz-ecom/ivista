@@ -1973,8 +1973,6 @@ background: rgba(255, 255, 255, 0) !important; */
   left: 0;
   right: 0;
   z-index: 1000;
-  /* Adjust z-index as needed */
-  /* Adjust background color as needed */
 }
 
 .animated-content {

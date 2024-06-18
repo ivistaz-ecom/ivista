@@ -25,22 +25,39 @@ const NgosContent = () => {
                         <div className='position-relative '>
                             <div className='timeline-badge3 mt-5'></div>
                             <Container className="iv-bg w-80 banner pt-5 pb-5 pe-5 ps-7">
-                                <p className="fw-bold text-white fs-3 para-text">Our digital marketing services for nonprofit organizations will help your audience understand your niche and help create awareness by:</p>
+                                <p className="fw-bold text-white fs-3 para-text">Our digital marketing services for nonprofit organizations will help your audience understand your niche and help create awareness for your projects:</p>
                                 <ul>
+                                    {/* <li className='industry-bullet'>
+                                        <p className="text-white para-text">Providing end-to-end services that will bring in more attention from the identified target group</p>
+                                    </li> */}
                                     <li className='industry-bullet'>
-                                        <p className="text-white para-text">Providing end-to-end services that will bring in more attention from the identified target group.</p>
+                                        <p className="text-white para-text">Evaluating or reframing the current positioning, message, and narrative for value creation</p>
                                     </li>
                                     <li className='industry-bullet'>
-                                        <p className="text-white para-text">Evaluating or reframing the current positioning, message, and narrative for value creation.</p>
+                                        <p className="text-white para-text">Generating traction for your website and offerings with captivating content and SEO</p>
                                     </li>
                                     <li className='industry-bullet'>
-                                        <p className="text-white para-text">Generating traction for your website and offerings with captivating content and SEO.</p>
+                                        <p className="text-white para-text">Generating new and repeat visitors for your website and improving engagement with content that resonates</p>
                                     </li>
                                     <li className='industry-bullet'>
-                                        <p className="text-white para-text">Generating enquiries for your projects with email marketing</p>
+                                        <p className="text-white para-text">Crafting SEO strategies to improve your search engine rankings and drive relevant traffic to your website</p>
+                                    </li>
+                                    <li className='industry-bullet'>
+                                        <p className="text-white para-text">Email marketing to help generate interest from relevant resource and funding organizations for your social impact projects</p>
+                                    </li>
+                                    <li className='industry-bullet'>
+                                        <p className="text-white para-text">Targeted campaigns on Google and Meta to generate outcomes for your CSR projects</p>
+                                    </li>
+                                    <li className='industry-bullet'>
+                                        <p className="text-white para-text">Web design and re-design to create a seamless UX/UI and help deliver an intuitive user experience</p>
+                                    </li>
+                                    <li className='industry-bullet'>
+                                        <p className="text-white para-text">
+                                            End-to-end social media management including content, design, and engagement analysis
+                                        </p>
                                     </li>
                                 </ul>
-                                <p className="text-white ">We specialize in social media marketing for non-profit organizations to enhance your social presence and engagement. Additionally, our digital marketing for NGOs ensures your campaigns are effective and far-reaching. For those needing a stronger online presence, our web design for NGOs will create a user-friendly and impactful website to support your mission.</p>
+                                {/* <p className="text-white ">We specialize in social media marketing for non-profit organizations to enhance your social presence and engagement. Additionally, our digital marketing for NGOs ensures your campaigns are effective and far-reaching. For those needing a stronger online presence, our web design for NGOs will create a user-friendly and impactful website to support your mission.</p> */}
                                 <Container className="">
                                     <Col className='d-flex flex-column align-items-center d-none d-lg-flex'>
                                         <Link className="btn-14 z-0" href="/contact-us">Contact Us</Link>

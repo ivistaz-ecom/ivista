@@ -53,7 +53,18 @@ const ContentDevelopment = () => {
                                     Long-form content:
                                 </p>
                                 <p className="text-black para-text">
-                                    Blogs. Articles. White papers. eBooks. POVs. Case studies. Product-solution pages. Campaign landing pages. Newsletter content. Video content.
+                                    <ul>
+                                        <li>Blogs</li>
+                                        <li>Articles</li>
+                                        <li>White papers</li>
+                                        <li>eBooks</li>
+                                        <li>POVs</li>
+                                        <li>Case studies</li>
+                                        <li>Product-solution pages</li>
+                                        <li>Campaign landing pages</li>
+                                        <li>Newsletter content</li>
+                                        <li>Video content</li>
+                                    </ul>
                                 </p>
 
                                 <p className='text-red fw-bold para-text'>
@@ -61,11 +72,20 @@ const ContentDevelopment = () => {
                                 </p>
 
                                 <p className="text-black para-text">
-                                    A+ content. e-commerce content and product descriptions. Quora content. Social media content, including short videos. Infographic development. Content for email marketing. Content for paid marketing for search and social.
+                                    <ul>
+                                        <li>A+ content</li>
+                                        <li>e-commerce content</li>
+                                        <li>Product descriptions</li>
+                                        <li>Quora content</li>
+                                        <li>Social media content including short videos</li>
+                                        <li>Infographic development</li>
+                                        <li>Content for email marketing</li>
+                                        <li>Content for paid marketing for search and social</li>
+                                    </ul>
                                 </p>
 
                                 <p className='text-red fw-bold para-text'>
-                                    Industries:
+                                    Industry-specific content:
                                 </p>
 
                                 <p className="text-black para-text">

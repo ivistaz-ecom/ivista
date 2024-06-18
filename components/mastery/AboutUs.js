@@ -29,7 +29,7 @@ function HeroBanner() {
               <Col lg={12} className="mt-5 position-relative">
                 <div className='timeline-badge2 mt-lg-2'></div>
                 <div className='ps-6'>
-                  <h1 className="fs-2 fw-semibold red">Focusing on Learning and Training</h1>
+                  <h1 className="fs-2 fw-semibold red">Focus on Learning and Training</h1>
                   <p className="para-text pe-lg-2 pe-3">
                     Over the years, we have realized that learning and training are key to understanding and navigating the complex intricacies of digital marketing. Beyond the requisite certifications, we focus on continuous upskilling and training sessions for our teams across departments.
                   </p>
@@ -40,7 +40,9 @@ function HeroBanner() {
                 <div className='timeline-badge2 mt-lg-2'></div>
                 <div className='ps-6 '>
                   <h1 className="fs-2 fw-semibold red">In Constant Pursuit of Measurable Outcomes</h1>
-                  <p className="para-text pe-lg-2 pe-3">At iVistaz, we believe that diligent work is crucial for achieving results, success, and goals. Our approach involves carefully calculating and curating each step, ensuring that we deliver the desired outcomes that bring you closer to your digital goals.</p>
+                  <p className="para-text pe-lg-2 pe-3">
+                    At iVistaz, we focus on measurable outcomes for our clients. Our meticulous approach involves crafting each step and backing our strategies with rigorous data analysis to ensure that we deliver the outcomes that propel you towards your goals. We prioritize transparency and accountability, providing detailed weekly, monthly, and quarterly reports to evaluate the effectiveness of our campaigns and guide continuous improvement. What our clients love about us is that we work on a performance-focused model for outcome-based campaigns, which means we get paid only we when deliver on results.
+                  </p>
                 </div>
               </Col>
             </div>

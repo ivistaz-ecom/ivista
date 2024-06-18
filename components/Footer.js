@@ -81,7 +81,7 @@ function Footer() {
                                         Privacy Policy
                                     </Link>
                                 </li>
-                              
+
                                 {/* <li>
                                     <Link href="#" className='text-decoration-none text-white custom-footer-font'>
                                         Statement
@@ -253,10 +253,10 @@ function Footer() {
             </Container>
             <Container className="bg-black pt-1 pb-1 z-2" fluid>
                 <Container className="text-center copyright">
-                    <p className='mb-0'>© {currentYear} iVistaz Ecom Services Pvt Ltd</p>
+                    <p className='mb-0' style={{ fontSize: '17px' }}>© {currentYear} iVistaz Ecom Services Pvt Ltd</p>
                 </Container>
             </Container>
-            <CollectChatScript/>
+            <CollectChatScript />
         </>
     )
 }

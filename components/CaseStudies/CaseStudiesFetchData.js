@@ -25,7 +25,8 @@ const CaseStudiesFetchData = () => {
                                 </div>
                                 <div className='d-flex flex-column flex-grow-1'>
                                     <div>
-                                        <p className="card-text text-dark fs-4 p-3">Increase in Ranking Keywords and 275+ on Page One: SEO Victory for a Global Financial Services Giant</p>
+                                        <p className="card-text text-dark fs-4 p-3 mb-0">Increase in Keyword Ranking with 275+ Keywords on Page One</p>
+                                        <p className="card-text text-dark fs-4 px-3">SEO Victory for a Global Financial Services Giant</p>
                                     </div>
                                 </div>
                                 <div className='py-5 pb-0'>
@@ -51,7 +52,8 @@ const CaseStudiesFetchData = () => {
                                 </div>
                                 <div className='d-flex flex-column flex-grow-1'>
                                     <div>
-                                        <p className="card-text text-dark fs-4 p-3">Revenue Growth Every 3 Years for Leading Jewelry Brand: Strategic Success Story</p>
+                                        <p className="card-text text-dark fs-4 p-3">Revenue Growth Every 3 <br /> Years  </p>
+                                        <p className="card-text text-dark fs-4 px-3">A Strategic Success Story for a Leading Jewelry Brand</p>
                                     </div>
                                 </div>
                                 <div className='py-5 pb-0'>
@@ -77,7 +79,10 @@ const CaseStudiesFetchData = () => {
                                 </div>
                                 <div className='d-flex flex-column flex-grow-1'>
                                     <div>
-                                        <p className="card-text text-dark fs-4 p-3">Lead Conversion and Cost per Lead Reduced to Rs.1,292: Luxury Automobile Dealership Optimization</p>
+                                        <p className="card-text text-dark fs-4 p-3">
+                                            Lead Conversion and Cost per Lead Reduced to Rs.1,292 </p>
+                                        <p className="card-text text-dark fs-4 px-3">Cost optimization for a Luxury Automobile Dealership
+                                        </p>
                                     </div>
                                 </div>
                                 <div className='py-5 pb-0'>
@@ -105,7 +110,9 @@ const CaseStudiesFetchData = () => {
                                 </div>
                                 <div className='d-flex flex-column flex-grow-1'>
                                     <div>
-                                        <p className="card-text text-dark fs-4 p-3">Conversion Rate from 0.8% in 3 Months: E-commerce and Mobile Engagement Success for a Top Beauty Brand</p>
+                                        <p className="card-text text-dark fs-4 p-3">Conversion Rate from 0.8% in 3 Months</p>
+                                        <p className="card-text text-dark fs-4 px-3"> E-commerce and Mobile Engagement Success
+                                            For a Top Beauty Brand</p>
                                     </div>
                                 </div>
                                 <div className='py-5 pb-0'>
@@ -131,7 +138,9 @@ const CaseStudiesFetchData = () => {
                                 </div>
                                 <div className='d-flex flex-column flex-grow-1'>
                                     <div>
-                                        <p className="card-text text-dark fs-4 p-3">Conversion Rate from 367 Organizations: B2B Email Marketing Success</p>
+                                        <p className="card-text text-dark fs-4 p-3 mb-5">Lead Conversion Rate </p>
+
+                                        <p className="card-text text-dark fs-4 px-3">   B2B Email Marketing Success for a Conslutling Orginaztion in the Social Impact Space </p>
                                     </div>
                                 </div>
                                 <div className='py-5 pb-0'>
@@ -157,7 +166,8 @@ const CaseStudiesFetchData = () => {
                                 </div>
                                 <div className='d-flex flex-column flex-grow-1'>
                                     <div>
-                                        <p className="card-text text-dark fs-4 p-3">Unique Leads in 12 Months: Online Presence and Traffic Boost for NGOs by a Multinational Retail Corporation</p>
+                                        <p className="card-text text-dark fs-4 p-3 mb-5">Unique Leads in 12 Months </p>
+                                        <p className="card-text text-dark fs-4 px-3"> For a Global Retail Corporation's MSME CSR Project</p>
                                     </div>
                                 </div>
                                 <div className='py-5 pb-0'>
@@ -185,7 +195,8 @@ const CaseStudiesFetchData = () => {
                                 </div>
                                 <div className='d-flex flex-column flex-grow-1'>
                                     <div>
-                                        <p className="card-text text-dark fs-4 p-3">Increase in Direct Online Bookings and 30% Higher Revenue: Digital Strategy Success for a Premier Hotel Chain</p>
+                                        <p className="card-text text-dark fs-4 p-3">Increase in Direct Online Bookings and 30% Higher Revenue</p>
+                                        <p className="card-text text-dark fs-4 px-3">Digital Strategy Success for a Luxury Hotel Chain</p>
                                     </div>
                                 </div>
                                 <div className='py-5 pb-0'>
@@ -211,7 +222,8 @@ const CaseStudiesFetchData = () => {
                                 </div>
                                 <div className='d-flex flex-column flex-grow-1'>
                                     <div>
-                                        <p className="card-text text-dark fs-4 p-3">Direct Online Bookings and Doubled Average Rate of Return: Strategic Digital Marketing Success for Top Hotel Chain</p>
+                                        <p className="card-text text-dark fs-4 p-3">Direct Online Bookings and Doubled Average Rate of Return</p>
+                                        <p className="card-text text-dark fs-4 px-3"> Strategic Digital Marketing Success for a Top Hotel Chain</p>
                                     </div>
                                 </div>
                                 <div className='py-5 pb-0'>
@@ -237,7 +249,8 @@ const CaseStudiesFetchData = () => {
                                 </div>
                                 <div className='d-flex flex-column flex-grow-1'>
                                     <div>
-                                        <p className="card-text text-dark fs-4 p-3">Direct Online Bookings and 32% Boost in Wedding and MIC Leads: Hotel Chain Digital Marketing Success</p>
+                                        <p className="card-text text-dark fs-4 p-3">Direct Online Bookings and 32% Boost in Wedding and MICE Leads</p>
+                                        <p className="card-text text-dark fs-4 px-3"> Hotel Chain Digital Marketing Success</p>
                                     </div>
                                 </div>
                                 <div className='py-5 pb-0'>
