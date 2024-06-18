@@ -15,7 +15,7 @@ const CareerForms = () => {
     const [yourEmail, setyourEmail] = React.useState('');
     const [yourPhone, setyourPhone] = React.useState('');
     const [yourJobType, setyourJobType] = React.useState('');
-    const [resume, setResume] = React.useState(null);
+    const [yourFile, setyourFile] = React.useState(null);
     const [loading, setLoading] = useState(false);
 
     const options = [
@@ -129,7 +129,7 @@ const CareerForms = () => {
         setyourEmail('');
         setyourPhone('');
         setyourJobType('');
-        setResume(null);
+        setyourFile(null);
     };
 
     const createPost = () => {
@@ -139,8 +139,8 @@ const CareerForms = () => {
         formData.append('yourEmail', yourEmail);
         formData.append('yourPhone', yourPhone);
         formData.append('yourJobType', yourJobType);
-        if (resume) {
-            formData.append('resume', resume);
+        if (yourFile) {
+            formData.append('yourFile', yourFile);
         }
 
         axios.post(`https://docs.ivistaz.com/wp-json/contact-form-7/v1/contact-forms/239/feedback`, formData, {
@@ -245,12 +245,12 @@ const CareerForms = () => {
 
                 {/* Add Resume */}
                 <div className="mb-3">
-                    <label htmlFor="resume" className="form-label text-black">Upload Resume</label>
+                    <label htmlFor="yourFile" className="form-label text-black">Upload Resume</label>
                     <input
                         type="file"
                         className="form-control"
-                        id="resume"
-                        name="resume"
+                        id="yourFile"
+                        name="yourFile"
                         placeholder=""
                         onChange={handleFileChange}
                     />
