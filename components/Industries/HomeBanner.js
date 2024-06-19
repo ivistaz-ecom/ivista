@@ -32,19 +32,22 @@ function HeroBanner() {
 
             <div className="d-flex flex-row flex-wrap z-3 mt-4 bg-white">
               {indust.map((industry, index) => (
-                <div key={index} className="mb-2 z-3 col-lg-3 text-center">
-                  <div>
-                    <Image src={industry.image} alt={industry.title} className="industry-image" />
+                <div key={index} className="mb-2 z-3 col-lg-3 p-3">
+                  <div className='d-flex flex-column text-center gap-4 shadow-lg px-3 py-4 rounded-4'>
+                    <div>
+                      <Image src={industry.image} alt={industry.title} className="industry-image" />
+                    </div>
+                    <div className='fw-bold'>
+                      <h5>{industry.title}</h5>
+                    </div>
+                    <div>
+                      <Link href={`/${industry.slug}`} className="text-decoration-none text-black">
+                        <button type="submit" className="btn btn-15 border border-danger">
+                          <p className='mb-0 para-text'>Read More</p>
+                        </button>
+                      </Link>
+                    </div>
                   </div>
-                  <div className='fw-bold'>
-                    {industry.title}
-                  </div>
-                  <Link href={`/${industry.slug}`} className="text-decoration-none text-black">
-
-                    <button type="submit" className="btn btn-15">
-                      Read More
-                    </button>
-                  </Link>
                 </div>
               ))}
             </div>
