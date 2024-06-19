@@ -9,6 +9,12 @@ import { usePathname } from 'next/navigation';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Button from 'react-bootstrap/Button';
 import Offcanvas from 'react-bootstrap/Offcanvas';
+import { TiSocialLinkedinCircular } from "react-icons/ti";
+import { GrInstagram } from "react-icons/gr";
+import { FaFacebook } from "react-icons/fa";
+import { AiFillTwitterCircle } from "react-icons/ai";
+
+
 
 function Header1() {
   const pathname = usePathname();
@@ -74,11 +80,11 @@ function Header1() {
                   pathname === '/art' ||
                   pathname === '/art/services' ||
                   pathname === '/art/services/digital-marketing' ||
-                  pathname === '/art/services/content-development-design' ||
+                  pathname === '/art/services/content-development-design'||
                   pathname === '/art/services/design-development'
                 )
                   ? "btn btn-outline-black"
-                  : (pathname === '/service/website-design-and-development' ||
+                  : (pathname === '/service/website-design-and-development'||
                     pathname === '/service/search-engine-optimization' ||
                     pathname === '/service/search-engine-marketing' ||
                     pathname === '/service/organic-social-media' ||
@@ -115,26 +121,26 @@ function Header1() {
                   </Link>
                 </Container>
                 <ul className="navbar-nav text-center flex-grow-1 pe-3">
-                  <NavDropdown title="Services" id="navbarScrollingDropdown" className='border-0'>
-                    <NavDropdown.Item href="/service/website-design-and-development">
+                  <NavDropdown title="Services" id="navbarScrollingDropdown" className='border-0 '>
+                    <NavDropdown.Item href="/service/website-design-and-development" className='nav-dropdown'>
                       Web Design & Development
                     </NavDropdown.Item>
-                    <NavDropdown.Item href="/service/search-engine-optimization">
+                    <NavDropdown.Item href="/service/search-engine-optimization" className='nav-dropdown'>
                       Search Engine Optimization
                     </NavDropdown.Item>
-                    <NavDropdown.Item href="/service/search-engine-marketing">
+                    <NavDropdown.Item href="/service/search-engine-marketing" className='nav-dropdown'>
                       Search Engine Marketing
                     </NavDropdown.Item>
-                    <NavDropdown.Item href="/service/organic-social-media">
+                    <NavDropdown.Item href="/service/organic-social-media" className='nav-dropdown'>
                       Social Media - Organic
                     </NavDropdown.Item>
-                    <NavDropdown.Item href="/service/social-media-marketing">
+                    <NavDropdown.Item href="/service/social-media-marketing" className='nav-dropdown'>
                       Social Media Marketing
                     </NavDropdown.Item>
-                    <NavDropdown.Item href="/service/content-development-b2b-b2c">
+                    <NavDropdown.Item href="/service/content-development-b2b-b2c" className='nav-dropdown'>
                       Content Development (B2B & B2C)
                     </NavDropdown.Item>
-                    <NavDropdown.Item href="/service/design">
+                    <NavDropdown.Item href="/service/design" className='nav-dropdown'>
                       Design
                     </NavDropdown.Item>
                   </NavDropdown>
@@ -142,20 +148,20 @@ function Header1() {
                     <hr className="m-divider" />
                   </li>
                   <li className="nav-item">
-                    <Link className="nav-link" href="/mastery/solutions">Solutions</Link>
+                    <Link className="nav-link " href="/mastery/solutions">Solutions</Link>
                   </li>
                   <li className="divider-center">
                     <hr className="m-divider" />
                   </li>
                   <NavDropdown title="Industries" id="navbarScrollingDropdown">
-                    <NavDropdown.Item href="/industries/appliances">Appliances</NavDropdown.Item>
-                    <NavDropdown.Item href="/industries/automobiles">Automobiles</NavDropdown.Item>
-                    <NavDropdown.Item href="/industries/beauty-wellness">Beauty & Wellness</NavDropdown.Item>
-                    <NavDropdown.Item href="/industries/fashion-accessories">Fashion & Accessories</NavDropdown.Item>
-                    <NavDropdown.Item href="/industries/hospitality">Hospitality</NavDropdown.Item>
-                    <NavDropdown.Item href="/industries/jewellery">Jewelry</NavDropdown.Item>
-                    <NavDropdown.Item href="/industries/ngos">Not-for-Profits/NGOs</NavDropdown.Item>
-                    <NavDropdown.Item href="/industries/technology-IT">Tech/IT</NavDropdown.Item>
+                    <NavDropdown.Item href="/industries/appliances" className='nav-dropdown'>Appliances</NavDropdown.Item>
+                    <NavDropdown.Item href="/industries/automobiles" className='nav-dropdown'>Automobiles</NavDropdown.Item>
+                    <NavDropdown.Item href="/industries/beauty-wellness" className='nav-dropdown'>Beauty & Wellness</NavDropdown.Item>
+                    <NavDropdown.Item href="/industries/fashion-accessories" className='nav-dropdown'>Fashion & Accessories</NavDropdown.Item>
+                    <NavDropdown.Item href="/industries/hospitality" className='nav-dropdown'>Hospitality</NavDropdown.Item>
+                    <NavDropdown.Item href="/industries/jewellery" className='nav-dropdown'>Jewelry</NavDropdown.Item>
+                    <NavDropdown.Item href="/industries/ngos" className='nav-dropdown'>Not-for-Profits/NGOs</NavDropdown.Item>
+                    <NavDropdown.Item href="/industries/technology-IT" className='nav-dropdown'>Tech/IT</NavDropdown.Item>
                   </NavDropdown>
                   <li className="divider-center">
                     <hr className="m-divider" />
@@ -173,10 +179,10 @@ function Header1() {
                     <hr className="m-divider" />
                   </li>
                   <NavDropdown title="Company" id="navbarScrollingDropdown" className='custom-nav-company'>
-                    <NavDropdown.Item href="/our-team">Team</NavDropdown.Item>
-                    <NavDropdown.Item href="/our-clients">Clients</NavDropdown.Item>
-                    <NavDropdown.Item href="/mastery/about-us">About Us</NavDropdown.Item>
-                    <NavDropdown.Item href="/careers">Careers</NavDropdown.Item>
+                    <NavDropdown.Item href="/our-team" className='nav-dropdown'>Team</NavDropdown.Item>
+                    <NavDropdown.Item href="/our-clients" className='nav-dropdown'>Clients</NavDropdown.Item>
+                    <NavDropdown.Item href="/mastery/about-us" className='nav-dropdown'>About Us</NavDropdown.Item>
+                    <NavDropdown.Item href="/careers" className='nav-dropdown'>Careers</NavDropdown.Item>
                   </NavDropdown>
                   <li className="divider-center">
                     <hr className="m-divider" />
@@ -194,18 +200,23 @@ function Header1() {
               <div>
                 Follow Us:
               </div>
-              <div className="d-flex align-items-center justify-content-start">
+              <div className="d-flex align-items-center justify-content-start gap-2">
                 <Link href="https://www.linkedin.com/company/ivistawebsolutions/mycompany/" target='_blank'>
-                  <Image src="/images/linkedin.svg" width={43} height={43} className="social" alt='' />
+                  {/* <Image src="/images/linkedin.svg" width={43} height={43} className="social" alt='' /> */}
+                  <TiSocialLinkedinCircular className='fs-1 txt-danger'/>
                 </Link>
                 <Link href="https://www.instagram.com/ivistawebsolutions/" target='_blank'>
-                  <Image src="/images/instagram.svg" width={44} height={44} className="social" alt='' />
+                  {/* <Image src="/images/instagram.svg" width={44} height={44} className="social" alt='' /> */}
+                  <GrInstagram className='fs-2 txt-danger'/>
+
                 </Link>
                 <Link href="https://www.facebook.com/ivistasolutions/" target='_blank'>
-                  <Image src="/images/facebook.svg" width={40} height={40} className="social" alt='' />
+                  {/* <Image src="/images/facebook.svg" width={40} height={40} className="social" alt='' /> */}
+                  <FaFacebook className='fs-2 txt-danger'/>
                 </Link>
                 <Link href="https://twitter.com/ivistasolutions?lang=en" target='_blank'>
-                  <Image src="/images/twitter.svg" width={44} height={44} className="social" alt='' />
+                  {/* <Image src="/images/twitter.svg" width={44} height={44} className="social" alt='' /> */}
+                  <AiFillTwitterCircle className='fs-1 txt-danger'/>
                 </Link>
               </div>
             </div>

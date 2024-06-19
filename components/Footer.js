@@ -34,7 +34,7 @@ function Footer() {
                     <Row>
                         {/* ABOUT IVISTAZ */}
                         <Col className="footer p-0" lg={3}>
-                            <Col className="f-head d-lg-none d-flex py-lg-0 py-3 pb-2" lg={3}>ABOUT IVISTAZ</Col>
+                            <Col className="f-head d-lg-none d-flex py-lg-0 py-3 pb-2" lg={3}>IVISTAZ</Col>
                             <ul>
                                 {/* <li>
                                     <Link href="#" className='text-decoration-none text-white custom-footer-font'>
