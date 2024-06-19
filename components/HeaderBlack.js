@@ -122,8 +122,6 @@ function Header1() {
                 </Container>
                 <ul className="navbar-nav text-center flex-grow-1 pe-2">
                   <NavDropdown title="Services" id="navbarScrollingDropdown" className='border-0'>
-
-                    <NavDropdown.Item href="/art/services/" className='nav-dropdown'>
                       Overview
                     </NavDropdown.Item>
                     <NavDropdown.Item href="/service/content-development-b2b-b2c" className='nav-dropdown'>

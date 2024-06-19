@@ -4,7 +4,8 @@ import { Container, Row, Col, CloseButton, Image } from 'react-bootstrap'
 import BannerAllPage from '../../PropsShared/BannerAllPage';
 import SeoComponents from '../../../components/SeoComponents/Seo'
 import { usePathname } from 'next/navigation'
-
+import { CiCircleChevRight } from "react-icons/ci";
+import Link from 'next/link';
 
 function HeroBanner() {
 
@@ -37,6 +38,17 @@ function HeroBanner() {
       <Container fluid className='p-0 bg-black position-relative z-3'>
         <Container className="w-80 custom-container">
           <Row className="d-flex align-items-center">
+            <Col className='d-flex flex-row flex-wrap align-items-center mb-3'>
+              <Link href="/performance/industries"
+                className='text-decoration-none '>
+                <h6 className='text-white mb-0 px-1'>Industries</h6>
+              </Link>
+              <CiCircleChevRight fill='white' />
+              <Link href=""
+                className='text-decoration-none px-1'>
+                <h6 className='text-decoration-none text-white mb-0'>Hospitality</h6>
+              </Link>
+            </Col>
             <BannerAllPage backgroundImage={backgroundImage} bannerHeading={bannerHeading} mobileBackgroundImage={mobileBackgroundImage} />
           </Row>
         </Container>

@@ -25,6 +25,7 @@ const CaseStudies = () => {
     }, [siteUrl, serverUrl]);
     return (
         <>
+        
             <Container fluid className="w-80 custom-container">
                 {data ? ( // Check if data is available
                     data.map((post) => (

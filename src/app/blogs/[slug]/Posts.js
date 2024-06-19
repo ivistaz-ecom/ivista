@@ -1,6 +1,7 @@
 'use client'
 import React, { useState, useEffect } from 'react'
-
+import { CiCircleChevRight } from "react-icons/ci";
+import Link from 'next/link';
 import ConfigData from '../../../../config'
 import { Container, Image, Row } from 'react-bootstrap';
 
@@ -24,13 +25,23 @@ const Posts = ({ slug }) => {
         fetchData();
     }, [siteUrl, serverUrl]);
 
-
     return (
         <>
             <Container fluid className="w-80 custom-container">
                 {data ? ( // Check if data is available
                     data.map((post) => (
                         <div class=" d-flex flex-column" key={post.id}>
+                            <div className='d-flex flex-row flex-wrap align-items-center mb-3'>
+                                <Link href="/blogs"
+                                    className='text-decoration-none '>
+                                    <h6 className='text-white mb-0 px-1'>Blogs</h6>
+                                </Link>
+                                <CiCircleChevRight fill='white' />
+                                <Link href=""
+                                    className='text-decoration-none px-1'>
+                                    <h6 className='text-decoration-none text-white mb-0' dangerouslySetInnerHTML={{ __html: post.title.rendered }} />
+                                </Link>
+                            </div>
                             <Image
                                 src={post.acf.desktop_banner_image.url}
                                 alt={post.title.rendered}
@@ -40,9 +51,9 @@ const Posts = ({ slug }) => {
                             <Container className='py-5'>
                                 <div class="card-body text-white d-flex flex-column justify-content-between">
 
-                                    <h5 class="card-title fs-22 pb-3">
-                                        {post.title.rendered}
-                                    </h5>
+                                    <h5 class="card-title fs-22 pb-3"
+                                        dangerouslySetInnerHTML={{ __html: post.title.rendered }}
+                                    />
                                     <div className='d-flex flex-column'>
                                         <div>
                                             <p class="card-text para-text" dangerouslySetInnerHTML={{ __html: post.content.rendered }} />

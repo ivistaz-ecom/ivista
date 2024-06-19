@@ -3,16 +3,20 @@ import { Button, Card, Col, Container, Row, Image } from 'react-bootstrap';
 import ConfigData from '../../config';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import { CiCircleChevRight } from "react-icons/ci";
+
 
 const CaseStudiesFetchData = () => {
     return (
         <Container className="w-80 custom-container">
+            
+
             <h1 className="fs-80 fw-bold text-white">CASE STUDIES</h1>
             <h3 className="fs-19 text-white fw-semibold poppins">Performance you'll love. Can we replicate it for you?</h3>
             <Row className='py-lg-5'>
                 {/* Column 1*/}
                 <Col md={4} className="d-flex py-2">
-                    <Link href={'/case-studies/global-tech-company-seo-success'} className='text-line'>
+                    <Link href={'/case-studies/seo-case-study-for-a-global-technology-company-increased-visibility-with-organic-search-results'} className='text-line'>
                         <div className="card text-white bg-white mb-3 rounded-5 w-100 h-100 d-flex flex-column">
                             <div className="card-body d-flex flex-column justify-content-between flex-grow-1">
                                 <div className='card-title d-flex justify-content-between align-items-center'>
@@ -39,7 +43,7 @@ const CaseStudiesFetchData = () => {
 
                 {/* Column 2 */}
                 <Col md={4} className="d-flex py-2">
-                    <Link href={'case-studies/leading-jewellery-and-accessories-brand-case-studystrategic-insights'} className='text-line'>
+                    <Link href={'case-studies/leading-jewelry-and-accessories-brand-case-study-increased-traffic-revenues-and-social-media-engagement'} className='text-line'>
                         <div className="card text-white bg-white mb-3 rounded-5 w-100 h-100 d-flex flex-column">
                             <div className="card-body d-flex flex-column justify-content-between flex-grow-1">
                                 <div className='card-title d-flex justify-content-between align-items-center'>
@@ -66,7 +70,7 @@ const CaseStudiesFetchData = () => {
 
                 {/* Column 3 */}
                 <Col md={4} className="d-flex py-2">
-                    <Link href={'/case-studies/luxury-automobile-lead-generation-case-study-optimising-dealerships'} className='text-line'>
+                    <Link href={'/case-studies/cost-optimization-for-a-luxury-automibile-dealership'} className='text-line'>
                         <div className="card text-white bg-white mb-3 rounded-5 w-100 h-100 d-flex flex-column">
                             <div className="card-body d-flex flex-column justify-content-between flex-grow-1">
                                 <div className='card-title d-flex justify-content-between align-items-center'>
@@ -153,7 +157,7 @@ const CaseStudiesFetchData = () => {
 
                 {/* Column 6 */}
                 <Col md={4} className="d-flex py-2">
-                    <Link href={'/case-studies/multinational-retail-corporation-case-study-enhancing-online-presence-and-traffic-for-ngos'} className='text-line'>
+                    <Link href={'/case-studies/b2b-lead-gen-case-study-delivering-outcomes-with-paid-marketing-for-a-global-retail-giants-csr-project'} className='text-line'>
                         <div className="card text-white bg-white mb-3 rounded-5 w-100 h-100 d-flex flex-column">
                             <div className="card-body d-flex flex-column justify-content-between flex-grow-1">
                                 <div className='card-title d-flex justify-content-between align-items-center'>
@@ -182,7 +186,7 @@ const CaseStudiesFetchData = () => {
             <Row className='py-lg-5 pb-3'>
                 {/* Column 7*/}
                 <Col md={4} className="d-flex py-2">
-                    <Link href={'/case-studies/premier-hotel-chain-case-studyelevating-direct-online-bookings-and-global-reach-with-digital-strategy'} className='text-line'>
+                    <Link href={'/case-studies/premier-hotel-chain-case-study-increased-direct-online-bookings-and-global-reach'} className='text-line'>
                         <div className="card text-white bg-white mb-3 rounded-5 w-100 h-100 d-flex flex-column">
                             <div className="card-body d-flex flex-column justify-content-between flex-grow-1">
                                 <div className='card-title d-flex justify-content-between align-items-center'>
@@ -209,7 +213,7 @@ const CaseStudiesFetchData = () => {
 
                 {/* Column 8 */}
                 <Col md={4} className="d-flex py-2">
-                    <Link href={'/case-studies/top-hotel-chain-case-study-boosting-direct-online-bookings-and-revenue-with-strategic-digital-marketing'} className='text-line'>
+                    <Link href={'/case-studies/top-hotel-chain-case-study-boosting-direct-online-bookings-and-revenue'} className='text-line'>
                         <div className="card text-white bg-white mb-3 rounded-5 w-100 h-100 d-flex flex-column">
                             <div className="card-body d-flex flex-column justify-content-between flex-grow-1">
                                 <div className='card-title d-flex justify-content-between align-items-center'>
