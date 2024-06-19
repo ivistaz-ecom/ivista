@@ -42,7 +42,7 @@ function HeroBanner() {
                     </div>
                     <div className='text-center'>
                       <Link href={`/${industry.slug}`} className="text-decoration-none">
-                        <button type="submit" className="btn btn-15 border border-danger w-100">
+                        <button type="submit" className="btn btn-151 border border-danger w-100">
                           <p className='mb-0 para-text w-100'>Read More</p>
                         </button>
                       </Link>
