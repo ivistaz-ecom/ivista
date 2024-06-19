@@ -79,7 +79,7 @@ const CaseStudiesCategoriesComponents = ({ categoryId }) => {
                                 <div className="card-body d-flex flex-column justify-content-between mb-0">
                                     <div>
                                         <div className="card-title" dangerouslySetInnerHTML={{ __html: items.title.rendered }} />
-                                        <p className="card-text three-line-show mt-2" dangerouslySetInnerHTML={{ __html: items.excerpt.rendered }} />
+                                        {/* <p className="card-text three-line-show mt-2" dangerouslySetInnerHTML={{ __html: items.excerpt.rendered }} /> */}
                                     </div>
                                     <div className='mt-3'>
                                         <div className="iv-link-1 cursor-pointer d-inline-block" onClick={() => handleShowModal(items)}>
@@ -114,7 +114,8 @@ const CaseStudiesCategoriesComponents = ({ categoryId }) => {
                                         <>
                                             <div className='d-flex flex-column justify-content-between'>
                                                 <div>
-                                                    <h2 className='text-red'>{selectedItem.title.rendered}</h2>
+                                                    <h2 className='text-red' dangerouslySetInnerHTML={{ __html: selectedItem.title.rendered }} />
+                                                    {/* {selectedItem.title.rendered}</h2> */}
                                                     <div className='case-text text-start' dangerouslySetInnerHTML={{ __html: selectedItem.content.rendered }} />
                                                 </div>
                                                 <div>

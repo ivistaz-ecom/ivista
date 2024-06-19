@@ -28,8 +28,8 @@ const HomeBanner = () => {
         url: '/service/mobile_service_banner/content_development_banner.jpg'
     }
 
-    const bannerSubHeading = "CONTENT DEVELOPMENT"
-    const bannerHeading = "B2B & B2C"
+    const bannerSubHeading = "CONTENT DEVELOPMENT B2B & B2C"
+    const bannerHeading = ""
     return (
         <>
             <SeoComponents title={title} description={description} path={path} metaImage={metaImage} />

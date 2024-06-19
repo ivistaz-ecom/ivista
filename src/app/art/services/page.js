@@ -35,7 +35,7 @@ function page() {
           <article>
             <div className='timeline4'>
               <Container className="w-80 custom-container position-relative bg-white">
-                <h1 className="fs-80 fw-bold ps-6">ART</h1>
+                {/* <h1 className="fs-80 fw-bold ps-6">ART</h1> */}
               </Container>
 
               <Container className="bg-black banner w-80 pb-5 mb-5 z-3" >

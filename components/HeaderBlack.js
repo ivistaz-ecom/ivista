@@ -122,27 +122,33 @@ function Header1() {
                 </Container>
                 <ul className="navbar-nav text-center flex-grow-1 pe-2">
                   <NavDropdown title="Services" id="navbarScrollingDropdown" className='border-0'>
-                    <NavDropdown.Item href="/service/website-design-and-development" className='nav-dropdown'>
-                      Web Design & Development
+
+                  <NavDropdown.Item href="/art/services/" className='nav-dropdown'>
+                      Overview
                     </NavDropdown.Item>
-                    <NavDropdown.Item href="/service/search-engine-optimization" className='nav-dropdown '>
-                      Search Engine Optimization
+                  <NavDropdown.Item href="/service/content-development-b2b-b2c" className='nav-dropdown'>
+                      Content Development (B2B & B2C)
+                    </NavDropdown.Item>
+                  <NavDropdown.Item href="/service/design" className='nav-dropdown'>
+                      Design
                     </NavDropdown.Item>
                     <NavDropdown.Item href="/service/search-engine-marketing" className='nav-dropdown'>
                       Search Engine Marketing
                     </NavDropdown.Item>
-                    <NavDropdown.Item href="/service/organic-social-media" className='nav-dropdown'>
-                      Social Media - Organic
+                    <NavDropdown.Item href="/service/search-engine-optimization" className='nav-dropdown '>
+                      Search Engine Optimization
                     </NavDropdown.Item>
                     <NavDropdown.Item href="/service/social-media-marketing" className='nav-dropdown'>
                       Social Media Marketing
                     </NavDropdown.Item>
-                    <NavDropdown.Item href="/service/content-development-b2b-b2c" className='nav-dropdown'>
-                      Content Development (B2B & B2C)
+                    <NavDropdown.Item href="/service/organic-social-media" className='nav-dropdown'>
+                      Social Media - Organic
                     </NavDropdown.Item>
-                    <NavDropdown.Item href="/service/design" className='nav-dropdown'>
-                      Design
+                    <NavDropdown.Item href="/service/website-design-and-development" className='nav-dropdown'>
+                      Web Design & Development
                     </NavDropdown.Item>
+                    
+                    
                   </NavDropdown>
                   <li className="divider-center">
                     <hr className="m-divider" />
@@ -154,6 +160,9 @@ function Header1() {
                     <hr className="m-divider" />
                   </li>
                   <NavDropdown title="Industries" id="navbarScrollingDropdown">
+                  <NavDropdown.Item href="/performance/industries" className='nav-dropdown text-danger'>
+                      Overview
+                    </NavDropdown.Item>
                     <NavDropdown.Item href="/industries/appliances" className='nav-dropdown'>Appliances</NavDropdown.Item>
                     <NavDropdown.Item href="/industries/automobiles" className='nav-dropdown'>Automobiles</NavDropdown.Item>
                     <NavDropdown.Item href="/industries/beauty-wellness" className='nav-dropdown'>Beauty & Wellness</NavDropdown.Item>
