@@ -120,12 +120,12 @@ function Header1() {
                     <Image src="/images/ivista_logo.svg" width="200" height={100} alt='' className='d-lg-none d-flex text-center' />
                   </Link>
                 </Container>
-                <ul className="navbar-nav text-center flex-grow-1 pe-3">
-                  <NavDropdown title="Services" id="navbarScrollingDropdown" className='border-0 '>
+                <ul className="navbar-nav text-center flex-grow-1 pe-2">
+                  <NavDropdown title="Services" id="navbarScrollingDropdown" className='border-0'>
                     <NavDropdown.Item href="/service/website-design-and-development" className='nav-dropdown'>
                       Web Design & Development
                     </NavDropdown.Item>
-                    <NavDropdown.Item href="/service/search-engine-optimization" className='nav-dropdown'>
+                    <NavDropdown.Item href="/service/search-engine-optimization" className='nav-dropdown '>
                       Search Engine Optimization
                     </NavDropdown.Item>
                     <NavDropdown.Item href="/service/search-engine-marketing" className='nav-dropdown'>
@@ -202,21 +202,21 @@ function Header1() {
               </div>
               <div className="d-flex align-items-center justify-content-start gap-2">
                 <Link href="https://www.linkedin.com/company/ivistawebsolutions/mycompany/" target='_blank'>
-                  {/* <Image src="/images/linkedin.svg" width={43} height={43} className="social" alt='' /> */}
-                  <TiSocialLinkedinCircular className='fs-1 txt-danger'/>
+                  <Image src="/images/linkedin.svg" width={43} height={43} className="social" alt='' />
+                  {/* <TiSocialLinkedinCircular className='fs-1 txt-danger'/> */}
                 </Link>
                 <Link href="https://www.instagram.com/ivistawebsolutions/" target='_blank'>
-                  {/* <Image src="/images/instagram.svg" width={44} height={44} className="social" alt='' /> */}
-                  <GrInstagram className='fs-2 txt-danger'/>
+                  <Image src="/images/instagram.svg" width={44} height={44} className="social" alt='' />
+                  {/* <GrInstagram className='fs-2 txt-danger'/> */}
 
                 </Link>
                 <Link href="https://www.facebook.com/ivistasolutions/" target='_blank'>
-                  {/* <Image src="/images/facebook.svg" width={40} height={40} className="social" alt='' /> */}
-                  <FaFacebook className='fs-2 txt-danger'/>
+                  <Image src="/images/facebook.svg" width={40} height={40} className="social" alt='' />
+                  {/* <FaFacebook className='fs-2 txt-danger'/> */}
                 </Link>
                 <Link href="https://twitter.com/ivistasolutions?lang=en" target='_blank'>
-                  {/* <Image src="/images/twitter.svg" width={44} height={44} className="social" alt='' /> */}
-                  <AiFillTwitterCircle className='fs-1 txt-danger'/>
+                  <Image src="/images/twitter.svg" width={44} height={44} className="social" alt='' />
+                  {/* <AiFillTwitterCircle className='fs-1 txt-danger'/> */}
                 </Link>
               </div>
             </div>
