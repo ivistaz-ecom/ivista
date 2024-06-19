@@ -121,7 +121,7 @@ const ContentDevelopment = () => {
                                 </p> */}
 
                                 <p className='text-red fw-bold para-text'>
-                                    longforms-specific content:
+                                    Industry-specific content:
                                 </p>
 
                                 <p className="text-black para-text">
