@@ -1,7 +1,7 @@
 'use client'
 import Link from 'next/link'
 import React from 'react'
-import { Col, Container } from 'react-bootstrap'
+import { Col, Container, Image } from 'react-bootstrap'
 import ScrollAnimation from '../../SharedComponents/ScrollAnimationServices'
 // import ScrollAnimation from '../../SharedComponents/ScrollAnimation'
 
@@ -43,23 +43,35 @@ const WebDesignAndDevelopmentContent = () => {
                                 <h3 className='fs-4 text-red fw-bold p-0'>
                                     Our expertise in web and mobile app design includes:
                                 </h3>
-                                <ul>
-                                    <li className="text-black para-text mb-0">
-                                        User Interface (UI) and User Experience (UX) design
-                                    </li>
-                                    <li className="text-black para-text mb-0">
-                                        Information Architecture
-                                    </li>
-                                    <li className="text-black para-text mb-0">
-                                        Illustrations and animations
-                                    </li>
-                                    <li className="text-black para-text mb-0">
-                                        Dynamic and responsive designs
-                                    </li>
-                                    <li className="text-black para-text">
-                                        Mobile responsiveness
-                                    </li>
-                                </ul>
+                                <div className='d-flex flex-lg-row flex-column flex-wrap'>
+                                    <div className="text-black para-text mb-0 col-lg-4 text-center d-flex align-items-stretch">
+                                        <div className='px-3 py-4 shadow-sm m-4 ms-0 d-flex align-items-center w-100 justify-content-center rounded-4'>
+                                            User Interface (UI) and User Experience (UX) design
+                                        </div>
+                                    </div>
+                                    <div className="text-black para-text mb-0 col-lg-4 text-center d-flex align-items-stretch">
+                                        <div className='px-3 py-4 shadow-sm m-4 ms-0 d-flex align-items-center w-100 justify-content-center rounded-4'>
+                                            Information Architecture
+                                            <br />
+                                            {/* Add a line break if needed */}
+                                        </div>
+                                    </div>
+                                    <div className="text-black para-text mb-0 col-lg-4 text-center d-flex align-items-stretch">
+                                        <div className='px-3 py-4 shadow-sm m-4 ms-0 d-flex align-items-center w-100 justify-content-center rounded-4'>
+                                            Illustrations and animations
+                                        </div>
+                                    </div>
+                                    <div className="text-black para-text mb-0 col-lg-4 text-center d-flex align-items-stretch">
+                                        <div className='px-3 py-4 shadow-sm m-4 ms-0 d-flex align-items-center w-100 justify-content-center rounded-4'>
+                                            Dynamic and responsive designs
+                                        </div>
+                                    </div>
+                                    <div className="text-black para-text mb-0 col-lg-4 text-center d-flex align-items-stretch">
+                                        <div className='px-3 py-4 shadow-sm m-4 ms-0 d-flex align-items-center w-100 justify-content-center rounded-4'>
+                                            Mobile responsiveness
+                                        </div>
+                                    </div>
+                                </div>
                             </Container>
                         </div>
 
@@ -69,35 +81,88 @@ const WebDesignAndDevelopmentContent = () => {
                                 <p className='fs-4 text-red fw-bold'>
                                     Technology Proficiency:
                                 </p>
-                                <ul>
-                                    <li className="text-black para-text mb-0">
-                                        WordPress
-                                    </li>
+                                <div className='d-flex flex-lg-row flex-column flex-wrap'>
+                                    <div className="text-black para-text mb-0 col-lg-3">
+                                        <div className='text-center px-3 py-4 d-flex flex-column gap-'>
+                                            <div>
+                                                <Image src='/services/web_design_development/wordpress.png' fluid alt=''></Image>
+                                            </div>
+                                            <div>
+                                                WordPress
+                                            </div>
+                                        </div>
+                                    </div>
 
-                                    <li className="text-black para-text mb-0">
-                                        Next Js
-                                    </li>
+                                    <div className="text-black para-text mb-0 col-lg-3">
+                                        <div className='text-center px-3 py-4 d-flex flex-column gap-'>
+                                            <div>
+                                                <Image src='/services/web_design_development/next_js.png' fluid alt=''></Image>
+                                            </div>
+                                            <div>
+                                                Next Js
+                                            </div>
+                                        </div>
+                                    </div>
 
-                                    <li className="text-black para-text mb-0">
-                                        React
-                                    </li>
+                                    <div className="text-black para-text mb-0 col-lg-3">
+                                        <div className='text-center px-3 py-4 d-flex flex-column gap-'>
+                                            <div>
+                                                <Image src='/services/web_design_development/react.png' fluid alt=''></Image>
+                                            </div>
+                                            <div>
+                                                React
+                                            </div>
+                                        </div>
+                                    </div>
 
-                                    <li className="text-black para-text mb-0">
-                                        Magento
-                                    </li>
+                                    <div className="text-black para-text mb-0 col-lg-3">
+                                        <div className='text-center px-3 py-4 d-flex flex-column gap-'>
+                                            <div>
+                                                <Image src='/services/web_design_development/magento.png' fluid alt=''></Image>
+                                            </div>
+                                            <div>
+                                                Magento
+                                            </div>
+                                        </div>
+                                    </div>
 
-                                    <li className="text-black para-text mb-0">
-                                        Shopify
-                                    </li>
+                                    <div className="text-black para-text mb-0 col-lg-3">
+                                        <div className='text-center px-3 py-4 d-flex flex-column gap-'>
+                                            <div>
+                                                <Image src='/services/web_design_development/html5.png' fluid alt=''></Image>
+                                            </div>
+                                            <div>
+                                                HTML (Bootstrap, Tailwind css, MUI, Shadcn)
+                                            </div>
+                                        </div>
+                                    </div>
 
-                                    <li className="text-black para-text">
-                                        PHP Framework
-                                    </li>
+                                    <div className="text-black para-text mb-0 col-lg-3">
 
-                                    <li className="text-black para-text">
-                                        HTML (Bootstrap, Tailwind css, MUI, Shadcn)
-                                    </li>
-                                </ul>
+                                        <div className='text-center px-3 py-4 d-flex flex-column gap-'>
+                                            <div>
+                                                <Image src='/services/web_design_development/shopify.png' fluid alt=''></Image>
+                                            </div>
+                                            <div>
+                                                Shopify
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div className="text-black para-text mb-0 col-lg-3">
+
+                                        <div className='text-center px-3 py-4 d-flex flex-column gap-'>
+                                            <div>
+                                                <Image src='/services/web_design_development/php.png' fluid alt=''></Image>
+                                            </div>
+                                            <div>
+                                                PHP Framework
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
                             </Container>
                         </div>
                         <h1 className='para-text text-red fw-bold pb-5 mt-2 position-relative px-0'>
