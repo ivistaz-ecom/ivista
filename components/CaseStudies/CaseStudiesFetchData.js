@@ -12,7 +12,7 @@ const CaseStudiesFetchData = () => {
             <Row className='py-lg-5'>
                 {/* Column 1*/}
                 <Col md={4} className="d-flex py-2">
-                    <Link href={'/case-studies/global-tech-company-seo-success'} target='_blank' className='text-line'>
+                    <Link href={'/case-studies/global-tech-company-seo-success'} className='text-line'>
                         <div className="card text-white bg-white mb-3 rounded-5 w-100 h-100 d-flex flex-column">
                             <div className="card-body d-flex flex-column justify-content-between flex-grow-1">
                                 <div className='card-title d-flex justify-content-between align-items-center'>
@@ -39,7 +39,7 @@ const CaseStudiesFetchData = () => {
 
                 {/* Column 2 */}
                 <Col md={4} className="d-flex py-2">
-                    <Link href={'case-studies/leading-jewellery-and-accessories-brand-case-studystrategic-insights'} target='_blank' className='text-line'>
+                    <Link href={'case-studies/leading-jewellery-and-accessories-brand-case-studystrategic-insights'} className='text-line'>
                         <div className="card text-white bg-white mb-3 rounded-5 w-100 h-100 d-flex flex-column">
                             <div className="card-body d-flex flex-column justify-content-between flex-grow-1">
                                 <div className='card-title d-flex justify-content-between align-items-center'>
@@ -53,7 +53,7 @@ const CaseStudiesFetchData = () => {
                                 <div className='d-flex flex-column flex-grow-1'>
                                     <div>
                                         <p className="card-text text-dark fs-4 p-3">Revenue Growth Every 3 <br /> Years  </p>
-                                        <p className="card-text text-dark fs-4 px-3">A Strategic Success Story for a Leading Jewelry Brand</p>
+                                        <p className="card-text text-dark fs-4 px-3 py-3">A Strategic Success Story for a Leading Jewelry Brand</p>
                                     </div>
                                 </div>
                                 <div className='py-5 pb-0'>
@@ -66,7 +66,7 @@ const CaseStudiesFetchData = () => {
 
                 {/* Column 3 */}
                 <Col md={4} className="d-flex py-2">
-                    <Link href={'/case-studies/luxury-automobile-lead-generation-case-study-optimising-dealerships'} target='_blank' className='text-line'>
+                    <Link href={'/case-studies/luxury-automobile-lead-generation-case-study-optimising-dealerships'} className='text-line'>
                         <div className="card text-white bg-white mb-3 rounded-5 w-100 h-100 d-flex flex-column">
                             <div className="card-body d-flex flex-column justify-content-between flex-grow-1">
                                 <div className='card-title d-flex justify-content-between align-items-center'>
@@ -80,7 +80,7 @@ const CaseStudiesFetchData = () => {
                                 <div className='d-flex flex-column flex-grow-1'>
                                     <div>
                                         <p className="card-text text-dark fs-4 p-3">
-                                            Lead Conversion and Cost per Lead Reduced to Rs.1,292 </p>
+                                            Lead Conversion and Cost per Lead Reduced (CPL) to Rs.1,292 </p>
                                         <p className="card-text text-dark fs-4 px-3">Cost optimization for a Luxury Automobile Dealership
                                         </p>
                                     </div>
@@ -97,7 +97,7 @@ const CaseStudiesFetchData = () => {
             <Row className=''>
                 {/* Column 4*/}
                 <Col md={4} className="d-flex py-2">
-                    <Link href={'case-studies/top-beauty-brand-case-study-optimising-ecommerce-conversion-and-mobile-engagement'} target='_blank' className='text-line'>
+                    <Link href={'case-studies/top-beauty-brand-case-study-optimising-ecommerce-conversion-and-mobile-engagement'} className='text-line'>
                         <div className="card text-white bg-white mb-3 rounded-5 w-100 h-100 d-flex flex-column">
                             <div className="card-body d-flex flex-column justify-content-between flex-grow-1">
                                 <div className='card-title d-flex justify-content-between align-items-center'>
@@ -125,7 +125,7 @@ const CaseStudiesFetchData = () => {
 
                 {/* Column 5 */}
                 <Col md={4} className="d-flex py-2">
-                    <Link href={'/case-studies/b2b-email-marketing-case-study-generating-qualified-leads-with-strategic-campaigns'} target='_blank' className='text-line'>
+                    <Link href={'/case-studies/b2b-email-marketing-case-study-generating-qualified-leads-with-strategic-campaigns'} className='text-line'>
                         <div className="card text-white bg-white mb-3 rounded-5 w-100 h-100 d-flex flex-column">
                             <div className="card-body d-flex flex-column justify-content-between flex-grow-1">
                                 <div className='card-title d-flex justify-content-between align-items-center'>
@@ -153,7 +153,7 @@ const CaseStudiesFetchData = () => {
 
                 {/* Column 6 */}
                 <Col md={4} className="d-flex py-2">
-                    <Link href={'/case-studies/multinational-retail-corporation-case-study-enhancing-online-presence-and-traffic-for-ngos'} target='_blank' className='text-line'>
+                    <Link href={'/case-studies/multinational-retail-corporation-case-study-enhancing-online-presence-and-traffic-for-ngos'} className='text-line'>
                         <div className="card text-white bg-white mb-3 rounded-5 w-100 h-100 d-flex flex-column">
                             <div className="card-body d-flex flex-column justify-content-between flex-grow-1">
                                 <div className='card-title d-flex justify-content-between align-items-center'>
@@ -182,7 +182,7 @@ const CaseStudiesFetchData = () => {
             <Row className='py-lg-5 pb-3'>
                 {/* Column 7*/}
                 <Col md={4} className="d-flex py-2">
-                    <Link href={'/case-studies/premier-hotel-chain-case-studyelevating-direct-online-bookings-and-global-reach-with-digital-strategy'} target='_blank' className='text-line'>
+                    <Link href={'/case-studies/premier-hotel-chain-case-studyelevating-direct-online-bookings-and-global-reach-with-digital-strategy'} className='text-line'>
                         <div className="card text-white bg-white mb-3 rounded-5 w-100 h-100 d-flex flex-column">
                             <div className="card-body d-flex flex-column justify-content-between flex-grow-1">
                                 <div className='card-title d-flex justify-content-between align-items-center'>
@@ -209,7 +209,7 @@ const CaseStudiesFetchData = () => {
 
                 {/* Column 8 */}
                 <Col md={4} className="d-flex py-2">
-                    <Link href={'/case-studies/top-hotel-chain-case-study-boosting-direct-online-bookings-and-revenue-with-strategic-digital-marketing'} target='_blank' className='text-line'>
+                    <Link href={'/case-studies/top-hotel-chain-case-study-boosting-direct-online-bookings-and-revenue-with-strategic-digital-marketing'} className='text-line'>
                         <div className="card text-white bg-white mb-3 rounded-5 w-100 h-100 d-flex flex-column">
                             <div className="card-body d-flex flex-column justify-content-between flex-grow-1">
                                 <div className='card-title d-flex justify-content-between align-items-center'>
@@ -236,7 +236,7 @@ const CaseStudiesFetchData = () => {
 
                 {/* Column 9 */}
                 <Col md={4} className="d-flex py-2">
-                    <Link href={'/case-studies/digital-marketing-case-study-increasing-website-traffic-and-online-revenue-for-a-major-hotel-chain'} target='_blank' className='text-line'>
+                    <Link href={'/case-studies/digital-marketing-case-study-increasing-website-traffic-and-online-revenue-for-a-major-hotel-chain'} className='text-line'>
                         <div className="card text-white bg-white mb-3 rounded-5 w-100 h-100 d-flex flex-column">
                             <div className="card-body d-flex flex-column justify-content-between flex-grow-1">
                                 <div className='card-title d-flex justify-content-between align-items-center'>

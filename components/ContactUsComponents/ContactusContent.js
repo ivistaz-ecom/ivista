@@ -100,7 +100,7 @@ const ContactusContent = () => {
                         <div className='map-container'>
                             <div className='p-3 text-white iv-bg shadow-3 rounded-top-4'>
                                 <p className='fs-3'>Address</p>
-                                <p className="">4th Floor, 16 & 16/1, Reliaable Phoenix Towers, Museum Road, Shanthala Nagar, Ashok Nagar, Bengaluru, Karnataka 560025</p>
+                                <p className="">4th Floor, 16 & 16/1, Reliaable Phoenix Towers, Museum Road, Shanthala Nagar, Ashok Nagar, Bengaluru-560025</p>
                             </div>
                             <iframe
                                 className="responsive-iframe"

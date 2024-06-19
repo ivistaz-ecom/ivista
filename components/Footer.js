@@ -15,11 +15,22 @@ function Footer() {
             <Container fluid className="iv-bg p-0 z-2 position-relative">
                 <Container className="w-80 p-12 d-lg-block d-none p-0 py-2" >
                     <Row>
-                        <Col className="f-head p-0" lg={3}>ABOUT IVISTAZ</Col>
-                        <Col className="f-head p-0" lg={3}> SERVICES </Col>
+                        <Col className="f-head p-0" lg={3}>COMPANY</Col>
+                        <Col className="f-head p-0" lg={3}>
+                            <Link href="/art/services" className='text-decoration-none text-white'>
+                                SERVICES
+                            </Link>
+                        </Col>
 
-                        <Col className="f-head p-0" lg={3}>INDUSTRIES</Col>
-                        <Col className="f-head p-0" lg={3}>SOLUTIONS</Col>
+                        <Col className="f-head p-0" lg={3}>
+                            <Link href="/performance/industries" className='text-decoration-none text-white'>
+                                INDUSTRIES
+                            </Link>
+                        </Col>
+                        <Col className="f-head p-0" lg={3}>
+                        <Link href="/mastery/solutions" className='text-decoration-none text-white'>
+                        SOLUTIONS
+                            </Link></Col>
 
                     </Row>
                 </Container>
@@ -76,11 +87,11 @@ function Footer() {
                                         Contact Us
                                     </Link>
                                 </li>
-                                <li>
+                                {/* <li>
                                     <Link href="/privacy-policy" className='text-decoration-none text-white custom-footer-font'>
                                         Privacy Policy
                                     </Link>
-                                </li>
+                                </li> */}
 
                                 {/* <li>
                                     <Link href="#" className='text-decoration-none text-white custom-footer-font'>
@@ -98,33 +109,10 @@ function Footer() {
 
                         {/* SERVICES */}
                         <Col className="footer p-0" lg={3}>
-                            <Col className="f-head d-lg-none d-flex py-lg-0 py-3 pb-2" lg={3}>SERVICES</Col>
+                            <Col className="f-head d-lg-none d-flex py-lg-0 py-3 pb-2" lg={3}>
+                                <Link href="/art/services" className='text-decoration-none'>
+                                    SERVICES</Link></Col>
                             <ul>
-                                <li>
-                                    <Link href="/service/website-design-and-development" className='text-decoration-none text-white custom-footer-font'>
-                                        Web Design & Development
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link href="/service/search-engine-optimization" className='text-decoration-none text-white custom-footer-font'>
-                                        Search Engine Optimization
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link href="/service/search-engine-marketing" className='text-decoration-none text-white custom-footer-font'>
-                                        Search Engine Marketing
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link href="/service/organic-social-media" className='text-decoration-none text-white custom-footer-font'>
-                                        Social Media - Organic
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link href="/service/social-media-marketing" className='text-decoration-none text-white custom-footer-font'>
-                                        Social Media Marketing
-                                    </Link>
-                                </li>
                                 <li>
                                     <Link href="/service/content-development-b2b-b2c" className='text-decoration-none text-white custom-footer-font'>
                                         Content Development (B2B & B2C)
@@ -135,6 +123,37 @@ function Footer() {
                                         Design
                                     </Link>
                                 </li>
+                                <li>
+                                    <Link href="/service/search-engine-marketing" className='text-decoration-none text-white custom-footer-font'>
+                                        Search Engine Marketing
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link href="/service/search-engine-optimization" className='text-decoration-none text-white custom-footer-font'>
+                                        Search Engine Optimization
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link href="/service/social-media-marketing" className='text-decoration-none text-white custom-footer-font'>
+                                        Social Media Marketing
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link href="/service/organic-social-media" className='text-decoration-none text-white custom-footer-font'>
+                                        Social Media - Organic
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link href="/service/website-design-and-development" className='text-decoration-none text-white custom-footer-font'>
+                                        Web Design & Development
+                                    </Link>
+                                </li>
+
+
+
+
+
+
                                 {/* <li>
                                     <Link href="service/website-design-and-development" className='text-decoration-none text-white custom-footer-font'>
                                         Videos
@@ -196,16 +215,10 @@ function Footer() {
                             <Col className="f-head d-lg-none d-flex py-lg-0 py-3 pb-2" lg={2}>SOLUTIONS</Col>
                             <ul>
                                 <li>
-                                    <Link href="/mastery/solutions#value" className='text-decoration-none text-white custom-footer-font'>
-                                        Value Creation
-                                    </Link>
-                                </li>
-                                <li>
                                     <Link href="/mastery/solutions#traffic" className='text-decoration-none text-white custom-footer-font'>
                                         Traffic
                                     </Link>
                                 </li>
-
                                 <li>
                                     <Link href="/mastery/solutions#leadgen" className='text-decoration-none text-white custom-footer-font'>
                                         Lead-gen
@@ -218,7 +231,12 @@ function Footer() {
                                 </li>
                                 <li>
                                     <Link href="/mastery/solutions#exp" className='text-decoration-none text-white custom-footer-font'>
-                                        Experience
+                                        User Experience
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link href="/mastery/solutions#value" className='text-decoration-none text-white custom-footer-font'>
+                                        Value Creation
                                     </Link>
                                 </li>
                             </ul>
@@ -251,9 +269,18 @@ function Footer() {
                     </Row>
                 </Container>
             </Container>
-            <Container className="bg-black pt-1 pb-1 z-2" fluid>
-                <Container className="text-center copyright">
-                    <p className='mb-0' style={{ fontSize: '17px' }}>© {currentYear} iVistaz Ecom Services Pvt Ltd</p>
+            <Container className="bg-black pt-1 pb-1 z-2 ps-0" fluid>
+                <Container className="text-center copyright  p-0">
+                    <div className='d-flex gap-5 col-lg-12'>
+                        <div className='col-lg-9 text-start'>
+                            <p className='mb-0' style={{ fontSize: '17px' }}>© {currentYear} iVistaz Ecom Services Pvt. Ltd.</p></div>
+
+                        <div className='col-lg-4 text-start'>
+                            <Link href="/privacy-policy" className='text-decoration-none text-white para-text ' style={{ fontSize: '14px' }}>
+                                Privacy Policy
+                            </Link>
+                        </div>
+                    </div>
                 </Container>
             </Container>
             <CollectChatScript />

@@ -48,9 +48,10 @@ const Posts = ({ slug }) => {
                             <Container className='pb-5'>
                                 <div class="card-body d-flex flex-column justify-content-between">
 
-                                    <h5 class="card-title text-white fs-22 pb-3">
-                                        {post.title.rendered}
-                                    </h5>
+                                    <h5 class="card-title text-white fs-22 pb-3"
+                                        // {post.title.rendered}
+                                        dangerouslySetInnerHTML={{ __html: post.title.rendered }}
+                                    />
                                     <div className='d-flex flex-column'>
                                         <div>
                                             <p class="card-text text-white para-text" dangerouslySetInnerHTML={{ __html: post.content.rendered }} />
