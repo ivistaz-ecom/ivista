@@ -1,43 +1,43 @@
 const indust = [
     {
-        "image": "path_to_image1.jpg",
+        "image": "/industrie/industries-icons/appliances.svg",
         "title": "Appliances",
-        "slug": "/industries/appliances"
+        "slug": "industries/appliances"
     },
     {
-        "image": "path_to_image2.jpg",
+        "image": "/industrie/industries-icons/automobile.svg",
         "title": "Automobiles",
-        "slug": "/industries/automobiles"
+        "slug": "industries/automobiles"
     },
     {
-        "image": "path_to_image3.jpg",
+        "image": "/industrie/industries-icons/beauty_and_wellness.svg",
         "title": "Beauty & Wellness",
-        "slug": "/industries/beauty-wellness"
+        "slug": "industries/beauty-wellness"
     },
     {
-        "image": "path_to_image4.jpg",
+        "image": "/industrie/industries-icons/hospitality.svg",
         "title": "Fashion & Accessories",
-        "slug": "industries/energy"
+        "slug": "industries/fashion-accessories"
     },
     {
-        "image": "path_to_image5.jpg",
+        "image": "/industrie/industries-icons/hospitality.svg",
         "title": "Hospitality",
-        "slug": "industries/financial-services"
+        "slug": "industries/hospitality"
     },
     {
-        "image": "path_to_image6.jpg",
+        "image": "/industrie/industries-icons/jewellery.svg",
         "title": "Jewelry",
-        "slug": "industries/healthcare"
+        "slug": "industries/jewellery"
     },
     {
-        "image": "path_to_image7.jpg",
+        "image": "/industrie/industries-icons/ngos.svg",
         "title": "Not-for-Profits/NGOs",
-        "slug": "industries/manufacturing"
+        "slug": "industries/ngos"
     },
     {
-        "image": "path_to_image8.jpg",
+        "image": "/industrie/industries-icons/tech_it.svg",
         "title": "Tech/IT",
-        "slug": "industries/retail"
+        "slug": "industries/technology-IT"
     },
 ];
 
