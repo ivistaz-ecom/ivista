@@ -28,8 +28,8 @@ function Footer() {
                             </Link>
                         </Col>
                         <Col className="f-head p-0" lg={3}>
-                        <Link href="/mastery/solutions" className='text-decoration-none text-white'>
-                        SOLUTIONS
+                            <Link href="/mastery/solutions" className='text-decoration-none text-white'>
+                                SOLUTIONS
                             </Link></Col>
 
                     </Row>
@@ -275,7 +275,7 @@ function Footer() {
                         <div className='col-lg-9 text-start'>
                             <p className='mb-0' style={{ fontSize: '17px' }}>© {currentYear} iVistaz Ecom Services Pvt. Ltd.</p></div>
 
-                        <div className='col-lg-4 text-start'>
+                        <div className='text-start'>
                             <Link href="/privacy-policy" className='text-decoration-none text-white para-text ' style={{ fontSize: '14px' }}>
                                 Privacy Policy
                             </Link>

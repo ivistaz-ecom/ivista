@@ -75,16 +75,16 @@ function Header1() {
               </Link>
               <Button
                 onMouseEnter={handleMouseEnter}
-               
+
                 className={(
                   pathname === '/art' ||
                   pathname === '/art/services' ||
                   pathname === '/art/services/digital-marketing' ||
-                  pathname === '/art/services/content-development-design'||
+                  pathname === '/art/services/content-development-design' ||
                   pathname === '/art/services/design-development'
                 )
                   ? "btn btn-outline-black"
-                  : (pathname === '/service/website-design-and-development'||
+                  : (pathname === '/service/website-design-and-development' ||
                     pathname === '/service/search-engine-optimization' ||
                     pathname === '/service/search-engine-marketing' ||
                     pathname === '/service/organic-social-media' ||
@@ -108,8 +108,8 @@ function Header1() {
           </nav>
         </Container>
 
-        <Offcanvas show={show}  placement="end" onMouseEnter={handleOffcanvasMouseEnter} >
-          <Offcanvas.Header closeButton  onClick={handleMouseLeave}>
+        <Offcanvas show={show} placement="end" onMouseEnter={handleOffcanvasMouseEnter} >
+          <Offcanvas.Header closeButton onClick={handleMouseLeave}>
             <Offcanvas.Title></Offcanvas.Title>
           </Offcanvas.Header>
           <Offcanvas.Body>
@@ -123,13 +123,13 @@ function Header1() {
                 <ul className="navbar-nav text-center flex-grow-1 pe-2">
                   <NavDropdown title="Services" id="navbarScrollingDropdown" className='border-0'>
 
-                  <NavDropdown.Item href="/art/services/" className='nav-dropdown'>
+                    <NavDropdown.Item href="/art/services/" className='nav-dropdown'>
                       Overview
                     </NavDropdown.Item>
-                  <NavDropdown.Item href="/service/content-development-b2b-b2c" className='nav-dropdown'>
+                    <NavDropdown.Item href="/service/content-development-b2b-b2c" className='nav-dropdown'>
                       Content Development (B2B & B2C)
                     </NavDropdown.Item>
-                  <NavDropdown.Item href="/service/design" className='nav-dropdown'>
+                    <NavDropdown.Item href="/service/design" className='nav-dropdown'>
                       Design
                     </NavDropdown.Item>
                     <NavDropdown.Item href="/service/search-engine-marketing" className='nav-dropdown'>
@@ -147,8 +147,8 @@ function Header1() {
                     <NavDropdown.Item href="/service/website-design-and-development" className='nav-dropdown'>
                       Web Design & Development
                     </NavDropdown.Item>
-                    
-                    
+
+
                   </NavDropdown>
                   <li className="divider-center">
                     <hr className="m-divider" />
@@ -160,7 +160,7 @@ function Header1() {
                     <hr className="m-divider" />
                   </li>
                   <NavDropdown title="Industries" id="navbarScrollingDropdown">
-                  <NavDropdown.Item href="/performance/industries" className='nav-dropdown text-danger'>
+                    <NavDropdown.Item href="/performance/industries" className='nav-dropdown text-danger'>
                       Overview
                     </NavDropdown.Item>
                     <NavDropdown.Item href="/industries/appliances" className='nav-dropdown'>Appliances</NavDropdown.Item>
