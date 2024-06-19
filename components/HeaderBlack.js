@@ -108,7 +108,7 @@ function Header1() {
           </nav>
         </Container>
 
-        <Offcanvas show={show} placement="end" onMouseEnter={handleOffcanvasMouseEnter} >
+        <Offcanvas show={show} placement="end" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
           <Offcanvas.Header closeButton onClick={handleMouseLeave}>
             <Offcanvas.Title></Offcanvas.Title>
           </Offcanvas.Header>

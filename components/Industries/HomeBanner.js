@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react'
-import { Container, Row, Col, Button } from 'react-bootstrap'
-import Image from 'next/image';
+import { Container, Row, Col, Button, Image } from 'react-bootstrap'
+// import Image from 'next/image';
 import Link from 'next/link'
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -8,6 +8,9 @@ import Svg from './Automobiles/svg'
 import { MotionPathPlugin } from "gsap/MotionPathPlugin";
 import { FaArrowRight } from "react-icons/fa";
 import ScrollAnimationPerformance from '../SharedComponents/ScrollAnimationPerformance';
+
+import indust from './IndustriesLandingpage';
+
 gsap.registerPlugin(MotionPathPlugin, ScrollTrigger);
 
 
@@ -27,7 +30,26 @@ function HeroBanner() {
               <p className="para-text pe-lg-2 ">Client expectations have taken a quantum leap, compelling individuals to adapt like never before. Brands have relentlessly pursued growth by embracing innovative solutions in Ecommerce development & growth strategies. That’s where we step in. With a passion for creating exceptional experiences and staying ahead of the curve, we’ve mastered our art. And today, we don’t just perform, we outperform.</p>
             </Col>
 
-            <Col lg={12} className="mt-4 position-relative ps-6">
+            <div className="d-flex flex-row flex-wrap z-3 mt-4 bg-white">
+              {indust.map((industry, index) => (
+                <div key={index} className="mb-2 z-3 col-lg-3 text-center">
+                  <div>
+                    <Image src={industry.image} alt={industry.title} className="industry-image" />
+                  </div>
+                  <div className='fw-bold'>
+                    {industry.title}
+                  </div>
+                  <Link href={`/${industry.slug}`} className="text-decoration-none text-black">
+
+                    <button type="submit" className="btn btn-15">
+                      Read More
+                    </button>
+                  </Link>
+                </div>
+              ))}
+            </div>
+
+            {/* <Col lg={12} className="mt-4 position-relative ps-6">
               <div className='timeline-badge5 mt-2'></div>
               <Link className="fs-3 i-link fw-semibold" href="/industries/automobiles">Automobiles</Link></Col>
 
@@ -57,9 +79,9 @@ function HeroBanner() {
 
             <Col lg={12} className="mt-4 position-relative ps-6 mb-5">
               <div className='timeline-badge5 mt-2'></div>
-              <Link className="fs-3 i-link fw-semibold" href="/industries/fashion-accessories">Fashion & Accessories</Link></Col>
+              <Link className="fs-3 i-link fw-semibold" href="/industries/fashion-accessories">Fashion & Accessories</Link></Col> */}
           </Row>
-          
+
         </article>
       </Container>
 
