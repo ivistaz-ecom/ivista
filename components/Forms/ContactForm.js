@@ -45,7 +45,8 @@ const ContactForm = () => {
     };
 
     // Phone Number Validation
-    const phoneRegex = /^[0-9]*$/;
+    const phoneRegex = /^[0-9]{10}$/;
+
     const phoneErrors = {
         field: 'yourPhone',
         message: 'Invalid phone number'
@@ -75,7 +76,11 @@ const ContactForm = () => {
                 break;
             case 'yourPhone':
                 setyourPhone(value);
-                if (!phoneRegex.test(value)) {
+                const numericValue = value.replace(/[^0-9]/g, '');
+                if (numericValue.length <= 10) {
+                    setyourPhone(numericValue);
+                }
+                if (!phoneRegex.test(numericValue)) {
                     setErrors(prevErrors => ({ ...prevErrors, [name]: phoneErrors.message }));
                 } else {
                     setErrors(prevErrors => ({ ...prevErrors, [name]: null }));
@@ -85,7 +90,7 @@ const ContactForm = () => {
                 setyourCompany(value);
                 break;
             case 'yourMessage':
-                // setyourMessage(value);
+                setyourMessage(value);
                 break;
             default:
                 break;
@@ -114,12 +119,12 @@ const ContactForm = () => {
 
     const createPost = async () => {
         try {
-            const response = await axios.post(`${siteUrl}/wp-json/contact-form-7/v1/contact-forms/271/feedback`, {
+            const response = await axios.post(`${siteUrl}wp-json/contact-form-7/v1/contact-forms/271/feedback`, {
                 yourName,
                 yourEmail,
                 yourPhone,
                 yourCompany,
-                // yourMessage
+                yourMessage
             }, {
                 headers: {
                     "Content-Type": 'multipart/form-data',
@@ -142,6 +147,13 @@ const ContactForm = () => {
             console.error("There was an error submitting the form", error);
         } finally {
             setLoading(false);
+        }
+    };
+
+    const handleBeforeInput = (event) => {
+        const { name, data } = event.nativeEvent;
+        if (name === 'yourPhone' && !/[0-9]/.test(data)) {
+            event.preventDefault();
         }
     };
 
@@ -199,6 +211,8 @@ const ContactForm = () => {
                             id="yourPhone"
                             name="yourPhone"
                             value={yourPhone}
+                            maxLength="10"
+                            onBeforeInput={handleBeforeInput}
                             onChange={handleTextChange}
                         />
                         {errors.yourPhone && <div className="invalid-feedback">{errors.yourPhone}</div>}
@@ -239,7 +253,7 @@ const ContactForm = () => {
                             Submit
                         </button>
                         {loading && <h1 className="reg-success mt-4">{post}</h1>}
-                    </div> 
+                    </div>
                 </form>
             ) : (
                 <div className='py-4 text-white'>

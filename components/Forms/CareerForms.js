@@ -115,10 +115,6 @@ const CareerForms = () => {
         }
     };
 
-    const handleFileChange = e => {
-        setResume(e.target.files[0]);
-    };
-
     const handleSubmit = async (e) => {
         e.preventDefault();
         createPost();
@@ -167,6 +163,60 @@ const CareerForms = () => {
                 console.error('There was an error submitting the form!', error);
             });
     };
+
+
+    // const handleFileChange = e => {
+    //     setResume(e.target.files[0]);
+    // };
+
+    const handleFileChange = (e) => {
+        const file = e.target.files[0];
+
+        // Check if a file was selected
+        if (!file) {
+            const fieldErrors = {};
+            fieldErrors['yourFile'] = 'Please select a file.';
+            setErrors(fieldErrors);
+            setyourFile(null); // Clear the selected file
+            return;
+        }
+
+        // Check file type (only PDF allowed)
+        if (file.type !== 'application/pdf') {
+            const fieldErrors = {};
+            fieldErrors['yourFile'] = 'Please select a PDF file.';
+            setErrors(fieldErrors);
+            setyourFile(null); // Clear the selected file
+            return;
+        }
+
+        // Check file size (max 4MB)
+        if (file.size > 4 * 1024 * 1024) {
+            const fieldErrors = {};
+            fieldErrors['yourFile'] = 'File size exceeds 4MB limit.';
+            setErrors(fieldErrors);
+            setyourFile(null); // Clear the selected file
+        } else {
+            setErrors({}); // Clear any previous errors
+            setyourFile(file); // Set the selected file
+        }
+    };
+
+
+    const handleBeforeInput = (event) => {
+        const { name, data } = event.nativeEvent;
+        if (name === 'yourPhone' && !/[0-9]/.test(data)) {
+            event.preventDefault();
+        }
+    };
+    <select
+        value={yourJobType}
+        onChange={handleTextChange}
+        className={`form-select ${errors && errors.yourJobType ? 'is-invalid' : ''}`}
+        name='yourJobType'
+    >
+
+    </select>
 
     return (
         <Container>
@@ -218,8 +268,10 @@ const CareerForms = () => {
                         className={`form-control ${errors && errors.yourPhone ? 'is-invalid' : ''}`}
                         id="yourPhone"
                         name="yourPhone"
+                        maxLength="10"
                         value={yourPhone}
                         onChange={handleTextChange}
+                        onBeforeInput={handleBeforeInput}
                     />
                     {errors && errors.yourPhone && <div className="invalid-feedback">{errors.yourPhone}</div>}
                 </div>
@@ -248,12 +300,13 @@ const CareerForms = () => {
                     <label htmlFor="yourFile" className="form-label text-black">Upload Resume</label>
                     <input
                         type="file"
-                        className="form-control"
+                        className={`form-control ${errors && errors.yourFile ? 'is-invalid' : ''}`}
                         id="yourFile"
                         name="yourFile"
                         placeholder=""
                         onChange={handleFileChange}
                     />
+                    {errors && errors.yourFile && <div className="invalid-feedback">{errors.yourFile}</div>}
                 </div>
                 {/* Privacy policy */}
                 <div>
