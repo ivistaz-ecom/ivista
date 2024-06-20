@@ -14,6 +14,22 @@ const ContentDevelopment = () => {
     return (
         <>
 
+            <style>
+                {
+                    `
+        .custom-img {
+            width:25%;
+        }
+
+        @media(max-width:767px) {
+            .custom-img {
+                width:50%;
+            }
+        }
+        
+        `
+                }
+            </style>
             <ScrollAnimationService />
             <Container fluid className="mt-4 p-0">
                 <article>
@@ -61,10 +77,10 @@ const ContentDevelopment = () => {
 
                                 <div className="d-flex flex-row flex-wrap z-3 mt-4 bg-white">
                                     {longform.map((longforms, index) => (
-                                        <div key={index} className="mb-2 z-3 col-lg-3 p-3 d-flex">
+                                        <div key={index} className="mb-2 z-3 col-lg-3 col-6 p-lg-3 d-flex">
                                             <div className="d-flex flex-column text-center gap-4 px-3 py-4 rounded-4 w-100 h-100">
-                                                <div className="flex-grow-1 d-flex align-items-center justify-content-center">
-                                                    <Image src={longforms.image} alt={longforms.title} className="longforms-image w-25 img-fluid" />
+                                                <div className=" d-flex align-items-center justify-content-center">
+                                                    <Image src={longforms.image} alt={longforms.title} className="img-fluid custom-img" />
                                                 </div>
                                                 <div className="fw-bold">
                                                     <h5>{longforms.title}</h5>
@@ -95,10 +111,10 @@ const ContentDevelopment = () => {
 
                                 <div className="d-flex flex-row flex-wrap z-3 mt-4 bg-white">
                                     {shortcontent.map((shortcontents, index) => (
-                                        <div key={index} className="mb-2 z-3 col-lg-3 p-3">
+                                        <div key={index} className="mb-2 z-3 col-lg-3 col-6 p-lg-3">
                                             <div className='d-flex flex-column text-center gap-4 px-3 py-4 rounded-4'>
                                                 <div>
-                                                    <Image src={shortcontents.image} alt={shortcontents.title} className="shortcontents-image w-25" />
+                                                    <Image src={shortcontents.image} alt={shortcontents.title} className="img-fluid custom-img " />
                                                 </div>
                                                 <div className='fw-bold'>
                                                     <h5>{shortcontents.title}</h5>

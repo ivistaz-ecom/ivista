@@ -45,29 +45,29 @@ const WebDesignAndDevelopmentContent = () => {
                                 </h3>
                                 <div className='d-flex flex-lg-row flex-column flex-wrap'>
                                     <div className="text-black para-text mb-0 col-lg-4 text-center d-flex align-items-stretch">
-                                        <div className='px-3 py-4 shadow m-4 ms-0 d-flex align-items-center w-100 justify-content-center rounded-4'>
+                                        <div className='px-3 py-4 shadow m-4 ms-lg-0 d-flex align-items-center w-100 justify-content-center rounded-4'>
                                             User Interface (UI) and User Experience (UX) design
                                         </div>
                                     </div>
                                     <div className="text-black para-text mb-0 col-lg-4 text-center d-flex align-items-stretch">
-                                        <div className='px-3 py-4 shadow m-4 ms-0 d-flex align-items-center w-100 justify-content-center rounded-4'>
+                                        <div className='px-3 py-4 shadow m-4 ms-lg-0 d-flex align-items-center w-100 justify-content-center rounded-4'>
                                             Information Architecture
                                             <br />
                                             {/* Add a line break if needed */}
                                         </div>
                                     </div>
                                     <div className="text-black para-text mb-0 col-lg-4 text-center d-flex align-items-stretch">
-                                        <div className='px-3 py-4 shadow m-4 ms-0 d-flex align-items-center w-100 justify-content-center rounded-4'>
+                                        <div className='px-3 py-4 shadow m-4 ms-lg-0 d-flex align-items-center w-100 justify-content-center rounded-4'>
                                             Illustrations and animations
                                         </div>
                                     </div>
                                     <div className="text-black para-text mb-0 col-lg-4 text-center d-flex align-items-stretch">
-                                        <div className='px-3 py-4 shadow m-4 ms-0 d-flex align-items-center w-100 justify-content-center rounded-4'>
+                                        <div className='px-3 py-4 shadow m-4 ms-lg-0 d-flex align-items-center w-100 justify-content-center rounded-4'>
                                             Dynamic and responsive designs
                                         </div>
                                     </div>
                                     <div className="text-black para-text mb-0 col-lg-4 text-center d-flex align-items-stretch">
-                                        <div className='px-3 py-4 shadow m-4 ms-0 d-flex align-items-center w-100 justify-content-center rounded-4'>
+                                        <div className='px-3 py-4 shadow m-4 ms-lg-0 d-flex align-items-center w-100 justify-content-center rounded-4'>
                                             Mobile responsiveness
                                         </div>
                                     </div>
@@ -81,8 +81,8 @@ const WebDesignAndDevelopmentContent = () => {
                                 <p className='fs-4 text-red fw-bold'>
                                     Technology Proficiency:
                                 </p>
-                                <div className='d-flex flex-lg-row flex-column flex-wrap'>
-                                    <div className="text-black para-text mb-0 col-lg-3">
+                                <div className='d-flex flex-row flex-wrap'>
+                                    <div className="text-black para-text mb-0 col-lg-3 col-6">
                                         <div className='text-center px-3 py-4 d-flex flex-column gap-'>
                                             <div>
                                                 <Image src='/services/web_design_development/wordpress.png' fluid alt=''></Image>
@@ -93,7 +93,7 @@ const WebDesignAndDevelopmentContent = () => {
                                         </div>
                                     </div>
 
-                                    <div className="text-black para-text mb-0 col-lg-3">
+                                    <div className="text-black para-text mb-0 col-lg-3 col-6">
                                         <div className='text-center px-3 py-4 d-flex flex-column gap-'>
                                             <div>
                                                 <Image src='/services/web_design_development/next_js.png' fluid alt=''></Image>
@@ -104,7 +104,7 @@ const WebDesignAndDevelopmentContent = () => {
                                         </div>
                                     </div>
 
-                                    <div className="text-black para-text mb-0 col-lg-3">
+                                    <div className="text-black para-text mb-0 col-lg-3 col-6">
                                         <div className='text-center px-3 py-4 d-flex flex-column gap-'>
                                             <div>
                                                 <Image src='/services/web_design_development/react.png' fluid alt=''></Image>
@@ -115,7 +115,7 @@ const WebDesignAndDevelopmentContent = () => {
                                         </div>
                                     </div>
 
-                                    <div className="text-black para-text mb-0 col-lg-3">
+                                    <div className="text-black para-text mb-0 col-lg-3 col-6">
                                         <div className='text-center px-3 py-4 d-flex flex-column gap-'>
                                             <div>
                                                 <Image src='/services/web_design_development/magento.png' fluid alt=''></Image>
@@ -126,21 +126,21 @@ const WebDesignAndDevelopmentContent = () => {
                                         </div>
                                     </div>
 
-                                    <div className="text-black para-text mb-0 col-lg-3">
+                                    <div className="text-black para-text mb-0 col-lg-3 col-6">
                                         <div className='text-center px-3 py-4 d-flex flex-column gap-'>
                                             <div>
                                                 <Image src='/services/web_design_development/html5.png' fluid alt=''></Image>
                                             </div>
                                             <div>
-                                            HTML 
+                                                HTML
                                             </div>
                                             <div>
-                                            (Bootstrap, Tailwind CSS, MUI, Shadcn)
+                                                (Bootstrap, Tailwind CSS, MUI, Shadcn)
                                             </div>
                                         </div>
                                     </div>
 
-                                    <div className="text-black para-text mb-0 col-lg-3">
+                                    <div className="text-black para-text mb-0 col-lg-3 col-6">
 
                                         <div className='text-center px-3 py-4 d-flex flex-column gap-'>
                                             <div>
@@ -152,7 +152,7 @@ const WebDesignAndDevelopmentContent = () => {
                                         </div>
                                     </div>
 
-                                    <div className="text-black para-text mb-0 col-lg-3">
+                                    <div className="text-black para-text mb-0 col-lg-3 col-6">
 
                                         <div className='text-center px-3 py-4 d-flex flex-column gap-'>
                                             <div>
