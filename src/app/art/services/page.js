@@ -61,8 +61,9 @@ function page() {
                         <img src="/images/Content_Development.svg" />
                       </div>
                       <div className="ps-lg-4 text-lg-start text-center">
-                        <p className='text-black fw-bold fs-3 mb-0'>Content Development</p>
-                        <p className='text-black fw-bold fs-3'>(B2B & B2C)</p>
+                        <Link className='text-decoration-none txt-danger' href="/service/content-development-b2b-b2c">
+                        <p className='fw-bold fs-3 mb-0'>Content Development</p>
+                        <p className='fw-bold fs-3'>(B2B & B2C)</p></Link>
                       </div>
                     </div>
                   </div>
@@ -73,7 +74,8 @@ function page() {
                         <img src="/images/Design.svg" />
                       </div>
                       <div className="ps-lg-4 text-lg-start text-center">
-                        <p className='text-black fw-bold fs-3 pt-3'>Design</p>
+                      <Link className='text-decoration-none txt-danger' href="/service/design">
+                        <p className='fw-bold fs-3 pt-3'>Design</p></Link>
                       </div>
                     </div>
                   </div>
@@ -84,7 +86,8 @@ function page() {
                         <img src="/images/Search_Engine_Marketing.svg" />
                       </div>
                       <div className="ps-lg-4 text-lg-start text-center">
-                        <p className='text-black fw-bold fs-3'>Search Engine Marketing</p>
+                      <Link className='text-decoration-none txt-danger' href="/service/search-engine-marketing">
+                        <p className='fw-bold fs-3'>Search Engine Marketing</p></Link>
                       </div>
                     </div>
                   </div>
@@ -95,7 +98,8 @@ function page() {
                         <img src="/images/Search_Engine_Optimization.svg" />
                       </div>
                       <div className="ps-lg-4 text-lg-start text-center">
-                        <p className='text-black fw-bold fs-3'>Search Engine Optimization</p>
+                      <Link className='text-decoration-none txt-danger' href="/service/search-engine-optimization">
+                        <p className='fw-bold fs-3'>Search Engine Optimization</p></Link>
                       </div>
                     </div>
                   </div>
@@ -106,7 +110,8 @@ function page() {
                         <img src="/images/Social_Media_Marketing.svg" />
                       </div>
                       <div className="ps-lg-4 text-lg-start text-center">
-                        <p className='text-black fw-bold fs-3'>Social Media Marketing</p>
+                      <Link className='text-decoration-none txt-danger' href="/service/social-media-marketing">
+                        <p className='fw-bold fs-3'>Social Media Marketing</p></Link>
                       </div>
                     </div>
                   </div>
@@ -117,8 +122,9 @@ function page() {
                         <img src="/images/Social_Media-Organic.svg" />
                       </div>
                       <div className="ps-lg-4 text-lg-start text-center">
-                        <p className='text-black fw-bold fs-3 mb-0'>Social Media -</p>
-                        <p className='text-black fw-bold fs-3'> Organic</p>
+                      <Link className='text-decoration-none txt-danger' href="/service/organic-social-media">
+                        <p className='fw-bold fs-3 mb-0'>Social Media -</p>
+                        <p className='fw-bold fs-3'> Organic</p></Link>
                       </div>
                     </div>
                   </div>
@@ -129,7 +135,8 @@ function page() {
                         <img src="/images/Web_Design.svg" />
                       </div>
                       <div className="ps-lg-4 text-lg-start text-center">
-                        <p className='text-black fw-bold fs-3'>Web Design & Development</p>
+                      <Link className='text-decoration-none txt-danger' href="/website-design-and-development">
+                        <p className='fw-bold fs-3'>Web Design & Development</p></Link>
                       </div>
                     </div>
                   </div>
