@@ -112,7 +112,7 @@ const CaseStudiesCategoriesComponents = ({ categoryId }) => {
                                 <div className='text-black'>
                                     {selectedItem && (
                                         <>
-                                            <div className='d-flex flex-column justify-content-between'>
+                                            <div className='d-flex flex-column justify-content-between p-0'>
                                                 <div>
                                                     <h2 className='text-red' dangerouslySetInnerHTML={{ __html: selectedItem.title.rendered }} />
                                                     {/* {selectedItem.title.rendered}</h2> */}
@@ -145,7 +145,7 @@ const CaseStudiesCategoriesComponents = ({ categoryId }) => {
                                 pathname === '/engagement'
                             )
                             && (
-                                <Link href="/home" className="btn-13">Enter website</Link>
+                                <Link href="/welcome" className="btn-13">Enter website</Link>
                             )
                         }
                         {

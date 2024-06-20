@@ -57,7 +57,7 @@ body {
   padding-top: 12px;
   padding-bottom: 12px;
 }
-
+.ms-6
 .cursor-pointer {
   cursor: pointer !important;
 }
@@ -1667,6 +1667,7 @@ background: rgba(255, 255, 255, 0) !important; */
 .case-text {
   font-size: 20px;
   font-family: 'Poppins', sans-serif !important;
+  /* padding: -30% !important; */
 }
 
 .list-group {
@@ -1888,6 +1889,11 @@ background: rgba(255, 255, 255, 0) !important; */
   .fs-23 {
     font-size: 3.5rem !important;
     font-family: 'Poppins', sans-serif;
+  }
+  .case-text {
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif !important;
+    padding: -50px !important;
   }
 }
 

@@ -48,7 +48,7 @@ const HomeBanner = () => {
                             <CiCircleChevRight fill='red' />
                             <Link href=""
                                 className='text-decoration-none px-1'>
-                                <h6 className='text-decoration-none text-black mb-0'>Serch engine optimization</h6>
+                                <h6 className='text-decoration-none text-black mb-0'>Search engine optimization</h6>
                             </Link>
                         </Col>
                         <ServiceBanner backgroundImage={backgroundImage} mobileBackgroundImage={mobileBackgroundImage} bannerSubHeading={bannerSubHeading} bannerHeading={bannerHeading} />
