@@ -14,8 +14,8 @@ function HeroBanner() {
 
   return (
     <>
+     <Header1 />
       <Container className="bg-black" fluid>
-        <Header1 />
         <CaseStudiesFetchDataIndex />
         <Footer />
       </Container>

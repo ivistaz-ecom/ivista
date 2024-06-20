@@ -9,8 +9,8 @@ import ContactusComponents from '../../../components/ContactUsComponents'
 function page() {
   return (
     <>
+      <Header1 />
       <Container className="bg-black pb-5" fluid>
-        <Header1 />
         <ContactusComponents />
       </Container>
       <Footer />
