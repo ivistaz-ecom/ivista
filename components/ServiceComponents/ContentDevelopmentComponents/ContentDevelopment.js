@@ -1,15 +1,19 @@
 'use client'
 import React from 'react'
-import { Col, Container } from 'react-bootstrap'
+import { Col, Container, Image } from 'react-bootstrap'
 import ScrollAnimationService from '../../SharedComponents/ScrollAnimationServices'
 import Link from 'next/link'
 import Breadcrumb from 'react-bootstrap/Breadcrumb';
+
+import longform from './LongContent'
+
+import shortcontent from './ShortContent'
 
 
 const ContentDevelopment = () => {
     return (
         <>
-          
+
             <ScrollAnimationService />
             <Container fluid className="mt-4 p-0">
                 <article>
@@ -54,7 +58,22 @@ const ContentDevelopment = () => {
                                 <p className='text-red fw-bold para-text '>
                                     Long-form content:
                                 </p>
-                                <p className="text-black para-text">
+
+                                <div className="d-flex flex-row flex-wrap z-3 mt-4 bg-white">
+                                    {longform.map((longforms, index) => (
+                                        <div key={index} className="mb-2 z-3 col-lg-3 p-3">
+                                            <div className='d-flex flex-column text-center gap-4 px-3 py-4 rounded-4'>
+                                                <div>
+                                                    <Image src={longforms.image} alt={longforms.title} className="longforms-image" />
+                                                </div>
+                                                <div className='fw-bold'>
+                                                    <h5>{longforms.title}</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    ))}
+                                </div>
+                                {/* <p className="text-black para-text">
                                     <ul>
                                         <li>Blogs</li>
                                         <li>Articles</li>
@@ -67,13 +86,28 @@ const ContentDevelopment = () => {
                                         <li>Newsletter content</li>
                                         <li>Video content</li>
                                     </ul>
-                                </p>
+                                </p> */}
 
                                 <p className='text-red fw-bold para-text'>
                                     Short content:
                                 </p>
 
-                                <p className="text-black para-text">
+                                <div className="d-flex flex-row flex-wrap z-3 mt-4 bg-white">
+                                    {shortcontent.map((shortcontents, index) => (
+                                        <div key={index} className="mb-2 z-3 col-lg-3 p-3">
+                                            <div className='d-flex flex-column text-center gap-4 px-3 py-4 rounded-4'>
+                                                <div>
+                                                    <Image src={shortcontents.image} alt={shortcontents.title} className="shortcontents-image" />
+                                                </div>
+                                                <div className='fw-bold'>
+                                                    <h5>{shortcontents.title}</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    ))}
+                                </div>
+
+                                {/* <p className="text-black para-text">
                                     <ul>
                                         <li>A+ content</li>
                                         <li>e-commerce content</li>
@@ -84,7 +118,7 @@ const ContentDevelopment = () => {
                                         <li>Content for email marketing</li>
                                         <li>Content for paid marketing for search and social</li>
                                     </ul>
-                                </p>
+                                </p> */}
 
                                 <p className='text-red fw-bold para-text'>
                                     Industry-specific content:

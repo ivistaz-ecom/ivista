@@ -1,8 +1,0 @@
-const shortcontent = [
-    {
-        image: '',
-        title: ''
-    }
-]
-
-export default shortcontent

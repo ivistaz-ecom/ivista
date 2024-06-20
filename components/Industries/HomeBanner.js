@@ -30,20 +30,20 @@ function HeroBanner() {
               <p className="para-text pe-lg-2 ">Client expectations have taken a quantum leap, compelling individuals to adapt like never before. Brands have relentlessly pursued growth by embracing innovative solutions in Ecommerce development & growth strategies. That’s where we step in. With a passion for creating exceptional experiences and staying ahead of the curve, we’ve mastered our art. And today, we don’t just perform, we outperform.</p>
             </Col>
 
-            <div className="d-flex flex-row flex-wrap z-3 mt-4 bg-white">
+            <div className="d-flex flex-lg-row flex-column flex-wrap z-3 mt-4 bg-white">
               {indust.map((industry, index) => (
-                <div key={index} className="mb-2 z-3 col-lg-3 p-3">
-                  <div className='d-flex flex-column text-center gap-4 shadow-lg px-3 py-4 rounded-4'>
+                <div key={index} className="mb-2 z-3 col-lg-3 p-3 col-sm-12">
+                  <div className='d-flex flex-column text-center gap-4 shadow-lg px-3 py-4 w-100 rounded-4'>
                     <div>
                       <Image src={industry.image} alt={industry.title} className="industry-image" />
                     </div>
                     <div className='fw-bold'>
                       <h5>{industry.title}</h5>
                     </div>
-                    <div>
-                      <Link href={`/${industry.slug}`} className="text-decoration-none text-black">
-                        <button type="submit" className="btn btn-15 border border-danger">
-                          <p className='mb-0 para-text'>Read More</p>
+                    <div className='text-center'>
+                      <Link href={`/${industry.slug}`} className="text-decoration-none">
+                        <button type="submit" className="btn btn-151 border border-danger w-100">
+                          <p className='mb-0 para-text w-100'>Read More</p>
                         </button>
                       </Link>
                     </div>
