@@ -1,11 +1,12 @@
 "use client"
 import Image from 'next/image';
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect ,useRef} from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import Link from 'next/link';
-
+import Header from '../../../components/HeaderBlack'
 // import '../../src/app/globals.css';
 import Footer from '../../../components/Footer';
+
 
 const Experience = () => {
     const [currentSection, setCurrentSection] = useState('main');
@@ -13,6 +14,7 @@ const Experience = () => {
     const [isMobile, setIsMobile] = useState(false);
     const [viewportWidth, setViewportWidth] = useState(0);
 
+    
     useEffect(() => {
         if (typeof window !== 'undefined') {
             setViewportWidth(window.innerWidth);
@@ -34,6 +36,7 @@ const Experience = () => {
 
     return (
         <>
+        <Header/>
             {currentSection === 'main' && (
                 <Container className="bg-black h-100vh d-flex flex-column justify-content-center" fluid>
                     <Row className='h-100vh d-flex flex-lg-row flex-column'>
