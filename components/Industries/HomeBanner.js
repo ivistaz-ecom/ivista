@@ -22,7 +22,7 @@ function HeroBanner() {
       <Container className="bg-white banner w-80 pb-5 container-height" >
         <article>
           <Row className="d-flex align-items-start ">
-            <Col lg={12} className="mt-5 position-relative  ps-6">
+            <Col lg={12} className="mt-5 position-relative ps-6">
               <div className='timeline-badge5 mt-4'></div>
               <h1 className="fs-19 fw-bold py-4">
                 Industries
