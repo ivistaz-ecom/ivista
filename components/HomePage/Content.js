@@ -21,10 +21,23 @@ const HomePage = () => {
       }
     };
 
+    const handleTouchMove = (event) => {
+      const touch = event.touches[0];
+      const deltaY = touch.clientY - touch.startY;
+
+      if (deltaY < 0 && !showSecondSection) {
+        // Swiping up
+        setShowSecondSection(true);
+        setIsScrollLocked(true);
+      }
+    };
+
     window.addEventListener("wheel", handleWheelScroll, { passive: false });
+    window.addEventListener("touchmove", handleTouchMove, { passive: false });
 
     return () => {
       window.removeEventListener("wheel", handleWheelScroll);
+      window.removeEventListener("touchmove", handleTouchMove);
     };
   }, [showSecondSection]);
 
@@ -155,6 +168,7 @@ const HomePage = () => {
 }
 
 export default HomePage
+
 
 
 
