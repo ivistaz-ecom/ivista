@@ -70,7 +70,7 @@ function Header1() {
         <Container className='w-80'>
           <nav className="navbar bg-color z-index-100">
             <div className="container-fluid">
-              <Link className="navbar-brand" href="/home">
+              <Link className="navbar-brand" href="/welcome">
                 <Image src="/images/ivista_logo.svg" width={200} height={40} className="img-fluid z-index-100" alt='' />
               </Link>
               <Button
