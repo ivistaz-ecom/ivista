@@ -54,7 +54,7 @@ const BlogsPageComponets = () => {
                                
                                 <div className='d-flex flex-column'>
                                     <div>
-                                        <p className="card-text three-line-show" dangerouslySetInnerHTML={{ __html: post.content.rendered }} />
+                                        {/* <p className="card-text three-line-show" dangerouslySetInnerHTML={{ __html: post.content.rendered }} /> */}
                                     </div>
 
                                     <div className='mt-3 d-flex justify-content-between align-items-center'>

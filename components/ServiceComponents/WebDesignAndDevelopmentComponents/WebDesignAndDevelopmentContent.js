@@ -41,33 +41,33 @@ const WebDesignAndDevelopmentContent = () => {
                             <div class="timeline-badge1"></div>
                             <Container className='w-80 ps-7'>
                                 <h3 className='fs-4 text-red fw-bold p-0'>
-                                    Our expertise in web and mobile app design includes:
+                                    Web and Mobile App Expertise:
                                 </h3>
                                 <div className='d-flex flex-lg-row flex-column flex-wrap'>
                                     <div className="text-black para-text mb-0 col-lg-4 text-center d-flex align-items-stretch">
-                                        <div className='px-3 py-4 shadow-sm m-4 ms-0 d-flex align-items-center w-100 justify-content-center rounded-4'>
+                                        <div className='px-3 py-4 shadow m-4 ms-0 d-flex align-items-center w-100 justify-content-center rounded-4'>
                                             User Interface (UI) and User Experience (UX) design
                                         </div>
                                     </div>
                                     <div className="text-black para-text mb-0 col-lg-4 text-center d-flex align-items-stretch">
-                                        <div className='px-3 py-4 shadow-sm m-4 ms-0 d-flex align-items-center w-100 justify-content-center rounded-4'>
+                                        <div className='px-3 py-4 shadow m-4 ms-0 d-flex align-items-center w-100 justify-content-center rounded-4'>
                                             Information Architecture
                                             <br />
                                             {/* Add a line break if needed */}
                                         </div>
                                     </div>
                                     <div className="text-black para-text mb-0 col-lg-4 text-center d-flex align-items-stretch">
-                                        <div className='px-3 py-4 shadow-sm m-4 ms-0 d-flex align-items-center w-100 justify-content-center rounded-4'>
+                                        <div className='px-3 py-4 shadow m-4 ms-0 d-flex align-items-center w-100 justify-content-center rounded-4'>
                                             Illustrations and animations
                                         </div>
                                     </div>
                                     <div className="text-black para-text mb-0 col-lg-4 text-center d-flex align-items-stretch">
-                                        <div className='px-3 py-4 shadow-sm m-4 ms-0 d-flex align-items-center w-100 justify-content-center rounded-4'>
+                                        <div className='px-3 py-4 shadow m-4 ms-0 d-flex align-items-center w-100 justify-content-center rounded-4'>
                                             Dynamic and responsive designs
                                         </div>
                                     </div>
                                     <div className="text-black para-text mb-0 col-lg-4 text-center d-flex align-items-stretch">
-                                        <div className='px-3 py-4 shadow-sm m-4 ms-0 d-flex align-items-center w-100 justify-content-center rounded-4'>
+                                        <div className='px-3 py-4 shadow m-4 ms-0 d-flex align-items-center w-100 justify-content-center rounded-4'>
                                             Mobile responsiveness
                                         </div>
                                     </div>
@@ -132,7 +132,10 @@ const WebDesignAndDevelopmentContent = () => {
                                                 <Image src='/services/web_design_development/html5.png' fluid alt=''></Image>
                                             </div>
                                             <div>
-                                                HTML (Bootstrap, Tailwind css, MUI, Shadcn)
+                                            HTML 
+                                            </div>
+                                            <div>
+                                            (Bootstrap, Tailwind CSS, MUI, Shadcn)
                                             </div>
                                         </div>
                                     </div>
