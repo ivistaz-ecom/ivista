@@ -15,6 +15,7 @@ const MasteryArtPerformance = () => {
         <ScrollAnimation/>
         <div className='custom-container'>
             <div className=''>
+                
                 <div className='position-relative' id='mastery'>
                     <div className="timeline-badge"></div>
                     <Mastery />

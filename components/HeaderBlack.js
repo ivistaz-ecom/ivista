@@ -116,7 +116,7 @@ function Header1() {
             <Row className='d-flex flex-column justify-content-between h-100 z-index-100'>
               <Col>
                 <Container className="text-center">
-                  <Link className="navbar-brand d-flex justify-content-center" href="/ivistaz">
+                  <Link className="navbar-brand d-flex justify-content-center" href="/welcome">
                     <Image src="/images/ivista_logo.svg" width="200" height={100} alt='' className='d-lg-none d-flex text-center' />
                   </Link>
                 </Container>

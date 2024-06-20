@@ -37,7 +37,7 @@ function Art() {
     <>
       <ScrollAnimation />
       <Container className="bg-black ps-lg-4" fluid>
-        <Container className="w-80 py-5 mb-5 ps-5" ref={artRef} id="art">
+        <Container className="w-80 py-5 mb-5 ps-6" ref={artRef} id="art">
           <Container className='p-0'>
             <h1 className="fs-80 fw-bold text-white">Art</h1>
           </Container>
@@ -48,7 +48,7 @@ function Art() {
 
           </Container>
           <Container className='p-0'>
-            <Link className="btn btn-12 z-0 custom-performance-text" href="/art">Know More</Link>
+            <Link className="btn btn-12 z-0 custom-performance-text ps-6" href="/art">Know More</Link>
           </Container>
         </Container>
       </Container>

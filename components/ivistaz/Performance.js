@@ -36,15 +36,15 @@ function Performance() {
   return (
     <Container className="w-80 pt-4 mb-5" ref={performanceRef} id="performance">
       <Container className='p-0'>
-        <h1 className="fs-80 fw-bold ps-5 custom-performance-text">Performance</h1>
+        <h1 className="fs-80 fw-bold ps-6 custom-performance-text">Performance</h1>
       </Container>
       <Container className='p-0'>
-        <p className={`fs-20 fw-bold ps-5 custom-performance-text line_space ${isActive ? 'active-text_performance' : ''}`}>
+        <p className={`fs-20 fw-bold ps-6 custom-performance-text line_space ${isActive ? 'active-text_performance' : ''}`}>
           Over the years, iVistaz has excelled by partnering with clients to craft unforgettable digital journeys. As a revenue-driven digital marketing agency, we consistently strive to surpass expectations with every performance.
         </p>
       </Container>
-      <Container className="p-0 mb-5">
-        <Link className="btn ms-5 btn-11 z-0 custom-performance-text" href="/performance">Know More</Link>
+      <Container className='ps-6'>
+        <Link className="btn btn-11 z-0" href="/mastery">Know More</Link>
       </Container>
     </Container>
   );
