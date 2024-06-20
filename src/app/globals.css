@@ -360,6 +360,7 @@ body {
   font-size: 3.3em;
   font-family: 'Poppins', sans-serif;
 }
+
 .fs-23 {
   font-size: 3.5rem !important;
   font-family: 'Poppins', sans-serif;
@@ -569,16 +570,15 @@ background: rgba(255, 255, 255, 0) !important; */
   .custom-home-row {
     width: 100% !important;
   }
+
   .ps-7 {
     padding-left: 1rem !important;
   }
+
   .ps-6 {
     padding-left: 1rem !important;
   }
 }
-
-
-
 
 @-webkit-keyframes criss-cross-left {
   0% {
@@ -957,6 +957,10 @@ background: rgba(255, 255, 255, 0) !important; */
   height: 31px !important;
 }
 
+.social:hover {
+  background-color: #ED2225;
+}
+
 .offcanvas.offcanvas-end {
   width: 25% !important;
 }
@@ -978,25 +982,37 @@ background: rgba(255, 255, 255, 0) !important; */
   font-size: 30px !important;
   font-family: 'Poppins', sans-serif !important;
   font-weight: 300 !important;
-  color: #ED2023!important;
+  color: #ED2023 !important;
 }
-.nav-dropdown{
+
+
+.txt-danger {
+  color: #000;
+}
+
+.txt-danger:hover {
+  color: #ff0000;
+}
+
+.nav-dropdown {
   color: #363636 !important;
   font-size: 15px !important;
 }
 
-.txt-danger{
-  color: #000;
-}
-
-.txt-danger:hover{
-  color: #ff0000;
-}
-
-.nav-dropdown:hover{
+.nav-dropdown:hover {
   color: #ffffff !important;
   background-color: #ED2023 !important;
 }
+
+.nav-overview {
+  color: #ED2023 !important;
+}
+
+.nav-overview:hover {
+  color: #ffffff !important;
+  background-color: #ED2023 !important;
+}
+
 .m-divider {
   height: 0;
   margin: var(--bs-dropdown-divider-margin-y) 0;
@@ -1075,7 +1091,8 @@ background: rgba(255, 255, 255, 0) !important; */
   text-decoration: none;
   color: #fff;
 }
-.text:hover{
+
+.text:hover {
   color: #ED2023;
 }
 
@@ -1772,26 +1789,35 @@ background: rgba(255, 255, 255, 0) !important; */
   color: red;
   /* Color when hovered */
 }
-.custom-mastery-text{
-  color: #000000; /* Original color */
+
+.custom-mastery-text {
+  color: #000000;
+  /* Original color */
 }
+
 .custom-art-text {
-  color: #808080; /* Original color */
+  color: #808080;
+  /* Original color */
 }
 
 .custom-performance-text {
-  color: #F36669; /* Original color */
+  color: #F36669;
+  /* Original color */
 }
 
 .active-text_mastery {
-  color:#808080 ; /* Active color */
+  color: #808080;
+  /* Active color */
 }
 
 .active-text_art {
-  color: #ffffff; /* Active color */
+  color: #ffffff;
+  /* Active color */
 }
+
 .active-text_performance {
-  color: #FF0000; /* Active color */
+  color: #FF0000;
+  /* Active color */
 }
 
 
@@ -1858,6 +1884,7 @@ background: rgba(255, 255, 255, 0) !important; */
   .fs-22 {
     font-size: 26px;
   }
+
   .fs-23 {
     font-size: 3.5rem !important;
     font-family: 'Poppins', sans-serif;
@@ -1993,7 +2020,7 @@ background: rgba(255, 255, 255, 0) !important; */
 
 .wb-marker-red::marker {
   color: #ED2225 !important;
-  
+
 
 }
 
@@ -2006,7 +2033,7 @@ background: rgba(255, 255, 255, 0) !important; */
   border: none !important;
 }
 
-.chat-bot{
+.chat-bot {
   position: fixed;
   top: 25px;
   z-index: 99;
@@ -2119,39 +2146,43 @@ background: rgba(255, 255, 255, 0) !important; */
   box-shadow: 0 0 10px 2px #ffffff;
 }
 
-.font-size{
+.font-size {
   font-size: 60px;
 }
 
 .line_space {
   line-height: 1.5;
 }
+
 /* TEAMS CARD IMAGE */
 .custom-card {
   width: 310px;
   height: 435px !important;
-  background-color: #ff0000 !important; /* Example background color, change as needed */
+  background-color: #ff0000 !important;
+  /* Example background color, change as needed */
   /* border-radius: 38px; Adjust as needed */
   position: relative;
   overflow: hidden;
-  padding: 20px; /* Adjust as needed */
+  padding: 20px;
+  /* Adjust as needed */
 }
 
 .card-body {
-  padding: 20px; /* Adjust padding as needed */
+  padding: 20px;
+  /* Adjust padding as needed */
   position: relative;
   top: 0;
 }
-.text-line{
+
+.text-line {
   text-decoration: none !important;
 }
-.team-card, .static-hiring-card {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100%;
-}
 
+/* Team custom card  */
+.custom-height {
+  height: 435px;
+  /* Set your custom height here */
+}
 
 
 .image-container {
@@ -2172,13 +2203,19 @@ background: rgba(255, 255, 255, 0) !important; */
 
 /************| Mobile view |************/
 @media screen and (min-width:360px) and (max-width:712px) {
-  
-  .demo{
+
+  .demo {
     display: none;
   }
 
-  .font-size{
+  .font-size {
     font-size: 40px;
+  }
+
+  /* Team custom card  */
+  .custom-height {
+    height: 490px;
+    /* Set your custom height here */
   }
 
 }

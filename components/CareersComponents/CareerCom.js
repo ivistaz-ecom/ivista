@@ -67,7 +67,7 @@ const CareerCom = () => {
                     <Col className='mb-4 text-black'>
                         <h1 className="fs-21 text-black fw-bold">CAREERS</h1>
                         <p className="text-black para-text">
-                        We are a vibrant digital marketing agency with a team that brings diverse perspectives and creative energy to our projects. At iVistaz, we take pride in our collaborative and supportive environment where work and learning go hand-in-hand. Our projects range from web development, paid marketing, social media campaigns and email marketing, offering you the chance to build on your experience and develop a broad skill set. Located in the heart of the city, our office is easily accessible and surrounded by a vibrant mix of offices, shopping streets, restaurants, and parks. Check out our current openings and take the next step in your career with iVistaz.
+                            We are a vibrant digital marketing agency with a team that brings diverse perspectives and creative energy to our projects. At iVistaz, we take pride in our collaborative and supportive environment where work and learning go hand-in-hand. Our projects range from web development, paid marketing, social media campaigns and email marketing, offering you the chance to build on your experience and develop a broad skill set. Located in the heart of the city, our office is easily accessible and surrounded by a vibrant mix of offices, shopping streets, restaurants, and parks. Check out our current openings and take the next step in your career with iVistaz.
                         </p>
                     </Col>
 
@@ -93,8 +93,8 @@ const CareerCom = () => {
                                                 </div> */}
                                             </div>
                                         </Col>
-                                        <Col className='d-flex flex-column justify-content-start align-items-start p-3'>
-                                            <button type="button" class="btn btn-16 z-0" onClick={() => handleShowModal(item)}>Apply</button>
+                                        <Col lg={12} className='d-flex flex-column justify-content-start align-items-start p-3'>
+                                            <button type="button" class="btn btn-16 z-0 ms-5 py-2 " onClick={() => handleShowModal(item)}>Apply</button>
                                         </Col>
                                     </Row>
                                 </>
@@ -149,7 +149,7 @@ const CareerCom = () => {
                 <p className="para-text text-black mt-5">
                     For enquiries about any positions not listed, please email <a href="mailto:hr@ivistasolutions.com" target='_blank' className='text-red'> hr@ivistasolutions.com</a>
                 </p>
-               
+
             </Container>
         </>
     )

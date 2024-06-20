@@ -1288,12 +1288,17 @@ p.animation5 {
 
   /* Art-> services/ about-us page */
   .custom_height_art_top {
-    min-height: 5vh !important;
+    min-height: 3vh !important;
   }
-
   .custom_height_top {
     min-height: 5vh;
   }
+  /* Team Card Height
+  .team-card-h {
+    height: 440px !important;
+    width: 300px;
+    background-color: #f30202;
+  } */
 }
 
 
@@ -1531,11 +1536,11 @@ p.animation5 {
   }
 
   /* Team Card Height */
-  .team-card-h {
+  /* .team-card-h {
     height: 350px !important;
     width: 230px;
     background-color: #f30202;
-  }
+  } */
 
   /* .footer-main {
     min-height: 55vh !important;
@@ -1812,11 +1817,11 @@ p.animation5 {
   }
 
   /* Team Card Height */
-  .team-card-h {
+  /* .team-card-h {
     height: 425px !important;
     width: 300px;
     background-color: #f30202;
-  }
+  } */
 }
 
 /******************** Screen size - 110% ********************/
@@ -2079,11 +2084,11 @@ p.animation5 {
   }   */
 
   /* Team Card Height */
-  .team-card-h {
+  /* .team-card-h {
     height: 440px !important;
     width: 300px;
     background-color: #f30202;
-  }
+  } */
 }
 
 /******************** Screen size - 100% ********************/
@@ -2396,11 +2401,11 @@ p.animation5 {
   }    */
 
   /* Team Card Height */
-  .team-card-h {
+  /* .team-card-h {
     height: 440px !important;
     width: 300px;
     background-color: #f30202;
-  }
+  } */
 }
 
 /******************** Screen size - 90% ********************/
@@ -2659,12 +2664,12 @@ p.animation5 {
     min-height: 7vh !important;
   }
 
-  /* Team Card Height */
+  /* Team Card Height
   .team-card-h {
     height: 440px !important;
     width: 300px;
     background-color: #f30202;
-  }
+  } */
 
 }
 
