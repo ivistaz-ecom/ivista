@@ -110,9 +110,9 @@ function Footer() {
                         {/* SERVICES */}
                         <Col className="footer p-0" lg={3}>
                             <Col className="f-head d-lg-none d-flex py-lg-0 py-3 pb-2" lg={3}>
-                            <Link href="/art/services" className='text-decoration-none text-white'>
-                                SERVICES
-                            </Link>
+                                <Link href="/art/services" className='text-decoration-none text-white'>
+                                    SERVICES
+                                </Link>
                             </Col>
                             <ul>
                                 <li>
@@ -168,9 +168,9 @@ function Footer() {
                         {/* INDUSTRIES */}
                         <Col className="footer p-0" lg={3}>
                             <Col className="f-head d-lg-none d-flex py-lg-0 py-3 pb-2" lg={3}>
-                            <Link href="/performance/industries" className='text-decoration-none text-white'>
-                                INDUSTRIES
-                            </Link>
+                                <Link href="/performance/industries" className='text-decoration-none text-white'>
+                                    INDUSTRIES
+                                </Link>
                             </Col>
                             <ul>
                                 <li>
@@ -219,9 +219,9 @@ function Footer() {
                         {/*SOLUTIONS*/}
                         <Col className="footer p-0" lg={3}>
                             <Col className="f-head d-lg-none d-flex py-lg-0 py-3 pb-2" lg={2}>
-                            <Link href="/mastery/solutions" className='text-decoration-none text-white'>
-                                SOLUTIONS
-                            </Link>
+                                <Link href="/mastery/solutions" className='text-decoration-none text-white'>
+                                    SOLUTIONS
+                                </Link>
                             </Col>
                             <ul>
                                 <li>
@@ -281,11 +281,11 @@ function Footer() {
             </Container>
             <Container className="bg-black pt-1 pb-1 z-2 ps-0" fluid>
                 <Container className="text-center copyright  p-0">
-                    <div className='d-flex gap-5 col-lg-12'>
-                        <div className='col-lg-9 text-start'>
+                    <div className='d-flex flex-lg-row flex-column gap-lg-5 gap-1 col-lg-12'>
+                        <div className='col-lg-9 text-lg-start text-center'>
                             <p className='mb-0' style={{ fontSize: '17px' }}>© {currentYear} iVistaz Ecom Services Pvt. Ltd.</p></div>
 
-                        <div className='text-start'>
+                        <div className='text-lg-start text-center'>
                             <Link href="/privacy-policy" className='text-decoration-none text-white para-text ' style={{ fontSize: '14px' }}>
                                 Privacy Policy
                             </Link>
