@@ -56,7 +56,7 @@ const HomePage = () => {
           <Col className="d-flex flex-column justify-content-center align-items-center z-index-100">
             <Image src="/images/ivista_logo.svg" width={300} height={80} className="img-fluid" alt="" />
             {/*Homepage skip Button  */}
-            <Link href="/home" className="demo rounded-3">Skip</Link>
+            <Link href="/welcome" className="demo rounded-3">Skip</Link>
           </Col>
 
 
