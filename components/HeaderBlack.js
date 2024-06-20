@@ -116,34 +116,34 @@ function Header1() {
             <Row className='d-flex flex-column justify-content-between h-100 z-index-100'>
               <Col>
                 <Container className="text-center">
-                  <Link className="navbar-brand" href="/ivistaz">
+                  <Link className="navbar-brand d-flex justify-content-center" href="/ivistaz">
                     <Image src="/images/ivista_logo.svg" width="200" height={100} alt='' className='d-lg-none d-flex text-center' />
                   </Link>
                 </Container>
                 <ul className="navbar-nav text-center flex-grow-1 pe-2">
                   <NavDropdown title="Services" id="navbarScrollingDropdown" className='border-0'>
-                    <NavDropdown.Item href="/art/services">
+                    <NavDropdown.Item href="/art/services" className='nav-overview'>
                       Overview
                     </NavDropdown.Item>
-                    <NavDropdown.Item href="/service/content-development-b2b-b2c" className='nav-dropdown'>
+                    <NavDropdown.Item href="/service/content-development-b2b-b2c" className='nav-dropdown p-2'>
                       Content Development (B2B & B2C)
                     </NavDropdown.Item>
-                    <NavDropdown.Item href="/service/design" className='nav-dropdown'>
+                    <NavDropdown.Item href="/service/design" className='nav-dropdown p-2'>
                       Design
                     </NavDropdown.Item>
-                    <NavDropdown.Item href="/service/search-engine-marketing" className='nav-dropdown'>
+                    <NavDropdown.Item href="/service/search-engine-marketing" className='nav-dropdown p-2'>
                       Search Engine Marketing
                     </NavDropdown.Item>
-                    <NavDropdown.Item href="/service/search-engine-optimization" className='nav-dropdown '>
+                    <NavDropdown.Item href="/service/search-engine-optimization" className='nav-dropdown p-2 '>
                       Search Engine Optimization
                     </NavDropdown.Item>
-                    <NavDropdown.Item href="/service/social-media-marketing" className='nav-dropdown'>
+                    <NavDropdown.Item href="/service/social-media-marketing" className='nav-dropdown p-2'>
                       Social Media Marketing
                     </NavDropdown.Item>
-                    <NavDropdown.Item href="/service/organic-social-media" className='nav-dropdown'>
+                    <NavDropdown.Item href="/service/organic-social-media" className='nav-dropdown p-2'>
                       Social Media - Organic
                     </NavDropdown.Item>
-                    <NavDropdown.Item href="/service/website-design-and-development" className='nav-dropdown'>
+                    <NavDropdown.Item href="/service/website-design-and-development" className='nav-dropdown p-2'>
                       Web Design & Development
                     </NavDropdown.Item>
 
@@ -158,18 +158,18 @@ function Header1() {
                   <li className="divider-center">
                     <hr className="m-divider" />
                   </li>
-                  <NavDropdown title="Industries" id="navbarScrollingDropdown">
-                    <NavDropdown.Item href="/performance/industries" className='nav-dropdown text-danger'>
+                  <NavDropdown title="Industries" id="navbarScrollingDropdown" className='border-0'>
+                    <NavDropdown.Item href="/performance/industries" className='nav-overview'>
                       Overview
                     </NavDropdown.Item>
-                    <NavDropdown.Item href="/industries/appliances" className='nav-dropdown'>Appliances</NavDropdown.Item>
-                    <NavDropdown.Item href="/industries/automobiles" className='nav-dropdown'>Automobiles</NavDropdown.Item>
-                    <NavDropdown.Item href="/industries/beauty-wellness" className='nav-dropdown'>Beauty & Wellness</NavDropdown.Item>
-                    <NavDropdown.Item href="/industries/fashion-accessories" className='nav-dropdown'>Fashion & Accessories</NavDropdown.Item>
-                    <NavDropdown.Item href="/industries/hospitality" className='nav-dropdown'>Hospitality</NavDropdown.Item>
-                    <NavDropdown.Item href="/industries/jewellery" className='nav-dropdown'>Jewelry</NavDropdown.Item>
-                    <NavDropdown.Item href="/industries/ngos" className='nav-dropdown'>Not-for-Profits/NGOs</NavDropdown.Item>
-                    <NavDropdown.Item href="/industries/technology-IT" className='nav-dropdown'>Tech/IT</NavDropdown.Item>
+                    <NavDropdown.Item href="/industries/appliances" className='nav-dropdown p-2'>Appliances</NavDropdown.Item>
+                    <NavDropdown.Item href="/industries/automobiles" className='nav-dropdown p-2'>Automobiles</NavDropdown.Item>
+                    <NavDropdown.Item href="/industries/beauty-wellness" className='nav-dropdown p-2'>Beauty & Wellness</NavDropdown.Item>
+                    <NavDropdown.Item href="/industries/fashion-accessories" className='nav-dropdown p-2'>Fashion & Accessories</NavDropdown.Item>
+                    <NavDropdown.Item href="/industries/hospitality" className='nav-dropdown p-2'>Hospitality</NavDropdown.Item>
+                    <NavDropdown.Item href="/industries/jewellery" className='nav-dropdown p-2'>Jewelry</NavDropdown.Item>
+                    <NavDropdown.Item href="/industries/ngos" className='nav-dropdown p-2'>Not-for-Profits/NGOs</NavDropdown.Item>
+                    <NavDropdown.Item href="/industries/technology-IT" className='nav-dropdown p-2'>Tech/IT</NavDropdown.Item>
                   </NavDropdown>
                   <li className="divider-center">
                     <hr className="m-divider" />
@@ -187,10 +187,10 @@ function Header1() {
                     <hr className="m-divider" />
                   </li>
                   <NavDropdown title="Company" id="navbarScrollingDropdown" className='custom-nav-company'>
-                    <NavDropdown.Item href="/our-team" className='nav-dropdown'>Team</NavDropdown.Item>
-                    <NavDropdown.Item href="/our-clients" className='nav-dropdown'>Clients</NavDropdown.Item>
-                    <NavDropdown.Item href="/mastery/about-us" className='nav-dropdown'>About Us</NavDropdown.Item>
-                    <NavDropdown.Item href="/careers" className='nav-dropdown'>Careers</NavDropdown.Item>
+                    <NavDropdown.Item href="/our-team" className='nav-dropdown p-2'>Team</NavDropdown.Item>
+                    <NavDropdown.Item href="/our-clients" className='nav-dropdown p-2'>Clients</NavDropdown.Item>
+                    <NavDropdown.Item href="/mastery/about-us" className='nav-dropdown p-2'>About Us</NavDropdown.Item>
+                    <NavDropdown.Item href="/careers" className='nav-dropdown p-2'>Careers</NavDropdown.Item>
                   </NavDropdown>
                   <li className="divider-center">
                     <hr className="m-divider" />
@@ -211,20 +211,20 @@ function Header1() {
               <div className="d-flex align-items-center justify-content-start gap-2">
                 <Link href="https://www.linkedin.com/company/ivistawebsolutions/mycompany/" target='_blank'>
                   <Image src="/images/linkedin.svg" width={43} height={43} className="social" alt='' />
-                  {/* <TiSocialLinkedinCircular className='fs-1 txt-danger'/> */}
+                 
                 </Link>
                 <Link href="https://www.instagram.com/ivistawebsolutions/" target='_blank'>
                   <Image src="/images/instagram.svg" width={44} height={44} className="social" alt='' />
-                  {/* <GrInstagram className='fs-2 txt-danger'/> */}
+                  
 
                 </Link>
                 <Link href="https://www.facebook.com/ivistasolutions/" target='_blank'>
-                  <Image src="/images/facebook.svg" width={40} height={40} className="social" alt='' />
-                  {/* <FaFacebook className='fs-2 txt-danger'/> */}
+                  <Image src="/images/Face-book.svg" width={40} height={40} className="social" alt='' />
+                  
                 </Link>
                 <Link href="https://twitter.com/ivistasolutions?lang=en" target='_blank'>
                   <Image src="/images/twitter.svg" width={44} height={44} className="social" alt='' />
-                  {/* <AiFillTwitterCircle className='fs-1 txt-danger'/> */}
+                 
                 </Link>
               </div>
             </div>

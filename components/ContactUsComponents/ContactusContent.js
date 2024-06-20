@@ -27,14 +27,14 @@ const ContactusContent = () => {
 
                     {/* New Contact us */}
 
-                    <Col lg={6} className="d-flex flex-column justify-content-center iv-bg my-5 rounded-4 h-50">
+                    <Col lg={6} className="d-flex flex-column justify-content-center iv-bg my-5 rounded-4 h-50 ">
                         <Container className='contact'>
-                            <h1 className="contact-head pb-4">iVistaz Ecom Services Pvt. Ltd.</h1>
+                            <h1 className="contact-head pb-4 pt-5">iVistaz Ecom Services Pvt. Ltd.</h1>
                             <p className="contact-text text-center">Business Enquiries</p>
                             <p className="contact-text text-center">+91 80 41966600</p>
                             <p className="contact-text text-center" ><Link className='text-white' href={"mailto: reach@ivistasolutions.com"}>reach@ivistasolutions.com</Link></p>
 
-                            <Container className="text-center pt-5">
+                            <Container className="text-center pt-5 pb-5">
                                 <Row className="g-0">
                                     <Col className="d-flex align-items-center justify-content-end">
                                         <p className="footer-text">Follow Us:</p>
@@ -113,7 +113,6 @@ const ContactusContent = () => {
                         </div>
                     </Col>
                 </Row>
-
                 <style jsx>{`
     .map-container {
         width: 1300px;
@@ -127,7 +126,7 @@ const ContactusContent = () => {
 
     @media (max-width: 768px) {
         .map-container {
-            width: 100%;
+            width: 500px;
             height: 400px;
         }
        .responsive-iframe {

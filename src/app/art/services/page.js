@@ -29,7 +29,7 @@ function page() {
       <ScrollAnimationArt />
       <Container fluid className="mb-4 p-0">
         <Header1 />
-        <img src="/images/h-icon.svg" className="header-icon " />
+        <img src="/images/h-icon.svg" className="header-icon d-none d-lg-block d-sm-none" />
         <Container fluid className='bg-white z-3 p-0'>
         <div className='custom_height_art_top'></div>
           <article>

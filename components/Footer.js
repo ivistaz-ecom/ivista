@@ -110,8 +110,10 @@ function Footer() {
                         {/* SERVICES */}
                         <Col className="footer p-0" lg={3}>
                             <Col className="f-head d-lg-none d-flex py-lg-0 py-3 pb-2" lg={3}>
-                                <Link href="/art/services" className='text-decoration-none'>
-                                    SERVICES</Link></Col>
+                            <Link href="/art/services" className='text-decoration-none text-white'>
+                                SERVICES
+                            </Link>
+                            </Col>
                             <ul>
                                 <li>
                                     <Link href="/service/content-development-b2b-b2c" className='text-decoration-none text-white custom-footer-font'>
@@ -165,7 +167,11 @@ function Footer() {
 
                         {/* INDUSTRIES */}
                         <Col className="footer p-0" lg={3}>
-                            <Col className="f-head d-lg-none d-flex py-lg-0 py-3 pb-2" lg={3}>INDUSTRIES</Col>
+                            <Col className="f-head d-lg-none d-flex py-lg-0 py-3 pb-2" lg={3}>
+                            <Link href="/performance/industries" className='text-decoration-none text-white'>
+                                INDUSTRIES
+                            </Link>
+                            </Col>
                             <ul>
                                 <li>
                                     <Link href="/industries/appliances" className='text-decoration-none text-white custom-footer-font'>
@@ -212,7 +218,11 @@ function Footer() {
 
                         {/*SOLUTIONS*/}
                         <Col className="footer p-0" lg={3}>
-                            <Col className="f-head d-lg-none d-flex py-lg-0 py-3 pb-2" lg={2}>SOLUTIONS</Col>
+                            <Col className="f-head d-lg-none d-flex py-lg-0 py-3 pb-2" lg={2}>
+                            <Link href="/mastery/solutions" className='text-decoration-none text-white'>
+                                SOLUTIONS
+                            </Link>
+                            </Col>
                             <ul>
                                 <li>
                                     <Link href="/mastery/solutions#traffic" className='text-decoration-none text-white custom-footer-font'>
