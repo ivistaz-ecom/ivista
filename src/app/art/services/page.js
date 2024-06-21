@@ -61,14 +61,14 @@ function Page() {
                       { src: "/images/Search_Engine_Optimization.svg", title: "Search Engine Optimization", link: "/service/search-engine-optimization" },
                       { src: "/images/Social_Media_Marketing.svg", title: "Social Media Marketing", link: "/service/social-media-marketing" },
                       { src: "/images/Social_Media-Organic.svg", title: "Social Media - Organic", link: "/service/organic-social-media" },
-                      { src: "/images/Web_Design.svg", title: "Web Design & Development", link: "/website-design-and-development" }
+                      // { src: "/images/Web_Design.svg", title: "Web Design & Development", link: "/website-design-and-development" }
                     ].map((service, index) => (
                       <Col lg={4} key={index} className="mt-3">
                         <div className="d-flex flex-column align-items-center text-center">
                           <div>
                             <img src={service.src} alt={service.title} />
                           </div>
-                          <div className=" pt-3">
+                          <div className=" p-4">
                             <Link className='text-decoration-none txt-danger' href={service.link}>
                               <p className='para-text mb-0'>{service.title}</p>
                               {service.subtitle && <p className='para-text'>{service.subtitle}</p>}
@@ -77,7 +77,23 @@ function Page() {
                         </div>
                       </Col>
                     ))}
+                   
                   </div>
+                  <Col className='ps-6 mt-4'>
+                      <div className="d-flex flex-column align-items-center text-start">
+                        <div>
+                          <img src="/images/Web_Design.svg" />
+                        </div>
+                        <div className=" p-4">
+                            <Link className='text-decoration-none txt-danger' href="/website-design-and-development">
+                              <p className='para-text mb-0'>Web Design & Development</p>
+                            
+                            </Link>
+                            </div>
+                      </div>
+                    </Col>
+                    <Col></Col>
+                    <Col></Col>
                 </Row>
               </Container>
               <div className='custom_height_art_bottom'></div>

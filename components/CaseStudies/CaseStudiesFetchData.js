@@ -9,7 +9,7 @@ import { CiCircleChevRight } from "react-icons/ci";
 const CaseStudiesFetchData = () => {
     return (
         <Container className="w-80 custom-container">
-            
+
 
             <h1 className="fs-80 fw-bold text-white">CASE STUDIES</h1>
             <h3 className="fs-19 text-white fw-semibold poppins">Performance you'll love. Can we replicate it for you?</h3>
@@ -70,7 +70,7 @@ const CaseStudiesFetchData = () => {
 
                 {/* Column 3 */}
                 <Col md={4} className="d-flex py-2">
-                    <Link href={'/case-studies/cost-optimization-for-a-luxury-automibile-dealership'} className='text-line'>
+                    <Link href={'/case-studies/luxury-automobile-dealership-case-study-cost-optimization-and-sales-conversion'} className='text-line'>
                         <div className="card text-white bg-white mb-3 rounded-5 w-100 h-100 d-flex flex-column">
                             <div className="card-body d-flex flex-column justify-content-between flex-grow-1">
                                 <div className='card-title d-flex justify-content-between align-items-center'>
@@ -129,7 +129,7 @@ const CaseStudiesFetchData = () => {
 
                 {/* Column 5 */}
                 <Col md={4} className="d-flex py-2">
-                    <Link href={'/case-studies/b2b-email-marketing-case-study-generating-qualified-leads-with-strategic-campaigns'} className='text-line'>
+                    <Link href={'/case-studies/b2b-email-marketing-case-study-delivering-qualified-leads-to-generate-interest-to-invest-in-the-clients-social-impact-projects'} className='text-line'>
                         <div className="card text-white bg-white mb-3 rounded-5 w-100 h-100 d-flex flex-column">
                             <div className="card-body d-flex flex-column justify-content-between flex-grow-1">
                                 <div className='card-title d-flex justify-content-between align-items-center'>
