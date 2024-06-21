@@ -44,7 +44,7 @@ function Performance() {
         </p>
       </Container>
       <Container className='ps-6'>
-        <Link className="btn btn-11 z-0" href="/mastery">Know More</Link>
+        <Link className="btn btn-11 z-0" href="/performance">Know More</Link>
       </Container>
     </Container>
   );

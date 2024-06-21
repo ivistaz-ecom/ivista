@@ -239,6 +239,15 @@ const ourclients = {
         {
             clientlogos: '/our_clients_logo/Zuri-Logo.jpg',
         },
+
+        {
+            clientlogos: '/our_clients_logo/Hexaware.jpg',
+        },
+
+        {
+            clientlogos: '/our_clients_logo/24.jpg',
+        },
+      
       
 
     ]

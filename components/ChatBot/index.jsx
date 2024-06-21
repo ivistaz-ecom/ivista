@@ -31,7 +31,10 @@ const CollectChatScript = () => {
             top: 78%;
           }
 
-          
+          div#chat-bot-launcher-button {
+            background-image: url('/images/chat_bot.svg') !important;
+            background-size: cover;
+          }
         `}
       </style>
       {/* This component doesn't render anything visible */}
