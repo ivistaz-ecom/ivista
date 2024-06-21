@@ -962,9 +962,9 @@ background: rgba(255, 255, 255, 0) !important; */
   height: 31px !important;
 }
 
-.social:hover {
+/* .social:hover {
   background-color: #ED2225;
-}
+} */
 
 .offcanvas.offcanvas-end {
   width: 25% !important;
@@ -1668,6 +1668,66 @@ background: rgba(255, 255, 255, 0) !important; */
   animation-direction: alternate;
 }
 
+
+.btn-17 {
+  position: relative;
+  color: #ED2225 !important;
+  position: relative;
+  display: block;
+  overflow: hidden;
+  width: 50% !important;
+  padding: 10px !important;
+  border-radius: 12px;
+  text-decoration: none !important;
+  font-family: 'Poppins', sans-serif !important;
+  border: 0px solid #ED2225 !important;
+  text-align: center !important;
+  font-size: 20px !important;
+  z-index: 9999;
+  background: #fff !important;
+}
+
+.btn-17:before,
+.btn-17:after {
+  position: absolute;
+  top: 50%;
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: #ED2225;
+  border-radius: 50%;
+  color: #ED2225 !important;
+  z-index: -17 !important;
+}
+
+.btn-17:before {
+  left: -20px;
+  transform: translate(-50%, -50%);
+}
+
+.btn-17:after {
+  right: -20px;
+  transform: translate(50%, -50%);
+}
+
+.btn-17:hover {
+  color: #fff !important;
+  border: 0px solid #fff !important;
+}
+
+.btn-17:hover:before {
+  -webkit-animation: criss-cross-left 0.8s both;
+  animation: criss-cross-left 0.8s both;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+}
+
+.btn-17:hover:after {
+  -webkit-animation: criss-cross-right 0.8s both;
+  animation: criss-cross-right 0.8s both;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+}
 
 .case-text {
   font-size: 20px;
