@@ -38,7 +38,9 @@ body {
   color: #ffffff83;
 }
 
-
+.txt-red{
+  color: #ED2225;
+}
 .black-and-white {
   background-image: linear-gradient(180deg, black 33%, white 33%);
   z-index: 0 !important;
@@ -1902,7 +1904,7 @@ background: rgba(255, 255, 255, 0) !important; */
   .fs-19,
   .fs-20,
   .fs-21 {
-    font-size: 25px !important;
+    font-size: 35px !important;
 
   }
 

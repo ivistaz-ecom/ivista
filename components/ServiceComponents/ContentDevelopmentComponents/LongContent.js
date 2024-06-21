@@ -11,7 +11,7 @@ const longform = [
     },
 
     {
-        title: 'White papers',
+        title: 'Whitepapers',
         image: '/services/long_form_icons/whitepapers.svg'
     },
 
