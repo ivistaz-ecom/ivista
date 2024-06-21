@@ -401,6 +401,14 @@ body {
   width: 85% !important;
 }
 
+.w-60{
+width: 60% !important;
+}
+
+.w-61{
+  width: 50% !important;
+  }
+
 .pl-8 {
   padding-left: 3% !important;
 }
@@ -580,7 +588,12 @@ background: rgba(255, 255, 255, 0) !important; */
   .ps-6 {
     padding-left: 1rem !important;
   }
-
+  .w-60{
+    width: 70% !important;
+    }
+    .w-61{
+      width: 70% !important;
+      }
   .custom-container {
     padding-top: 40px !important;
     z-index: 0;
