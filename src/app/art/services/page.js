@@ -63,7 +63,7 @@ function Page() {
                       { src: "/images/Social_Media-Organic.svg", title: "Social Media - Organic", link: "/service/organic-social-media" },
                       // { src: "/images/Web_Design.svg", title: "Web Design & Development", link: "/website-design-and-development" }
                     ].map((service, index) => (
-                      <Col lg={4} key={index} className="mt-3">
+                      <Col lg={4} key={index} className="mt-3 m-2 m-lg-0">
                         <div className="d-flex flex-column align-items-center text-center">
                           <div>
                             <img src={service.src} alt={service.title} />
@@ -79,9 +79,11 @@ function Page() {
                     ))}
                    
                   </div>
-                  <Col className='ps-6 mt-4'>
+                  </Row>
+                  <Row className="d-flex align-items-start ps-lg-5">
+                  <Col lg={4} className='mt-4'>
                       <div className="d-flex flex-column align-items-center text-start">
-                        <div>
+                        <div className='' >
                           <img src="/images/Web_Design.svg" />
                         </div>
                         <div className=" p-4">
@@ -94,7 +96,7 @@ function Page() {
                     </Col>
                     <Col></Col>
                     <Col></Col>
-                </Row>
+                    </Row>
               </Container>
               <div className='custom_height_art_bottom'></div>
             </div>

@@ -26,27 +26,27 @@ const longform = [
     },
 
     {
-        title: 'Case studies',
+        title: 'Case Studies',
         image: '/services/long_form_icons/case_studies.svg'
     },
 
     {
-        title: 'Product-solution pages',
+        title: 'Product-solution Pages',
         image: '/services/long_form_icons/product_solution_pages.svg'
     },
 
     {
-        title: 'Campaign landing pages',
+        title: 'Campaign Landing Pages',
         image: '/services/long_form_icons/campaign_landing_page.svg'
     },
 
     {
-        title: 'Newsletter content',
+        title: 'Newsletter Content',
         image: '/services/long_form_icons/news.svg'
     },
 
     {
-        title: 'Video content',
+        title: 'Video Content',
         image: '/services/long_form_icons/video_content.svg'
     },
 

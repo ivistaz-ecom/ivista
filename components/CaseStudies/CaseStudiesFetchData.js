@@ -23,8 +23,8 @@ const CaseStudiesFetchData = () => {
                                     <div>
                                         <p className="fs-23 mb-0 red para-text fw-bold ps-3">201%</p>
                                     </div>
-                                    <div className='d-flex'>
-                                        <Image src="/images/search.svg" className='w-50 ms-auto' width={100} height={100} alt='' />
+                                    <div className=''>
+                                        <Image src="/images/search.svg" className='w-60 d-flex ms-auto p-1' width={100} height={100} alt='' />
                                     </div>
                                 </div>
                                 <div className='d-flex flex-column flex-grow-1'>
@@ -50,8 +50,8 @@ const CaseStudiesFetchData = () => {
                                     <div>
                                         <p className="fs-23 mb-0 red para-text fw-bold ps-3">2x</p>
                                     </div>
-                                    <div className='pe-0 d-flex'>
-                                        <Image src="/images/shoping.svg" className='w-50 ms-auto' width={100} height={100} alt='' />
+                                    <div className='pe-0'>
+                                        <Image src="/images/shoping.svg" className='w-60 d-flex ms-auto' width={100} height={100} alt='' />
                                     </div>
                                 </div>
                                 <div className='d-flex flex-column flex-grow-1'>
@@ -77,8 +77,8 @@ const CaseStudiesFetchData = () => {
                                     <div>
                                         <p className="fs-23 mb-0 red para-text fw-bold ps-3">1 <span className='fs-3 red'>in 14</span></p>
                                     </div>
-                                    <div className='d-flex'>
-                                        <Image src="/images/magnet.svg" className='w-50 ms-auto' width={100} height={100} alt='' />
+                                    <div className=''>
+                                        <Image src="/images/magnet.svg" className='w-60 d-flex ms-auto' width={100} height={100} alt='' />
                                     </div>
                                 </div>
                                 <div className='d-flex flex-column flex-grow-1'>
@@ -108,8 +108,8 @@ const CaseStudiesFetchData = () => {
                                     <div>
                                         <p className="fs-23 mb-0 red para-text fw-bold ps-3">2.8%</p>
                                     </div>
-                                    <div className='d-flex'>
-                                        <Image src="/images/message.svg" className='w-50 ms-auto' width={100} height={100} alt='' />
+                                    <div className=''>
+                                        <Image src="/images/message.svg" className='w-60 d-flex ms-auto' width={100} height={100} alt='' />
                                     </div>
                                 </div>
                                 <div className='d-flex flex-column flex-grow-1'>
@@ -136,15 +136,15 @@ const CaseStudiesFetchData = () => {
                                     <div>
                                         <p className="fs-23 mb-0 red para-text fw-bold ps-3">10.8%</p>
                                     </div>
-                                    <div className='d-flex'>
-                                        <Image src="/images/message.svg" className='w-50 ms-auto' width={100} height={100} alt='' />
+                                    <div className=''>
+                                        <Image src="/images/message.svg" className='w-60 d-flex ms-auto' width={100} height={100} alt='' />
                                     </div>
                                 </div>
                                 <div className='d-flex flex-column flex-grow-1'>
                                     <div>
-                                        <p className="card-text text-dark fs-4 p-3 mb-5">Lead Conversion Rate </p>
+                                        <p className="card-text text-dark fs-4 p-3 mb-5">Lead Conversion Rate</p>
 
-                                        <p className="card-text text-dark fs-4 px-3">   B2B Email Marketing Success for a Conslutling Orginaztion in the Social Impact Space </p>
+                                        <p className="card-text text-dark fs-4 px-3">   B2B Email Marketing Success for a Consulting Organization in the Social Impact Space </p>
                                     </div>
                                 </div>
                                 <div className='py-5 pb-0'>
@@ -164,8 +164,8 @@ const CaseStudiesFetchData = () => {
                                     <div>
                                         <p className="fs-23 mb-0 red para-text fw-bold ps-3">93,345</p>
                                     </div>
-                                    <div className='d-flex'>
-                                        <Image src="/images/scale.svg" className='w-50 ms-auto' width={100} height={100} alt='' />
+                                    <div className=''>
+                                        <Image src="/images/scale.svg" className='w-61 d-flex ms-auto' width={100} height={100} alt='' />
                                     </div>
                                 </div>
                                 <div className='d-flex flex-column flex-grow-1'>
@@ -183,7 +183,7 @@ const CaseStudiesFetchData = () => {
                 </Col>
             </Row>
 
-            <Row className='py-lg-5 pb-3'>
+            <Row className='py-lg-5'>
                 {/* Column 7*/}
                 <Col md={4} className="d-flex py-2">
                     <Link href={'/case-studies/premier-hotel-chain-case-study-increased-direct-online-bookings-and-global-reach'} className='text-line'>
@@ -193,8 +193,8 @@ const CaseStudiesFetchData = () => {
                                     <div>
                                         <p className="fs-23 mb-0 red para-text fw-bold ps-3">7%</p>
                                     </div>
-                                    <div className='d-flex'>
-                                        <Image src="/images/shoping.svg" className='w-50 ms-auto' width={100} height={100} alt='' />
+                                    <div className=''>
+                                        <Image src="/images/shoping.svg" className='w-60 d-flex ms-auto' width={100} height={100} alt='' />
                                     </div>
                                 </div>
                                 <div className='d-flex flex-column flex-grow-1'>
@@ -220,8 +220,8 @@ const CaseStudiesFetchData = () => {
                                     <div>
                                         <p className="fs-23 mb-0 red para-text fw-bold ps-3">14%</p>
                                     </div>
-                                    <div className='d-flex'>
-                                        <Image src="/images/message.svg" className='w-50 ms-auto' width={100} height={100} alt='' />
+                                    <div className=''>
+                                        <Image src="/images/message.svg" className='w-60 d-flex ms-auto' width={100} height={100} alt='' />
                                     </div>
                                 </div>
                                 <div className='d-flex flex-column flex-grow-1'>
@@ -245,16 +245,44 @@ const CaseStudiesFetchData = () => {
                             <div className="card-body d-flex flex-column justify-content-between flex-grow-1">
                                 <div className='card-title d-flex justify-content-between align-items-center'>
                                     <div>
-                                        <p className="fs-23 mb-0 red para-text fw-bold">8%</p>
+                                        <p className="fs-23 mb-0 red para-text fw-bold ps-3">8%</p>
                                     </div>
-                                    <div className='d-flex'>
-                                        <Image src="/images/scale.svg" className='w-50 ms-auto' width={100} height={100} alt='' />
+                                    <div className=''>
+                                    <Image src="/images/scale.svg" className='w-61 d-flex ms-auto p-lg-0 p-2' width={100} height={100} alt='' />
                                     </div>
                                 </div>
                                 <div className='d-flex flex-column flex-grow-1'>
                                     <div>
                                         <p className="card-text text-dark fs-4 p-3">Direct Online Bookings and 32% Boost in Wedding and MICE Leads</p>
                                         <p className="card-text text-dark fs-4 px-3"> Hotel Chain Digital Marketing Success</p>
+                                    </div>
+                                </div>
+                                <div className='py-5 pb-0'>
+                                    <button type="button" className="btn btn-16 z-0 rounded-4">Read More</button>
+                                </div>
+                            </div>
+                        </div>
+                    </Link>
+                </Col>
+            </Row>
+            <Row className='pb-3'>
+                {/* Column 10 */}
+                <Col md={4} className="d-flex py-2">
+                    <Link href={'/case-studies/leading-water-purifier-brand-boosted-monthly-online-sales-from-1-5-cr-to-12-cr'} className='text-line'>
+                        <div className="card text-white bg-white mb-3 rounded-5 w-100 h-100 d-flex flex-column">
+                            <div className="card-body d-flex flex-column justify-content-between flex-grow-1">
+                                <div className='card-title d-flex justify-content-between align-items-center'>
+                                    <div>
+                                        <p className="fs-23 mb-0 red para-text fw-bold ps-3">700%</p>
+                                    </div>
+                                    <div className=''>
+                                        <Image src="/images/shoping.svg" className='w-60 d-flex ms-auto' width={100} height={100} alt='' />
+                                    </div>
+                                </div>
+                                <div className='d-flex flex-column flex-grow-1'>
+                                    <div>
+                                        <p className="card-text text-dark fs-4 p-3">Increase in Online Sales</p>
+                                        <p className="card-text text-dark fs-4 px-3">For India’s Leading Water Purifier Brand</p>
                                     </div>
                                 </div>
                                 <div className='py-5 pb-0'>
