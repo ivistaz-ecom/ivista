@@ -1,15 +1,15 @@
 "use client"
-import React, { useState, useEffect, useRef } from 'react'
-import Header1 from '../../../../components/HeaderBlack'
-import { Col, Container, Row } from 'react-bootstrap'
+import React, { useState, useEffect } from 'react';
+import Header1 from '../../../../components/HeaderBlack';
+import { Col, Container, Row } from 'react-bootstrap';
 import Link from 'next/link';
-import Image from 'next/image'
+import Image from 'next/image';
 import Footer from '../../../../components/Footer';
 import ScrollAnimationArt from '../../../../components/SharedComponents/ScrollAnimationArt';
-import SeoComponents from '../../../../components/SeoComponents/Seo'
-import { usePathname } from 'next/navigation'
+import SeoComponents from '../../../../components/SeoComponents/Seo';
+import { usePathname } from 'next/navigation';
 
-function page() {
+function Page() {
   const pathname = usePathname();
   const [domainName, setDomainName] = useState('');
 
@@ -29,8 +29,7 @@ function page() {
       <ScrollAnimationArt />
       <Header1 />
       <Container fluid className="mb-lg-4 mb-0 p-0">
-
-        <img src="/images/h-icon.svg" className="header-icon d-none d-lg-block d-sm-none" />
+        <img src="/images/h-icon.svg" className="header-icon d-none d-lg-block d-sm-none" alt="Header Icon" />
         <Container fluid className='bg-white z-3 p-0 mb-0'>
           <div className='custom_height_art_top'></div>
           <article>
@@ -38,121 +37,57 @@ function page() {
               <Container className="w-80 custom-container position-relative bg-white">
                 {/* <h1 className="fs-80 fw-bold ps-6">ART</h1> */}
               </Container>
-
-              <Container className="banner w-80 mb-0 z-3" >
+              <Container className="banner w-80 mb-0 z-3">
                 <Row className="d-flex align-items-start">
                   <Col lg={12} className="mt-5 position-relative">
-                    <div className=' position-relative'>
+                    <div className='position-relative'>
                       <div className='timeline-badge4 mt-4'></div>
                       <div className='ps-6'>
                         <h1 className="fs-21 fw-bold text-red position-relative">
                           Services
                         </h1>
                         <p className="para-text text-black">
-                          At the core of everything we do lies the art of transforming exceptional services into extraordinary results with effective digital marketing techniques. We are dedicated to crafting and curating tailored digital marketing solutions that exceed your expectations. Whether it’s a comprehensive package for content creation and design or a single service, we’re here to help brands achieve more than what they wish for. And the best part? We have a <Link href="/mastery/about-us" className="red">performance-based digital marketing model.</Link>  This means we get paid only when we deliver results.</p>
+                          At the core of everything we do lies the art of transforming exceptional services into extraordinary results with effective digital marketing techniques. We are dedicated to crafting and curating tailored digital marketing solutions that exceed your expectations. Whether it’s a comprehensive package for content creation and design or a single service, we’re here to help brands achieve more than what they wish for. And the best part? We have a <Link href="/mastery/about-us" className="red">performance-based digital marketing model.</Link>  This means we get paid only when we deliver results.
+                        </p>
                       </div>
                     </div>
                   </Col>
                   <div className='row bg-white z-3 ps-6'>
-                    {/* Column -1 */}
-                    <Col lg={4}>
-                      <div className="d-flex flex-lg-row flex-column align-items-center mt-3">
-                        <div className=" pt-0">
-                          <img src="/images/Content_Development.svg" />
+                    {/* Service Columns */}
+                    {[
+                      { src: "/images/Content_Development.svg", title: "Content Development", subtitle: "(B2B & B2C)", link: "/service/content-development-b2b-b2c" },
+                      { src: "/images/Design.svg", title: "Design", link: "/service/design" },
+                      { src: "/images/Search_Engine_Marketing.svg", title: "Search Engine Marketing", link: "/service/search-engine-marketing" },
+                      { src: "/images/Search_Engine_Optimization.svg", title: "Search Engine Optimization", link: "/service/search-engine-optimization" },
+                      { src: "/images/Social_Media_Marketing.svg", title: "Social Media Marketing", link: "/service/social-media-marketing" },
+                      { src: "/images/Social_Media-Organic.svg", title: "Social Media - Organic", link: "/service/organic-social-media" },
+                      { src: "/images/Web_Design.svg", title: "Web Design & Development", link: "/website-design-and-development" }
+                    ].map((service, index) => (
+                      <Col lg={4} key={index} className="mt-3">
+                        <div className="d-flex flex-column align-items-center text-center">
+                          <div>
+                            <img src={service.src} alt={service.title} />
+                          </div>
+                          <div className=" pt-3">
+                            <Link className='text-decoration-none txt-danger' href={service.link}>
+                              <p className='para-text mb-0'>{service.title}</p>
+                              {service.subtitle && <p className='para-text'>{service.subtitle}</p>}
+                            </Link>
+                          </div>
                         </div>
-                        <div className="ps-lg-4 text-lg-start text-center pt-3">
-                          <Link className='text-decoration-none txt-danger' href="/service/content-development-b2b-b2c">
-                            <p className='fw-bold fs-4 mb-0'>Content Development</p>
-                            <p className='fw-bold fs-4'>(B2B & B2C)</p></Link>
-                        </div>
-                      </div>
-                    </Col>
-                    {/* Column -2 */}
-                    <Col lg={4}>
-                      <div className="d-flex flex-lg-row flex-column align-items-center mt-4">
-                        <div className=" pt-0">
-                          <img src="/images/Design.svg" />
-                        </div>
-                        <div className="ps-lg-4 text-lg-start text-center pt-4">
-                          <Link className='text-decoration-none txt-danger' href="/service/design">
-                            <p className='fw-bold fs-4'>Design</p></Link>
-                        </div>
-                      </div>
-                    </Col>
-                    {/* Column -3 */}
-                    <Col lg={4}>
-                      <div className="d-flex flex-lg-row flex-column align-items-center mt-2">
-                        <div className=" pt-0">
-                          <img src="/images/Search_Engine_Marketing.svg" />
-                        </div>
-                        <div className="ps-lg-4 text-lg-start text-center pt-3">
-                          <Link className='text-decoration-none txt-danger' href="/service/search-engine-marketing">
-                            <p className='fw-bold fs-4 mb-0'>Search Engine </p>
-                            <p className='fw-bold fs-4'> Marketing</p></Link>
-                        </div>
-                      </div>
-                    </Col>
-                    {/* Column -4 */}
-                    <Col lg={4}>
-                      <div className="d-flex flex-lg-row flex-column align-items-center mt-3">
-                        <div className="text-start pt-0">
-                          <img src="/images/Search_Engine_Optimization.svg" />
-                        </div>
-                        <div className="ps-lg-4 text-lg-start text-center pt-3">
-                          <Link className='text-decoration-none txt-danger' href="/service/search-engine-optimization">
-                            <p className='fw-bold fs-4'>Search Engine Optimization</p></Link>
-                        </div>
-                      </div>
-                    </Col>
-                    {/* Column -5 */}
-                    <Col lg={4}>
-                      <div className="d-flex flex-lg-row flex-column align-items-center mt-3">
-                        <div className=" pt-0">
-                          <img src="/images/Social_Media_Marketing.svg" />
-                        </div>
-                        <div className="ps-lg-4 text-lg-start text-center pt-3">
-                          <Link className='text-decoration-none txt-danger' href="/service/social-media-marketing">
-                            <p className='fw-bold fs-4 mb-0'>Social Media</p>
-                            <p className='fw-bold fs-4'>Marketing</p></Link>
-                        </div>
-                      </div>
-                    </Col>
-                    {/* Column -6 */}
-                    <Col lg={4}>
-                      <div className="d-flex flex-lg-row flex-column align-items-center mt-3">
-                        <div className=" pt-0">
-                          <img src="/images/Social_Media-Organic.svg" />
-                        </div>
-                        <div className="ps-lg-4 text-lg-start text-center pt-3">
-                          <Link className='text-decoration-none txt-danger' href="/service/organic-social-media">
-                            <p className='fw-bold fs-4 mb-0'>Social Media -</p>
-                            <p className='fw-bold fs-4'> Organic</p></Link>
-                        </div>
-                      </div>
-                    </Col>
-                    {/* Column -7 */}
-                    <Col lg={4}>
-                      <div className="d-flex flex-lg-row flex-column align-items-center mt-3">
-                        <div className=" pt-0">
-                          <img src="/images/Web_Design.svg" />
-                        </div>
-                        <div className="ps-lg-4 text-lg-start text-center pt-3">
-                          <Link className='text-decoration-none txt-danger' href="/website-design-and-development">
-                            <p className='fw-bold fs-4'>Web Design & Development</p></Link>
-                        </div>
-                      </div>
-                </Col>
-                </div>
-              </Row>
-            </Container>
-            <div className='custom_height_art_bottom'></div>
-          </div>
-        </article>
+                      </Col>
+                    ))}
+                  </div>
+                </Row>
+              </Container>
+              <div className='custom_height_art_bottom'></div>
+            </div>
+          </article>
+        </Container>
       </Container>
-    </Container >
       <Footer />
     </>
-  )
+  );
 }
 
-export default page
+export default Page;
