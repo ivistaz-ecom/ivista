@@ -58,10 +58,10 @@ function HeroBanner() {
                         <p className="para-text text-dark fs-5 p-3 mb-0">
                         At iVistaz, we focus on measurable outcomes for our clients. Our meticulous approach involves crafting each step and backing our strategies with rigorous data analysis to ensure that we deliver the outcomes that propel you towards your goals. 
                           {showMore && (
-                            <span>We prioritize transparency and accountability, providing detailed weekly, monthly, and quarterly reports to evaluate the effectiveness of our campaigns and guide continuous improvement. What our clients love about us is that we work on a performance-focused model for outcome-based campaigns. This means we get paid only we when deliver results.</span>
+                            <span> We prioritize transparency and accountability, providing detailed weekly, monthly, and quarterly reports to evaluate the effectiveness of our campaigns and guide continuous improvement. What our clients love about us is that we work on a performance-focused model for outcome-based campaigns. This means we get paid only when we deliver results.</span>
                           )}
                         </p>
-                        <Button variant="link" className='btn btn-17 text-center' onClick={handleReadMore}>
+                        <Button variant="link" className='text-start text-decoration-none text-danger' onClick={handleReadMore}>
                           {showMore ? 'Read Less' : 'Read More'}
                         </Button>
                       </div>

@@ -208,6 +208,7 @@ const OurTeamsList = () => {
                                                     fluid
                                                     className='rounded-4 z-1'
                                                 />
+                                                <div class="overlay"></div>
                                             </div>
                                             <div>
                                                 <h4 className='text-white mb-0'>{team.title.rendered}</h4>
