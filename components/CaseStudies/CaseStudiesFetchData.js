@@ -142,9 +142,9 @@ const CaseStudiesFetchData = () => {
                                 </div>
                                 <div className='d-flex flex-column flex-grow-1'>
                                     <div>
-                                        <p className="card-text text-dark fs-4 p-3 mb-4">Conversion rate of qualified leads with email marketing</p>
+                                        <p className="card-text text-dark fs-4 p-3 mb-5">Lead Conversion Rate</p>
 
-                                        <p className="card-text text-dark fs-4 px-3">Generating investments for social impact projects</p>
+                                        <p className="card-text text-dark fs-4 px-3">   B2B Email Marketing Success for a Consulting Organization in the Social Impact Space </p>
                                     </div>
                                 </div>
                                 <div className='py-5 pb-0'>
@@ -228,6 +228,7 @@ const CaseStudiesFetchData = () => {
                                     <div>
                                         <p className="card-text text-dark fs-4 p-3">Direct Online Bookings and Doubled Average Rate of Return</p>
                                         <p className="card-text text-dark fs-4 px-3"> Strategic Digital Marketing Success for a Top Hotel Chain</p>
+                                        <br />
                                     </div>
                                 </div>
                                 <div className='py-5 pb-0'>
@@ -292,7 +293,7 @@ const CaseStudiesFetchData = () => {
                         </div>
                     </Link>
                 </Col>
-
+                {/* Column 11 */}
                 <Col md={4} className="d-flex py-2">
                     <Link href={'/case-studies/online-sales-success-for-a-leading-appliance-brand'} className='text-line'>
                         <div className="card text-white bg-white mb-3 rounded-5 w-100 h-100 d-flex flex-column">
@@ -309,7 +310,34 @@ const CaseStudiesFetchData = () => {
                                     <div>
                                         <p className="card-text text-dark fs-4 p-3">Increase in online sales</p>
                                         <p className="card-text text-dark fs-4 px-3">E-commerce Success Story for a Leading Appliance Brand</p>
-                                     <br/>
+
+                                    </div>
+                                </div>
+                                <div className='py-5 pb-0'>
+                                    <button type="button" className="btn btn-16 z-0 rounded-4">Read More</button>
+                                </div>
+                            </div>
+                        </div>
+                    </Link>
+                </Col>
+                 {/* Column 11 */}
+                 <Col md={4} className="d-flex py-2">
+                    <Link href={'#'} className='text-line'>
+                        <div className="card text-white bg-white mb-3 rounded-5 w-100 h-100 d-flex flex-column">
+                            <div className="card-body d-flex flex-column justify-content-between flex-grow-1">
+                                <div className='card-title d-flex justify-content-between align-items-center'>
+                                    <div>
+                                        <p className="fs-23 mb-0 red para-text fw-bold ps-3">10.8%</p>
+                                    </div>
+                                    <div className=''>
+                                        <Image src="/images/shoping.svg" className='w-60 d-flex ms-auto' width={100} height={100} alt='' />
+                                    </div>
+                                </div>
+                                <div className='d-flex flex-column flex-grow-1'>
+                                    <div>
+                                        <p className="card-text text-dark fs-4 p-3">Conversion rate of qualified leads with email marketing</p>
+                                        <p className="card-text text-dark fs-4 px-3">Generating investments for social impact projects</p>
+
                                     </div>
                                 </div>
                                 <div className='py-5 pb-0'>
