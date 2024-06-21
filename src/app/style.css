@@ -2257,13 +2257,13 @@ p.animation5 {
 
   /* Art-> service page */
   .KW_progressContainer4 {
-    left: 17.6%;
+    left: 17.4%;
     width: 0.4em;
     height: 16%;
     margin-bottom: 0px;
     position: fixed;
     bottom: 0px;
-    top: 0%;
+    top: -2%;
     overflow: hidden;
     background-color: #fff0;
     content: "";
@@ -2385,11 +2385,11 @@ p.animation5 {
 
   /* Art page */
   .custom_height_art_top {
-    min-height: 7vh !important;
+    min-height: 5vh !important;
   }
 
   .custom_height_art_bottom {
-    min-height: 15vh !important;
+    min-height: 10vh !important;
   }
 
   /* .footer-main {
