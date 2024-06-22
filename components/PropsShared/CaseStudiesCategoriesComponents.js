@@ -103,7 +103,7 @@ const CaseStudiesCategoriesComponents = ({ categoryId }) => {
                     {isOpen && (
                         <div className='position-fixed top-0 start-0 end-0 bottom-0 z-index-100 d-flex flex-column justify-content-center align-items-center bg-black bg-opacity-75 mx-lg-0 mx-2'>
                             <span className='position-absolute top-0 bottom-0 end-0 start-0 z-3' onClick={handleCloseModal}></span>
-                            <div className='position-relative p-5 bg-white h-80vh w-50 rounded-3 overflow-auto z-index-100'>
+                            <div className='position-relative bg-white h-80vh rounded-3 overflow-auto z-index-100 pop-box'>
                                 <div className='position-absolute end-0 p-4 pe-5 top-0' onClick={handleCloseModal}>
                                     <div className='position-fixed'>
                                         <CloseButton />

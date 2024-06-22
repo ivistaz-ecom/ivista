@@ -58,7 +58,7 @@ function performance() {
                 </Container>
               </Container>
 
-              <Container className="margin-left d-lg-flex d-none mb-4">
+              <Container className="margin-left d-lg-flex d-none mt-5 ps-4">
                 <Col className=''>
                   <Link href="/art" className="perform-text">ART</Link>
                   <Link href="/mastery" className="perform-text mx-5">MASTERY</Link>
