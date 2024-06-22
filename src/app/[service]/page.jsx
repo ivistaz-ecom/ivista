@@ -23,7 +23,7 @@ const CustomErrorPage = () => {
 
                     <h1>Page 404 is under development</h1>
                     <p>{domainName}{pathname} page you're looking for could not be found.</p>
-                    <Link href="/ivistaz" className='text-decoration-none text-white'>
+                    <Link href="/welcome" className='text-decoration-none text-white'>
                         <p className='text-red para-text border-bottom d-inline-block'>
                             Go back to home
                         </p>
