@@ -79,7 +79,7 @@ const HomePage = () => {
     <>
 
       {/* Desktop view */}
-      <Container fluid className="d-lg-flex d-none p-0">
+      <Container fluid className="d-lg-flex d-none p-0" >
         <Container className={`iv-bg z-0 ${showSecondSection ? 'hide-first-section' : ''}`} fluid>
           <Row className="d-flex flex-column align-items-center justify-content-between h-100vh" >
             <Col className="d-flex flex-column justify-content-center align-items-center z-index-100">
