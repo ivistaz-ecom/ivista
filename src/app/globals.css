@@ -983,7 +983,7 @@ background: rgba(255, 255, 255, 0) !important; */
 }
 
 /* .social:hover {
-  background-color: #ED2225;
+  filter: brightness(0) saturate(100%) invert(24%) sepia(94%) saturate(4442%) hue-rotate(345deg) brightness(104%) contrast(103%);
 } */
 
 .offcanvas.offcanvas-end {
@@ -2311,4 +2311,12 @@ background: rgba(255, 255, 255, 0) !important; */
     /* Set your custom height here */
   }
 
+}
+
+/******************** Screen size - 150% ********************/
+@media screen and (min-width:1280px) and (max-width:1535px) {
+  .custom-height {
+    height: 348px;
+    /* Set your custom height here */
+  }
 }

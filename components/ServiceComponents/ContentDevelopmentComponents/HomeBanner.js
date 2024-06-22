@@ -42,16 +42,19 @@ const HomeBanner = () => {
             <Container className='bg-white z-3 position-relative' fluid>
                 <Container className="w-80 custom-container z-index-100">
                     <Row className="d-flex align-items-center px-lg-0 px-2">
-                        <Col className='d-flex flex-row flex-wrap align-items-center mb-3'>
-                            <Link href="/art/services"
-                                className='text-decoration-none '>
-                                <h6 className='text-black mb-0 px-1'>Services</h6>
-                            </Link>
-                            <CiCircleChevRight fill='red' />
-                            <Link href=""
-                                className='text-decoration-none px-1'>
-                                <h6 className='text-decoration-none text-black mb-0'>Content development for B2C and B2B</h6>
-                            </Link>
+                        {/* Breadcrumb */}
+                        <Col className='d-flex flex-row align-items-center mb-3'>
+                            <p>
+                                <Link href="/art/services"
+                                    className='text-decoration-none '>
+                                    <span className='text-black mb-0 px-1 fs-6'>Services</span>
+                                </Link>
+                                <CiCircleChevRight fill='red' />
+                                <Link href=""
+                                    className='text-decoration-none px-1'>
+                                    <span className='text-decoration-none text-black mb-0 fs-6'>Content development for B2C and B2B</span>
+                                </Link>
+                            </p>
                         </Col>
 
                         <ServiceBanner

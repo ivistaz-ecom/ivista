@@ -142,9 +142,9 @@ const CaseStudiesFetchData = () => {
                                 </div>
                                 <div className='d-flex flex-column flex-grow-1'>
                                     <div>
-                                        <p className="card-text text-dark fs-4 p-3 mb-5">Lead Conversion Rate</p>
+                                        <p className="card-text text-dark fs-4 p-3 mb-5">Conversion rate of qualified leads with email marketing</p>
 
-                                        <p className="card-text text-dark fs-4 px-3">   B2B Email Marketing Success for a Consulting Organization in the Social Impact Space </p>
+                                        <p className="card-text text-dark fs-4 px-3">Generating investments for social impact projects</p>
                                     </div>
                                 </div>
                                 <div className='py-5 pb-0'>
@@ -266,6 +266,7 @@ const CaseStudiesFetchData = () => {
                     </Link>
                 </Col>
             </Row>
+
             <Row className='pb-3'>
                 {/* Column 10 */}
                 <Col md={4} className="d-flex py-2">
@@ -293,6 +294,7 @@ const CaseStudiesFetchData = () => {
                         </div>
                     </Link>
                 </Col>
+
                 {/* Column 11 */}
                 <Col md={4} className="d-flex py-2">
                     <Link href={'/case-studies/online-sales-success-for-a-leading-appliance-brand'} className='text-line'>
@@ -320,8 +322,8 @@ const CaseStudiesFetchData = () => {
                         </div>
                     </Link>
                 </Col>
-                 {/* Column 11 */}
-                 <Col md={4} className="d-flex py-2">
+                 {/* Column 12 */}
+                 {/* <Col md={4} className="d-flex py-2">
                     <Link href={'#'} className='text-line'>
                         <div className="card text-white bg-white mb-3 rounded-5 w-100 h-100 d-flex flex-column">
                             <div className="card-body d-flex flex-column justify-content-between flex-grow-1">
@@ -346,10 +348,8 @@ const CaseStudiesFetchData = () => {
                             </div>
                         </div>
                     </Link>
-                </Col>
+                </Col> */}
             </Row>
-
-
 
             {/* <Col className='text-center'>
                 {data.length > visibleItems && (
