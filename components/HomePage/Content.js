@@ -77,13 +77,98 @@ const HomePage = () => {
 
   return (
     <>
-      <Container className={`iv-bg z-0 ${showSecondSection ? 'hide-first-section' : ''}`} fluid>
-        <Row className="d-flex flex-column align-items-center justify-content-between h-100vh" >
-          <Col className="d-flex flex-column justify-content-center align-items-center z-index-100">
-            <Image src="/images/ivista_logo.svg" width={300} height={80} className="img-fluid" alt="" />
-            {/*Homepage skip Button  */}
-            <Link href="/welcome" className="demo rounded-3">Skip</Link>
-          </Col>
+
+      {/* Desktop view */}
+      <Container fluid className="d-lg-flex d-none p-0">
+        <Container className={`iv-bg z-0 ${showSecondSection ? 'hide-first-section' : ''}`} fluid>
+          <Row className="d-flex flex-column align-items-center justify-content-between h-100vh" >
+            <Col className="d-flex flex-column justify-content-center align-items-center z-index-100">
+              <Image src="/images/ivista_logo.svg" width={300} height={80} className="img-fluid" alt="" />
+              {/*Homepage skip Button  */}
+              <Link href="/welcome" className="demo rounded-3">Skip</Link>
+            </Col>
+
+            <Col className="d-flex flex-column justify-content-center align-items-center">
+              <h2 className="text-white fs-60 fw-bold">WHAT DOES</h2>
+              <div className="animate seven text-white fs-70 fw-bold">
+                <span>P</span><span>E</span><span>R</span><span>F</span>
+                <span>O</span><span>R</span><span>M</span><span>A</span><span>N</span><span>C</span><span>E</span>
+              </div>
+              <h2 className="text-white fs-60 fw-bold"> MEAN TO YOU?</h2>
+            </Col>
+
+            <Col className="d-flex flex-column justify-content-center align-items-center z-0">
+              <div className='' onClick={() => setShowSecondSection(true)}>
+              </div>
+              <div className="scroll-down cursor-pointer" onClick={() => setShowSecondSection(true)}></div>
+            </Col>
+          </Row>
+        </Container>
+
+        <Container className="iv-bg h-100vh fixed-top-custom p-0 z-3" fluid style={{ display: showSecondSection ? 'block' : 'none' }} ref={secondSectionRef}>
+          <Row className="d-flex flex-column align-items-center justify-content-between h-100vh">
+            <Col className="d-flex flex-column justify-content-center align-items-center p-0">
+              {/* <Image src="/images/robot_1.svg" width={200} height={100} alt="" /> */}
+              {/* <Image src="/images/ivista_logo.svg" width={300} height={80} className="img-fluid" alt="" /> */}
+            </Col>
+
+            <Col className="d-flex flex-column justify-content-center align-items-center p-0">
+              <h2 className="text-white fs-60 fw-bold">WHAT DOES</h2>
+              <div className="animate seven text-white fs-70 fw-bold">
+                <span>P</span><span>E</span><span>R</span><span>F</span>
+                <span>O</span><span>R</span><span>M</span><span>A</span><span>N</span><span>C</span><span>E</span>
+              </div>
+              <h2 className="text-white fs-60 fw-bold"> MEAN TO YOU?</h2>
+            </Col>
+
+            <Col className="d-flex flex-column justify-content-center align-items-center animated-content">
+              <Row className="d-flex flex-lg-row flex-column align-items-center justofy-content-end g-3 custom-home-row" >
+                <Col className="overflow-hidden blurb-ripple-out-wrap w-75 bg-danger" data-aos="fade-up">
+                  <Link href="/sales" className="btn h-btn blurb-ripple-out d-flex flex-row gap-2 justify-content-center">
+                    <Image src="/mainpage/online_sale.svg" alt="" width={30} height={30} />
+                    <span>Online Sales</span>
+                  </Link>
+                </Col>
+                <Col className="overflow-hidden blurb-ripple-out-wrap w-75">
+                  <Link href="/leads" className="btn h-btn blurb-ripple-out  d-flex flex-row gap-2 justify-content-center" >
+                    <Image src="/mainpage/leads.svg" alt="" width={30} height={30} />
+                    <span>Leads</span>
+                  </Link>
+                </Col>
+                <Col className="overflow-hidden blurb-ripple-out-wrap w-75" >
+                  <Link href="/traffic" className="btn h-btn blurb-ripple-out d-flex flex-row gap-2 justify-content-center">
+                    <Image src="/mainpage/traffic.svg" alt="" width={30} height={30} />
+                    <span>Traffic</span>
+                  </Link>
+                </Col>
+              </Row>
+
+              <Row className="d-flex flex-lg-row flex-column align-items-center g-3 pt-3 custom-home-row">
+                <Col className="overflow-hidden blurb-ripple-out-wrap w-75" >
+                  <Link href="/keyword-ranking" className="btn h1-btn blurb-ripple-out d-flex flex-row gap-2 justify-content-center">
+                    <Image src="/mainpage/keyword.svg" alt="" width={30} height={30} />
+                    <span>Keyword Ranking</span>
+                  </Link>
+                </Col>
+                <Col className="overflow-hidden blurb-ripple-out-wrap w-75 d-flex flex-row gap-2 justify-content-center">
+                  <Link href="/engagement" className="btn h1-btn blurb-ripple-out d-flex flex-row gap-2 justify-content-center">
+                    <Image src="/mainpage/engagement.svg" alt="" width={30} height={30} />
+                    <span>Engagement</span>
+                  </Link>
+                </Col>
+              </Row>
+
+            </Col>
+          </Row>
+        </Container>
+      </Container>
+
+      {/* Mobile view */}
+
+      <Container fluid className="d-lg-none d-flex p-0">
+        <Container className='iv-bg z-0' fluid>
+
+          <Image src="/images/ivista_logo.svg" width={300} height={80} className="img-fluid" alt="" />
 
           <Col className="d-flex flex-column justify-content-center align-items-center">
             <h2 className="text-white fs-60 fw-bold">WHAT DOES</h2>
@@ -94,69 +179,78 @@ const HomePage = () => {
             <h2 className="text-white fs-60 fw-bold"> MEAN TO YOU?</h2>
           </Col>
 
-          <Col className="d-flex flex-column justify-content-center align-items-center z-0">
-            <div className='' onClick={() => setShowSecondSection(true)}>
-            </div>
-            <div className="scroll-down cursor-pointer" onClick={() => setShowSecondSection(true)}></div>
-          </Col>
-        </Row>
-      </Container>
 
-      <Container className="iv-bg h-100vh fixed-top-custom p-0 z-3" fluid style={{ display: showSecondSection ? 'block' : 'none' }} ref={secondSectionRef}>
-        <Row className="d-flex flex-column align-items-center justify-content-between h-100vh">
-          <Col className="d-flex flex-column justify-content-center align-items-center p-0">
-            {/* <Image src="/images/robot_1.svg" width={200} height={100} alt="" /> */}
-            {/* <Image src="/images/ivista_logo.svg" width={300} height={80} className="img-fluid" alt="" /> */}
-          </Col>
+          <Row className="d-flex flex-column align-items-center justify-content-between h-100vh" >
+            <Col className="d-flex flex-column justify-content-center align-items-center">
+              {/*Homepage skip Button  */}
+              {/* <Link href="/welcome" className="demo rounded-3">Skip</Link> */}
+            </Col>
 
-          <Col className="d-flex flex-column justify-content-center align-items-center p-0">
-            <h2 className="text-white fs-60 fw-bold">WHAT DOES</h2>
-            <div className="animate seven text-white fs-70 fw-bold">
-              <span>P</span><span>E</span><span>R</span><span>F</span>
-              <span>O</span><span>R</span><span>M</span><span>A</span><span>N</span><span>C</span><span>E</span>
-            </div>
-            <h2 className="text-white fs-60 fw-bold"> MEAN TO YOU?</h2>
-          </Col>
 
-          <Col className="d-flex flex-column justify-content-center align-items-center animated-content">
-            <Row className="d-flex flex-lg-row flex-column align-items-center justofy-content-end g-3 custom-home-row" >
-              <Col className="overflow-hidden blurb-ripple-out-wrap w-75 bg-danger" data-aos="fade-up">
-                <Link href="/sales" className="btn h-btn blurb-ripple-out d-flex flex-row gap-2 justify-content-center">
-                  <Image src="/mainpage/online_sale.svg" alt="" width={30} height={30} />
-                  <span>Online Sales</span>
-                </Link>
-              </Col>
-              <Col className="overflow-hidden blurb-ripple-out-wrap w-75">
-                <Link href="/leads" className="btn h-btn blurb-ripple-out  d-flex flex-row gap-2 justify-content-center" >
-                  <Image src="/mainpage/leads.svg" alt="" width={30} height={30} />
-                  <span>Leads</span>
-                </Link>
-              </Col>
-              <Col className="overflow-hidden blurb-ripple-out-wrap w-75" >
-                <Link href="/traffic" className="btn h-btn blurb-ripple-out d-flex flex-row gap-2 justify-content-center">
-                  <Image src="/mainpage/traffic.svg" alt="" width={30} height={30} />
-                  <span>Traffic</span>
-                </Link>
-              </Col>
-            </Row>
+            <Col className="d-flex flex-column justify-content-center align-items-center z-0">
+              <div className='' onClick={() => setShowSecondSection(true)}>
+              </div>
+              <div className="scroll-down cursor-pointer" onClick={() => setShowSecondSection(true)}></div>
+            </Col>
+          </Row>
+        </Container>
 
-            <Row className="d-flex flex-lg-row flex-column align-items-center g-3 pt-3 custom-home-row">
-              <Col className="overflow-hidden blurb-ripple-out-wrap w-75" >
-                <Link href="/keyword-ranking" className="btn h1-btn blurb-ripple-out d-flex flex-row gap-2 justify-content-center">
-                  <Image src="/mainpage/keyword.svg" alt="" width={30} height={30} />
-                  <span>Keyword Ranking</span>
-                </Link>
-              </Col>
-              <Col className="overflow-hidden blurb-ripple-out-wrap w-75 d-flex flex-row gap-2 justify-content-center">
-                <Link href="/engagement" className="btn h1-btn blurb-ripple-out d-flex flex-row gap-2 justify-content-center">
-                  <Image src="/mainpage/engagement.svg" alt="" width={30} height={30} />
-                  <span>Engagement</span>
-                </Link>
-              </Col>
-            </Row>
+        <Container className="iv-bg h-100vh fixed-top-custom p-0 z-3" fluid ref={secondSectionRef}>
+          <Row className="d-flex flex-column align-items-center justify-content-between h-100vh">
+            <Col className="d-flex flex-column justify-content-center align-items-center p-0">
+              {/* <Image src="/images/robot_1.svg" width={200} height={100} alt="" /> */}
+              <Image src="/images/ivista_logo.svg" width={300} height={80} className="img-fluid" alt="" />
+            </Col>
 
-          </Col>
-        </Row>
+            <Col className="d-flex flex-column justify-content-center align-items-center p-0">
+              <h2 className="text-white fs-60 fw-bold">WHAT DOES</h2>
+              <div className="animate seven text-white fs-70 fw-bold">
+                <span>P</span><span>E</span><span>R</span><span>F</span>
+                <span>O</span><span>R</span><span>M</span><span>A</span><span>N</span><span>C</span><span>E</span>
+              </div>
+              <h2 className="text-white fs-60 fw-bold"> MEAN TO YOU?</h2>
+            </Col>
+
+            <Col className="d-flex flex-column justify-content-center align-items-center animated-content">
+              <Row className="d-flex flex-lg-row flex-column align-items-center justofy-content-end g-3 custom-home-row" >
+                <Col className="overflow-hidden blurb-ripple-out-wrap w-75 bg-danger" data-aos="fade-up">
+                  <Link href="/sales" className="btn h-btn blurb-ripple-out d-flex flex-row gap-2 justify-content-center">
+                    <Image src="/mainpage/online_sale.svg" alt="" width={30} height={30} />
+                    <span>Online Sales</span>
+                  </Link>
+                </Col>
+                <Col className="overflow-hidden blurb-ripple-out-wrap w-75">
+                  <Link href="/leads" className="btn h-btn blurb-ripple-out  d-flex flex-row gap-2 justify-content-center" >
+                    <Image src="/mainpage/leads.svg" alt="" width={30} height={30} />
+                    <span>Leads</span>
+                  </Link>
+                </Col>
+                <Col className="overflow-hidden blurb-ripple-out-wrap w-75" >
+                  <Link href="/traffic" className="btn h-btn blurb-ripple-out d-flex flex-row gap-2 justify-content-center">
+                    <Image src="/mainpage/traffic.svg" alt="" width={30} height={30} />
+                    <span>Traffic</span>
+                  </Link>
+                </Col>
+              </Row>
+
+              <Row className="d-flex flex-lg-row flex-column align-items-center g-3 pt-3 custom-home-row">
+                <Col className="overflow-hidden blurb-ripple-out-wrap w-75" >
+                  <Link href="/keyword-ranking" className="btn h1-btn blurb-ripple-out d-flex flex-row gap-2 justify-content-center">
+                    <Image src="/mainpage/keyword.svg" alt="" width={30} height={30} />
+                    <span>Keyword Ranking</span>
+                  </Link>
+                </Col>
+                <Col className="overflow-hidden blurb-ripple-out-wrap w-75 d-flex flex-row gap-2 justify-content-center">
+                  <Link href="/engagement" className="btn h1-btn blurb-ripple-out d-flex flex-row gap-2 justify-content-center">
+                    <Image src="/mainpage/engagement.svg" alt="" width={30} height={30} />
+                    <span>Engagement</span>
+                  </Link>
+                </Col>
+              </Row>
+
+            </Col>
+          </Row>
+        </Container>
       </Container>
       <style jsx>{`
         .hide-first-section {
