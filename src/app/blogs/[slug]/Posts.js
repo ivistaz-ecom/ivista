@@ -31,16 +31,17 @@ const Posts = ({ slug }) => {
                 {data ? ( // Check if data is available
                     data.map((post) => (
                         <div class=" d-flex flex-column" key={post.id}>
-                            <div className='d-flex flex-row flex-wrap align-items-center mb-3'>
+                            <div className='d-flex flex-row align-items-center mb-3 flex-nowrap'>
+                                <p>
                                 <Link href="/blogs"
                                     className='text-decoration-none '>
-                                    <h6 className='text-white mb-0 px-1'>Blogs</h6>
+                                    <span className='fs-6 text-white mb-0 px-1'>Blogs</span>
                                 </Link>
                                 <CiCircleChevRight fill='white' />
                                 <Link href=""
                                     className='text-decoration-none px-1'>
-                                    <h6 className='text-decoration-none text-white mb-0' dangerouslySetInnerHTML={{ __html: post.title.rendered }} />
-                                </Link>
+                                    <span className='fs-6 text-decoration-none text-white mb-0' dangerouslySetInnerHTML={{ __html: post.title.rendered }} />
+                                </Link></p>
                             </div>
                             <Image
                                 src={post.acf.desktop_banner_image.url}

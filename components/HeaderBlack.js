@@ -210,21 +210,16 @@ function Header1() {
               </div>
               <div className="d-flex align-items-center justify-content-start gap-2">
                 <Link href="https://www.linkedin.com/company/ivistawebsolutions/mycompany/" target='_blank'>
-                  <Image src="/images/linkedin.svg" width={43} height={43} className="social" alt='' />
-                 
+                  <Image src="/images/linkedin.svg" width={43} height={43} className="social" alt='LinkedIn' />
                 </Link>
                 <Link href="https://www.instagram.com/ivistawebsolutions/" target='_blank'>
-                  <Image src="/images/instagram.svg" width={44} height={44} className="social" alt='' />
-                  
-
+                  <Image src="/images/instagram.svg" width={44} height={44} className="social" alt='Instagram' />
                 </Link>
                 <Link href="https://www.facebook.com/ivistasolutions/" target='_blank'>
-                  <Image src="/images/Face-book.svg" width={40} height={40} className="social" alt='' />
-                  
+                  <Image src="/images/Face-book.svg" width={40} height={40} className="social" alt='Facebook' />
                 </Link>
                 <Link href="https://twitter.com/ivistasolutions?lang=en" target='_blank'>
-                  <Image src="/images/twitter.svg" width={44} height={44} className="social" alt='' />
-                 
+                  <Image src="/images/twitter.svg" width={44} height={44} className="social" alt='Twitter' />
                 </Link>
               </div>
             </div>

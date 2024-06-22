@@ -239,7 +239,6 @@ const OurTeamsList = () => {
                                 <h3 className='text-white mt-4'>
                                     SEO & SEM
                                 </h3>
-
                                 <div className='d-flex flex-lg-row flex-column flex-wrap'>
                                     {seoData.map((team) => (
                                         <div key={team.id} className='col-lg-3 d-flex flex-column p-3 gap-2'>
@@ -268,7 +267,6 @@ const OurTeamsList = () => {
                                 <h3 className='text-white mt-4'>
                                     WEB DEVELOPMENT
                                 </h3>
-
                                 <div className='d-flex flex-lg-row flex-column flex-wrap'>
                                     {develomentData.map((team) => (
                                         <div key={team.id} className='col-lg-3 d-flex flex-column p-3 gap-2'>

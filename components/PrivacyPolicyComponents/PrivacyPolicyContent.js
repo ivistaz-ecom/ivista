@@ -67,7 +67,7 @@ const PrivacyPolicyContent = () => {
                     </h1>
 
                     <p className="text-white para-text mb-0">
-                        If you have any queries regarding our Privacy Policy, or if you want to know what information we have collected about you, please email us at <Link className='text-decoration-none' style={{ color: '#ED2023;' }} href="mailto:info@ivistasolutions.com">info@ivistasolutions.com</Link>.
+                        If you have any queries regarding our Privacy Policy, or if you want to know what information we have collected about you, please email us at <Link className='text-decoration-none txt-red' style={{ color: '#ED2023;' }} href="mailto:info@ivistasolutions.com">info@ivistasolutions.com</Link>.
                     </p>
                 </Container>
             </Container>
