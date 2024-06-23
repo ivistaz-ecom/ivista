@@ -15,7 +15,7 @@ body {
 }
 
 .iv-bg {
-  background: #ED2225;
+  background: #ED2225 !important;
 }
 
 .iv-grey {
@@ -54,7 +54,9 @@ body {
 .ps-7 {
   padding-left: 5rem !important;
 }
-
+.ps-8{
+  padding-left: 5rem !important;
+}
 
 .p-12 {
   padding-top: 12px;
@@ -345,12 +347,12 @@ body {
 }
 
 .fs-21 {
-  font-size: 4.5rem !important;
+  font-size: 4rem !important;
   font-family: 'Poppins', sans-serif;
 }
 
 .fs-19 {
-  font-size: 3.5rem !important;
+  font-size: 3rem !important;
   font-family: 'Poppins', sans-serif;
 }
 
@@ -581,7 +583,9 @@ background: rgba(255, 255, 255, 0) !important; */
   .custom-home-row {
     width: 100% !important;
   }
-
+  .ps-8{
+    padding-left: 0rem !important;
+  }
   .ps-7 {
     padding-left: 1rem !important;
   }
@@ -676,7 +680,7 @@ background: rgba(255, 255, 255, 0) !important; */
     height: 375px;
   }
 }
-
+/* 
 .btn-11 {
   position: relative;
 }
@@ -721,7 +725,7 @@ background: rgba(255, 255, 255, 0) !important; */
   animation: criss-cross-right 0.8s both;
   -webkit-animation-direction: alternate;
   animation-direction: alternate;
-}
+} */
 
 .animate span:nth-of-type(2) {
   animation-delay: .05s;
@@ -1128,13 +1132,15 @@ background: rgba(255, 255, 255, 0) !important; */
 }
 
 .arts-text {
-  font-size: 30px;
+  font-size: 27px;
   font-weight: 500;
   font-family: 'Poppins';
   text-decoration: none;
   color: #000;
 }
-
+.arts-text:hover {
+color: #ED2023 !important;
+}
 .arts-img {
   width: 85%;
   margin-top: -272px;
@@ -1172,6 +1178,7 @@ background: rgba(255, 255, 255, 0) !important; */
   color: #ffffff;
 }
 
+
 .btn-11 {
   position: relative;
   color: #ED2225 !important;
@@ -1188,9 +1195,6 @@ background: rgba(255, 255, 255, 0) !important; */
   text-align: center !important;
   font-size: 24px !important;
   z-index: 9999;
-
-
-
 }
 
 .btn-11:before,
@@ -1749,6 +1753,64 @@ background: rgba(255, 255, 255, 0) !important; */
   animation-direction: alternate;
 }
 
+.btn-18 {
+  position: relative;
+  color: #fff !important;
+  position: relative;
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  max-width: 300px;
+  padding: 12px !important;
+  border-radius: 12px;
+  text-decoration: none !important;
+  font-family: 'Poppins', sans-serif !important;
+  border: 1px solid #fff !important;
+  text-align: center !important;
+  font-size: 24px !important;
+  z-index: 9999;
+}
+
+.btn-18:before,
+.btn-18:after {
+  position: absolute;
+  top: 50%;
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border-radius: 50%;
+  color: #fff !important;
+  z-index: -17 !important;
+}
+
+.btn-18:before {
+  left: -20px;
+  transform: translate(-50%, -50%);
+}
+
+.btn-18:after {
+  right: -20px;
+  transform: translate(50%, -50%);
+}
+
+.btn-18:hover {
+  color: #ED2225 !important;
+}
+
+.btn-18:hover:before {
+  -webkit-animation: criss-cross-left 0.8s both;
+  animation: criss-cross-left 0.8s both;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+}
+
+.btn-18:hover:after {
+  -webkit-animation: criss-cross-right 0.8s both;
+  animation: criss-cross-right 0.8s both;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+}
 .case-text {
   font-size: 20px;
   font-family: 'Poppins', sans-serif !important;
@@ -2166,6 +2228,7 @@ background: rgba(255, 255, 255, 0) !important; */
   .philo-text {
     font-size: 18px;
   }
+  
 }
 
 .slide-up {
@@ -2302,7 +2365,7 @@ background: rgba(255, 255, 255, 0) !important; */
 } */
 
 /************| Mobile view |************/
-@media screen and (min-width:360px) and (max-width:712px) {
+@media screen and (min-width:360px) and (max-width:844px) {
 
   .demo {
     display: none;
@@ -2319,7 +2382,50 @@ background: rgba(255, 255, 255, 0) !important; */
   }
   .line_space {
     line-height: 1.1;
-  }
+  }  
+
+.btn-11 {
+  width: 100%;
+  max-width: 160px;
+  padding: 10px !important;
+  border-radius: 10px;
+  font-size: 20px !important;
+}
+.btn-12 {
+  width: 100%;
+  max-width: 160px;
+  padding: 10px !important;
+  border-radius: 10px;
+  font-size: 20px !important;
+}
+.btn-13 {
+  width: 100%;
+  max-width: 160px;
+  padding: 10px !important;
+  border-radius: 10px;
+  font-size: 20px !important;
+}
+.btn-14 {
+  width: 100%;
+  max-width: 160px;
+  padding: 10px !important;
+  border-radius: 10px;
+  font-size: 20px !important;
+}
+.btn-16 {
+  width: 100%;
+  max-width: 160px;
+  padding: 10px !important;
+  border-radius: 10px;
+  font-size: 20px !important;
+}
+.btn-18 {
+  width: 100%;
+  max-width: 250px;
+  padding: 10px !important;
+  border-radius: 10px;
+  font-size: 20px !important;
+}
 }
 
 /******************** Screen size - 150% ********************/
@@ -2329,5 +2435,3 @@ background: rgba(255, 255, 255, 0) !important; */
     /* Set your custom height here */
   }
 }
-
-/* test */

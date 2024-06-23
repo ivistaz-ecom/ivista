@@ -10,7 +10,7 @@ const SocialMediaMarketingContent = () => {
         <>
             <ScrollAnimationServiceˀ />
 
-            <Container fluid className="mt-4 p-0">
+            <Container fluid className="mt-4 p-0 mb-5">
                 <article>
                     <div className='timeline1'>
                         {/* <h1 className='fs-3 text-red fw-bold ps-7 position-relative'>

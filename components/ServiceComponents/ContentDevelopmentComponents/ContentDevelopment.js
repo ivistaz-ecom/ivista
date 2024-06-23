@@ -31,7 +31,7 @@ const ContentDevelopment = () => {
                 }
             </style>
             <ScrollAnimationService />
-            <Container fluid className="mt-4 p-0">
+            <Container fluid className="mt-4 p-0 mb-5">
                 <article>
                     <div className='timeline1'>
                         {/* <h1 className='fs-3 text-red fw-bold ps-7 position-relative'>
@@ -147,7 +147,7 @@ const ContentDevelopment = () => {
                             </Container>
                         </Col>
 
-                        <Col className='position-relative mt-2 pb-5'>
+                        <Col className='position-relative mt-2'>
                             <div class="timeline-badge1"></div>
                             <Container className='w-80 ps-7 '>
                                 <p className='text-red fw-bold para-text'>

@@ -37,12 +37,11 @@ const ServiceBanner = ({ backgroundImage, mobileBackgroundImage, bannerHeading, 
                 className='d-flex flex-column justify-content-lg-center justify-content-start align-items-start align-items-lg-start pt-lg-0 pt-4 rounded-5'
             >
 
-                <Col lg={7} className="pl-8 d-flex flex-column text-align-start">
-                    <h1 className="fs-21 fw-bold text-white lh-1 py-4">
-                        <span className="fs-19 fw-bold text-white mb-0 ">
-                            {bannerSubHeading}
-                        </span>
-                        {' '}
+                <Col lg={7} className="text-start">
+                    <h2 className="fs-19 fw-bold text-white mb-2">
+                        {bannerSubHeading}
+                    </h2>
+                    <h1 className="fs-21 fw-bold text-white lh-1">
                         {bannerHeading}
                     </h1>
                 </Col>

@@ -52,14 +52,14 @@ const TechContetn = () => {
                                     </li>
                                 </ul>
                                 <Container className="">
-                                    <Col className='d-flex flex-column align-items-center d-none d-lg-flex'>
+                                    <Col className='d-flex flex-column align-items-center'>
                                         <Link className="btn-14 z-0" href="/contact-us">Contact Us</Link>
                                     </Col>
 
                                     {/* Mobile view  */}
-                                    <Col className='d-flex flex-column justify-content-center d-flex d-lg-none'>
+                                    {/* <Col className='d-flex flex-column justify-content-center d-flex d-lg-none'>
                                         <Link className="btn-14 z-0" href="/contact-us">Contact Us</Link>
-                                    </Col>
+                                    </Col> */}
                                 </Container>
                             </Container>
                         </div>

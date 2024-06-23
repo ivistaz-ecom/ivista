@@ -48,7 +48,7 @@ function HeroBanner() {
               <CiCircleChevRight fill='white' />
               <Link href=""
                 className='text-decoration-none px-1'>
-                <h6 className='text-decoration-none text-white mb-0'>Automobile</h6>
+                <h6 className='text-decoration-none text-white mb-0'>Automobiles</h6>
               </Link>
             </Col>
             <BannerAllPage backgroundImage={backgroundImage} bannerHeading={bannerHeading} mobileBackgroundImage={mobileBackgroundImage} />

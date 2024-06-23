@@ -9,7 +9,7 @@ const SearchEngineMarketingContent = () => {
     return (
         <>
             <ScrollAnimationService />
-            <Container className="mt-4 p-0" fluid>
+            <Container className="mt-4 p-0 mb-5" fluid>
                 <article>
                     <div className='timeline1'>
                         {/* <h1 className='fs-3 text-red fw-bold  position-relative'>

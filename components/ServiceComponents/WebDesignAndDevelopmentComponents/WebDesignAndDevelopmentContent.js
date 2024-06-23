@@ -10,7 +10,7 @@ const WebDesignAndDevelopmentContent = () => {
         <>
             <ScrollAnimation />
 
-            <Container fluid className="mt-4 p-0">
+            <Container fluid className="mt-4 p-0 mb-5">
                 <article>
                     <div className='timeline1'>
                         <div className='position-relative'>
