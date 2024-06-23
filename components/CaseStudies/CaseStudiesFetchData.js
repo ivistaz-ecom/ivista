@@ -370,15 +370,9 @@ const CaseStudiesFetchData = () => {
                     </div>
                     </Link>
                 </Col>
+
             </Row>
 
-
-
-            {/* <Col className='text-center'>
-                {data.length > visibleItems && (
-                    <button type="button" className="btn btn-15 my-5" onClick={handleLoadMore}>Load More</button>
-                )}
-            </Col> */}
         </Container>
     );
 };
