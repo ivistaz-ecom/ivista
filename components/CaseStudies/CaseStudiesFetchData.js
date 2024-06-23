@@ -12,7 +12,7 @@ const CaseStudiesFetchData = () => {
 
 
             <h1 className="fs-80 fw-bold text-white">CASE STUDIES</h1>
-            <h3 className="fs-19 text-white fw-semibold poppins">Performance you'll love. Can we replicate it for you?</h3>
+            <h3 className="fs-19 text-white fw-semibold poppins pt-lg-0 pt-3">Performance you'll love. Can we replicate it for you?</h3>
             <Row className='py-lg-5'>
                 {/* Column 01 */}
                 <Col md={4} className="d-flex py-2">
@@ -351,7 +351,7 @@ const CaseStudiesFetchData = () => {
             <Row className='pb-5'>
 
                 {/* Dummy red card */}
-                <Col md={4} className="d-flex py-5 p-0">
+                <Col md={4} className="d-flex py-lg-5 py-2 p-0">
                 <Link href="/contact-us " className='text-decoration-none'>
                     <div class="container d-flex flex-column ">
                         <div class="card iv-bg text-white rounded-5 ">

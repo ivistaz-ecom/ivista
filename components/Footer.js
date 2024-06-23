@@ -298,7 +298,7 @@ function Footer() {
                         <Col className="f-head d-lg-none d-flex py-lg-0 py-3 pb-2 w-100" lg={3} onClick={handleOnclickFunction}>
                             <Row className='d-flex flex-row justify-content-between w-100'>
                                 <Col>
-                                    IVISTAZ
+                                    COMPANY
                                 </Col>
                                 <Col className='d-flex flex-column align-items-end'>
                                     <GoPlus />
