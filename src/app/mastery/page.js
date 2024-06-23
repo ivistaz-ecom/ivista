@@ -30,9 +30,10 @@ function page() {
         <Container className="w-80 custom-container">
           <Col className='w-auto'>
           </Col>
+          <h1 className="text-white fs-70 fw-bold d-inline-block d-block d-lg-none mb-3">MASTERY</h1>
           <Row className='d-flex flex-lg-row flex-column-reverse'>
             <Col className="section">
-              <h1 className="text-white fs-70 fw-bold d-inline-block">MASTERY</h1>
+              <h1 className="text-white fs-70 fw-bold d-inline-block d-lg-block d-none">MASTERY</h1>
               <p className="mastery-text mastery-h" onMouseEnter={() => handleMouseEnter(0)} onMouseLeave={handleMouseLeave}>Years of Experience & Expertise</p>
               <p className="mastery-text mastery-h" onMouseEnter={() => handleMouseEnter(1)} onMouseLeave={handleMouseLeave}>Clients Served </p>
               <p className="mastery-text mastery-h" onMouseEnter={() => handleMouseEnter(2)} onMouseLeave={handleMouseLeave}>Online Revenue Generated</p>
