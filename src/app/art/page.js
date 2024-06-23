@@ -11,9 +11,9 @@ import Header1 from '../../../components/HeaderBlack';
 function page() {
   return (
     <>
-     <Header1 />
+      <Header1 />
       <Container fluid className=" d-flex flex-column justify-content-between min-vh-100">
-       
+
         <Image src="/images/h-icon.svg" className="header-icon d-lg-flex d-none overflow-hidden" alt='' />
 
         <Container className="w-80 custom-container">
@@ -34,7 +34,7 @@ function page() {
         <Container className="w-80 pb-3">
           <Row className='d-flex flex-lg-row flex-column-reverse'>
             <Col className="d-flex justify-content-end flex-column py-4 py-lg-3">
-              <Container className=" margin-left d-flex flex-lg-row flex-column">
+              <Container className=" margin-left d-lg-flex d-none flex-lg-row flex-column">
                 <Link href="/mastery" className="arts-text">MASTERY</Link>
                 <Link href="/performance" className="arts-text mx-lg-5">PERFORMANCE</Link>
               </Container>
@@ -43,6 +43,10 @@ function page() {
               <Image src="/images/arts.svg" className="arts-img" alt='' />
             </Col>
           </Row>
+          <Container className="mt-5 margin-left d-flex d-lg-none pb-4 pb-lg-0">
+            <Link href="/mastery" className="arts-text">MASTERY</Link>
+            <Link href="/performance" className="arts-text mx-lg-5 mx-4">PERFORMANCE</Link>
+          </Container>
         </Container>
       </Container>
       <Footer />
