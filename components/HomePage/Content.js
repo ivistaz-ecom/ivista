@@ -78,7 +78,7 @@ const HomePage = () => {
   return (
     <>
       <Container className={`iv-bg z-0 ${showSecondSection ? 'hide-first-section' : ''}`} fluid>
-        <Row className="d-flex flex-column align-items-center justify-content-between h-100vh" >
+        <Row className="d-flex flex-column align-items-center justify-content-between min-vh-100" >
           <Col className="d-flex flex-column justify-content-center align-items-center z-index-100">
             <Image src="/images/ivista_logo.svg" width={300} height={80} className="img-fluid" alt="" />
             {/*Homepage skip Button  */}
@@ -102,20 +102,21 @@ const HomePage = () => {
         </Row>
       </Container>
 
-      <Container className="iv-bg h-100vh fixed-top-custom p-0 z-3" fluid style={{ display: showSecondSection ? 'block' : 'none' }} ref={secondSectionRef}>
-        <Row className="d-flex flex-column align-items-center justify-content-between h-100vh">
+      <Container className="iv-bg min-vh-100 fixed-top-custom p-0 z-3" fluid style={{ display: showSecondSection ? 'block' : 'none' }} ref={secondSectionRef}>
+        <Row className="d-flex flex-column align-items-center justify-content-between min-vh-100">
           <Col className="d-flex flex-column justify-content-center align-items-center p-0">
             {/* <Image src="/images/robot_1.svg" width={200} height={100} alt="" /> */}
             {/* <Image src="/images/ivista_logo.svg" width={300} height={80} className="img-fluid" alt="" /> */}
           </Col>
 
           <Col className="d-flex flex-column justify-content-center align-items-center p-0">
+            <div className="d-lg-none d-flex mobile-home-padding" style={{ marginTop: '80px' }}></div>
             <h2 className="text-white fs-60 fw-bold">WHAT DOES</h2>
             <div className="animate seven text-white fs-70 fw-bold">
               <span>P</span><span>E</span><span>R</span><span>F</span>
               <span>O</span><span>R</span><span>M</span><span>A</span><span>N</span><span>C</span><span>E</span>
             </div>
-            <h2 className="text-white fs-60 fw-bold"> MEAN TO YOU?</h2>
+            <h2 className="text-white fs-60 fw-bold">MEAN TO YOU?</h2>
           </Col>
 
           <Col className="d-flex flex-column justify-content-center align-items-center animated-content">
@@ -226,7 +227,7 @@ export default HomePage
 //     <>
 
 //       <Container className="iv-bg z-0" fluid>
-//         <Row className="d-flex flex-column align-items-center justify-content-between h-100vh" >
+//         <Row className="d-flex flex-column align-items-center justify-content-between min-vh-100" >
 //           <Col className="d-flex flex-column justify-content-center align-items-center z-index-100">
 //             <Image src="/images/ivista_logo.svg" width={300} height={80} className="img-fluid" alt="" />
 //             {/*Homepage skip Button  */}
@@ -252,8 +253,8 @@ export default HomePage
 //         </Row>
 //       </Container>
 
-//       <Container className="iv-bg h-100vh fixed-top-custom p-0 z-3" fluid style={{ display: showSecondSection ? 'block' : 'none' }} ref={secondSectionRef}>
-//         <Row className="d-flex flex-column align-items-center justify-content-between h-100vh">
+//       <Container className="iv-bg min-vh-100 fixed-top-custom p-0 z-3" fluid style={{ display: showSecondSection ? 'block' : 'none' }} ref={secondSectionRef}>
+//         <Row className="d-flex flex-column align-items-center justify-content-between min-vh-100">
 //           <Col className="d-flex flex-column justify-content-center align-items-center p-0">
 //             <h2 className="text-white fs-60 fw-bold">WHAT DOES</h2>
 //             <div class="animate seven text-white fs-70 fw-bold">
@@ -353,7 +354,7 @@ export default HomePage
 
 //   return (
 //     <>
-//       <Container className="iv-bg  h-100vh" fluid>
+//       <Container className="iv-bg  min-vh-100" fluid>
 //         <Row className="d-flex flex-column align-items-center" style={{ height: hvalue + hname }}>
 //           {
 //             logo ?

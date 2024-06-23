@@ -11,26 +11,33 @@ import Header from '../../../components/HeaderBlack'
 const MasteryArtPerformance = () => {
     return (
         <>
-        <Header/>
-        <ScrollAnimation/>
-        <div className='custom-container'>
-            <div className=''>
-                
-                <div className='position-relative' id='mastery'>
-                    <div className="timeline-badge"></div>
-                    <Mastery />
+            <Header />
+            <ScrollAnimation />
+            <div className='custom-container'>
+                <div className=''>
+
+                    <div id='mastery' style={{ paddingTop: '30px' }}>
+                        <div className='position-relative'>
+                            <div className="timeline-badge"></div>
+                            <Mastery />
+                        </div>
+                    </div>
+
+                    <div id='art' style={{ paddingTop: '30px' }}>
+                        <div className='position-relative' >
+                            <div className="timeline-badge"></div>
+                            <Arts />
+                        </div>
+                    </div>
+                    <div id='performance' style={{ paddingTop: '30px' }}>
+                        <div className='position-relative'>
+                            <div className="timeline-badge"></div>
+                            <Performance />
+                        </div>
+                    </div>
                 </div>
-                <div className='position-relative' id='art'>
-                    <div className="timeline-badge"></div>
-                    <Arts />
-                </div>
-                <div className='position-relative' id='performance'>
-                    <div className="timeline-badge"></div>
-                    <Performance />
-                </div>
+                <Footer />
             </div>
-            <Footer />
-        </div>
         </>
     );
 }
