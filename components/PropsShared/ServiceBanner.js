@@ -38,10 +38,10 @@ const ServiceBanner = ({ backgroundImage, mobileBackgroundImage, bannerHeading, 
             >
 
                 <Col lg={7} className="text-start">
-                    <h2 className="fs-19 fw-bold text-white mb-2">
+                    <h2 className="fs-19 fw-bold text-white mb-2 ps-lg-5">
                         {bannerSubHeading}
                     </h2>
-                    <h1 className="fs-21 fw-bold text-white lh-1">
+                    <h1 className="fs-21 fw-bold text-white lh-1 ps-lg-5">
                         {bannerHeading}
                     </h1>
                 </Col>

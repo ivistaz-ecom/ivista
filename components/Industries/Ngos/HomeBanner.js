@@ -33,7 +33,7 @@ function HeroBanner() {
     url: '/industrie/mobile_industries_banner/NGOs_mob_banner.jpg'
   }
 
-  const bannerHeading = 'NOT-FOR-PROFITS/NGOs'
+  const bannerHeading = 'NOT-FOR-PROFITS/ NGOs'
 
   return (
     <>
@@ -51,7 +51,7 @@ function HeroBanner() {
               <CiCircleChevRight fill='white' />
               <Link href=""
                 className='text-decoration-none px-1'>
-                <h6 className='text-decoration-none text-white mb-0'>Not for Profits/Ngos</h6>
+                <h6 className='text-decoration-none text-white mb-0'>Not-for-Profits/NGOs</h6>
               </Link>
             </Col>
             <BannerAllPage backgroundImage={backgroundImage} bannerHeading={bannerHeading} mobileBackgroundImage={mobileBackgroundImage} />

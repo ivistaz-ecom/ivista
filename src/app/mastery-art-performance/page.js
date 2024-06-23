@@ -7,16 +7,18 @@ import Footer from '../../../components/Footer';
 import Experience from '@/app/experience/page';
 import ScrollAnimation from '../../../components/SharedComponents/ScrollAnimation';
 import Header from '../../../components/HeaderBlack'
+import { Container } from 'react-bootstrap';
 
 const MasteryArtPerformance = () => {
     return (
         <>
         <Header/>
-        <ScrollAnimation/>
+        {/* <ScrollAnimation/> */}
+       
         <div className='custom-container'>
             <div className=''>
                 
-                <div className='position-relative' id='mastery'>
+                <div className='position-relative my-5' id='mastery'>
                     <div className="timeline-badge"></div>
                     <Mastery />
                 </div>

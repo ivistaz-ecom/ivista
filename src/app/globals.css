@@ -2045,6 +2045,12 @@ color: #ED2023 !important;
     font-family: 'Poppins', sans-serif !important;
     padding: -80px !important;
   }
+  .counter {
+    font-size: 100px;
+    font-weight: 700;
+    color: #fff;
+  }
+  
 }
 
 /* maximum line show */
