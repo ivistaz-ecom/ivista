@@ -19,13 +19,16 @@ const CareerForms = () => {
     const [loading, setLoading] = useState(false);
 
     const options = [
-        { value: 'account_manager', label: 'Account Manager/Client Servicing' },
-        { value: 'content_writer', label: 'Content Writer' },
-        { value: 'ui_ux_designer', label: 'UI/UX Designer' },
-        { value: 'front_end_developer', label: 'Front-End Developer' },
-        { value: 'back_end_developer', label: 'Back-End Developer' },
-        { value: 'paid_marketing_specialist', label: 'Paid Marketing Specialist' },
-        { value: 'seo', label: 'SEO' }
+        { value: 'account_manager', label: 'Account Manager' },
+        { value: 'inside_sales_executive', label: 'Inside Sales Executive' },
+        { value: 'account_executive', label: 'Account Executive' },
+        { value: 'ui_ux_designer', label: 'UI/Graphic Designer' },
+        // { value: 'account_manager', label: 'Account Manager/Client Servicing' },
+        // { value: 'content_writer', label: 'Content Writer' },
+        // { value: 'front_end_developer', label: 'Front-End Developer' },
+        // { value: 'back_end_developer', label: 'Back-End Developer' },
+        // { value: 'paid_marketing_specialist', label: 'Paid Marketing Specialist' },
+        // { value: 'seo', label: 'SEO' }
     ];
 
     // Email Validation
@@ -262,7 +265,7 @@ const CareerForms = () => {
 
                 {/* Mobile */}
                 <div className="mb-3">
-                    <label htmlFor="yourPhone" className="form-label text-black">Phone</label>
+                    <label htmlFor="yourPhone" className="form-label text-black">Phone <sup className='text-danger'>*</sup></label>
                     <input
                         type="text"
                         className={`form-control ${errors && errors.yourPhone ? 'is-invalid' : ''}`}

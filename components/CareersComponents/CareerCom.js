@@ -6,13 +6,16 @@ import CareerForms from '../Forms/CareerForms';
 const CareerCom = () => {
 
     const options = [
-        { value: 'account_manager', label: 'Account Manager/Client Servicing' },
-        { value: 'content_writer', label: 'Content Writer' },
-        { value: 'ui_ux_designer', label: 'UI/UX Designer' },
-        { value: 'front_end_developer', label: 'Front-End Developer' },
-        { value: 'back_end_developer', label: 'Back-End Developer' },
-        { value: 'paid_marketing_specialist', label: 'Paid Marketing Specialist' },
-        { value: 'seo', label: 'SEO' }
+        { value: 'account_manager', label: 'Account Manager' },
+        { value: 'inside_sales_executive', label: 'Inside Sales Executive' },
+        { value: 'account_executive', label: 'Account Executive' },
+        { value: 'ui_ux_designer', label: 'UI/Graphic Designer' },
+        // { value: 'account_manager', label: 'Account Manager/Client Servicing' },
+        // { value: 'content_writer', label: 'Content Writer' },
+        // { value: 'front_end_developer', label: 'Front-End Developer' },
+        // { value: 'back_end_developer', label: 'Back-End Developer' },
+        // { value: 'paid_marketing_specialist', label: 'Paid Marketing Specialist' },
+        // { value: 'seo', label: 'SEO' }
     ];
 
     const categoryId = 25;
