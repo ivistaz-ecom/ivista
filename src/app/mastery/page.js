@@ -25,9 +25,8 @@ function page() {
 
   return (
     <>
+      <Header1 />
       <Container fluid className="bg-black d-flex flex-column justify-content-between min-vh-100 bg-black" >
-        <Header1 />
-
         <Container className="w-80 custom-container">
           <Col className='w-auto'>
           </Col>
@@ -51,7 +50,7 @@ function page() {
                 <CountUp end={6} prefix="$" suffix='B' className="counter" />
               )}
               {countVisible[3] && (
-                <CountUp end={500}  suffix='+' className="counter" />
+                <CountUp end={500} suffix='+' className="counter" />
               )}
             </Col>
           </Row>

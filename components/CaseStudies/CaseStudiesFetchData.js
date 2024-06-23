@@ -137,7 +137,7 @@ const CaseStudiesFetchData = () => {
                                         <p className="fs-23 mb-0 red para-text fw-bold ps-3">10.8%</p>
                                     </div>
                                     <div className=''>
-                                        <Image src="/images/message.svg" className='w-60 d-flex ms-auto' width={100} height={100} alt='' />
+                                    <Image src="/images/magnet.svg" className='w-60 d-flex ms-auto' width={100} height={100} alt='' />
                                     </div>
                                 </div>
                                 <div className='d-flex flex-column flex-grow-1'>
@@ -165,7 +165,7 @@ const CaseStudiesFetchData = () => {
                                         <p className="fs-23 mb-0 red para-text fw-bold ps-3">93,345</p>
                                     </div>
                                     <div className=''>
-                                        <Image src="/images/scale.svg" className='w-61 d-flex ms-auto' width={100} height={100} alt='' />
+                                        <Image src="/images/magnet.svg" className='w-60 d-flex ms-auto' width={100} height={100} alt='' />
                                     </div>
                                 </div>
                                 <div className='d-flex flex-column flex-grow-1'>
@@ -221,7 +221,7 @@ const CaseStudiesFetchData = () => {
                                         <p className="fs-23 mb-0 red para-text fw-bold ps-3">14%</p>
                                     </div>
                                     <div className=''>
-                                        <Image src="/images/message.svg" className='w-60 d-flex ms-auto' width={100} height={100} alt='' />
+                                        <Image src="/images/shoping.svg" className='w-60 d-flex ms-auto' width={100} height={100} alt='' />
                                     </div>
                                 </div>
                                 <div className='d-flex flex-column flex-grow-1'>
@@ -249,7 +249,7 @@ const CaseStudiesFetchData = () => {
                                         <p className="fs-23 mb-0 red para-text fw-bold ps-3">8%</p>
                                     </div>
                                     <div className=''>
-                                        <Image src="/images/scale.svg" className='w-61 d-flex ms-auto p-lg-0 p-2' width={100} height={100} alt='' />
+                                        <Image src="/images/shoping.svg" className='w-60 d-flex ms-auto' width={100} height={100} alt='' />
                                     </div>
                                 </div>
                                 <div className='d-flex flex-column flex-grow-1'>
@@ -330,14 +330,13 @@ const CaseStudiesFetchData = () => {
                                         <p className="fs-23 mb-0 red para-text fw-bold ps-3">10.8%</p>
                                     </div>
                                     <div className=''>
-                                        <Image src="/images/shoping.svg" className='w-60 d-flex ms-auto' width={100} height={100} alt='' />
+                                        <Image src="/images/magnet.svg" className='w-60 d-flex ms-auto' width={100} height={100} alt='' />
                                     </div>
                                 </div>
                                 <div className='d-flex flex-column flex-grow-1'>
                                     <div>
                                         <p className="card-text text-dark fs-4 p-3">Conversion rate of qualified leads with email marketing</p>
                                         <p className="card-text text-dark fs-4 px-3">Generating investments for social impact projects</p>
-
                                     </div>
                                 </div>
                                 <div className='py-5 pb-0'>
@@ -347,7 +346,7 @@ const CaseStudiesFetchData = () => {
                         </div>
                     </Link>
                 </Col>
-                {/* Dummy card */}
+                {/* Dummy red card */}
                 <Col md={4} className="d-flex py-2 p-0">
                     <div class="container mt-5">
                         <div class="card iv-bg text-white rounded-5 ">
