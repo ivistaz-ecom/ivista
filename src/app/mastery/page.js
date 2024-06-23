@@ -74,10 +74,10 @@ function page() {
               <Container className="mt-5 pb-3 margin-left d-flex flex-column justify-content-center">
                 <div className='d-flex flex-lg-row flex-column gap-3 justify-content-start'>
                   <div className='text-start'>
-                    <Link href="/mastery/about-us" className="btn btn-13 b-width">About Us</Link>
+                    <Link href="/mastery/about-us" className="btn btn-13 b-width z-3">About Us</Link>
                   </div>
                   <div className='text-start'>
-                    <Link href="/mastery/solutions" className="btn btn-13 b-width">Solutions</Link>
+                    <Link href="/mastery/solutions" className="btn btn-13 b-width z-3">Solutions</Link>
                   </div>
                 </div>
 
