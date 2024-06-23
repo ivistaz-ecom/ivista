@@ -77,26 +77,28 @@ function Page() {
                         </div>
                       </Col>
                     ))}
-                   
+
                   </div>
-                  </Row>
-                  <Row className="d-flex align-items-start ps-lg-5">
-                  <Col lg={4} className='mt-4'>
-                      <div className="d-flex flex-column align-items-center text-start">
-                        <div className='' >
-                          <img src="/images/Web_Design.svg" />
-                        </div>
-                        <div className=" p-4">
-                            <Link className='text-decoration-none txt-danger' href="/website-design-and-development">
-                              <p className='para-text mb-0'>Web Design & Development</p>
-                            
-                            </Link>
-                            </div>
+                </Row>
+                <Container >
+                <Row className="d-flex align-items-start bg-white p-0 position-relative">
+                  <Col lg={4} className='mt-4 ps-8 position-relative'>
+                    <div className="d-flex flex-column align-items-center text-start">
+                      <div className='' >
+                        <img src="/images/Web_Design.svg" />
                       </div>
-                    </Col>
-                    <Col></Col>
-                    <Col></Col>
-                    </Row>
+                      <div className=" p-4">
+                        <Link className='text-decoration-none txt-danger text-center' href="/website-design-and-development">
+                          <p className='para-text mb-0'>Web Design & Development</p>
+
+                        </Link>
+                      </div>
+                    </div>
+                  </Col>
+                  <Col></Col>
+                  <Col></Col>
+                </Row>
+                </Container>
               </Container>
               <div className='custom_height_art_bottom'></div>
             </div>

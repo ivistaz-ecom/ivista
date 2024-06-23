@@ -62,7 +62,7 @@ const CareerCom = () => {
                 }
             `}
             </style>
-            <Container className="w-80 custom-container bg-white text-black">
+            <Container className="w-80 custom-container bg-white text-black mb-5">
                 <Row className='d-flex flex-column'>
                     <Col className='mb-4 text-black'>
                         <h1 className="fs-21 text-black fw-bold">CAREERS</h1>
@@ -81,7 +81,7 @@ const CareerCom = () => {
                         data.length > 0 ? ( // Check if data is available and not empty
                             data.slice(0, visibleItems).map((item) => (
                                 <>
-                                    <Row className='border-0 custom-career d-flex flex-lg-row flex-column mt-3 shadow-sm' key={item.id}>
+                                    <Row className='border-0 custom-career d-flex flex-lg-row flex-column mt-3 shadow-sm m-2' key={item.id}>
                                         <Col className='list-group-1 border-0' lg={12}>
                                             <div className="d-flex justify-content-between align-items-center border-0">
                                                 <div className="ms-2 me-auto">

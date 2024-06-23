@@ -96,7 +96,7 @@ const ContactusContent = () => {
                 </Row>
                 <Row className='mb-5'>
                     {/* Google map */}
-                    <Col className="d-flex justify-content-center py-4 mb-5">
+                    <Col className="d-flex justify-content-center py-4 mb-5 p-0">
                         <div className='map-container'>
                             <div className='p-3 text-white iv-bg shadow-3 rounded-top-4'>
                                 <p className='fs-3'>Address</p>
