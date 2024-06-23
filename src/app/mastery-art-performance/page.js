@@ -12,9 +12,8 @@ import { Container } from 'react-bootstrap';
 const MasteryArtPerformance = () => {
     return (
         <>
-
         <Header/>
-        <ScrollAnimation/> 
+        {/* <ScrollAnimation/> */}
        
         <div className='custom-container'>
             <div className=''>
@@ -30,10 +29,10 @@ const MasteryArtPerformance = () => {
                 <div className='position-relative' id='performance'>
                     <div className="timeline-badge"></div>
                     <Performance />
-           
                 </div>
-                <Footer />
             </div>
+            <Footer />
+        </div>
         </>
     );
 }
