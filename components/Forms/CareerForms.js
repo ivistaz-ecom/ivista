@@ -265,7 +265,7 @@ const CareerForms = () => {
 
                 {/* Mobile */}
                 <div className="mb-3">
-                    <label htmlFor="yourPhone" className="form-label text-black">Phone <sup className='text-danger'>*</sup></label>
+                    <label htmlFor="yourPhone" className="form-label text-black">Phone *</label>
                     <input
                         type="text"
                         className={`form-control ${errors && errors.yourPhone ? 'is-invalid' : ''}`}

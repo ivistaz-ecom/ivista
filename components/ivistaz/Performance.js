@@ -2,7 +2,7 @@
 import Link from 'next/link';
 import React, { useEffect, useRef, useState } from 'react';
 import { Container } from 'react-bootstrap';
-// import './styles.css'; // Import the CSS file
+import ScrollAnimation from '../SharedComponents/ScrollAnimation';
 
 function Performance() {
   const [isActive, setIsActive] = useState(false);
@@ -34,6 +34,9 @@ function Performance() {
   }, []);
 
   return (
+    <>
+      {/* <ScrollAnimation /> */}
+
     <Container className="w-80 pt-4 mb-5" ref={performanceRef} id="performance">
       <Container className='p-0'>
         <h1 className="fs-80 fw-bold ps-6 custom-performance-text">Performance</h1>
@@ -47,6 +50,7 @@ function Performance() {
         <Link className="btn btn-11 z-0" href="/performance">Know More</Link>
       </Container>
     </Container>
+    </>
   );
 }
 

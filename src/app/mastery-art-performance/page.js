@@ -7,34 +7,30 @@ import Footer from '../../../components/Footer';
 import Experience from '@/app/experience/page';
 import ScrollAnimation from '../../../components/SharedComponents/ScrollAnimation';
 import Header from '../../../components/HeaderBlack'
+import { Container } from 'react-bootstrap';
 
 const MasteryArtPerformance = () => {
     return (
         <>
-            <Header />
-            <ScrollAnimation />
-            <div className='custom-container'>
-                <div className=''>
 
-                    <div id='mastery' style={{ paddingTop: '30px' }}>
-                        <div className='position-relative'>
-                            <div className="timeline-badge"></div>
-                            <Mastery />
-                        </div>
-                    </div>
-
-                    <div id='art' style={{ paddingTop: '30px' }}>
-                        <div className='position-relative' >
-                            <div className="timeline-badge"></div>
-                            <Arts />
-                        </div>
-                    </div>
-                    <div id='performance' style={{ paddingTop: '30px' }}>
-                        <div className='position-relative'>
-                            <div className="timeline-badge"></div>
-                            <Performance />
-                        </div>
-                    </div>
+        <Header/>
+        <ScrollAnimation/> 
+       
+        <div className='custom-container'>
+            <div className=''>
+                
+                <div className='position-relative my-5' id='mastery'>
+                    <div className="timeline-badge"></div>
+                    <Mastery />
+                </div>
+                <div className='position-relative' id='art'>
+                    <div className="timeline-badge"></div>
+                    <Arts />
+                </div>
+                <div className='position-relative' id='performance'>
+                    <div className="timeline-badge"></div>
+                    <Performance />
+           
                 </div>
                 <Footer />
             </div>

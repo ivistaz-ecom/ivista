@@ -71,7 +71,7 @@ const ContentDevelopment = () => {
 
                         <Col>
                             <Container className='w-80 ps-7 position-relative pe-lg-0 pe-3'>
-                                <p className='text-red fw-bold para-text '>
+                                <p className='text-red fw-bold para-text my-5'>
                                     Long-form content:
                                 </p>
 
