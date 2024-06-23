@@ -12,8 +12,8 @@ function HomePage() {
         <>
             <Link href="/home" className="demo">Take Me to Homepage</Link>
 
-            <Container className="iv-bg pt-5 h-100vh" fluid >
-                <Row className="d-flex flex-column align-items-center" >
+            <Container className="iv-bg pt-5 h-100vh " fluid >
+                <Row className="d-lg-flex flex-column align-items-center d-none" >
                     <Col className="d-flex flex-column justify-content-center align-items-center ">
                         <Image src="/images/robot_1.svg" width={200} height={100} alt='' />
                     </Col>
@@ -34,40 +34,15 @@ function HomePage() {
                                 <Link href="/leads" className="btn h-btn blurb-ripple-out" >
                                     <FaChartBar size={30} /> <span>Leads</span></Link>
                             </Col>
-                            {/* <Col className="overflow-hidden blurb-ripple-out-wrap" >
-                                <Link href="/conversion" className="btn h-btn blurb-ripple-out">
-                                    <FaUserPlus size={30} /> <span>Conversion</span></Link>
-                            </Col> 
-                            <Col className="overflow-hidden blurb-ripple-out-wrap" >
-                                <Link href="/booking" className="btn h-btn blurb-ripple-out">
-                                    <FaRocketchat size={30} /> <span>Booking</span></Link>
-                            </Col>
-                            */}
                             <Col className="overflow-hidden blurb-ripple-out-wrap" >
                                 <Link href="/traffic" className="btn h-btn blurb-ripple-out">
                                     <FaUsers size={30} /> <span>Traffic</span></Link>
                             </Col>
                         </Row>
-                        <Row className="d-flex align-items-center g-3 pt-3">
-                            {/* <Col className="overflow-hidden blurb-ripple-out-wrap" >
-                                <Link href="clicks" className="btn h-btn blurb-ripple-out">
-                                    <FaRegHandPointer size={30} /> <span>Clicks</span></Link>
-                            </Col>
-                            <Col className="overflow-hidden blurb-ripple-out-wrap" >
-                                <Link href="revenue" className="btn h-btn blurb-ripple-out">
-                                    <FaDollarSign size={30} /> <span>Revenue</span></Link>
-                            </Col>
-                            <Col className="overflow-hidden blurb-ripple-out-wrap" >
-                                <Link href="impressions" className="btn h-btn blurb-ripple-out">
-                                    <FaRegCheckCircle size={30} /> <span>Impressions</span></Link>
-                            </Col>
-                            <Col className="overflow-hidden blurb-ripple-out-wrap" >
-                                <Link href="reach" className="btn h-btn blurb-ripple-out">
-                                    <FaUserFriends size={30} /> <span>Reach</span></Link>
-                            </Col> */}
-                        </Row>
                     </Col>
                 </Row>
+
+
             </Container>
         </>
     )
