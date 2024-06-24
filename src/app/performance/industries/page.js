@@ -6,6 +6,8 @@ import Header1 from '../../../../components/HeaderBlack';
 import Footer from '../../../../components/Footer';
 import SeoComponents from '../../../../components/SeoComponents/Seo'
 import { usePathname } from 'next/navigation'
+import { CiCircleChevRight } from "react-icons/ci";
+import Link from 'next/link';
 
 function page() {
   const pathname = usePathname();
@@ -31,6 +33,21 @@ function page() {
             PERFORMANCE
           </h1>
         </Container> */}
+
+
+          {/* Bread-crumb */}
+          <div className='d-flex flex-row align-items-center mb-3 flex-nowrap ps-6'>
+            <p>
+              <Link href="/performance"
+                className='text-decoration-none '>
+                <span className='fs-6 text-white mb-0 px-1'>Performance</span>
+              </Link>
+              <CiCircleChevRight fill='white' />
+              <Link href=""
+                className='text-decoration-none px-1'>
+                <span className='fs-6 text-decoration-none text-white mb-0'>Industries</span>
+              </Link></p>
+          </div>
         <HomeBanner />
         <div className='custom_height_per_bottom'></div>
       <Footer />
