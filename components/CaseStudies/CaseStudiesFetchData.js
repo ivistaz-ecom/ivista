@@ -361,7 +361,7 @@ const CaseStudiesFetchData = () => {
                                 <br />
                                 <p className='py-3'></p>
                                 <p className="card-text red fs-4 px-3 mt-5">xxxxxx</p>
-                                <p className="card-text text-white text-center fs-3 p-3 mt-5">Can we reproduce this success for you?</p>
+                                <p className="card-text text-white text-center fs-3 p-3 mt-5">If you want this to be your digital success story, Contact us here</p>
                                 <p className="card-text red fs-4 p-3">xxxx</p>
                                 <p className="card-text red fs-4 p-3">xxxx</p>
                                 <br />

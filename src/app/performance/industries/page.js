@@ -26,18 +26,24 @@ function page() {
 
       <SeoComponents title={title} description={description} path={path} metaImage={metaImage} />
       <Header1 />
-      <Container fluid className="iv-bg border-bottom z-3 p-0">
+      <Container fluid className="iv-bg p-0">
         <div className='custom_height_per_top'></div>
-        {/* <Container className="w-80 custom-container position-relative iv-bg z-3">
+        <Container className='w-80 custom-container iv-bg position-relative z-3 mb-0 mt-0'>
+         {/* <Container className="w-80 custom-container position-relative iv-bg z-3">
           <h1 className="text-offwhite fs-80 fw-bold z-3 pt-4 py-4">
             PERFORMANCE
           </h1>
-        </Container> */}
+         </Container> */}
 
 
           {/* Bread-crumb */}
-          <div className='d-flex flex-row align-items-center mb-3 flex-nowrap ps-6'>
+          <div className='d-flex flex-row align-items-center mb-3 flex-nowrap '>
             <p>
+            <Link href="/welcome"
+                className='text-decoration-none '>
+                <span className='fs-6 text-white mb-0 px-1'>Home</span>
+              </Link>
+              <CiCircleChevRight fill='white'/>
               <Link href="/performance"
                 className='text-decoration-none '>
                 <span className='fs-6 text-white mb-0 px-1'>Performance</span>
@@ -48,6 +54,7 @@ function page() {
                 <span className='fs-6 text-decoration-none text-white mb-0'>Industries</span>
               </Link></p>
           </div>
+          </Container>
         <HomeBanner />
         <div className='custom_height_per_bottom'></div>
       <Footer />

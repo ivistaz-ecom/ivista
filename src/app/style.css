@@ -1415,7 +1415,7 @@ p.animation5 {
     margin-bottom: 0px;
     position: fixed;
     bottom: 0px;
-    top: 0%;
+    top: -3%;
     overflow: hidden;
     background-color: #fff0;
     content: "";
@@ -1671,7 +1671,7 @@ p.animation5 {
     margin-bottom: 0px;
     position: fixed;
     bottom: 0px;
-    top: 2%;
+    top: 0%;
     overflow: hidden;
     background-color: #fff0;
     content: "";
@@ -2146,11 +2146,11 @@ p.animation5 {
   .KW_progressContainer {
     left: 15.3%;
     width: 0.5em;
-    height: 70%;
+    height: 50%;
     margin-bottom: 0px;
     position: fixed;
     bottom: 0px;
-    top: 5%;
+    top: 1%;
     overflow: hidden;
     background-color: #fff0;
     content: "";
@@ -2162,7 +2162,7 @@ p.animation5 {
   .KW_progressBar {
     width: 100%;
     float: left;
-    height: 20% !important;
+    height: 70% !important;
     z-index: 99;
     max-width: 100%;
     border: 10px dashed rgb(243, 2, 2);
@@ -2273,7 +2273,7 @@ p.animation5 {
     margin-bottom: 0px;
     position: fixed;
     bottom: 0px;
-    top: 3%;
+    top: -1%;
     overflow: hidden;
     background-color: #fff0;
     content: "";
@@ -2385,7 +2385,7 @@ p.animation5 {
   .KW_progressContainer5 {
     left: 17.1%;
     width: 0.4em;
-    height: 35%;
+    height: 20%;
     margin-bottom: 0px;
     position: fixed;
     bottom: 0px;
@@ -2419,7 +2419,7 @@ p.animation5 {
   }
 
   .custom_height_per_top {
-    min-height: 12vh !important;
+    min-height: 6vh !important;
   }
 
   .custom_height_per_bottom {

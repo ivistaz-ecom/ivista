@@ -175,33 +175,32 @@ const CareerForms = () => {
     const handleFileChange = (e) => {
         const file = e.target.files[0];
 
-        // Check if a file was selected
         if (!file) {
             const fieldErrors = {};
             fieldErrors['yourFile'] = 'Please select a file.';
             setErrors(fieldErrors);
-            setyourFile(null); // Clear the selected file
+            setyourFile(null);
             return;
         }
 
-        // Check file type (only PDF allowed)
-        if (file.type !== 'application/pdf') {
+        const fileTypes = ['application/pdf', 'application/msword', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document'];
+
+        if (!fileTypes.includes(file.type)) {
             const fieldErrors = {};
-            fieldErrors['yourFile'] = 'Please select a PDF file.';
+            fieldErrors['yourFile'] = 'Please select a PDF, DOC, or DOCX file.';
             setErrors(fieldErrors);
-            setyourFile(null); // Clear the selected file
+            setyourFile(null);
             return;
         }
 
-        // Check file size (max 4MB)
         if (file.size > 4 * 1024 * 1024) {
             const fieldErrors = {};
             fieldErrors['yourFile'] = 'File size exceeds 4MB limit.';
             setErrors(fieldErrors);
-            setyourFile(null); // Clear the selected file
+            setyourFile(null);
         } else {
-            setErrors({}); // Clear any previous errors
-            setyourFile(file); // Set the selected file
+            setErrors({});
+            setyourFile(file);
         }
     };
 
@@ -212,6 +211,7 @@ const CareerForms = () => {
             event.preventDefault();
         }
     };
+
     <select
         value={yourJobType}
         onChange={handleTextChange}
@@ -221,19 +221,61 @@ const CareerForms = () => {
 
     </select>
 
+    const [isOpen, setIsOpen] = useState(false);
+
+
+    const handleCloseModal = () => {
+        setIsOpen(false);
+        setSelectedItem(null);
+    };
+
     return (
         <Container>
             <style>
                 {`
-                    h1.reg-success.mt-4 {
-                        color: green !important;
-                        font-size: 22px !important;
-                        font-weight: 700 !important;
-                    }
+                
+    h1.reg-success.mt-4 {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    right: 0%;
+    bottom: 0;
+    background: white;
+    font-size:30px;
+    z-index:9999;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+button.btn-close {
+    position: relative;
+    top: 0px;
+}
+
+@media(max-width:767px) {
+    h1.reg-success.mt-4 {
+    position: absolute;
+    top: 5%;
+    left: 0;
+    right: 0%;
+    bottom: -20%;
+    background: white;
+    font-size:30px;
+    z-index:9999;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+    button.btn-close {
+    position: relative;
+    top: 0px;
+}
+}
                 `}
             </style>
 
-            <form className="row p-0 z-index-100">
+            <form className="row p-0 z-index-100 pt-4">
                 {/* Name */}
                 <div className="mb-3">
                     <label htmlFor="yourName" className="form-label text-black">Full Name *</label>
@@ -316,7 +358,7 @@ const CareerForms = () => {
                     <p className="para-text text-black fs-6">We value your privacy and will handle your information with utmost confidentiality. By submitting this form, you agree to our<Link className='' target='_blank' href='/privacy-policy'> Privacy Policy.</Link></p>
                 </div>
                 {/* Submit Button */}
-                <div className="mt-3 text-center">
+                <div className="mt-3 text-center z-1">
                     <div class="text-center">
                         <button
                             type="button"
@@ -326,7 +368,13 @@ const CareerForms = () => {
                             Submit
                         </button>
                     </div>
-                    {loading && <h1 class="reg-success mt-4">{post}</h1>}
+                    {loading &&
+                        <>
+                            <h1 class="reg-success mt-4 red">
+                                Form Submission Successful
+                            </h1>
+                        </>
+                    }
                 </div>
             </form>
 

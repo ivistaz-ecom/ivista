@@ -90,6 +90,11 @@ const HomePage = () => {
     .d-flex.flex-column.justify-content-center.align-items-center.p-0.col {
     margin-top: 48px !important;
 }
+
+      .scrollable-section {
+          overflow-y: auto;
+          -webkit-overflow-scrolling: touch;
+        }
         }
         
         `
@@ -118,7 +123,7 @@ const HomePage = () => {
           </Col>
         </Row>
       </Container>
-      <Container className="iv-bg min-vh-100 fixed-top-custom p-0 z-3" fluid style={{ display: showSecondSection ? 'block' : 'none' }} ref={secondSectionRef}>
+      <Container className="iv-bg min-vh-100 fixed-top-custom p-0 z-3 scrollable-section" fluid style={{ display: showSecondSection ? 'block' : 'none' }} ref={secondSectionRef}>
         <Row className="d-flex flex-column align-items-center justify-content-between min-vh-100">
           <Col className="d-flex flex-column justify-content-center align-items-center p-0">
             {/* <Image src="/images/robot_1.svg" width={200} height={100} alt="" /> */}
@@ -182,6 +187,7 @@ const HomePage = () => {
           overflow-y: auto;
           -webkit-overflow-scrolling: touch;
         }
+        
       `}</style>
     </>
   );

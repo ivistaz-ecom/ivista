@@ -8,6 +8,7 @@ import Experience from '@/app/experience/page';
 import ScrollAnimation from '../../../components/SharedComponents/ScrollAnimation';
 import Header from '../../../components/HeaderBlack'
 import { Container } from 'react-bootstrap';
+import NewMastery from '../../../components/ivistaz/NewMastery';
 
 const MasteryArtPerformance = () => {
     return (
@@ -15,7 +16,7 @@ const MasteryArtPerformance = () => {
         <Header />
         <ScrollAnimation />
         <div className='custom-container'>
-            <div className=''>
+            {/* <div className=''>
 
                 <div id='mastery' style={{ paddingTop: '30px' }}>
                     <div className='position-relative'>
@@ -36,7 +37,8 @@ const MasteryArtPerformance = () => {
                         <Performance />
                     </div>
                 </div>
-            </div>
+            </div> */}
+            <NewMastery />
             <Footer />
         </div>
     </>

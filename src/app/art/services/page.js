@@ -42,6 +42,11 @@ function Page() {
                 {/* Bread-crumb */}
                 <div className='d-flex flex-row align-items-center mb-3 flex-nowrap ps-6'>
                   <p>
+                  <Link href="/welcome"
+                className='text-decoration-none '>
+                <span className='fs-6 text-black mb-0 px-1'>Home</span>
+              </Link>
+              <CiCircleChevRight fill='red'/>
                     <Link href="/art"
                       className='text-decoration-none '>
                       <span className='fs-6 text-black mb-0 px-1'>Art</span>
@@ -55,7 +60,7 @@ function Page() {
               </Container>
               <Container className="banner w-80 mb-0 z-3">
                 <Row className="d-flex align-items-start">
-                  <Col lg={12} className="mt-5 position-relative">
+                  <Col lg={12} className="position-relative">
                     <div className='position-relative'>
                       <div className='timeline-badge4 mt-4'></div>
                       <div className='ps-6'>
@@ -68,7 +73,7 @@ function Page() {
                       </div>
                     </div>
                   </Col>
-                  <div className='row bg-white z-3 ps-6'>
+                  <div className='row bg-white z-3 ps-6 pt-lg-5'>
                     {/* Service Columns */}
                     {[
                       { src: "/images/Content_Development.svg", title: "Content Development", subtitle: "(B2B & B2C)", link: "/service/content-development-b2b-b2c" },
