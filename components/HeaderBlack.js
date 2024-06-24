@@ -194,7 +194,7 @@ function Header1({ setChatVisible }) {
             </Row>
           </Offcanvas.Body>
 
-          <Col className='d-flex flex-column justify-content-end z-index-100 pb-2'>
+          <Col className='d-flex flex-column justify-content-end z-index-100 pb-3'>
             <div className='d-flex flex-row justify-content-center align-items-center'>
               <div>
                 Follow Us:

@@ -8,6 +8,8 @@ import Footer from '../../../../components/Footer';
 import ScrollAnimationArt from '../../../../components/SharedComponents/ScrollAnimationArt';
 import SeoComponents from '../../../../components/SeoComponents/Seo';
 import { usePathname } from 'next/navigation';
+import { CiCircleChevRight } from "react-icons/ci";
+
 
 function Page() {
   const pathname = usePathname();
@@ -36,6 +38,20 @@ function Page() {
             <div className='timeline4'>
               <Container className="w-80 custom-container position-relative bg-white">
                 {/* <h1 className="fs-80 fw-bold ps-6">ART</h1> */}
+
+                {/* Bread-crumb */}
+                <div className='d-flex flex-row align-items-center mb-3 flex-nowrap ps-6'>
+                  <p>
+                    <Link href="/art"
+                      className='text-decoration-none '>
+                      <span className='fs-6 text-black mb-0 px-1'>Art</span>
+                    </Link>
+                    <CiCircleChevRight fill='red' />
+                    <Link href=""
+                      className='text-decoration-none px-1'>
+                      <span className='fs-6 text-decoration-none text-black mb-0'>Services</span>
+                    </Link></p>
+                </div>
               </Container>
               <Container className="banner w-80 mb-0 z-3">
                 <Row className="d-flex align-items-start">
@@ -81,23 +97,23 @@ function Page() {
                   </div>
                 </Row>
                 <Container >
-                <Row className="d-flex align-items-start bg-white p-0 position-relative">
-                  <Col lg={4} className='mt-4 ps-8 position-relative'>
-                    <div className="d-flex flex-column align-items-center text-start">
-                      <div className='' >
-                        <img src="/images/Web_Design.svg" />
-                      </div>
-                      <div className=" p-4">
-                        <Link className='text-decoration-none txt-danger text-center' href="/website-design-and-development">
-                          <p className='para-text mb-0'>Web Design & Development</p>
+                  <Row className="d-flex align-items-start bg-white p-0 position-relative">
+                    <Col lg={4} className='mt-4 ps-8 position-relative'>
+                      <div className="d-flex flex-column align-items-center text-start">
+                        <div className='' >
+                          <img src="/images/Web_Design.svg" />
+                        </div>
+                        <div className=" p-4">
+                          <Link className='text-decoration-none txt-danger text-center' href="/website-design-and-development">
+                            <p className='para-text mb-0'>Web Design & Development</p>
 
-                        </Link>
+                          </Link>
+                        </div>
                       </div>
-                    </div>
-                  </Col>
-                  <Col></Col>
-                  <Col></Col>
-                </Row>
+                    </Col>
+                    <Col></Col>
+                    <Col></Col>
+                  </Row>
                 </Container>
               </Container>
               <div className='custom_height_art_bottom'></div>

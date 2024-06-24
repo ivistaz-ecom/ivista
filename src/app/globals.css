@@ -1067,7 +1067,7 @@ background: rgba(255, 255, 255, 0) !important; */
 }
 
 .counter {
-  font-size: 160px;
+  font-size: 80px;
   font-weight: 700;
   color: #fff;
 }
@@ -2046,7 +2046,7 @@ color: #ED2023 !important;
     padding: -80px !important;
   }
   .counter {
-    font-size: 100px;
+    font-size: 55px;
     font-weight: 700;
     color: #fff;
   }

@@ -538,7 +538,7 @@ function Footer() {
 
 
             <Container className="iv-grey pt-2 pb-2 z-3" fluid>
-                <Container className="text-center">
+                <Container className="text-lg-center text-start">
                     <Row className="g-0">
                         <Col className="d-flex align-items-center justify-content-end">
                             <p className="footer-text">Follow Us:</p>
