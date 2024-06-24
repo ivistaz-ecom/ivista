@@ -136,26 +136,7 @@
 // export default MasteryArtsPerfomancePage;
 
 
-
-
-
-
-
 // code 2
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 // import Image from 'next/image';

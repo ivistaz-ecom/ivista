@@ -166,6 +166,15 @@ const ContactForm = () => {
                         font-size: 22px !important;
                         font-weight: 700 !important;
                     }
+
+                    
+                    .submit-message {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
                 `}
             </style>
 
@@ -244,7 +253,7 @@ const ContactForm = () => {
                             onChange={handleTextChange}
                             rows="5"
                         />
-                        {errors.yourMessage && <div className="invalid-feedback">{errors.yourMessage}</div>}
+                        {/* {errors.yourMessage && <div className="invalid-feedback">{errors.yourMessage}</div>} */}
                     </div>
 
                     {/* Submit Button */}
@@ -256,7 +265,7 @@ const ContactForm = () => {
                     </div>
                 </form>
             ) : (
-                <div className='py-4 text-white'>
+                <div className='py-4 text-white submit-message'>
                     <h3>Thank you for your submission!</h3>
                 </div>
             )}

@@ -19,6 +19,11 @@ function page() {
             {/* Bread-crumb */}
             <div className='d-flex flex-row align-items-center mb-3 flex-nowrap'>
             <p>
+            <Link href="/welcome"
+                className='text-decoration-none '>
+                <span className='fs-6 text-white mb-0 px-1'>Home</span>
+              </Link>
+              <CiCircleChevRight fill='white'/>
               <Link href="/mastery"
                 className='text-decoration-none '>
                 <span className='fs-6 text-white mb-0 px-1'>Mastery</span>
@@ -26,7 +31,7 @@ function page() {
               <CiCircleChevRight fill='white' />
               <Link href=""
                 className='text-decoration-none px-1'>
-                <span className='fs-6 text-decoration-none text-white mb-0'>Solution</span>
+                <span className='fs-6 text-decoration-none text-white mb-0'>Solutions</span>
               </Link></p>
           </div>
         </Container>

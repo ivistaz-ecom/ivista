@@ -8,6 +8,18 @@ import ContactForm from '../Forms/ContactForm';
 const ContactusContent = () => {
     return (
         <>
+            <style>
+                {`
+                    .submit_message {
+                      display: flex;
+                      flex-direction: column;
+                      flex-wrap: nowrap;
+                      align-content: center;
+                      justify-content: center;
+                      align-items: center;
+                  }
+                `}
+            </style>
             <Container className="w-80 custom-container">
                 <Row>
                     <Col>
@@ -21,7 +33,7 @@ const ContactusContent = () => {
                     </Col>
                 </Row>
                 <Row>
-                    <Col lg={6} className='py-4'>
+                    <Col lg={6} className='submit_message py-4'>
                         <ContactForm />
                     </Col>
 
