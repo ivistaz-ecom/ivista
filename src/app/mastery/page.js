@@ -57,14 +57,16 @@ function page() {
                 className='text-decoration-none '>
                 <span className='fs-6 text-white mb-0 px-1'>Home</span>
               </Link>
-              <CiCircleChevRight fill='white' />
+              <span className='px-1'>
+                <CiCircleChevRight fill='white' />
+              </span>
               <Link href=""
                 className='text-decoration-none px-1'>
                 <span className='fs-6 text-decoration-none text-white mb-0'>Mastery</span>
               </Link></p>
           </div>
 
-          <h1 className="text-white fs-70 fw-bold d-inline-block d-block mb-3">MASTERY</h1>
+          <h1 className="text-white fs-90 fw-bold d-inline-block d-block mb-3">MASTERY</h1>
           <Row className='d-flex flex-lg-row flex-column-reverse'>
             {/* <h1 className="text-white fs-70 fw-bold d-inline-block d-lg-block d-none">MASTERY</h1> */}
 

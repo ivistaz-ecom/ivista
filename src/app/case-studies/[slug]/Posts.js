@@ -45,12 +45,15 @@ const Posts = ({ slug }) => {
                     data.map((post) => (
                         <div className="d-flex flex-column" key={post.id}>
                             <Container className='pb-5'>
+                                {/* Bread-crumb */}
                                 <div className='d-flex align-items-center mb-3 flex-nowrap'>
                                     <p className="mb-0">
                                         <Link href="/case-studies" className='text-decoration-none text-white'>
                                             Case Studies
                                         </Link>
-                                        <CiCircleChevRight fill='white' />
+                                        <span className='px-2'>
+                                            <CiCircleChevRight fill='white' />
+                                        </span>
                                         <Link href="" className='text-decoration-none text-white' dangerouslySetInnerHTML={{ __html: post.title.rendered }} />
                                     </p>
                                 </div>

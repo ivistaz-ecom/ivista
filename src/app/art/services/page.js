@@ -42,16 +42,20 @@ function Page() {
                 {/* Bread-crumb */}
                 <div className='d-flex flex-row align-items-center mb-3 flex-nowrap ps-6'>
                   <p>
-                  <Link href="/welcome"
-                className='text-decoration-none '>
-                <span className='fs-6 text-black mb-0 px-1'>Home</span>
-              </Link>
-              <CiCircleChevRight fill='red'/>
+                    <Link href="/welcome"
+                      className='text-decoration-none '>
+                      <span className='fs-6 text-black mb-0 px-1'>Home</span>
+                    </Link>
+                    <span className='px-1'>
+                      <CiCircleChevRight fill='red' />
+                    </span>
                     <Link href="/art"
                       className='text-decoration-none '>
                       <span className='fs-6 text-black mb-0 px-1'>Art</span>
                     </Link>
-                    <CiCircleChevRight fill='red' />
+                    <span className='px-1'>
+                      <CiCircleChevRight fill='red' />
+                    </span>
                     <Link href=""
                       className='text-decoration-none px-1'>
                       <span className='fs-6 text-decoration-none text-black mb-0'>Services</span>
@@ -109,9 +113,8 @@ function Page() {
                           <img src="/images/Web_Design.svg" />
                         </div>
                         <div className=" p-4">
-                          <Link className='text-decoration-none txt-danger text-center' href="/website-design-and-development">
+                          <Link className='text-decoration-none txt-danger text-center' href="/service/website-design-and-development">
                             <p className='para-text mb-0'>Web Design & Development</p>
-
                           </Link>
                         </div>
                       </div>

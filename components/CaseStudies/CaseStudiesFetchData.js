@@ -9,7 +9,28 @@ import { CiCircleChevRight } from "react-icons/ci";
 const CaseStudiesFetchData = () => {
     return (
         <Container className="w-80 custom-container">
-
+            {/* Bread-crumb */}
+            <div className='d-flex flex-row align-items-center mb-3 flex-nowrap '>
+                <p>
+                    <Link href="/welcome"
+                        className='text-decoration-none '>
+                        <span className='fs-6 text-white mb-0 px-1'>Home</span>
+                    </Link>
+                    <span className='px-1'>
+                        <CiCircleChevRight fill='white' />
+                    </span>
+                    <Link href="/performance"
+                        className='text-decoration-none '>
+                        <span className='fs-6 text-white mb-0 px-1'>Performance</span>
+                    </Link>
+                    <span className='px-1'>
+                        <CiCircleChevRight fill='white' />
+                    </span>
+                    <Link href="/case-studies"
+                        className='text-decoration-none px-1'>
+                        <span className='fs-6 text-decoration-none text-white mb-0'>Case Studies</span>
+                    </Link></p>
+            </div>
 
             <h1 className="fs-80 fw-bold text-white">CASE STUDIES</h1>
             <h3 className="fs-19 text-white fw-semibold poppins pt-lg-0 pt-3">Performance you'll love. Can we replicate it for you?</h3>
@@ -153,7 +174,8 @@ const CaseStudiesFetchData = () => {
 
                 {/* Column 06 new landing page*/}
                 <Col md={4} className="d-flex py-2">
-                    <Link href={'/case-studies/seo-case-study-for-a-global-technology-company-increased-visibility-with-organic-search-results'} className='text-decoration-none'>
+                    <Link href={'/case-studies/digital-marketing-strategy-case-study-boosting-audio-equipment-sales-with-seo-and-amazon-marketing-2'} className='text-decoration-none'>
+
                         <div className="card text-white bg-white mb-3 rounded-5 w-100 h-100 d-flex flex-column">
                             <div className="card-body d-flex flex-column justify-content-between flex-grow-1">
                                 <div className='card-title d-flex justify-content-between align-items-center'>
@@ -209,7 +231,7 @@ const CaseStudiesFetchData = () => {
 
                 {/* Column 08 */}
                 <Col md={4} className="d-flex py-2">
-                    <Link href={'/service'} className='text-decoration-none'>
+                    <Link href={'/case-studies/luxury-automobile-dealership-case-study-cost-optimization-and-sales-conversion'} className='text-decoration-none'>
                         <div className="card text-white bg-white mb-3 rounded-5 w-100 h-100 d-flex flex-column">
                             <div className="card-body d-flex flex-column justify-content-between flex-grow-1">
                                 <div className='card-title d-flex justify-content-between align-items-center'>
@@ -293,7 +315,7 @@ const CaseStudiesFetchData = () => {
                 </Col>
                 {/* Column 11*/}
                 <Col md={4} className="d-flex py-2">
-                    <Link href={'/service'} className='text-decoration-none'>
+                    <Link href={'/case-studies/b2b-email-marketing-case-study-delivering-qualified-leads-to-generate-interest-to-invest-in-the-clients-social-impact-projects'} className='text-decoration-none'>
                         <div className="card text-white bg-white mb-3 rounded-5 w-100 h-100 d-flex flex-column">
                             <div className="card-body d-flex flex-column justify-content-between flex-grow-1">
                                 <div className='card-title d-flex justify-content-between align-items-center'>
@@ -321,7 +343,7 @@ const CaseStudiesFetchData = () => {
                 </Col>
                 {/* Column 12*/}
                 <Col md={4} className="d-flex py-2">
-                    <Link href={'/case-studies/digital-marketing-strategy-case-study-boosting-audio-equipment-sales-with-seo-and-amazon-marketing-2'} className='text-decoration-none'>
+                    <Link href={'/case-studies/seo-case-study-for-a-global-technology-company-increased-visibility-with-organic-search-results'} className='text-decoration-none'>
                         <div className="card text-white bg-white mb-3 rounded-5 w-100 h-100 d-flex flex-column">
                             <div className="card-body d-flex flex-column justify-content-between flex-grow-1">
                                 <div className='card-title d-flex justify-content-between align-items-center'>
@@ -352,22 +374,22 @@ const CaseStudiesFetchData = () => {
 
                 {/* Dummy red card */}
                 <Col md={4} className="d-flex py-lg-5 py-2 p-0">
-                <Link href="/contact-us " className='text-decoration-none'>
-                    <div class="container d-flex flex-column ">
-                        <div class="card iv-bg text-white rounded-5 ">
-                            <div class="card-body">
-                                {/* <!-- Empty card body --> */}
+                    <Link href="/contact-us " className='text-decoration-none'>
+                        <div class="container d-flex flex-column ">
+                            <div class="card iv-bg text-white rounded-5 ">
+                                <div class="card-body">
+                                    {/* <!-- Empty card body --> */}
 
-                                <br />
-                                <p className='py-3'></p>
-                                <p className="card-text red fs-4 px-3 mt-5">xxxxxx</p>
-                                <p className="card-text text-white text-center fs-3 p-3 mt-5">If you want this to be your digital success story, Contact us here</p>
-                                <p className="card-text red fs-4 p-3">xxxx</p>
-                                <p className="card-text red fs-4 p-3">xxxx</p>
-                                <br />
+                                    <br />
+                                    <p className='py-3'></p>
+                                    <p className="card-text red fs-4 px-3 mt-5">xxxxxx</p>
+                                    <p className="card-text text-white text-center fs-3 p-3 mt-5">If you want this to be your digital success story, Contact us here</p>
+                                    <p className="card-text red fs-4 p-3">xxxx</p>
+                                    <p className="card-text red fs-4 p-3">xxxx</p>
+                                    <br />
+                                </div>
                             </div>
                         </div>
-                    </div>
                     </Link>
                 </Col>
             </Row>
