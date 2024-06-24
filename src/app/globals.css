@@ -576,6 +576,20 @@ background: rgba(255, 255, 255, 0) !important; */
     width: 100% !important;
   }
 
+  .h-btn span {
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    font-weight: 500;
+  }
+
+  .h1-btn span {
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    font-weight: 500;
+}
+
   .h-btn {
     width: 100% !important;
   }

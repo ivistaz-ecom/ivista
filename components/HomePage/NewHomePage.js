@@ -80,21 +80,21 @@ const HomePage = () => {
 
   return (
     <>
-    <style>
-      {
-        `
-        @madia (max-width : 767px){
+      <style>
+        {
+          `
+        @media (max-width : 767px){
         .d-flex.flex-lg-row.flex-column.align-items-center.justify-content-end.g-3.custom-home-row.row {
     margin-top: 20px;
 }
     .d-flex.flex-column.justify-content-center.align-items-center.p-0.col {
-    margin-top: 48px;
+    margin-top: 48px !important;
 }
         }
         
         `
-      }
-    </style>
+        }
+      </style>
       <Container className={`iv-bg z-0 ${showSecondSection ? 'hide-first-section' : ''}`} fluid>
         <Row className="d-flex flex-column align-items-center justify-content-between min-vh-100">
           <Col className="d-flex flex-column justify-content-center align-items-center z-index-100">
