@@ -42,7 +42,7 @@ function Performance() {
         <h1 className="fs-80 fw-bold ps-6 custom-performance-text">Performance</h1>
       </Container>
       <Container className='p-0'>
-        <p className={`fs-20 fw-bold ps-6 custom-performance-text line_space ${isActive ? 'active-text_performance' : ''}`}>
+        <p className={`fw-bold ps-6 custom-art-text custom-performance-text line_space ${isActive ? 'active-text_performance' : ''}`}>
           Over the years, iVistaz has excelled by partnering with clients to craft unforgettable digital journeys. As a revenue-driven digital marketing agency, we consistently strive to surpass expectations with every performance.
         </p>
       </Container>

@@ -8,6 +8,7 @@ import Image from 'next/image'
 import Footer from '../../../components/Footer';
 import SeoComponents from '../../../components/SeoComponents/Seo'
 import { usePathname } from 'next/navigation'
+import { CiCircleChevRight } from "react-icons/ci";
 
 function performance() {
 
@@ -31,6 +32,20 @@ function performance() {
       <Container fluid className="iv-bg border-bottom d-flex flex-column justify-content-between min-vh-100 p-0 m-0">
         <Header1 />
         <Container className="w-80 mb-5 custom-container">
+          {/* Bread-crumb */}
+          <div className='d-flex flex-row align-items-center mb-3 flex-nowrap'>
+            <p>
+              <Link href="/welcome"
+                className='text-decoration-none '>
+                <span className='fs-6 text-white mb-0 px-1'>Home</span>
+              </Link>
+              <CiCircleChevRight fill='white' />
+              <Link href=""
+                className='text-decoration-none px-1'>
+                <span className='fs-6 text-decoration-none text-white mb-0'>Performance</span>
+              </Link></p>
+          </div>
+
           <Col>
             <h1 className="text-white fs-70 fw-bold mb-5 text-start">PERFORMANCE</h1>
           </Col>
@@ -59,10 +74,10 @@ function performance() {
               </Container>
 
               <Container className="margin-left d-lg-flex d-none mt-5 ps-4">
-                <Col className=''>
+                {/* <Col className=''>
                   <Link href="/art" className="perform-text">ART</Link>
                   <Link href="/mastery" className="perform-text mx-5">MASTERY</Link>
-                </Col>
+                </Col> */}
               </Container>
             </Col>
 
@@ -71,12 +86,12 @@ function performance() {
             </Col>
           </Row>
 
-          <Container className="margin-left d-lg-none d-flex mt-3">
+          {/* <Container className="margin-left d-lg-none d-flex mt-3">
             <Col className='ms-3'>
               <Link href="/art" className="perform-text">ART</Link>
               <Link href="/mastery" className="perform-text mx-5">MASTERY</Link>
             </Col>
-          </Container>
+          </Container> */}
         </Container>
       </Container>
       <Footer />

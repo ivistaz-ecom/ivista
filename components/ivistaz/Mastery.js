@@ -38,7 +38,7 @@ function Mastery() {
         <h1 className="fs-80 fw-bold ps-6">Mastery</h1>
       </Container>
       <Container className='p-0'>
-        <p className={`fs-20 fw-bold custom-mastery-text ps-6 line_space ${isActive ? 'active-text_mastery' : ''}`}>
+        <p className={`fw-bold custom-art-text custom-mastery-text ps-6 line_space ${isActive ? 'active-text_mastery' : ''}`}>
           As a performance-marketing agency, we've mastered the intricacies of digital marketing over the years, crafting winning strategies rooted in deep insights. Through ongoing learning and training, we have adeptly navigated the digital landscape. Our commitment is reflected in our meticulous approach to every step, guiding clients to their digital goals with precision and mastery.
         </p>
       </Container>
