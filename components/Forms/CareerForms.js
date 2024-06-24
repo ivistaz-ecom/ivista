@@ -236,6 +236,9 @@ const CareerForms = () => {
                 
     h1.reg-success.mt-4 {
     position: absolute;
+    heigth:50px !important;
+    min-height: 110vh;
+    overflow: hidden;
     top: 30px;
     left: 0;
     right: 0%;

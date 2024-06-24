@@ -16,19 +16,23 @@ function page() {
         <div className='custom_height_top'></div>
         <Container className='w-80 custom-container bg-black position-relative z-3 mb-0'>
           {/* <h1 className="text-offwhite fs-70 fw-bold text-start ps-5 mb-0">MASTERY</h1> */}
-            {/* Bread-crumb */}
-            <div className='d-flex flex-row align-items-center mb-3 flex-nowrap'>
+          {/* Bread-crumb */}
+          <div className='d-flex flex-row align-items-center mb-3 flex-nowrap'>
             <p>
-            <Link href="/welcome"
+              <Link href="/welcome"
                 className='text-decoration-none '>
                 <span className='fs-6 text-white mb-0 px-1'>Home</span>
               </Link>
-              <CiCircleChevRight fill='white'/>
+              <span className='px-1'>
+                <CiCircleChevRight fill='white' />
+              </span>
               <Link href="/mastery"
                 className='text-decoration-none '>
                 <span className='fs-6 text-white mb-0 px-1'>Mastery</span>
               </Link>
-              <CiCircleChevRight fill='white' />
+              <span className='px-1'>
+                <CiCircleChevRight fill='white' />
+              </span>
               <Link href=""
                 className='text-decoration-none px-1'>
                 <span className='fs-6 text-decoration-none text-white mb-0'>Solutions</span>
