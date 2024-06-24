@@ -7,6 +7,8 @@ import Link from 'next/link';
 import Image from 'next/image';
 import gsap from 'gsap';
 import Footer from '../../../components/Footer';
+import { CiCircleChevRight } from "react-icons/ci";
+
 
 
 function page() {
@@ -25,19 +27,51 @@ function page() {
 
   return (
     <>
+
+      <style>
+        {
+          `
+
+    .section.d-flex.flex-row.row {
+        min-height: 250px;
+      }
+
+    @media(max-width:767px) {
+    .counter-txt {
+       font-size: 18px !important;
+  }
+    }
+    `
+        }
+      </style>
+
       <Header1 />
       <Container fluid className="bg-black d-flex flex-column justify-content-between min-vh-100 bg-black" >
         <Container className="w-80 custom-container">
           <Col className='w-auto'>
           </Col>
-          <h1 className="text-white fs-70 fw-bold d-inline-block d-block d-lg-none mb-3">MASTERY</h1>
+          {/* Bread-crumb */}
+          <div className='d-flex flex-row align-items-center mb-3 flex-nowrap'>
+            <p>
+              <Link href="/welcome"
+                className='text-decoration-none '>
+                <span className='fs-6 text-white mb-0 px-1'>Home</span>
+              </Link>
+              <CiCircleChevRight fill='white' />
+              <Link href=""
+                className='text-decoration-none px-1'>
+                <span className='fs-6 text-decoration-none text-white mb-0'>Mastery</span>
+              </Link></p>
+          </div>
+
+          <h1 className="text-white fs-70 fw-bold d-inline-block d-block mb-3">MASTERY</h1>
           <Row className='d-flex flex-lg-row flex-column-reverse'>
-            <Col className="section">
-              <h1 className="text-white fs-70 fw-bold d-inline-block d-lg-block d-none">MASTERY</h1>
-              <p className="mastery-text mastery-h" onMouseEnter={() => handleMouseEnter(0)} onMouseLeave={handleMouseLeave}>Years of Experience & Expertise</p>
+            {/* <h1 className="text-white fs-70 fw-bold d-inline-block d-lg-block d-none">MASTERY</h1> */}
+
+            <Row className="section d-flex flex-row ">
+              {/* <p className="mastery-text mastery-h" onMouseEnter={() => handleMouseEnter(0)} onMouseLeave={handleMouseLeave}>Years of Experience & Expertise</p>
               <p className="mastery-text mastery-h" onMouseEnter={() => handleMouseEnter(1)} onMouseLeave={handleMouseLeave}>Clients Served </p>
               <p className="mastery-text mastery-h" onMouseEnter={() => handleMouseEnter(2)} onMouseLeave={handleMouseLeave}>Online Revenue Generated</p>
-              {/* <p className="mastery-text mastery-h">Marketing Qualified Leads (MQLs) delivered</p> */}
               <p className="mastery-text mastery-h" onMouseEnter={() => handleMouseEnter(3)} onMouseLeave={handleMouseLeave}>Websites Designed and Developed</p>
             </Col>
             <Col className="d-flex justify-content-center align-items-center">
@@ -52,8 +86,53 @@ function page() {
               )}
               {countVisible[3] && (
                 <CountUp end={500} suffix='+' className="counter" />
-              )}
-            </Col>
+              )} */}
+              <Col lg={3} xs={6} className='text-center d-flex flex-column justify-content-between'>
+                <Col>
+                  <CountUp end={28} prefix="" className="counter" />
+                </Col>
+                <Col >
+                  <h5 className='text-white text-center counter-txt'>
+                    Years of Experience & Expertise
+                  </h5>
+                </Col>
+              </Col>
+
+              <Col lg={3} xs={6} className='text-center d-flex flex-column justify-content-between'>
+                <Col>
+                  <CountUp end={800} suffix="+" className="counter" />
+                </Col>
+                <Col >
+                  <h5 className='text-white text-center counter-txt'>
+                    Clients Served
+                  </h5>
+                </Col>
+              </Col>
+
+              <Col lg={3} xs={6} className='text-center d-flex flex-column justify-content-between'>
+                <Col>
+                  <CountUp end={6} prefix="$" suffix='B' className="counter" />
+                </Col>
+                <Col >
+                  <h5 className='text-white text-center counter-txt'>
+                    Online Revenue Generated
+                  </h5>
+                </Col>
+              </Col>
+
+
+              <Col lg={3} xs={6} className='text-center d-flex flex-column justify-content-between'>
+                <Col>
+                  <CountUp end={500} suffix='+' className="counter" />
+                </Col>
+                <Col >
+                  <h5 className='text-white text-center counter-txt'>
+                    Websites Designed and Developed
+                  </h5>
+                </Col>
+              </Col>
+            </Row>
+
           </Row>
         </Container>
 
@@ -81,18 +160,19 @@ function page() {
                   </div>
                 </div>
 
-                <Container className="mt-5 margin-left d-lg-flex d-none pt-4 mb-0">
+                {/* <Container className="mt-5 margin-left d-lg-flex d-none pt-4 mb-0">
                   <Link href="/art" className="text">ART</Link>
                   <Link href="/performance" className="text mx-lg-5 mx-4">PERFORMANCE</Link>
-                </Container>
+                </Container> */}
               </Container>
             </Col>
           </Row>
 
-          <Container className="mt-5 margin-left d-flex d-lg-none pb-4 pb-lg-0">
+          {/* <Container className="mt-5 margin-left d-flex d-lg-none pb-4 pb-lg-0">
             <Link href="/art" className="text">ART</Link>
             <Link href="/performance" className="text mx-lg-5 mx-4">PERFORMANCE</Link>
-          </Container>
+          </Container> */}
+
         </Container>
       </Container>
 
