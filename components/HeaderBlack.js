@@ -1,4 +1,3 @@
-
 "use client"
 import React, { useState, useRef } from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
@@ -14,9 +13,7 @@ import { GrInstagram } from "react-icons/gr";
 import { FaFacebook } from "react-icons/fa";
 import { AiFillTwitterCircle } from "react-icons/ai";
 
-
-
-function Header1() {
+function Header1({ setChatVisible }) {
   const pathname = usePathname();
   const [show, setShow] = useState(false);
   const timeoutRef = useRef(null);
@@ -24,20 +21,14 @@ function Header1() {
   const handleMouseEnter = () => {
     clearTimeout(timeoutRef.current);
     setShow(true);
+    setChatVisible(false);  // Hide the chat script when the menu is opened
   };
 
   const handleMouseLeave = () => {
     timeoutRef.current = setTimeout(() => {
       setShow(false);
+      setChatVisible(true);  // Show the chat script when the menu is closed
     }, 200); // Delay to prevent immediate closing
-  };
-
-  const handleOffcanvasMouseEnter = () => {
-    clearTimeout(timeoutRef.current);
-  };
-
-  const handleOffcanvasMouseLeave = () => {
-    handleMouseLeave();
   };
 
   return (
