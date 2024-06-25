@@ -84,12 +84,27 @@ const HomePage = () => {
         {
           `
         @media (max-width : 767px){
-        .d-flex.flex-lg-row.flex-column.align-items-center.justify-content-end.g-3.custom-home-row.row {
-    margin-top: 20px;
+//         .d-flex.flex-lg-row.flex-column.align-items-center.justify-content-end.g-3.custom-home-row.row {
+//     margin-top: 20px;
+// }
+//     .d-flex.flex-column.justify-content-center.align-items-center.p-0.col {
+//     margin-top: 48px !important;
+// }
+
+.custom-logo {
+    margin-top: -85px;
 }
-    .d-flex.flex-column.justify-content-center.align-items-center.p-0.col {
-    margin-top: 48px !important;
+
+a.btn.h-btn.blurb-ripple-out.d-flex.flex-row.gap-2.justify-content-center {
+    padding: 8px !important;
 }
+    a.btn.h1-btn.blurb-ripple-out.d-flex.flex-row.gap-2.justify-content-center {
+          padding: 8px !important;
+    }
+
+    .fs-80, .fs-70, .fs-60 {
+        font-size: 26px !important;
+    }
 
       .scrollable-section {
           overflow-y: auto;
@@ -102,7 +117,7 @@ const HomePage = () => {
       </style>
       <Container className={`iv-bg z-0 ${showSecondSection ? 'hide-first-section' : ''}`} fluid>
         <Row className="d-flex flex-column align-items-center justify-content-between min-vh-100">
-          <Col className="d-flex flex-column justify-content-center align-items-center z-index-100">
+          <Col className="d-flex flex-column justify-content-center align-items-center z-index-100 custom-logo">
             <Image src="/images/ivista_logo.svg" width={300} height={80} className="img-fluid" alt="IVISTAZ Logo" />
             {/* Homepage skip Button  */}
             <Link href="/welcome" className="demo rounded-3">Skip</Link>
