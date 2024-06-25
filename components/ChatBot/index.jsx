@@ -35,7 +35,7 @@ const CollectChatScript = () => {
             background-image: url('/images/chat_bot.svg') !important;
             background-size: cover;
           }
-        `}
+               `}
       </style>
       {/* This component doesn't render anything visible */}
     </>

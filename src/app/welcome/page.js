@@ -36,7 +36,6 @@ function IhomePage() {
   }
 
 
-
   const [currentSection, setCurrentSection] = useState('main');
 
   const [isMobile, setIsMobile] = useState(false);
@@ -70,6 +69,17 @@ function IhomePage() {
 
   return (
     <>
+      <style>
+        {
+          `
+           #chat-bot-launcher-container.chat-bot-avatar-launcher, #chat-bot-launcher-container.chat-bot-launcher-notext {
+            bottom: 15px;
+            z-index: 0 !important;
+            display: none;
+        }
+        `
+        }
+      </style>
       <SeoComponents title={title} description={description} path={path} metaImage={metaImage} />
 
       <Header />
