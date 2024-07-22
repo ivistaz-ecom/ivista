@@ -1,12 +1,12 @@
-import React from 'react'
-import BlogsPageComponets from './BlogsPageComponets'
+import React from "react";
+import BlogsPageComponets from "./BlogsPageComponets";
 
 const index = () => {
-    return (
-        <>
-            <BlogsPageComponets />
-        </>
-    )
-}
+  return (
+    <>
+      <BlogsPageComponets />
+    </>
+  );
+};
 
-export default index
+export default index;
