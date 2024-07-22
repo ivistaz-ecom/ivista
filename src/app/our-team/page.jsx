@@ -1,12 +1,12 @@
-import React from 'react'
-import OurTeamComponents from '../../../components/OurTeamComponents'
+import React from "react";
+import OurTeamComponents from "../../../components/OurTeamComponents";
 
 const page = () => {
-    return (
-        <>
-            <OurTeamComponents />
-        </>
-    )
-}
+  return (
+    <>
+      <OurTeamComponents />
+    </>
+  );
+};
 
-export default page
+export default page;
