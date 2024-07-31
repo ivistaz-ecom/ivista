@@ -24,51 +24,58 @@ function HeroBanner() {
                 </div>
               </Col>
               <Row className='ps-3 pe-3'>
-                <Col md={4} className="d-flex py-2">
-                  <div className="card text-white bg-white mb-3 rounded-5 w-100 h-100 d-flex flex-column shadow">
-                    <div className="card-body d-flex flex-column justify-content-between flex-grow-1">
-                      <div className='card-title d-flex justify-content-between align-items-center'>
-                        <p className="fs-4 mb-0 red para-text fw-bold ps-3">Planning Winning Strategies Backed by Deep Insights</p>
-                      </div>
-                      <div className='d-flex flex-column flex-grow-1'>
-                        <p className="para-text text-dark fs-5 p-3 mb-0">As a digital marketing agency, we have witnessed the shifts in the digital landscape for more than a quarter of a century now. In this process, we have gained deep insights and experience in designing effective digital marketing strategies that deliver results for our clients.</p>
-                      </div>
-                    </div>
-                  </div>
-                </Col>
-                <Col md={4} className="d-flex py-2">
-                  <div className="card text-white bg-white mb-3 rounded-5 w-100 h-100 d-flex flex-column shadow">
-                    <div className="card-body d-flex flex-column justify-content-between flex-grow-1">
-                      <div className='card-title d-flex justify-content-between align-items-center'>
-                        <p className="fs-4 mb-0 red para-text fw-bold ps-3">Focusing on Learning and Training</p>
-                      </div>
-                      <div className='d-flex flex-column flex-grow-1'>
-                        <p className="para-text text-dark fs-5 p-3 mb-0">Over the years, we have realized that learning and training are key to understanding and navigating the complex intricacies of digital marketing. Beyond requisite certifications, we focus on continuous upskilling and training sessions for our teams across departments.</p>
-                      </div>
-                    </div>
-                  </div>
-                </Col>
-                <Col md={4} className="d-flex py-2">
-                  <div className="card text-white bg-white mb-3 rounded-5 w-100 h-100 d-flex flex-column shadow">
-                    <div className="card-body d-flex flex-column justify-content-between flex-grow-1">
-                      <div className='card-title d-flex justify-content-between align-items-center'>
-                        <p className="fs-4 mb-0 red para-text fw-bold ps-3">In Constant Pursuit of Measurable Outcomes</p>
-                      </div>
-                      <div className='d-flex flex-column flex-grow-1'>
-                        <p className="para-text text-dark fs-5 p-3 mb-0">
-                        At iVistaz, we focus on measurable outcomes for our clients. Our meticulous approach involves crafting each step and backing our strategies with rigorous data analysis to ensure that we deliver the outcomes that propel you towards your goals. 
-                          {showMore && (
-                            <span> We prioritize transparency and accountability, providing detailed weekly, monthly, and quarterly reports to evaluate the effectiveness of our campaigns and guide continuous improvement. What our clients love about us is that we work on a performance-focused model for outcome-based campaigns. This means we get paid only when we deliver results.</span>
-                          )}
-                        </p>
-                        <Button variant="link" className='text-start text-decoration-none text-danger' onClick={handleReadMore}>
-                          {showMore ? 'Read Less' : 'Read More'}
-                        </Button>
-                      </div>
-                    </div>
-                  </div>
-                </Col>
-              </Row>
+  <Col md={4} className="d-flex py-2">
+    <div className="card text-white bg-white mb-3 rounded-5 w-100 h-100 d-flex flex-column shadow">
+      <div className="card-body d-flex flex-column justify-content-between flex-grow-1">
+        <div className='card-title d-flex justify-content-between align-items-start' style={{ minHeight: '100px' }}>
+          <p className="fs-4 mb-0 red para-text fw-bold ps-3">Planning Winning Strategies Backed by Deep Insights</p>
+        </div>
+        <div className='d-flex flex-column flex-grow-1'>
+          <p className="para-text text-dark fs-5 p-3 mb-0">
+            As a digital marketing agency, we have witnessed the shifts in the digital landscape for more than a quarter of a century now. In this process, we have gained deep insights and experience in designing effective digital marketing strategies that deliver results for our clients.
+          </p>
+        </div>
+      </div>
+    </div>
+  </Col>
+  <Col md={4} className="d-flex py-2">
+    <div className="card text-white bg-white mb-3 rounded-5 w-100 h-100 d-flex flex-column shadow">
+      <div className="card-body d-flex flex-column justify-content-between flex-grow-1">
+        <div className='card-title d-flex justify-content-between align-items-start' style={{ minHeight: '100px' }}>
+          <p className="fs-4 mb-0 red para-text fw-bold ps-3">Focusing on Learning and Training</p>
+        </div>
+        <div className='d-flex flex-column flex-grow-1'>
+          <p className="para-text text-dark fs-5 p-3 mb-0">
+            Over the years, we have realized that learning and training are key to understanding and navigating the complex intricacies of digital marketing. Beyond requisite certifications, we focus on continuous upskilling and training sessions for our teams across departments.
+          </p>
+        </div>
+      </div>
+    </div>
+  </Col>
+  <Col md={4} className="d-flex py-2">
+    <div className="card text-white bg-white mb-3 rounded-5 w-100 h-100 d-flex flex-column shadow">
+      <div className="card-body d-flex flex-column justify-content-between flex-grow-1">
+        <div className='card-title d-flex justify-content-between align-items-start' style={{ minHeight: '100px' }}>
+          <p className="fs-4 mb-0 red para-text fw-bold ps-3">In Constant Pursuit of Measurable Outcomes</p>
+        </div>
+        <div className='d-flex flex-column flex-grow-1'>
+          <p className="para-text text-dark fs-5 p-3 mb-0">
+            At iVistaz, we focus on measurable outcomes for our clients. Our meticulous approach involves crafting each step and backing our strategies with rigorous data analysis to ensure that we deliver the outcomes that propel you towards your goals.
+            {showMore && (
+              <span style={{ fontWeight: 'normal' }}>
+                We prioritize transparency and accountability, providing detailed weekly, monthly, and quarterly reports to evaluate the effectiveness of our campaigns and guide continuous improvement. What our clients love about us is that we work on a performance-focused model for outcome-based campaigns. This means we get paid only when we deliver results.
+              </span>
+            )}
+          </p>
+          <Button variant="link" className='text-start text-decoration-none text-danger' onClick={handleReadMore}>
+            {showMore ? 'Read Less' : 'Read More'}
+          </Button>
+        </div>
+      </div>
+    </div>
+  </Col>
+</Row>
+
             </div>
           </article>
         </Row>

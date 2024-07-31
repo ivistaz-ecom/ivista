@@ -6,8 +6,8 @@ import Header1 from '../../../components/HeaderBlack'
 const page = () => {
     return (
         <>
-            <Container className="bg-black pb-5" fluid>
                 <Header1 />
+            <Container className="bg-black pb-5" fluid>
                 <Container className='custom-container w-80'>
                     <h1 className="fs-21 text-white fw-bold">GET IN TOUCH</h1>
 

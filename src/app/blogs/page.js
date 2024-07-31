@@ -9,8 +9,8 @@ import Footer from "../../../components/Footer";
 function page() {
   return (
     <>
+      <Header1 />
       <Container fluid className="p-0 bg-black">
-        <Header1 />
         <BlogComponents />
         <Footer />
       </Container>
