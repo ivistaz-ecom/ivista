@@ -11,8 +11,8 @@ function page() {
 
   return (
     <>
-      <Container className="bg-white p-0" fluid>
         <Header1 />
+      <Container className="bg-white p-0" fluid>
         <CareerComponents />
         <Footer />
       </Container>

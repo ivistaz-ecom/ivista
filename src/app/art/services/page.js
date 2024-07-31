@@ -15,7 +15,7 @@ function Page() {
   const pathname = usePathname();
   const [domainName, setDomainName] = useState('');
 
-  useEffect(() => {
+  useEffect(() => { 
     setDomainName(window.location.hostname);
   }, []);
 
