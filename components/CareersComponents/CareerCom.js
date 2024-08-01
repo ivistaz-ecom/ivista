@@ -56,15 +56,25 @@ const CareerCom = () => {
         setIsOpen(false);
         setSelectedItem(null);
     };
+
+
+  const handleSuccess = () => {
+    handleCloseModal(); // Close the modal when the form is successfully submitted
+  };
+
+  const handleFormSuccess = () => {
+    setShowModal(true);
+  };
+
     return (
         <>
-            <style>
-                {`
-                input[type="file"] {
-                    color: white;
-                }
-            `}
-            </style>
+               <style>
+        {`
+        input[type="file"] {
+            color: white;
+        }
+      `}
+      </style>
             <Container className="w-80 custom-container bg-white text-black mb-5">
                 <Row className='d-flex flex-column'>
                     <Col className='mb-4 text-black'>
@@ -139,7 +149,7 @@ const CareerCom = () => {
                                     <div className='text-black'>
                                         {selectedItem && (
                                             <>
-                                                <CareerForms className="z-index-100" />
+                                                <CareerForms onSuccess={handleFormSuccess} />
                                             </>
                                         )}
                                     </div>

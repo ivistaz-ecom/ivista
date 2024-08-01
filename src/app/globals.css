@@ -2,7 +2,7 @@
 
 *,
 body {
-  transition: background-color 1s ease;
+  /* transition: background-color 1s ease; */
   font-family: "monument regular", sans-serif;
   font-weight: 500;
   src: url("/font/MonumentGrotesk-font/MonumentGrotesk-Regular.ttf");
@@ -1035,6 +1035,7 @@ background: rgba(255, 255, 255, 0) !important; */
 .nav-dropdown {
   color: #363636 !important;
   font-size: 15px !important;
+  transition: 0.5s ease; 
 }
 
 .nav-dropdown:hover {
@@ -1043,6 +1044,7 @@ background: rgba(255, 255, 255, 0) !important; */
 }
 
 .nav-overview {
+  transition: 0.5s ease ;
   color: #ed2023 !important;
 }
 
