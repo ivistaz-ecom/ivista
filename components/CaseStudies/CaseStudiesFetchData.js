@@ -93,7 +93,7 @@ const CaseStudiesFetchData = () => {
               <div className="card-body d-flex flex-column justify-content-between flex-grow-1">
                 <div className="card-title d-flex justify-content-between align-items-center">
                   <div>
-                    <p className="fs-23 mb-0 red para-text fw-bold ps-3">8%</p>
+                    <p className="fs-23 mb-0 red para-text fw-bold ps-3">8x</p>
                   </div>
                   <div className="">
                     <Image
