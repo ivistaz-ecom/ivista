@@ -36,7 +36,7 @@ const CaseStudiesFetchData = () => {
         Performance you'll love. Can we replicate it for you?
       </h3>
       <Row className="py-lg-5">
-        {/* Column 01 */}
+        {/* Card 01 */}
         <Col md={4} className="d-flex py-2">
           <Link
             href={
@@ -81,7 +81,7 @@ const CaseStudiesFetchData = () => {
             </div>
           </Link>
         </Col>
-        {/* Column 02 */}
+        {/* Card 02 */}
         <Col md={4} className="d-flex py-2">
           <Link
             href={
@@ -125,7 +125,7 @@ const CaseStudiesFetchData = () => {
           </Link>
         </Col>
 
-        {/* Column 03*/}
+        {/* Card 03*/}
         <Col md={4} className="d-flex py-2">
           <Link
             href={
@@ -171,7 +171,7 @@ const CaseStudiesFetchData = () => {
       </Row>
 
       <Row className="py-lg-3">
-        {/* Column 04 */}
+        {/* Card 04 */}
         <Col md={4} className="d-flex py-2">
           <Link
             href={
@@ -216,7 +216,7 @@ const CaseStudiesFetchData = () => {
             </div>
           </Link>
         </Col>
-        {/* Column 05 */}
+        {/* Card 05 */}
         <Col md={4} className="d-flex py-2">
           <Link
             href={
@@ -262,7 +262,7 @@ const CaseStudiesFetchData = () => {
           </Link>
         </Col>
 
-        {/* Column 06 new landing page*/}
+        {/* Card 06 new landing page*/}
         <Col md={4} className="d-flex py-2">
           <Link
             href={
@@ -309,7 +309,7 @@ const CaseStudiesFetchData = () => {
         </Col>
       </Row>
       <Row className="py-lg-5">
-        {/* Column 07 */}
+        {/* Card 07 */}
         <Col md={4} className="d-flex py-2">
           <Link
             href={
@@ -356,7 +356,7 @@ const CaseStudiesFetchData = () => {
           </Link>
         </Col>
 
-        {/* Column 08 */}
+        {/* Card 08 */}
         <Col md={4} className="d-flex py-2">
           <Link
             href={
@@ -405,7 +405,7 @@ const CaseStudiesFetchData = () => {
           </Link>
         </Col>
 
-        {/* Column 09 */}
+        {/* Card 09 */}
         <Col md={4} className="d-flex py-2">
           <Link
             href={
@@ -449,8 +449,9 @@ const CaseStudiesFetchData = () => {
           </Link>
         </Col>
       </Row>
+
       <Row className="py-lg-3">
-        {/* Column -10*/}
+        {/* Card 10*/}
         <Col md={4} className="d-flex py-2">
           <Link
             href={
@@ -497,7 +498,8 @@ const CaseStudiesFetchData = () => {
             </div>
           </Link>
         </Col>
-        {/* Column 11*/}
+
+        {/* Card 11*/}
         <Col md={4} className="d-flex py-2">
           <Link
             href={
@@ -543,7 +545,8 @@ const CaseStudiesFetchData = () => {
             </div>
           </Link>
         </Col>
-        {/* Column 12*/}
+
+        {/* Card 12*/}
         <Col md={4} className="d-flex py-2">
           <Link
             href={
@@ -588,6 +591,7 @@ const CaseStudiesFetchData = () => {
             </div>
           </Link>
         </Col>
+        
       </Row>
       <Row className="pb-5">
         {/* Dummy red card */}
