@@ -775,7 +775,7 @@ function Footer() {
       </Container>
       
       {/* Socil Media */}
-      <Container className="iv-grey pt-2 pb-2 z-3 position-relative d-lg-none d-flex" fluid>
+      <Container className="iv-grey px-1 py-2 z-3 position-relative d-lg-none d-flex" fluid>
         <Container className="text-start">
           <Row className="g-0">
             <Col className="d-flex align-items-center justify-content-start">
@@ -832,8 +832,6 @@ function Footer() {
           </Row>
         </Container>
       </Container>
-
-
 
 {/* Common  */}
 
