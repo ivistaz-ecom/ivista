@@ -360,7 +360,7 @@ const CaseStudiesFetchData = () => {
         <Col md={4} className="d-flex py-2">
           <Link
             href={
-              "/case-studies/luxury-automobile-dealership-case-study-cost-optimization-and-sales-conversion"
+              "/case-studies/b2b-email-marketing-case-study-delivering-qualified-leads-to-generate-interest-to-invest-in-the-clients-social-impact-projects"
             }
             className="text-decoration-none"
           >
@@ -503,7 +503,8 @@ const CaseStudiesFetchData = () => {
         <Col md={4} className="d-flex py-2">
           <Link
             href={
-              "/case-studies/b2b-email-marketing-case-study-delivering-qualified-leads-to-generate-interest-to-invest-in-the-clients-social-impact-projects"
+              
+              "/case-studies/luxury-automobile-dealership-case-study-cost-optimization-and-sales-conversion"
             }
             className="text-decoration-none"
           >
