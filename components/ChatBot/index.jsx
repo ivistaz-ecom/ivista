@@ -28,7 +28,8 @@ const CollectChatScript = () => {
         {`
           #chat-bot-launcher-container.chat-bot-avatar-launcher, #chat-bot-launcher-container.chat-bot-launcher-notext {
            z-index: 3;
-            top: 78%;
+            top: 83%;
+            padding: 20px ;
           }
 
           div#chat-bot-launcher-button {
