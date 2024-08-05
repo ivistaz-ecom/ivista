@@ -1324,11 +1324,11 @@ p.animation5 {
   .KW_progressContainer {
     left: 6.4%;
     width: 0.4em;
-    height: 70%;
+    height: 40%;
     margin-bottom: 0px;
     position: fixed;
     bottom: 0px;
-    top: 7%;
+    top: 0;
     overflow: hidden;
     background-color: #fff0;
     content: "";
@@ -1336,17 +1336,18 @@ p.animation5 {
     table-layout: fixed;
     z-index: 0 !important;
   }
+
   .KW_progressBar {
     width: 100%;
     float: left;
-    height: 35% !important;
+    height: 0;
     z-index: 99;
     max-width: 100%;
     border: 10px dashed rgb(243, 2, 2);
     background-color: #ff000000;
     -webkit-transition: width .6s ease;
     -o-transition: width .6s ease;
-    transition: width .6s ease;
+    transition: width 0.6s ease, height 1s ease-in-out ;
   }
 
   .timeline-badge {
@@ -1354,7 +1355,7 @@ p.animation5 {
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    line-height: 50px;
+    line-height: 20px;
     font-size: 2em;
     text-align: center;
     position: absolute;
@@ -1583,11 +1584,11 @@ p.animation5 {
   .KW_progressContainer {
     left: 7.4%;
     width: 0.4em;
-    height: 70%;
+    height: 30%;
     margin-bottom: 0px;
     position: fixed;
     bottom: 0px;
-    top: 2%;
+    top: 0;
     overflow: hidden;
     background-color: #fff0;
     content: "";
@@ -1598,14 +1599,14 @@ p.animation5 {
   .KW_progressBar {
     width: 100%;
     float: left;
-    height: 30% !important;
+    height: 0;
     z-index: 99;
     max-width: 100%;
     border: 10px dashed rgb(243, 2, 2);
     background-color: #ff000000;
     -webkit-transition: width .6s ease;
     -o-transition: width .6s ease;
-    transition: width .6s ease;
+    transition: width 0.6s ease, height 1s ease-in-out ;
   }
   .timeline-badge {
     color: rgb(255, 255, 255);
@@ -1866,7 +1867,7 @@ p.animation5 {
   .KW_progressContainer {
     left: 11.35%;
     width: 0.4em;
-    height: 80%;
+    height: 20%;
     margin-bottom: 0px;
     position: fixed;
     bottom: 0px;
@@ -1882,14 +1883,14 @@ p.animation5 {
   .KW_progressBar {
     width: 100%;
     float: left;
-    height: 20% !important;
+    height: 0;
     z-index: 99;
     max-width: 100%;
     border: 10px dashed rgb(243, 2, 2);
     background-color: #ff000000;
     -webkit-transition: width .6s ease;
     -o-transition: width .6s ease;
-    transition: width .6s ease;
+    transition: width 0.6s ease, height 1s ease-in-out ;
   }
 
   .timeline-badge {
@@ -2146,11 +2147,11 @@ p.animation5 {
   .KW_progressContainer {
     left: 15.3%;
     width: 0.5em;
-    height: 50%;
+    height: 30%;
     margin-bottom: 0px;
     position: fixed;
     bottom: 0px;
-    top: 1%;
+    top: -1%;
     overflow: hidden;
     background-color: #fff0;
     content: "";
@@ -2162,14 +2163,15 @@ p.animation5 {
   .KW_progressBar {
     width: 100%;
     float: left;
-    height: 70% !important;
+    height: 0; /* Initial height */
     z-index: 99;
     max-width: 100%;
     border: 10px dashed rgb(243, 2, 2);
     background-color: #ff000000;
     -webkit-transition: width .6s ease;
     -o-transition: width .6s ease;
-    transition: width .6s ease;
+    transition: width .6s ease , height .5s ease-in-out;
+   
   }
 
   .timeline-badge {
@@ -2190,6 +2192,7 @@ p.animation5 {
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
     opacity: 0;
+    
   }
 
   .mastery_custom_h{

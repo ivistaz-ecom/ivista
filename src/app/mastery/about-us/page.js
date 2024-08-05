@@ -17,7 +17,7 @@ function page() {
         <Container className='w-80 custom-container bg-black position-relative z-3 mb-0'>
           {/* <h1 className="text-offwhite fs-70 fw-bold text-start ps-5 mb-0">MASTERY</h1> */}
           {/* Bread-crumb */}
-          <div className='d-flex flex-row align-items-center mb-3 flex-nowrap'>
+          <div className='d-flex flex-row align-items-center pb-3 flex-nowrap'>
             <p>
               <Link href="/welcome"
                 className='text-decoration-none '>
