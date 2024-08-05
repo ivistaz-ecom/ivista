@@ -2,6 +2,26 @@ import React, { useEffect, useRef } from 'react';
 import $ from 'jquery';
 
 const ScrollAnimation = () => {
+
+    document.addEventListener('scroll', function() {
+        const progressBar = document.querySelector('.KW_progressBar');
+        const scrollPosition = window.scrollY;
+        const stopPoint = 300; // Adjust this value to where you want the line to stop (in pixels)
+        
+        // Calculate the scroll percentage relative to the stop point
+        let scrollPercentage = (scrollPosition / stopPoint) * 100;
+        
+        // Limit the height to a maximum of 100% until the stop point is reached
+        if (scrollPercentage > 100) {
+            scrollPercentage = 100;
+        }
+    
+        // Update height of progress bar (scaled to max 70% if desired)
+        const maxHeightPercentage = 20; // Change to 100 if you want full height
+        progressBar.style.height = (scrollPercentage / 100) * maxHeightPercentage + '%';
+    });
+
+    
     const nodesRef = useRef([]);
     const myNodesRef = useRef([]);
 

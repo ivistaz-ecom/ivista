@@ -537,7 +537,7 @@ function Footer() {
             </Container>
 
 
-            <Container className="iv-grey pt-2 pb-2 z-3" fluid>
+            <Container className="iv-grey pt-2 pb-2 z-3 position-relative" fluid>
                 <Container className="text-lg-center text-start">
                     <Row className="g-0">
                         <Col className="d-flex align-items-center justify-content-end">
@@ -560,7 +560,7 @@ function Footer() {
                     </Row>
                 </Container>
             </Container>
-            <Container className="bg-black pt-1 pb-1 z-2 ps-0" fluid>
+            <Container className="bg-black pt-1 pb-1 z-2 ps-0 position-relative" fluid>
                 <Container className="text-center copyright  p-0">
                     <div className='d-flex flex-lg-row flex-column gap-lg-5 gap-1 col-lg-12'>
                         <div className='col-lg-9 text-lg-start text-center'>
