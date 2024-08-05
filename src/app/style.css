@@ -26,7 +26,7 @@ p.animation{
   /************************************************************************************/
   
   .timeline-badge.active {
-    color: #ff0909;  /* text color */
+    color: #ff0909;  
     animation-name: lines;
     opacity: 1;
     /* background-color: rgb(255, 0, 0); */
@@ -1021,7 +1021,7 @@ p.animation5 {
 /************************************************| ANIMATION ADJUSTMENT BASED ON SCREEN SIZE |************************************************/
 
 /************| Mobile view |************/
-@media screen and (min-width:360px) and (max-width:412px) {
+@media screen and (min-width:360px) and (max-width:1280px) {
   .KW_progressContainer {
     left: 6.4%;
     width: 0.4em;
