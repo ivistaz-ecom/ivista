@@ -878,9 +878,11 @@ function Footer() {
       </Container>
       {/* ChatBot */}
       <CollectChatScript />
+      
       {/* Cookie */}
       {showConsent && (
         <CookieConsent
+        
           className="cookie-font"
           enableDeclineButton
           flipButtons
