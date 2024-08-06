@@ -57,8 +57,8 @@ function HeroBanner() {
                   If you are a B2B company looking to consistently deliver MQLs (Marketing Qualified Leads) to your sales pipeline, we are here to help. Our lead-gen team will understand your goals and develop robust social and email marketing plans to generate Leads with Digital Marketing.
                 </p>
                 <p className="para-text ps-6 ms-lg-4">
-                  Read our B2B lead-gen case studies <Link href="/case-studies" className=' red'>here.
-                  </Link>
+                  Read our B2B lead-gen case studies <Link href="/case-studies" className=' red'>here
+                  </Link>.
                 </p>
               </Col>
 
@@ -70,8 +70,8 @@ function HeroBanner() {
                     Whether it is B2C products like home appliances, automobiles, earphones, airline tickets, or hotel room bookings, we have helped businesses significantly increase Online Sales with Digital Marketing. Our e-commerce marketing strategies and capabilities include Organic Search, Paid Search/Google PPC, real-time bidding, Organic and Paid Social marketing, and Amazon marketing. Our ad campaigns are designed not just to create awareness and demand for your products and services but will also keep a sharp eye on your CPL (Cost Per Lead) and ROAS (Return on Ad Spend).
                   </p>
                   <p className="para-text ms-lg-4">
-                    Read our success stories for boosting online sales <Link href="/case-studies" className='red'>here.
-                    </Link>
+                    Read our success stories for boosting online sales <Link href="/case-studies" className='red'>here
+                    </Link>.
                   </p>
                 </div>
               </Col>
@@ -86,8 +86,8 @@ function HeroBanner() {
                     We are passionate about building web and mobile experiences that will bring your customers back to engage with your website, brand, and content. For UI/UX, we combine design with data and analytics to create seamless experiences—desktop, mobile, or apps. Our platform capabilities include WordPress, React, JS, Node, and Magento.
                   </p>
                   <p className="para-text pe-lg-2 pe-3 ms-lg-4">
-                    Looking to develop a new website or redesign your existing one? Reach out to us <Link href="/contact-us" className=' red'>here.
-                    </Link>
+                    Looking to develop a new website or redesign your existing one? Reach out to us <Link href="/contact-us" className=' red'>here
+                    </Link>.
                   </p>
                 </div>
               </Col>
@@ -98,8 +98,8 @@ function HeroBanner() {
                   We understand that creating value for your company/brand lies primarily in how you communicate your value proposition. Our strategy and copy team will collaborate with you to craft the messaging and narrative for your company/brand, working to increase brand value with digital marketing.
                 </p>
               </Col>
+              
             </div>
-
           </article >
         </Row>
         

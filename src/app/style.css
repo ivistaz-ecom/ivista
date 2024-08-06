@@ -178,7 +178,7 @@ p.animation{
     content: "";
     display: table;
     table-layout: fixed;
-    display: none;
+    display: none !important;
   }
 }
 
@@ -342,7 +342,7 @@ p.animation1 {
     content: "";
     display: table;
     table-layout: fixed;
-    display: none;
+    display: none !important;
   }
 }
 
@@ -510,7 +510,7 @@ p.animation2 {
     content: "";
     display: table;
     table-layout: fixed;
-    display: none;
+    display: none !important;
     
   }
 }
@@ -680,7 +680,7 @@ p.animation3 {
     content: "";
     display: table;
     table-layout: fixed;
-    display: none;
+    display: none !important;
   }
 }
 
@@ -848,7 +848,7 @@ p.animation4 {
     content: "";
     display: table;
     table-layout: fixed;
-    display: none;
+    display: none !important;
   }
 }
 
@@ -1014,16 +1014,16 @@ p.animation5 {
     content: "";
     display: table;
     table-layout: fixed;
-    display: none;
+    display: none !important;
   }
 }
 
 /************************************************| ANIMATION ADJUSTMENT BASED ON SCREEN SIZE |************************************************/
 
 /************| Mobile view |************/
-@media screen and (min-width:360px) and (max-width:1280px) {
+@media screen and (min-width:360px) and (max-width:960px) {
   .KW_progressContainer {
-    left: 6.4%;
+    /* left: 6.4%;
     width: 0.4em;
     height: 50%;
     margin-bottom: 0px;
@@ -1035,12 +1035,12 @@ p.animation5 {
     content: "";
     display: table;
     table-layout: fixed;
-    z-index: 0 !important;
-    display: none;
+    z-index: 0 !important; */
+    display: none !important;
   }
 
   .timeline-badge {
-    color: rgb(255, 255, 255);
+    /* color: rgb(255, 255, 255);
     width: 20px;
     height: 20px;
     border-radius: 50%;
@@ -1056,12 +1056,12 @@ p.animation5 {
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
-    opacity: 0;
-    display: none;
+    opacity: 0; */
+    display: none !important;
   }
 
   .KW_progressContainer1 {
-    left: 6.4%;
+    /* left: 6.4%;
     width: 0.4em;
     height: 50%;
     margin-bottom: 0px;
@@ -1073,12 +1073,12 @@ p.animation5 {
     content: "";
     display: table;
     table-layout: fixed;
-    z-index: 0 !important;
-    display: none;
+    z-index: 0 !important; */
+    display: none !important;
   }
 
   .timeline-badge1 {
-    color: rgb(255, 255, 255);
+    /* color: rgb(255, 255, 255);
     width: 20px;
     height: 20px;
     border-radius: 50%;
@@ -1094,13 +1094,13 @@ p.animation5 {
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
-    opacity: 0;
-    display: none;
+    opacity: 0; */
+    display: none !important;
   }
 
   /* Mastery -> Solution and about-us page */
   .KW_progressContainer2 {
-    left: 11.5%;
+    /* left: 11.5%;
     width: 0.4em;
     height: 50%;
     margin-bottom: 0px;
@@ -1112,12 +1112,12 @@ p.animation5 {
     content: "";
     display: table;
     table-layout: fixed;
-    z-index: 0 !important;
-    display: none;
+    z-index: 0 !important; */
+    display: none !important;
   }
 
   .KW_progressBar2 {
-    width: 100%;
+    /* width: 100%;
     float: left;
     height: 62% !important;
     z-index: 99;
@@ -1126,12 +1126,12 @@ p.animation5 {
     background-color: #ff000000;
     -webkit-transition: width .6s ease;
     -o-transition: width .6s ease;
-    transition: width .6s ease;
-    display: none;
+    transition: width .6s ease; */
+    display: none !important;
   }
 
   .timeline-badge2 {
-    color: rgb(255, 255, 255);
+    /* color: rgb(255, 255, 255);
     width: 20px;
     height: 20px;
     border-radius: 50%;
@@ -1147,12 +1147,12 @@ p.animation5 {
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
-    opacity: 0;
-    display: none;
+    opacity: 0; */
+    display: none !important;
   }
 
   .KW_progressContainer3 {
-    left: 11.5%;
+    /* left: 11.5%;
     width: 0.4em;
     height: 50%;
     margin-bottom: 0px;
@@ -1164,8 +1164,8 @@ p.animation5 {
     content: "";
     display: table;
     table-layout: fixed;
-    z-index: 0 !important;
-      display: none;
+    z-index: 0 !important; */
+      display: none !important;
   }
 
   .timeline-badge3 {
@@ -1188,7 +1188,7 @@ p.animation5 {
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
     opacity: 0;
-      display: none;
+      display: none !important;
   }
 
   /* Art-> service page */
@@ -1206,7 +1206,7 @@ p.animation5 {
     display: table;
     table-layout: fixed;
     z-index: 0 !important;
-      display: none;
+      display: none !important;
   }
 
   .KW_progressBar4 {
@@ -1221,7 +1221,7 @@ p.animation5 {
     -webkit-transition: width .6s ease;
     -o-transition: width .6s ease;
     transition: width .6s ease;
-      display: none;
+      display: none !important;
   }
 
   .timeline-badge4 {
@@ -1242,7 +1242,7 @@ p.animation5 {
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
     opacity: 0;
-      display: none;
+      display: none !important;
   }
 
 
@@ -1260,7 +1260,7 @@ p.animation5 {
     display: table;
     table-layout: fixed;
     z-index: 0 !important;
-      display: none;
+      display: none !important;
   }
 
   .timeline-badge5 {
@@ -1281,7 +1281,7 @@ p.animation5 {
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
     opacity: 0;
-      display: none;
+      display: none !important;
   }
 
   .KW_progressBar5 {
@@ -1296,7 +1296,7 @@ p.animation5 {
     -webkit-transition: width .6s ease;
     -o-transition: width .6s ease;
     transition: width .6s ease;
-      display: none;
+      display: none !important;
   }
 
   .footer-main {

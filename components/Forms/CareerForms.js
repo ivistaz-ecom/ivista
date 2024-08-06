@@ -388,9 +388,9 @@ const CareerForms = () => {
           <div>
             <p className="para-text text-black fs-6">
               We value your privacy and will handle your information with utmost
-              confidentiality. By submitting this form, you agree to our
+              confidentiality. By submitting this form, you agree to our{" "}
               <Link className="" target="_blank" href="/privacy-policy">
-                {" "}
+                
                 Privacy Policy.
               </Link>
             </p>
