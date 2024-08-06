@@ -20,12 +20,11 @@ const CareerForms = () => {
   const [showSuccessModal, setShowSuccessModal] = useState(false);
   const [formSubmitted, setFormSubmitted] = useState(false); // New state for form submission
 
-
   const options = [
-    { value: "account_manager", label: "Account Manager" },
-    { value: "inside_sales_executive", label: "Inside Sales Executive" },
-    { value: "account_executive", label: "Account Executive" },
-    { value: "ui_ux_designer", label: "UI/Graphic Designer" },
+    { value: "Account Manager", label: "Account Manager" },
+    { value: "Inside Sales Executive", label: "Inside Sales Executive" },
+    { value: "Account Executive", label: "Account Executive" },
+    { value: "UI/Graphic Designer", label: "UI/Graphic Designer" }, 
     // { value: 'account_manager', label: 'Account Manager/Client Servicing' },
     // { value: 'content_writer', label: 'Content Writer' },
     // { value: 'front_end_developer', label: 'Front-End Developer' },
@@ -138,7 +137,7 @@ const CareerForms = () => {
         resetForm();
         setShowSuccessModal(true); // Show success modal
         // setFormSubmitted(true); // Set formSubmitted to true
-        onSuccess(); 
+        onSuccess();
       } else if (response.status === "validation_failed") {
         const fieldErrors = {};
         const { invalid_fields } = response.data;
@@ -245,8 +244,6 @@ const CareerForms = () => {
 
   const [isOpen, setIsOpen] = useState(false);
 
-
-
   const handleCloseModal = () => {
     setShowSuccessModal(false);
     setFormSubmitted(false); // Reset formSubmitted state
@@ -255,7 +252,7 @@ const CareerForms = () => {
   return (
     <Container>
       <style>
-      {`
+        {`
     .modal.show {
         display: block;
     }
@@ -273,140 +270,135 @@ const CareerForms = () => {
     }
 `}
       </style>
+      <form className="row p-0 z-index-100 pt-4" onSubmit={handleSubmit}>
+        {/* Name */}
+        <div className="mb-3">
+          <label htmlFor="yourName" className="form-label text-black">
+            Full Name *
+          </label>
+          <input
+            type="text"
+            className={`form-control ${
+              errors && errors.yourName ? "is-invalid" : ""
+            }`}
+            id="yourName"
+            name="yourName"
+            value={yourName}
+            required
+            onChange={handleTextChange}
+          />
+          {errors && errors.yourName && (
+            <div className="invalid-feedback">{errors.yourName}</div>
+          )}
+        </div>
 
-     
-        <form className="row p-0 z-index-100 pt-4" onSubmit={handleSubmit}>
-          {/* Name */}
-          <div className="mb-3">
-            <label htmlFor="yourName" className="form-label text-black">
-              Full Name *
-            </label>
-            <input
-              type="text"
-              className={`form-control ${
-                errors && errors.yourName ? "is-invalid" : ""
-              }`}
-              id="yourName"
-              name="yourName"
-              value={yourName}
-              required
-              onChange={handleTextChange}
-            />
-            {errors && errors.yourName && (
-              <div className="invalid-feedback">{errors.yourName}</div>
-            )}
+        {/* Email */}
+        <div className="mb-3">
+          <label htmlFor="yourEmail" className="form-label text-black">
+            Email *
+          </label>
+          <input
+            type="email"
+            className={`form-control ${
+              errors && errors.yourEmail ? "is-invalid" : ""
+            }`}
+            id="yourEmail"
+            name="yourEmail"
+            value={yourEmail}
+            onChange={handleTextChange}
+          />
+          {errors && errors.yourEmail && (
+            <div className="invalid-feedback">{errors.yourEmail}</div>
+          )}
+        </div>
+
+        {/* Mobile */}
+        <div className="mb-3">
+          <label htmlFor="yourPhone" className="form-label text-black">
+            Phone *
+          </label>
+          <input
+            type="text"
+            className={`form-control ${
+              errors && errors.yourPhone ? "is-invalid" : ""
+            }`}
+            id="yourPhone"
+            name="yourPhone"
+            maxLength="10"
+            value={yourPhone}
+            onChange={handleTextChange}
+            onBeforeInput={handleBeforeInput}
+          />
+          {errors && errors.yourPhone && (
+            <div className="invalid-feedback">{errors.yourPhone}</div>
+          )}
+        </div>
+
+        {/* Job Type */}
+        <div className="mb-3">
+          <label htmlFor="yourJobType" className="form-label text-black">
+            Job Type
+          </label>
+          <select
+            value={yourJobType}
+            onChange={handleTextChange}
+            className={`form-select ${
+              errors && errors.yourJobType ? "is-invalid" : ""
+            }`}
+            name="yourJobType"
+          >
+            <option value="Job Type">Job Type</option>
+            {options.map((option) => (
+              <option key={option.value} value={option.value}>
+                {option.label}
+              </option>
+            ))}
+          </select>
+          {errors && errors.yourJobType && (
+            <div className="invalid-feedback">{errors.yourJobType}</div>
+          )}
+        </div>
+
+        {/* Add Resume */}
+        <div className="mb-3">
+          <label htmlFor="yourFile" className="form-label text-black">
+            Upload Resume
+          </label>
+          <input
+            type="file"
+            className={`form-control ${
+              errors && errors.yourFile ? "is-invalid" : ""
+            }`}
+            id="yourFile"
+            name="yourFile"
+            placeholder=""
+            onChange={handleFileChange}
+          />
+          {errors && errors.yourFile && (
+            <div className="invalid-feedback">{errors.yourFile}</div>
+          )}
+        </div>
+
+        {/* Privacy policy */}
+        <div>
+          <p className="para-text text-black fs-6">
+            We value your privacy and will handle your information with utmost
+            confidentiality. By submitting this form, you agree to our{" "}
+            <Link className="" target="_blank" href="/privacy-policy">
+              Privacy Policy.
+            </Link>
+          </p>
+        </div>
+
+        {/* Submit Button */}
+        <div className="mt-3 text-center z-1">
+          <div className="text-center">
+            <button type="button" className="btn btn-16" onClick={handleSubmit}>
+              Submit
+            </button>
           </div>
-
-          {/* Email */}
-          <div className="mb-3">
-            <label htmlFor="yourEmail" className="form-label text-black">
-              Email *
-            </label>
-            <input
-              type="email"
-              className={`form-control ${
-                errors && errors.yourEmail ? "is-invalid" : ""
-              }`}
-              id="yourEmail"
-              name="yourEmail"
-              value={yourEmail}
-              onChange={handleTextChange}
-            />
-            {errors && errors.yourEmail && (
-              <div className="invalid-feedback">{errors.yourEmail}</div>
-            )}
-          </div>
-
-          {/* Mobile */}
-          <div className="mb-3">
-            <label htmlFor="yourPhone" className="form-label text-black">
-              Phone *
-            </label>
-            <input
-              type="text"
-              className={`form-control ${
-                errors && errors.yourPhone ? "is-invalid" : ""
-              }`}
-              id="yourPhone"
-              name="yourPhone"
-              maxLength="10"
-              value={yourPhone}
-              onChange={handleTextChange}
-              onBeforeInput={handleBeforeInput}
-            />
-            {errors && errors.yourPhone && (
-              <div className="invalid-feedback">{errors.yourPhone}</div>
-            )}
-          </div>
-
-          {/* Job Type */}
-          <div className="mb-3">
-            <label htmlFor="yourJobType" className="form-label text-black">
-              Job Type
-            </label>
-            <select
-              value={yourJobType}
-              onChange={handleTextChange}
-              className={`form-select ${
-                errors && errors.yourJobType ? "is-invalid" : ""
-              }`}
-              name="yourJobType"
-            >
-              <option value="Job Type">Job Type</option>
-              {options.map((option) => (
-                <option key={option.value} value={option.value}>
-                  {option.label}
-                </option>
-              ))}
-            </select>
-            {errors && errors.yourJobType && (
-              <div className="invalid-feedback">{errors.yourJobType}</div>
-            )}
-          </div>
-
-          {/* Add Resume */}
-          <div className="mb-3">
-            <label htmlFor="yourFile" className="form-label text-black">
-              Upload Resume
-            </label>
-            <input
-              type="file"
-              className={`form-control ${
-                errors && errors.yourFile ? "is-invalid" : ""
-              }`}
-              id="yourFile"
-              name="yourFile"
-              placeholder=""
-              onChange={handleFileChange}
-            />
-            {errors && errors.yourFile && (
-              <div className="invalid-feedback">{errors.yourFile}</div>
-            )}
-          </div>
-
-          {/* Privacy policy */}
-          <div>
-            <p className="para-text text-black fs-6">
-              We value your privacy and will handle your information with utmost
-              confidentiality. By submitting this form, you agree to our{" "}
-              <Link className="" target="_blank" href="/privacy-policy">
-                
-                Privacy Policy.
-              </Link>
-            </p>
-          </div>
-
-          {/* Submit Button */}
-          <div className="mt-3 text-center z-1">
-            <div className="text-center">
-              <button type="button" className="btn btn-16" onClick={handleSubmit}>
-                Submit
-              </button>
-            </div>
-          </div>
-        </form>
-   
-
+        </div>
+      </form>
       {/* Success Modal */}
       <div
         className={`modal fade ${showSuccessModal ? "show" : ""}`}
@@ -416,7 +408,7 @@ const CareerForms = () => {
       >
         <div className="modal-dialog modal-dialog-centered " role="document">
           <div className="modal-content border shadow pt-5 mb-2 bg-white rounded ">
-          {/* <div className="modal-header d-flex justify-content-end">
+            {/* <div className="modal-header d-flex justify-content-end">
               <div className="relative">
                 <button
                   type="button"
@@ -442,7 +434,8 @@ const CareerForms = () => {
           </div>
         </div>
       </div>
-      {showSuccessModal && <div className="modal-backdrop fade show"></div>} {/* Background overlay */}
+      {showSuccessModal && <div className="modal-backdrop fade show"></div>}{" "}
+      {/* Background overlay */}
     </Container>
   );
 };
