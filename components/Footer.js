@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState , useEffect} from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Image from "next/image";
 import Link from "next/link";
@@ -8,6 +8,8 @@ import CookieConsent from "react-cookie-consent";
 import { GoPlus } from "react-icons/go";
 
 function Footer() {
+  const [showConsent, setShowConsent] = useState(false);
+
   const currentYear = new Date().getFullYear();
 
   const [isShow, setIsShow] = useState(true);
@@ -39,6 +41,15 @@ function Footer() {
     setIsShow2(false);
     setIsShow3(!isShow3);
   };
+
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowConsent(true);
+    }, 2000); // 2 seconds delay
+
+    return () => clearTimeout(timer);
+  }, []);
 
   return (
     <>
@@ -868,36 +879,38 @@ function Footer() {
       {/* ChatBot */}
       <CollectChatScript />
       {/* Cookie */}
-      <CookieConsent
-        className="cookie-font"
-        enableDeclineButton
-        flipButtons
-        location="bottom"
-        buttonText="Accept All"
-        declineButtonText="Decline"
-        cookieName="YourCookieName"
-        style={{
-          background: "#ffff",
-          color: "black",
-          fontFamily: '"monument regular", sans-serif',
-        }}
-        buttonStyle={{
-          backgroundColor: "green",
-          color: "white",
-          fontSize: "15px",
-          fontFamily: '"monument regular", sans-serif',
-        }}
-        declineButtonStyle={{
-          margin: "10px 10px 10px 0",
-          fontFamily: '"monument regular", sans-serif',
-        }}
-        expires={450}
-      >
-        We use cookies on our website to give you the most relevant experience
-        by remembering your preferences and repeat visits. By clicking “Accept
-        All”, you consent to the use of ALL the cookies. However, you may visit
-        "Cookie Settings" to provide a controlled consent.
-      </CookieConsent>
+      {showConsent && (
+        <CookieConsent
+          className="cookie-font"
+          enableDeclineButton
+          flipButtons
+          location="bottom"
+          buttonText="Accept All"
+          declineButtonText="Decline"
+          cookieName="YourCookieName"
+          style={{
+            background: "#ffff",
+            color: "black",
+            fontFamily: '"monument regular", sans-serif',
+          }}
+          buttonStyle={{
+            backgroundColor: "green",
+            color: "white",
+            fontSize: "15px",
+            fontFamily: '"monument regular", sans-serif',
+          }}
+          declineButtonStyle={{
+            margin: "10px 10px 10px 0",
+            fontFamily: '"monument regular", sans-serif',
+          }}
+          expires={450}
+        >
+          We use cookies on our website to give you the most relevant experience
+          by remembering your preferences and repeat visits. By clicking “Accept
+          All”, you consent to the use of ALL the cookies. However, you may visit
+          "Cookie Settings" to provide a controlled consent.
+        </CookieConsent>
+      )}
     </>
   );
 }
