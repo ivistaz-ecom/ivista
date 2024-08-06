@@ -238,7 +238,7 @@ body {
 
 .iv-cards:hover .card-body .icons {
   transition: 0.9s !important;
-  transform: rotateZ(332deg) !important;
+  transform: rotateZ(360deg) !important;
 }
 
 .iv-cards:hover .card-body .card-title {
