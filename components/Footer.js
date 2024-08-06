@@ -4,6 +4,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import Image from "next/image";
 import Link from "next/link";
 import CollectChatScript from "./ChatBot";
+import CookieConsent from "react-cookie-consent";
 import { GoPlus } from "react-icons/go";
 
 function Footer() {
@@ -377,9 +378,12 @@ function Footer() {
           </Row>
         </Container>
       </Container>
-      
+
       {/* Socil Media */}
-      <Container className="iv-grey pt-2 pb-2 z-3 position-relative  d-lg-block d-none " fluid>
+      <Container
+        className="iv-grey pt-2 pb-2 z-3 position-relative  d-lg-block d-none "
+        fluid
+      >
         <Container className="text-lg-center text-start">
           <Row className="g-0">
             <Col className="d-flex align-items-center justify-content-end">
@@ -438,7 +442,6 @@ function Footer() {
           </Row>
         </Container>
       </Container>
-      
 
       {/* Mobile Footer */}
       <Container
@@ -773,9 +776,12 @@ function Footer() {
           </Col>
         </Row>
       </Container>
-      
+
       {/* Socil Media */}
-      <Container className="iv-grey px-1 py-2 z-3 position-relative d-lg-none d-flex" fluid>
+      <Container
+        className="iv-grey px-1 py-2 z-3 position-relative d-lg-none d-flex"
+        fluid
+      >
         <Container className="text-start">
           <Row className="g-0">
             <Col className="d-flex align-items-center justify-content-start">
@@ -833,7 +839,7 @@ function Footer() {
         </Container>
       </Container>
 
-{/* Common  */}
+      {/* Common  */}
 
       <Container
         className="bg-black pt-1 pb-1 z-2 ps-0 position-relative"
@@ -859,7 +865,39 @@ function Footer() {
           </div>
         </Container>
       </Container>
+      {/* ChatBot */}
       <CollectChatScript />
+      {/* Cookie */}
+      <CookieConsent
+        className="cookie-font"
+        enableDeclineButton
+        flipButtons
+        location="bottom"
+        buttonText="Accept All"
+        declineButtonText="Decline"
+        cookieName="YourCookieName"
+        style={{
+          background: "#ffff",
+          color: "black",
+          fontFamily: '"monument regular", sans-serif',
+        }}
+        buttonStyle={{
+          backgroundColor: "green",
+          color: "white",
+          fontSize: "15px",
+          fontFamily: '"monument regular", sans-serif',
+        }}
+        declineButtonStyle={{
+          margin: "10px 10px 10px 0",
+          fontFamily: '"monument regular", sans-serif',
+        }}
+        expires={450}
+      >
+        We use cookies on our website to give you the most relevant experience
+        by remembering your preferences and repeat visits. By clicking “Accept
+        All”, you consent to the use of ALL the cookies. However, you may visit
+        "Cookie Settings" to provide a controlled consent.
+      </CookieConsent>
     </>
   );
 }
