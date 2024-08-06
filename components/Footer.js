@@ -1,5 +1,5 @@
 "use client";
-import React, { useState , useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Image from "next/image";
 import Link from "next/link";
@@ -42,7 +42,6 @@ function Footer() {
     setIsShow3(!isShow3);
   };
 
-
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowConsent(true);
@@ -53,7 +52,7 @@ function Footer() {
 
   return (
     <>
-      <Container fluid className="iv-bg p-0 z-2 position-relative">
+      <Container fluid className="iv-bg p-0 z-2 position-relative shadow-lg">
         <Container className="w-80 p-12 d-lg-block d-none p-0 py-2">
           <Row>
             <Col className="f-head p-0" lg={3}>
@@ -878,12 +877,11 @@ function Footer() {
       </Container>
       {/* ChatBot */}
       <CollectChatScript />
-      
+
       {/* Cookie */}
       {showConsent && (
         <CookieConsent
-        
-          className="cookie-font"
+
           enableDeclineButton
           flipButtons
           location="bottom"
@@ -909,8 +907,8 @@ function Footer() {
         >
           We use cookies on our website to give you the most relevant experience
           by remembering your preferences and repeat visits. By clicking “Accept
-          All”, you consent to the use of ALL the cookies. However, you may visit
-          "Cookie Settings" to provide a controlled consent.
+          All”, you consent to the use of ALL the cookies. However, you may
+          visit "Cookie Settings" to provide a controlled consent.
         </CookieConsent>
       )}
     </>
