@@ -4,12 +4,23 @@ import { Container } from 'react-bootstrap';
 import Image from 'next/image';
 import { Row, Col } from 'react-bootstrap';
 import Link from 'next/link';
+import SeoComponents from "../SeoComponents/Seo";
+import { usePathname } from "next/navigation";
 
 const HomePage = () => {
   const [showSecondSection, setShowSecondSection] = useState(false);
   const [isScrollLocked, setIsScrollLocked] = useState(false);
   const secondSectionRef = useRef(null);
   const touchStartY = useRef(0);
+  const pathname = usePathname();
+  const [domainName, setDomainName] = useState("");
+
+
+  const title = "Performance Marketing Services ";
+  const description =
+    " Discover top-notch performance marketing services with iVistaz. Our expert team offers innovative solutions to boost your business's online presence and drive measurable results. Partner with us for customized strategies that enhance your digital growth.";
+  const path = `${domainName}${pathname}`;
+  const metaImage = "";
 
   useEffect(() => {
     const handleWheelScroll = (event) => {
@@ -115,6 +126,13 @@ a.btn.h-btn.blurb-ripple-out.d-flex.flex-row.gap-2.justify-content-center {
         `
         }
       </style>
+      <SeoComponents
+        title={title}
+        description={description}
+        path={path}
+        metaImage={metaImage}
+      />
+      
       <Container className={`iv-bg z-0 ${showSecondSection ? 'hide-first-section' : ''}`} fluid>
         <Row className="d-flex flex-column align-items-center justify-content-between min-vh-100">
           <Col className="d-flex flex-column justify-content-center align-items-center z-index-100 custom-logo">

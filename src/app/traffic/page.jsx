@@ -1,13 +1,30 @@
-import React from 'react'
-
-import TrafficComponents from '../../../components/TrafficComponents'
+"use client";
+import React, { useState } from "react";
+import TrafficComponents from "../../../components/TrafficComponents";
+import SeoComponents from "../../../components/SeoComponents/Seo";
+import { usePathname } from "next/navigation";
 
 const page = () => {
-    return (
-        <div>
-            <TrafficComponents />
-        </div>
-    )
-}
+  const pathname = usePathname();
+  const [domainName, setDomainName] = useState("");
 
-export default page
+  const title = " Increase Website Traffic";
+  const description =
+    "Drive more traffic to your website with iVistaz's proven strategies. Our expertise in SEO, content marketing, and social media will help you attract and retain visitors, boosting your online visibility and engagement.";
+  const path = `${domainName}${pathname}`;
+  const metaImage = "";
+
+  return (
+    <>
+      <SeoComponents
+        title={title}
+        description={description}
+        path={path}
+        metaImage={metaImage}
+      />
+      <TrafficComponents />
+    </>
+  );
+};
+
+export default page;

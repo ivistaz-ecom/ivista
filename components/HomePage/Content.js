@@ -5,10 +5,12 @@ import Image from 'next/image'
 import { Row, Col } from 'react-bootstrap'
 import Link from 'next/link'
 
+
 const HomePage = () => {
   const [showSecondSection, setShowSecondSection] = useState(false);
   const [isScrollLocked, setIsScrollLocked] = useState(false);
   const secondSectionRef = useRef(null);
+ 
 
   useEffect(() => {
     const handleWheelScroll = (event) => {
@@ -77,6 +79,8 @@ const HomePage = () => {
 
   return (
     <>
+     
+
       <Container className={`iv-bg z-0 ${showSecondSection ? 'hide-first-section' : ''}`} fluid>
         <Row className="d-flex flex-column align-items-center justify-content-between min-vh-100" >
           <Col className="d-flex flex-column justify-content-center align-items-center z-index-100">

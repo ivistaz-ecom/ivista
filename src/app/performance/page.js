@@ -19,8 +19,8 @@ function performance() {
     setDomainName(window.location.hostname);
   }, []);
 
-  const title = "Seamless digital performance with iVistaz";
-  const description = " Working closely with our clients, we make sure we deliver performance that goes beyond expectations, prioritising excellence.";
+  const title = "Performance Marketing Excellence ";
+  const description = "Experience performance marketing excellence with iVistaz. Our data-driven strategies and innovative solutions ensure your marketing campaigns deliver maximum ROI and drive business growth.";
   const path = `${domainName}${pathname}`;
   const metaImage = "";
 
