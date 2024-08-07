@@ -1,14 +1,30 @@
-import React from 'react'
-
-import SalesComponents from '../../../components/SalesComponents'
+"use client";
+import React, { useState } from "react";
+import SalesComponents from "../../../components/SalesComponents";
+import SeoComponents from "../../../components/SeoComponents/Seo";
+import { usePathname } from "next/navigation";
 
 const page = () => {
-    return (
-        <>
-            <SalesComponents />
+  const pathname = usePathname();
+  const [domainName, setDomainName] = useState("");
 
-        </>
-    )
-}
+  const title = " Boost Sales with Expert Digital Marketing";
+  const description =
+    "Maximize your sales potential with iVistaz's cutting-edge digital marketing solutions. Our tailored strategies focus on driving sales and increasing ROI, ensuring your business achieves sustained growth in a competitive market.";
+  const path = `${domainName}${pathname}`;
+  const metaImage = "";
+  return (
+    <>
+     <SeoComponents
+        title={title}
+        description={description}
+        path={path}
+        metaImage={metaImage}
+      />
 
-export default page
+      <SalesComponents />
+    </>
+  );
+};
+
+export default page;

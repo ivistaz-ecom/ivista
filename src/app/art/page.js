@@ -6,11 +6,31 @@ import Link from 'next/link';
 import Footer from '../../../components/Footer';
 import Header1 from '../../../components/HeaderBlack';
 import { CiCircleChevRight } from "react-icons/ci";
+import SeoComponents from "../../../components/SeoComponents/Seo";
+import { usePathname } from "next/navigation";
+import { useState } from "react";
+
 
 
 function page() {
+  const pathname = usePathname();
+  const [domainName, setDomainName] = useState("");
+
+  const title = "Art Marketing Solutions ";
+  const description =
+    "Promote your art with iVistaz's specialized marketing solutions. We help artists and galleries increase their online presence and connect with art enthusiasts, ensuring your work reaches a broader audience.";
+  const path = `${domainName}${pathname}`;
+  const metaImage = "";
+
   return (
     <>
+       <SeoComponents
+        title={title}
+        description={description}
+        path={path}
+        metaImage={metaImage}
+      />
+
       <Header1 />
       <Container fluid className=" d-flex flex-column justify-content-between min-vh-100">
         <Image src="/images/h-icon.svg" className="header-icon d-lg-flex d-none overflow-hidden" alt='' />

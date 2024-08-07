@@ -2386,7 +2386,7 @@ background: rgba(255, 255, 255, 0) !important; */
 } */
 
 /************| Mobile view |************/
-@media screen and (min-width: 360px) and (max-width: 844px) {
+@media(max-width:767px) {
   .demo {
     display: none;
   }

@@ -1021,7 +1021,8 @@ p.animation5 {
 /************************************************| ANIMATION ADJUSTMENT BASED ON SCREEN SIZE |************************************************/
 
 /************| Mobile view |************/
-@media screen and (min-width:360px) and (max-width:960px) {
+
+  @media(max-width:960px) {
   .KW_progressContainer {
     /* left: 6.4%;
     width: 0.4em;

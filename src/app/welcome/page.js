@@ -19,9 +19,9 @@ function IhomePage() {
   }, []);
 
   const title =
-    "Crafting Digital Excellence: Mastery, Art, and Performance in Digital Marketing";
+    "Welcome to iVistaz";
   const description =
-    "Explore the expertise of iVistaz, a digital marketing agency mastering the intricacies of performance marketing, crafting captivating digital art, and delivering unforgettable digital journeys with precision and excellence.";
+    "Welcome to iVistaz, where innovative digital marketing solutions meet exceptional service. Explore our range of services designed to boost your online presence and drive business growth.";
   const path = `${domainName}${pathname}`;
   const metaImage = "";
 
@@ -78,6 +78,7 @@ function IhomePage() {
         }
         `}
       </style>
+      
       <SeoComponents
         title={title}
         description={description}

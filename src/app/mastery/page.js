@@ -8,10 +8,20 @@ import Image from 'next/image';
 import gsap from 'gsap';
 import Footer from '../../../components/Footer';
 import { CiCircleChevRight } from "react-icons/ci";
-
+import SeoComponents from "../../../components/SeoComponents/Seo";
+import { usePathname } from "next/navigation";
 
 
 function page() {
+  const pathname = usePathname();
+  const [domainName, setDomainName] = useState("");
+
+  const title = "Achieve Marketing Mastery ";
+  const description =
+    " Reach new heights of marketing mastery with iVistaz. Our expert team provides tailored strategies and insights to help you dominate your market and achieve long-term success.";
+  const path = `${domainName}${pathname}`;
+  const metaImage = "";
+
 
   const [countVisible, setCountVisible] = useState([true, false, false, false]);
 
@@ -44,6 +54,13 @@ function page() {
     `
         }
       </style>
+
+      <SeoComponents
+        title={title}
+        description={description}
+        path={path}
+        metaImage={metaImage}
+      />
 
       <Header1 />
       <Container fluid className="bg-black d-flex flex-column justify-content-between min-vh-100 bg-black" >
