@@ -607,7 +607,7 @@ const CaseStudiesFetchData = () => {
                   {/* <!-- Empty card body --> */}
                   <br />
                   <p className="card-text text-white text-center fs-3 p-3">
-                    If you want this to be your digital success story, Contact
+                    If you want this to be your digital success story, contact
                     us here
                   </p>
                   <br />

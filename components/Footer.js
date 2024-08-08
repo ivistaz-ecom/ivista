@@ -391,7 +391,7 @@ function Footer() {
 
       {/* Socil Media */}
       <Container
-        className="iv-grey pt-2 pb-2 z-3 position-relative  d-lg-block d-none "
+        className="iv-grey pt-2 pb-2 z-2 position-relative  d-lg-block d-none "
         fluid
       >
         <Container className="text-lg-center text-start">
@@ -789,7 +789,7 @@ function Footer() {
 
       {/* Socil Media */}
       <Container
-        className="iv-grey px-1 py-2 z-3 position-relative d-lg-none d-flex"
+        className="iv-grey px-1 py-2 z-2 position-relative d-lg-none d-flex"
         fluid
       >
         <Container className="text-start">
