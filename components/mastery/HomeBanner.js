@@ -68,7 +68,7 @@ function HeroBanner() {
                 <p className="para-text ps-6 ms-lg-4">
                   Read our success stories for boosting online sales with SEO{" "}
                   <Link
-                    href="case-studies/digital-marketing-strategy-case-study-boosting-audio-equipment-sales-with-seo-and-amazon-marketing-2"
+                    href="/case-studies/digital-marketing-strategy-case-study-boosting-audio-equipment-sales-with-seo-and-amazon-marketing-2"
                     className=" red"
                   >
                     here
