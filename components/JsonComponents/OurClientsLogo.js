@@ -252,8 +252,6 @@ const ourclients = {
 
     ]
 };
-
-export const getClientLogos = () => {
     return ourclients.clients.map(client => client.clientlogos);
 };
 
