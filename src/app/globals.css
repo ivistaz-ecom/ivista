@@ -1822,6 +1822,67 @@ background: rgba(255, 255, 255, 0) !important; */
   animation-direction: alternate;
 }
 
+.btn-19 {
+  position: relative;
+  color: #ed2225 !important;
+  position: relative;
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  max-width: 365px;
+  padding: 12px !important;
+  border-radius: 12px;
+  text-decoration: none !important;
+  font-family: "monument regular", sans-serif !important;
+  border: 1px solid #ed2225 !important;
+  text-align: center !important;
+  font-size: 24px !important;
+  z-index: 9999;
+  background: #fff !important;
+}
+
+.btn-19:before,
+.btn-19:after {
+  position: absolute;
+  top: 50%;
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-color: #ed2225;
+  border-radius: 50%;
+  color: #ed2225 !important;
+  z-index: -17 !important;
+}
+
+.btn-19:before {
+  left: -20px;
+  transform: translate(-50%, -50%);
+}
+
+.btn-19:after {
+  right: -20px;
+  transform: translate(50%, -50%);
+}
+
+.btn-19:hover {
+  color: #fff !important;
+  border: 1px solid #fff !important;
+}
+
+.btn-19:hover:before {
+  -webkit-animation: criss-cross-left 0.8s both;
+  animation: criss-cross-left 0.8s both;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+}
+
+.btn-19:hover:after {
+  -webkit-animation: criss-cross-right 0.8s both;
+  animation: criss-cross-right 0.8s both;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+}
+
 .case-text {
   font-size: 20px;
   font-family: "monument regular", sans-serif !important;
@@ -2448,6 +2509,14 @@ background: rgba(255, 255, 255, 0) !important; */
   .btn-18 {
     width: 100%;
     max-width: 250px;
+    padding: 10px !important;
+    border-radius: 10px;
+    font-size: 20px !important;
+  }
+
+  .btn-19 {
+    width: 100%;
+    max-width: 310px;
     padding: 10px !important;
     border-radius: 10px;
     font-size: 20px !important;
