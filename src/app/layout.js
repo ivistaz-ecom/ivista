@@ -2,7 +2,6 @@ import './globals.css'
 import { Inter } from 'next/font/google'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
-
 import './style.css'
 
 const inter = Inter({ subsets: ['latin'] })

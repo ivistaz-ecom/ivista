@@ -111,7 +111,7 @@ function page() {
                   <CountUp end={28} prefix="" className="counter" />
                 </Col>
                 <Col >
-                  <h4 className='count-mastery-text text-white text-center counter-txt'>
+                  <h4 className='text-white text-center counter-txt'>
                     Years of Experience & Expertise
                   </h4>
                 </Col>
@@ -122,9 +122,9 @@ function page() {
                   <CountUp end={800} suffix="+" className="counter" />
                 </Col>
                 <Col >
-                  <h5 className='count-mastery-text text-white text-center counter-txt'>
+                  <h4 className='text-white text-center counter-txt'>
                     Clients Served
-                  </h5>
+                  </h4>
                 </Col>
               </Col>
 
@@ -133,9 +133,9 @@ function page() {
                   <CountUp end={6} prefix="$" suffix='B' className="counter" />
                 </Col>
                 <Col >
-                  <h5 className='count-mastery-text text-white text-center counter-txt'>
+                  <h4 className='text-white text-center counter-txt'>
                     Online Revenue Generated
-                  </h5>
+                  </h4>
                 </Col>
               </Col>
 
@@ -145,9 +145,9 @@ function page() {
                   <CountUp end={500} suffix='+' className="counter" />
                 </Col>
                 <Col >
-                  <h5 className='count-mastery-text text-white text-center counter-txt'>
+                  <h4 className='text-white text-center counter-txt'>
                     Websites Designed and Developed
-                  </h5>
+                  </h4>
                 </Col>
               </Col>
             </Row>
