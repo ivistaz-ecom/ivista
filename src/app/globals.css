@@ -1090,14 +1090,14 @@ background: rgba(255, 255, 255, 0) !important; */
 .mastery-text {
   color: #fff;
   font-size: 20px;
-  font-family: "monument regular";
+  /* font-family: "monument regular"; */
   font-weight: 200;
 }
 
 .count-mastery-text {
   color: #fff;
   font-size: 24px;
-  font-family: "monument regular";
+  font-family: "monument regular" !important;
   font-weight: 200;
 }
 
@@ -1150,7 +1150,7 @@ background: rgba(255, 255, 255, 0) !important; */
 .art-text {
   color: #000;
   font-size: 20px;
-  font-family: "monument regular";
+  /* font-family: "monument regular"; */
 }
 
 .arts-text {
