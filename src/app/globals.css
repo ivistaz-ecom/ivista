@@ -79,6 +79,7 @@ body {
   z-index: 0;
 }
 
+
 .red-outline {
   color: #ed2225 !important;
   text-decoration: none !important;
@@ -347,10 +348,7 @@ body {
   font-family: "monument regular", sans-serif;
 }
 
-.fs-21 {
-  font-size: 4rem !important;
-  font-family: "monument regular", sans-serif;
-}
+
 
 .fs-19 {
   font-size: 3rem !important;
@@ -362,12 +360,22 @@ body {
   font-family: "monument regular", sans-serif;
 }
 
+.fs-21 {
+  font-size: 4rem !important;
+  font-family: "monument regular", sans-serif;
+}
+
 .fs-22 {
   font-size: 3.3em;
   font-family: "monument regular", sans-serif;
 }
 
 .fs-23 {
+  font-size: 3.5rem !important;
+  font-family: "monument regular", sans-serif;
+}
+
+.fs-24 {
   font-size: 3.5rem !important;
   font-family: "monument regular", sans-serif;
 }
@@ -384,7 +392,7 @@ body {
 
 .para-text {
   font-weight: 300;
-  font-size: 20px;
+  font-size: 18px;
   font-family: "MonumentGrotesk", sans-serif;
 }
 
@@ -625,6 +633,8 @@ background: rgba(255, 255, 255, 0) !important; */
     padding-top: 80px !important;
     z-index: 0;
   }
+
+
 }
 
 @-webkit-keyframes criss-cross-left {
@@ -2112,6 +2122,11 @@ background: rgba(255, 255, 255, 0) !important; */
 
   .fs-23 {
     font-size: 3.5rem !important;
+    font-family: "monument regular", sans-serif;
+  }
+
+  .fs-24 {
+    font-size: 2.5rem !important;
     font-family: "monument regular", sans-serif;
   }
 
