@@ -160,7 +160,7 @@ const CareerCom = () => {
                 </Row>
 
                 <p className="para-text text-black mt-5">
-                    For enquiries about any positions not listed, please email <a href="mailto:hr@ivistasolutions.com" target='_blank' className='text-red'> hr@ivistasolutions.com</a>
+                    For enquiries about any positions not listed, please email <a href="mailto:careers@ivistaz.com " target='_blank' className='text-red'>  careers@ivistaz.com </a>
                 </p>
 
             </Container>

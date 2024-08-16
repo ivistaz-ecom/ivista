@@ -44,7 +44,7 @@ const ContactusContent = () => {
                             <h1 className="contact-head pb-4 pt-5">iVistaz Ecom Services Pvt. Ltd.</h1>
                             <p className="contact-text text-center">Business Enquiries</p>
                             <p className="contact-text text-center">+91 80 41966600</p>
-                            <p className="contact-text text-center" ><Link className='text-white' href={"mailto: reach@ivistasolutions.com"}>reach@ivistasolutions.com</Link></p>
+                            <p className="contact-text text-center" ><Link className='text-white' href={"mailto: reach@ivistaz.com"}>reach@ivistaz.com</Link></p>
 
                             <Container className="text-center pt-5 pb-5">
                                 <Row className="g-0">
