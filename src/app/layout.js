@@ -10,6 +10,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
+      <meta name="p:domain_verify" content="0d52b0992f69dadc8ca90881cc4677c2"/>
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         {/* Google Tag Manager */}
         <script
