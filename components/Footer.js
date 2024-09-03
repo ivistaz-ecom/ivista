@@ -151,6 +151,14 @@ function Footer() {
                     Clients
                   </Link>
                 </li>
+                
+                <Link
+                    href="/careers"
+                    className="text-decoration-none text-white custom-footer-font"
+                  >
+                    Careers
+                  </Link>
+
                 <li>
                   <Link
                     href="/contact-us"
