@@ -151,13 +151,13 @@ function Footer() {
                     Clients
                   </Link>
                 </li>
-                
+
                 <Link
-                    href="/careers"
-                    className="text-decoration-none text-white custom-footer-font"
-                  >
-                    Careers
-                  </Link>
+                  href="/careers"
+                  className="text-decoration-none text-white custom-footer-font"
+                >
+                  Careers
+                </Link>
 
                 <li>
                   <Link
@@ -525,12 +525,21 @@ function Footer() {
                     Blogs
                   </Link>
                 </li>
+
                 <li>
                   <Link
                     href="/our-clients"
                     className="text-decoration-none text-white custom-footer-font"
                   >
                     Clients
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/careers"
+                    className="text-decoration-none text-white custom-footer-font"
+                  >
+                    Careers
                   </Link>
                 </li>
                 <li>
@@ -889,7 +898,6 @@ function Footer() {
       {/* Cookie */}
       {showConsent && (
         <CookieConsent
-
           enableDeclineButton
           flipButtons
           location="bottom"
