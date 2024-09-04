@@ -19,7 +19,7 @@ const HomeBanner = () => {
 
     const title = "Social media marketing to boost your brand online    ";
     const description = "Discover iVistaz comprehensive social media marketing services for businesses in both B2B and B2C sectors.";
-    const path = `${domainName}${pathname}`;
+    const path = `${pathname}`;
     const metaImage = "";
 
     // const backgroundImage = "/services/seo_banner.jpg"

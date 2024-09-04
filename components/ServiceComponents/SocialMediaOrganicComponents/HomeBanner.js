@@ -19,7 +19,7 @@ const HomeBanner = () => {
 
     const title = " Cultivate Brand Loyalty with Organic Social Media Marketing.";
     const description = "Humanize your brand with authentic interactions. Our comprehensive Social Media Management services ensure measurable metrics and impactful engagement.";
-    const path = `${domainName}${pathname}`;
+    const path = `${pathname}`;
     const metaImage = "";
     // const backgroundImage = "/services/seo_banner.jpg"
 

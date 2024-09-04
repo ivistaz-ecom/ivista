@@ -22,7 +22,7 @@ function HeroBanner() {
 
   const title = "Digital Marketing Solutions for Nonprofit Organizations | SEO, Social Media & Web Design";
   const description = "Maximize your nonprofit's impact with our comprehensive digital marketing services. From SEO and social media marketing to web design, we help NGOs and nonprofit organizations reach their audience and drive meaningful engagement.";
-  const path = `${domainName}${pathname}`;
+  const path = `${pathname}`;
   const metaImage = "";
 
   const backgroundImage = {

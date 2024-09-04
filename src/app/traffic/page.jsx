@@ -11,7 +11,7 @@ const page = () => {
   const title = " Increase Website Traffic";
   const description =
     "Drive more traffic to your website with iVistaz's proven strategies. Our expertise in SEO, content marketing, and social media will help you attract and retain visitors, boosting your online visibility and engagement.";
-  const path = `${domainName}${pathname}`;
+  const path = `${pathname}`;
   const metaImage = "";
 
   return (

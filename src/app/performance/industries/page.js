@@ -19,7 +19,7 @@ function page() {
 
   const title = " Digital marketing services across industries";
   const description = "By embracing innovative solutions and a passion for creating exceptional performances, iVistaz delivers expert digital marketing services for various industries.";
-  const path = `${domainName}${pathname}`;
+  const path = `${pathname}`;
   const metaImage = "";
   return (
     <>

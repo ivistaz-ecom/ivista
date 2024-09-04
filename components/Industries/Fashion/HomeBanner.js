@@ -22,7 +22,7 @@ function HeroBanner() {
 
   const title = "Digital Marketing Solutions for Fashion Brands | Increase Online Sales & Social Engagement";
   const description = "Unlock the potential of your fashion brand with our tailored digital marketing services. From increasing online sales for fashion accessories to enhancing social media engagement, we help bridge the gap between online visitors and sales while creating curated online experiences to strengthen brand loyalty. Discover how our expertise can elevate your brand's online presence and drive growth in the dynamic fashion industry.";
-  const path = `${domainName}${pathname}`;
+  const path = `${pathname}`;
   const metaImage = "";
 
   const backgroundImage = {

@@ -21,7 +21,7 @@ function performance() {
 
   const title = "Performance Marketing Excellence ";
   const description = "Experience performance marketing excellence with iVistaz. Our data-driven strategies and innovative solutions ensure your marketing campaigns deliver maximum ROI and drive business growth.";
-  const path = `${domainName}${pathname}`;
+  const path = `${pathname}`;
   const metaImage = "";
 
   return (

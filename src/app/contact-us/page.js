@@ -15,7 +15,7 @@ function page() {
   const title = "Contact Us ";
   const description =
     "Reach out to iVistaz Ecom Services Pvt. Ltd. for business inquiries, service requests, or any assistance. Visit us at our Bengaluru office or follow us on social media for updates and support. Get started on your journey towards enhanced performance with iVistaz today.";
-  const path = `${domainName}${pathname}`;
+  const path = `${pathname}`;
   const metaImage = "";
   return (
     <>

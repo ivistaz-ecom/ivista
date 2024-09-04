@@ -22,7 +22,7 @@ function IhomePage() {
     "Welcome to iVistaz";
   const description =
     "Welcome to iVistaz, where innovative digital marketing solutions meet exceptional service. Explore our range of services designed to boost your online presence and drive business growth.";
-  const path = `${domainName}${pathname}`;
+  const path = `${pathname}`;
   const metaImage = "";
 
   const [isYearOfPerformance, setIsYearOfPerformance] = useState(1996);

@@ -19,7 +19,7 @@ function page() {
   const title = "Achieve Marketing Mastery ";
   const description =
     " Reach new heights of marketing mastery with iVistaz. Our expert team provides tailored strategies and insights to help you dominate your market and achieve long-term success.";
-  const path = `${domainName}${pathname}`;
+  const path = `${pathname}`;
   const metaImage = "";
 
 

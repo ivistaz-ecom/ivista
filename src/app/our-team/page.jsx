@@ -12,7 +12,7 @@ const page = () => {
   const title = "Meet the iVistaz Team";
   const description =
     "Get to know the talented team behind iVistaz. Our digital marketing experts are dedicated to helping your business succeed with innovative strategies and personalized service.";
-  const path = `${domainName}${pathname}`;
+  const path = `${pathname}`;
   const metaImage = "";
 
   return (

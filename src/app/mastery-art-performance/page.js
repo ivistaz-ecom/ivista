@@ -15,7 +15,7 @@ const MasteryArtPerformance = () => {
     const title = " Mastery in Art Performance Marketing";
     const description =
       "Achieve mastery in art performance marketing with iVistaz. Our specialized strategies help artists and performers increase their online visibility and reach, ensuring their talents are showcased to the right audience.";
-    const path = `${domainName}${pathname}`;
+    const path = `${pathname}`;
     const metaImage = "";
 
   return (

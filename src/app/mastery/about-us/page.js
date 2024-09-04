@@ -17,7 +17,7 @@ function page() {
   const title = " About iVistaz";
   const description =
     "Learn more about iVistaz, a leading digital marketing agency committed to delivering exceptional results. Our team of experts specializes in performance marketing, branding, web development, and more.";
-  const path = `${domainName}${pathname}`;
+  const path = `${pathname}`;
   const metaImage = "";
 
   return (

@@ -21,7 +21,7 @@ function HeroBanner() {
 
   const title = "Increase Online Sales for Home Appliances | Expert Digital Marketing for Appliance Brands";
   const description = "Boost your appliance brand's online sales with our specialised digital marketing strategies. Capitalise on the growing market and enhance your brand's visibility and engagement on e-stores and marketplaces. Discover how we can help you succeed in the rapidly evolving appliances industry.";
-  const path = `${domainName}${pathname}`;
+  const path = `${pathname}`;
   const metaImage = "";
 
 

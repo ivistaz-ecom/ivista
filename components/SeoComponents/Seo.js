@@ -1,6 +1,7 @@
 'use client'
 import React from 'react';
 import Head from 'next/head';
+import config from '../../config';
 
 function NextSeo({ title, description, path, metaImage }) {
     return (
@@ -11,7 +12,7 @@ function NextSeo({ title, description, path, metaImage }) {
             <meta name="viewport" content="width=device-width, initial-scale=1" />
             <meta name="robots" content="index, follow" />
             <link rel="icon" href="/images/cac_favicon-150x150.png" />
-            <link rel="canonical" href={`https://www.${path}`} />
+            <link rel="canonical" href={`${config.mainWebUrl}${path}`} />
             <meta property="og:locale" content="en_US" />
             <meta property="og:type" content="website" />
             <meta property="og:title" content={title} />
