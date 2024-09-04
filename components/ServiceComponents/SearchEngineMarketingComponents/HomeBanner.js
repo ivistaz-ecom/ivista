@@ -19,7 +19,7 @@ const HomeBanner = () => {
 
     const title = "Expert SEM Strategies for Effective Online Advertisin";
     const description = " Navigate micro-moments with expert SEM. Place ads at the top of SERPs, optimize CPL, and drive conversions with search, display, video, shopping, and discovery ads.";
-    const path = `${domainName}${pathname}`;
+    const path = `${pathname}`;
     const metaImage = "";
 
     // const backgroundImage = "/services/seo_banner.jpg"

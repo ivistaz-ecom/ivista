@@ -18,7 +18,7 @@ function HeroBanner() {
   const title = "Success Stories & Case Studies";
   const description =
     "Explore our success stories and case studies to see how iVistaz has helped businesses achieve their marketing goals. Learn from our proven strategies and discover how we can drive success for your brand.";
-  const path = `${domainName}${pathname}`;
+  const path = `${pathname}`;
   const metaImage = "";
 
   return (

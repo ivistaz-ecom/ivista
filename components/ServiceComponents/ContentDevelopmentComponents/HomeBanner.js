@@ -20,7 +20,7 @@ const HomeBanner = () => {
 
     const title = "Content development for B2C and B2B businesses";
     const description = " iVistaz provides content development services for organisations across B2B and B2C sectors, going beyond mere content creation.";
-    const path = `${domainName}${pathname}`;
+    const path = `${pathname}`;
     const metaImage = "";
     // const backgroundImage = "/services/seo_banner.jpg"
 

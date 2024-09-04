@@ -24,7 +24,7 @@ function HeroBanner() {
   const title = "Expert Digital marketing solutions with iVistaz";
   const description =
     " Ivistaz has mastered its art, providing expert digital marketing solutions that aim at value creation, increasing traffic, and generating leads and customers.";
-  const path = `${domainName}${pathname}`;
+  const path = `${pathname}`;
   const metaImage = "";
 
   return (

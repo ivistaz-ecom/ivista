@@ -20,7 +20,7 @@ function HeroBanner() {
 
   const title = "Strengthening market share in Indian Automobile Industry";
   const description = "As India sees transformative growth at global levels for the automobile industry, digital marketing services are imperative to grow brand networks.";
-  const path = `${domainName}${pathname}`;
+  const path = `${pathname}`;
   const metaImage = "";
 
   const backgroundImage = {

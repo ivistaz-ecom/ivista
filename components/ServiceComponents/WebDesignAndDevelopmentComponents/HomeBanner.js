@@ -19,7 +19,7 @@ const HomeBanner = () => {
 
     const title = " Crafting Digital Excellence: Mastery, Art, and Performance in Digital Marketing";
     const description = "Explore the expertise of iVistaz, a digital marketing agency mastering the intricacies of performance marketing, crafting captivating digital art, and delivering unforgettable digital journeys with precision and excellence.";
-    const path = `${domainName}${pathname}`;
+    const path = `${pathname}`;
     const metaImage = "";
 
     const backgroundImage = {

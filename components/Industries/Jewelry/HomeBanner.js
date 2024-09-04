@@ -22,7 +22,7 @@ function HeroBanner() {
 
   const title = " Boost Online Sales for Jewelry Brands | Expert Digital Marketing Solutions";
   const description = "Enhance your jewelry brand's online presence and drive sales with our specialized digital marketing services. From SEO and social media marketing to personalized online experiences, we help jewelry brands connect with their audience and increase conversions both in-store and online.";
-  const path = `${domainName}${pathname}`;
+  const path = `${pathname}`;
   const metaImage = "";
 
   const backgroundImage = {

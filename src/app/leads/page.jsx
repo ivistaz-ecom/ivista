@@ -11,7 +11,7 @@ const page = () => {
   const title = "Generate Quality Leads ";
   const description =
     "Attract and convert high-quality leads with iVistaz. Our comprehensive lead generation strategies are designed to optimize your marketing efforts, ensuring a steady flow of potential customers ready to engage with your brand.";
-  const path = `${domainName}${pathname}`;
+  const path = `${pathname}`;
   const metaImage = "";
 
   return (

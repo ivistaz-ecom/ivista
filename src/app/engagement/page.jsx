@@ -11,7 +11,7 @@ const page = () => {
   const title = " Enhance Customer Engagement ";
   const description =
     "Engage your audience with compelling content and interactive strategies from iVistaz. Our services are designed to increase customer loyalty and drive meaningful interactions, helping you build stronger relationships with your audience.";
-  const path = `${domainName}${pathname}`;
+  const path = `${pathname}`;
   const metaImage = "";
 
   return (

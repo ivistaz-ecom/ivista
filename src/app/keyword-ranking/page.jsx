@@ -12,7 +12,7 @@ const page = () => {
     const title = " Improve Your Keyword Ranking  ";
     const description =
       "Boost your search engine rankings with iVistaz's keyword optimization services. Our team uses advanced SEO techniques to enhance your visibility and drive organic traffic to your site, ensuring you stay ahead of the competition.";
-    const path = `${domainName}${pathname}`;
+    const path = `${pathname}`;
     const metaImage = "";
 
     return (

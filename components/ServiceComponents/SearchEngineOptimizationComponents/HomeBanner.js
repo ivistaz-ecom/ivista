@@ -18,7 +18,7 @@ const HomeBanner = () => {
 
     const title = " Maximize Your Online Visibility with Expert SEO Services by iVistaz";
     const description = "Boost online visibility with expert SEO by iVistaz. Navigate dynamic SEO landscape, elevate digital presence, track progress.";
-    const path = `${domainName}${pathname}`;
+    const path = `${pathname}`;
     const metaImage = "";
 
     // const backgroundImage = "/services/seo_banner.jpg"

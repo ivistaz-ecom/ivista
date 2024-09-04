@@ -18,7 +18,7 @@ function HeroBanner() {
 
   const title = "Enhancing digital experience for customers in hospitality sector";
   const description = " Leveraging twelve years of expertise with digital marketing in the hospitality sector, iVistaz ensures content is fine-tuned to customer expectations.";
-  const path = `${domainName}${pathname}`;
+  const path = `${pathname}`;
   const metaImage = "";
 
   const backgroundImage = {

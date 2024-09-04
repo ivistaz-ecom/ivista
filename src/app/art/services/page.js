@@ -21,7 +21,7 @@ function Page() {
   const title = " Performance-focused digital marketing services";
   const description =
     "At iVistaz, digital marketing services are tailored for optimal performance for the business, ensuring results are delivered.";
-  const path = `${domainName}${pathname}`;
+  const path = `${pathname}`;
   const metaImage = "";
 
   return (

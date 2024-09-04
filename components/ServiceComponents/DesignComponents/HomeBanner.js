@@ -20,7 +20,7 @@ const HomeBanner = () => {
 
     const title = " Tailored User-Friendly Web Design Services";
     const description = "Discover iVistaz tailored web design services that are not only meticulously crafted to capture brand essence but also prioritises user and mobile friendliness.";
-    const path = `${domainName}${pathname}`;
+    const path = `${pathname}`;
     const metaImage = "";
 
     // const backgroundImage = "/services/seo_banner.jpg"

@@ -13,7 +13,7 @@ const page = () => {
   const title = "Our Clients";
   const description =
     " Discover the diverse range of clients we serve at iVistaz. Our success stories highlight the impact of our tailored digital marketing strategies across various industries.";
-  const path = `${domainName}${pathname}`;
+  const path = `${pathname}`;
   const metaImage = "";
 
   return (
