@@ -325,7 +325,7 @@ const OurTeamsList = () => {
           <Col className="mt-5">
             {fianceData.length > 0 && (
               <>
-                <h3 className="text-white mt-4">FINANCE & ADMIN</h3>
+                <h3 className="text-white mt-4">HR, FINANCE & ADMIN</h3>
 
                 <div className="d-flex flex-lg-row flex-column flex-wrap">
                   {fianceData.map((team) => (
