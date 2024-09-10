@@ -6,7 +6,8 @@ import CareerForms from '../Forms/CareerForms';
 const CareerCom = () => {
 
     const options = [
-        { value: 'account_manager', label: 'Account Manager' },
+        { value: 'seo_&_social_media_executive', label: 'SEO & Social Media Executive' },
+        // { value: 'account_manager', label: 'Account Manager' },
         { value: 'inside_sales_executive', label: 'Inside Sales Executive' },
         { value: 'account_executive', label: 'Account Executive' },
         { value: 'ui_ux_designer', label: 'UI/Graphic Designer' },
