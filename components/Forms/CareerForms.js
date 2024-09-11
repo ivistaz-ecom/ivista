@@ -194,18 +194,18 @@ const CareerForms = () => {
   const handleFileChange = (e) => {
     const file = e.target.files[0];
 
-    if (!file) {
+    if (!file) { 
       const fieldErrors = {};
       fieldErrors["yourFile"] = "Please select a file.";
       setErrors(fieldErrors);
       setyourFile(null);
-      return;
+      return; 
     }
 
     const fileTypes = [
       "application/pdf",
       "application/msword",
-      "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "application/vnd.openxmlformats-officedocument.wordprocessingml.document", 
     ];
 
     if (!fileTypes.includes(file.type)) {

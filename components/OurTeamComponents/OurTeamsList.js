@@ -284,6 +284,22 @@ const OurTeamsList = () => {
                       </div>
                     </div>
                   ))}
+
+                  {/* ADDITIONAL STATIC CARD FOR HIRING */}
+                  <div className="col-lg-3 col-md-6 col-sm-12 d-flex flex-column justify-content-between gap-2 p-3 static-card">
+                    <div className="d-flex flex-column p-3 mt-0 rounded-4 justify-content-center align-items-center h-100 text-white iv-bg">
+                      <p className="fs-3 mb-0 text-center">
+                        <a
+                          className="text-white text-decoration-none"
+                          target="_blank"
+                          href="/careers"
+                        >
+                          Want to claim this spot? We’re hiring
+                        </a>
+                      </p>
+                    </div>
+                    <div className="opacity-0">.</div>
+                  </div>
                 </div>
               </>
             )}
