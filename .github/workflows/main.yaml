@@ -1,0 +1,27 @@
+name: remote ssh command
+on: [push]
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+      # Step 1: Checkout the code from the GitHub repository
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      # Step 2: Setup SSH
+      - name: Setup SSH
+        uses: webfactory/ssh-agent-action@v0.7.0
+        with:
+          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+          ssh-passphrase: ${{ secrets.SSH_PASSPHRASE }}
+
+      # Step 3: Deploy the code to the DigitalOcean droplet via SSH
+      - name: Deploy to DigitalOcean Droplet
+        uses: appleboy/ssh-action@v1.0.2
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          port: ${{ secrets.PORT }}
+          script: |
+            cd /home/react-staging/ivistaz
