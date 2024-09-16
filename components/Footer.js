@@ -116,7 +116,7 @@ function Footer() {
                     href="/mastery/about-us"
                     className="text-decoration-none text-white custom-footer-font"
                   >
-                    About Us
+                    About
                   </Link>
                 </li>
                 <li>
