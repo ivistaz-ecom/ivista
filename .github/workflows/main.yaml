@@ -12,28 +12,29 @@ jobs:
 
       - name: Configure Git
         run: |
-          git config --global user.name 'GitHub Actions'
-          git config --global user.email 'actions@github.com'
+          git config --global user.name 'jalal'
+          git config --global user.email 'jalal1985khan@gmail.com'
 
-      - name: Merge Main to Live
+      # Merge main into live
+      - name: Merge Main into Live
         run: |
           git fetch origin
           git checkout live
           git merge origin/main
           git push origin live
 
-      - name: Deploy to Server
+      # Deploy to live production server
+      - name: Deploy to Live Server
         uses: appleboy/ssh-action@master
         with:
-          host: ${{ secrets.HOST }} # Your server's IP address
-          username: ${{ secrets.USERNAME }} # Your server's username
-          key: ${{ secrets.SSH_PRIVATE_KEY }} # Your server's SSH private key
-          passphrase: ${{ secrets.SSH_PASSPHRASE }} # Your server's SSH passphrase
+          host: ${{ secrets.LIVE_HOST }} # Your live server's IP address
+          username: ${{ secrets.LIVE_USERNAME }} # Your live server's username
+          key: ${{ secrets.LIVE_SSH_PRIVATE_KEY }} # Your live server's SSH private key
+          passphrase: ${{ secrets.LIVE_SSH_PASSPHRASE }} # Your live server's SSH passphrase
 
           script: |
-            cd /home/react-live/thezurihotels
-            echo ${{ secrets.PASSWORD }} | sudo -S git config --global --add safe.directory /home/react-live/thezurihotels
+            cd home/react-staging/ivistalive
             echo ${{ secrets.PASSWORD }} | sudo -S git pull origin live
-            echo ${{ secrets.PASSWORD }} | sudo -S npm install
-            echo ${{ secrets.PASSWORD }} | sudo -S npm run build
-            echo ${{ secrets.PASSWORD }} | sudo -S pm2 restart 5
+            # echo ${{ secrets.PASSWORD }} | sudo -S npm install
+            # echo ${{ secrets.PASSWORD }} | sudo -S npm run build
+            # echo ${{ secrets.PASSWORD }} | sudo -S pm2 restart 5
