@@ -1,0 +1,31 @@
+name: Build & Deploy Staging
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy_staging:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      - name: Build Staging Site
+        run: npm run build
+
+      - name: Deploy to Staging Server
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.HOST }} # Your staging server's IP address
+          username: ${{ secrets.USERNAME }} # Your staging server's username
+          key: ${{ secrets.SSH_PRIVATE_KEY }} # Your server's SSH private key
+          passphrase: ${{ secrets.SSH_PASSPHRASE }} # Your server's SSH passphrase
+
+          script: |
+            cd /home/react-live/thezurihotels
+            echo ${{ secrets.PASSWORD }} | sudo -S git pull origin main
+            echo ${{ secrets.PASSWORD }} | sudo -S npm install
+            echo ${{ secrets.PASSWORD }} | sudo -S npm run build
+            echo ${{ secrets.PASSWORD }} | sudo -S pm2 restart 5
