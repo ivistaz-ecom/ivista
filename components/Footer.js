@@ -159,18 +159,15 @@ function Footer() {
                   Careers
                 </Link>
 
-                {/* <li>
+                <li>
                   <Link
                     href="/contact-us"
                     className="text-decoration-none text-white custom-footer-font"
                   >
-                    Contact Us
+                    Contact
                   </Link>
-                </li> */}
+                </li>
 
-
-
-                
                 {/* <li>
                                     <Link href="/privacy-policy" className='text-decoration-none text-white custom-footer-font'>
                                         Privacy Policy
