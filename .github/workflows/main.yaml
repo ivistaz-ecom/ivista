@@ -31,9 +31,9 @@ jobs:
           passphrase: ${{ secrets.SSH_PASSPHRASE }} # Your server's SSH passphrase
 
           script: |
-            cd /home/react-staging/zurilive
-            echo ${{ secrets.PASSWORD }} | sudo -S git config --global --add safe.directory /home/react-staging/zurilive
-            echo ${{ secrets.PASSWORD }} | sudo -S git pull origin live
+            # cd /home/react-staging/zurilive
+            # echo ${{ secrets.PASSWORD }} | sudo -S git config --global --add safe.directory /home/react-staging/zurilive
+            # echo ${{ secrets.PASSWORD }} | sudo -S git pull origin live
             # echo ${{ secrets.PASSWORD }} | sudo -S npm install
             # echo ${{ secrets.PASSWORD }} | sudo -S npm run build
             # echo ${{ secrets.PASSWORD }} | sudo -S pm2 restart 5
