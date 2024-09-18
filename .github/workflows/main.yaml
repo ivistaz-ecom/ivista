@@ -1,27 +1,39 @@
-name: Build & Deploy
+name: Merge and Deploy to Live
 
 on:
-  push:
-    branches: [main]
-  workflow_dispatch: # Manual trigger  
+  workflow_dispatch: # Manual trigger
 
 jobs:
-  deploy:
+  merge_and_deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Deploy Staging Ivista
-        uses: appleboy/ssh-action@master
+      - name: Checkout Code
+        uses: actions/checkout@v3
 
+      - name: Configure Git
+        run: |
+          git config --global user.name 'jalal'
+          git config --global user.email 'jalal1985khan@gmail.com'
+
+      - name: Merge Main to Live
+        run: |
+          git fetch origin
+          git checkout live
+          git merge origin/main
+          git push origin live
+
+      - name: Deploy to Server
+        uses: appleboy/ssh-action@master
         with:
           host: ${{ secrets.HOST }} # Your server's IP address
           username: ${{ secrets.USERNAME }} # Your server's username
           key: ${{ secrets.SSH_PRIVATE_KEY }} # Your server's SSH private key
-          passphrase: ${{ secrets.SSH_PASSPHRASE }} # Your server's SSH password
+          passphrase: ${{ secrets.SSH_PASSPHRASE }} # Your server's SSH passphrase
 
           script: |
-            cd /home/react-staging/ivistaz
-            echo ${{ secrets.PASSWORD }} | sudo -S git config --global --add safe.directory /home/react-staging/ivistaz
-            echo ${{ secrets.PASSWORD }} | sudo -S git pull origin main
-            echo ${{ secrets.PASSWORD }} | sudo -S npm install
-            echo ${{ secrets.PASSWORD }} | sudo -S npm run build
-            echo ${{ secrets.PASSWORD }} | sudo -S pm2 restart 4
+            cd /home/react-staging/zurilive
+            echo ${{ secrets.PASSWORD }} | sudo -S git config --global --add safe.directory /home/react-staging/zurilive
+            echo ${{ secrets.PASSWORD }} | sudo -S git pull origin live
+            # echo ${{ secrets.PASSWORD }} | sudo -S npm install
+            # echo ${{ secrets.PASSWORD }} | sudo -S npm run build
+            # echo ${{ secrets.PASSWORD }} | sudo -S pm2 restart 5
