@@ -12,8 +12,8 @@ jobs:
 
       - name: Configure Git
         run: |
-          git config --global user.name 'jalal'
-          git config --global user.email 'jalal1985khan@gmail.com'
+          echo ${{ secrets.PASSWORD }} | sudo -S git config --global user.name 'jalal'
+          echo ${{ secrets.PASSWORD }} | sudo -S git config --global user.email 'jalal1985khan@gmail.com'
 
       - name: Merge Main to Live
         run: |
