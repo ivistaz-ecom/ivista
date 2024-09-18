@@ -27,10 +27,10 @@ jobs:
       - name: Deploy to Live Server
         uses: appleboy/ssh-action@master
         with:
-          host: ${{ secrets.LIVE_HOST }} # Your live server's IP address
-          username: ${{ secrets.LIVE_USERNAME }} # Your live server's username
-          key: ${{ secrets.LIVE_SSH_PRIVATE_KEY }} # Your live server's SSH private key
-          passphrase: ${{ secrets.LIVE_SSH_PASSPHRASE }} # Your live server's SSH passphrase
+          host: ${{ secrets.HOST }} # Your live server's IP address
+          username: ${{ secrets.USERNAME }} # Your live server's username
+          key: ${{ secrets.SSH_PRIVATE_KEY }} # Your live server's SSH private key
+          passphrase: ${{ secrets.SSH_PASSPHRASE }} # Your live server's SSH passphrase
 
           script: |
             cd home/react-staging/ivistalive
