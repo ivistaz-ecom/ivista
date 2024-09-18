@@ -1,4 +1,4 @@
-name: Merge and Deploy to Live
+- name: Merge and Deploy to Live
 
 on:
   workflow_dispatch: # Manual trigger
@@ -19,7 +19,7 @@ jobs:
         run: |
           git fetch origin main
           git checkout live
-          git merge origin/main
+          git merge origin/main --allow-unrelated-histories
           git push origin live
 
       - name: Deploy to Server
