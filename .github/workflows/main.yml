@@ -2,29 +2,25 @@ name: Build & Deploy Staging
 
 on:
   push:
-    branches:
-      - main
+    branches: [main]
+  workflow_dispatch: # Manual trigger
 
 jobs:
-  deploy_staging:
+  deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout Code
-        uses: actions/checkout@v3
-
-      - name: Build Staging Site
-        run: npm run build
-
-      - name: Deploy to Staging Server
+      - name: Deploy Staging iVista
         uses: appleboy/ssh-action@master
+
         with:
-          host: ${{ secrets.HOST }} # Your staging server's IP address
-          username: ${{ secrets.USERNAME }} # Your staging server's username
+          host: ${{ secrets.HOST }} # Your server's IP address
+          username: ${{ secrets.USERNAME }} # Your server's username
           key: ${{ secrets.SSH_PRIVATE_KEY }} # Your server's SSH private key
-          passphrase: ${{ secrets.SSH_PASSPHRASE }} # Your server's SSH passphrase
+          passphrase: ${{ secrets.SSH_PASSPHRASE }} # Your server's SSH password
 
           script: |
-            cd /home/react-live/thezurihotels
+            cd /home/react-staging/ivistaz
+            echo ${{ secrets.PASSWORD }} | sudo -S git config --global --add safe.directory /home/react-staging/ivistaz
             echo ${{ secrets.PASSWORD }} | sudo -S git pull origin main
             echo ${{ secrets.PASSWORD }} | sudo -S npm install
             echo ${{ secrets.PASSWORD }} | sudo -S npm run build
