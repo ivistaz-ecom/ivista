@@ -1,4 +1,4 @@
-- name: Merge and Deploy to Live
+name: Merge and Deploy to Live
 
 on:
   workflow_dispatch: # Manual trigger
@@ -12,14 +12,14 @@ jobs:
 
       - name: Configure Git
         run: |
-          echo ${{ secrets.PASSWORD }} | sudo -S git config --global user.name 'jalal'
-          echo ${{ secrets.PASSWORD }} | sudo -S git config --global user.email 'jalal1985khan@gmail.com'
+          git config --global user.name 'GitHub Actions'
+          git config --global user.email 'actions@github.com'
 
       - name: Merge Main to Live
         run: |
-          git fetch origin main
+          git fetch origin
           git checkout live
-          git merge origin/main --allow-unrelated-histories
+          git merge origin/main
           git push origin live
 
       - name: Deploy to Server
@@ -31,9 +31,9 @@ jobs:
           passphrase: ${{ secrets.SSH_PASSPHRASE }} # Your server's SSH passphrase
 
           script: |
-            # cd /home/react-staging/zurilive
-            # echo ${{ secrets.PASSWORD }} | sudo -S git config --global --add safe.directory /home/react-staging/zurilive
-            # echo ${{ secrets.PASSWORD }} | sudo -S git pull origin live
-            # echo ${{ secrets.PASSWORD }} | sudo -S npm install
-            # echo ${{ secrets.PASSWORD }} | sudo -S npm run build
-            # echo ${{ secrets.PASSWORD }} | sudo -S pm2 restart 5
+            cd /home/react-live/thezurihotels
+            echo ${{ secrets.PASSWORD }} | sudo -S git config --global --add safe.directory /home/react-live/thezurihotels
+            echo ${{ secrets.PASSWORD }} | sudo -S git pull origin live
+            echo ${{ secrets.PASSWORD }} | sudo -S npm install
+            echo ${{ secrets.PASSWORD }} | sudo -S npm run build
+            echo ${{ secrets.PASSWORD }} | sudo -S pm2 restart 5
