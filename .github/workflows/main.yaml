@@ -12,8 +12,8 @@ jobs:
 
       - name: Configure Git
         run: |
-          git config --global user.name 'jalal'
-          git config --global user.email 'jalal1985khan@gmail.com'
+          echo ${{ secrets.PASSWORD }} | sudo -S git config --global user.name 'jalal'
+          echo ${{ secrets.PASSWORD }} | sudo -S git config --global user.email 'jalal1985khan@gmail.com'
 
       - name: Merge Main to Live
         run: |
@@ -31,9 +31,9 @@ jobs:
           passphrase: ${{ secrets.SSH_PASSPHRASE }} # Your server's SSH passphrase
 
           script: |
-            cd /home/react-staging/zurilive
-            echo ${{ secrets.PASSWORD }} | sudo -S git config --global --add safe.directory /home/react-staging/zurilive
-            echo ${{ secrets.PASSWORD }} | sudo -S git pull origin live
+            # cd /home/react-staging/zurilive
+            # echo ${{ secrets.PASSWORD }} | sudo -S git config --global --add safe.directory /home/react-staging/zurilive
+            # echo ${{ secrets.PASSWORD }} | sudo -S git pull origin live
             # echo ${{ secrets.PASSWORD }} | sudo -S npm install
             # echo ${{ secrets.PASSWORD }} | sudo -S npm run build
             # echo ${{ secrets.PASSWORD }} | sudo -S pm2 restart 5
