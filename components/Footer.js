@@ -164,7 +164,7 @@ function Footer() {
                     href="/contact-us"
                     className="text-decoration-none text-white custom-footer-font"
                   >
-                    Contact
+                    Contact Us
                   </Link>
                 </li>
 
