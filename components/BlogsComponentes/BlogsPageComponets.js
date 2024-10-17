@@ -54,6 +54,7 @@ const BlogsPageComponets = () => {
                 >
                   <div className="iv-cards d-flex flex-column h-100">
                     <Image
+                      loading="lazy"
                       src={post.acf.thumbnail_image.url}
                       alt={post.title.rendered}
                       className="w-100"
