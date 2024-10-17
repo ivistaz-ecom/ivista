@@ -26,10 +26,11 @@ const Posts = ({ slug }) => {
             }
         };
 
-        if (slug) {
-            fetchData(); // Only fetch when slug is available
-        }
-    }, [slug, siteUrl]); // Add slug to the dependency array
+        // if (slug) {
+        //     fetchData(); // Only fetch when slug is available
+        // }
+        fetchData(); 
+    }, []); // Add slug to the dependency array
 
     return (
         <>
