@@ -48,6 +48,7 @@ const Posts = ({ slug }) => {
                                     </Link></p>
                             </div>
                             <Image
+                                loading="lazy"
                                 src={post.acf.desktop_banner_image.url}
                                 alt={post.title.rendered}
                                 className='w-100 img-fluid rounded-5'
