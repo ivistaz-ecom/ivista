@@ -18,6 +18,7 @@ const Posts = ({ slug }) => {
                 const result = await response.json();
                 if (result.length) {
                     setData(result); // Ensure the response is not empty
+                    setLoading(false);
                 }
                 setLoading(false); // Set loading to false once data is fetched
             } catch (error) {
