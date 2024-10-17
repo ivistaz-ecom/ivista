@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import { Col, Row, Container, Image } from "react-bootstrap";
 import Header1 from "../HeaderBlack";
 import { FaArrowRight } from "react-icons/fa";
+import Link from 'next/link'
 
 import ConfigData from "../../config";
 
@@ -54,6 +55,7 @@ const BlogsPageComponets = () => {
                 >
                   <div className="iv-cards d-flex flex-column h-100">
                     <Image
+                      loading="lazy"
                       src={post.acf.thumbnail_image.url}
                       alt={post.title.rendered}
                       className="w-100"
@@ -69,10 +71,10 @@ const BlogsPageComponets = () => {
 
                         <div className="mt-3 d-flex justify-content-between align-items-center">
                           <div>
-                            <a href={`/blogs/${post.slug}`} className="iv-link">
+                            <Link href={`/blogs/${post.slug}`} className="iv-link">
                               Read more{" "}
                               <FaArrowRight className="icons" size="25" />
-                            </a>
+                            </Link>
                           </div>
                           <div>
                             <p className="card-date mb-0">

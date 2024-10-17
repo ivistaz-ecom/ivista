@@ -3,49 +3,58 @@ import React, { useState, useEffect } from 'react'
 import { CiCircleChevRight } from "react-icons/ci";
 import Link from 'next/link';
 import ConfigData from '../../../../config'
-import { Container, Image, Row } from 'react-bootstrap';
+import { Container, Image } from 'react-bootstrap';
 
 const Posts = ({ slug }) => {
-
     const siteUrl = ConfigData.wpApiUrl;
-    const serverUrl = ConfigData.SERVER;
     const [data, setData] = useState(null); // Initialize data state with null initially
+    const [loading, setLoading] = useState(true); // Track loading state
 
     useEffect(() => {
         const fetchData = async () => {
+            setLoading(true); // Set loading to true at the start of fetching
             try {
                 const response = await fetch(`${siteUrl}/blogs?_embed&slug=${slug}`);
-                const data = await response.json();
-                setData(data);
-                // console.log(data);
+                const result = await response.json();
+                if (result.length) {
+                    setData(result); // Ensure the response is not empty
+                    setLoading(false);
+                }
+                setLoading(false); // Set loading to false once data is fetched
             } catch (error) {
                 console.error('Error fetching data:', error);
+                setLoading(false); // Handle error and stop loading
             }
         };
-        fetchData();
-    }, [siteUrl, serverUrl]);
+
+        // if (slug) {
+        //     fetchData(); // Only fetch when slug is available
+        // }
+        fetchData(); 
+    }, []); // Add slug to the dependency array
 
     return (
         <>
             <Container fluid className="w-80 custom-container">
-                {data ? ( // Check if data is available
+                {loading ? ( // Check if loading
+                    <div className='text-white'>Loading...</div>
+                ) : data && data.length ? ( // Check if data exists and map it
                     data.map((post) => (
-                        <div class=" d-flex flex-column" key={post.id}>
+                        <div className="d-flex flex-column" key={post.id}>
 
                             {/* Bread-crumb*/}
                             <div className='d-flex flex-row align-items-center mb-3 flex-nowrap'>
                                 <p>
-                                    <Link href="/blogs"
-                                        className='text-decoration-none '>
+                                    <Link href="/blogs" className='text-decoration-none '>
                                         <span className='fs-6 text-white mb-0 px-1'>Blogs</span>
                                     </Link>
                                     <span className='px-1'>
                                         <CiCircleChevRight fill='white' />
                                     </span>
-                                    <Link href=""
-                                        className='text-decoration-none px-1'>
+                                    <Link href="" className='text-decoration-none px-1'>
                                         <span className='fs-6 text-decoration-none text-white mb-0' dangerouslySetInnerHTML={{ __html: post.title.rendered }} />
-                                    </Link></p>
+                                    </Link>
+                                </p>
                             </div>
                             <Image
                                 loading="lazy"
@@ -55,14 +64,13 @@ const Posts = ({ slug }) => {
                             />
 
                             <Container className='py-5'>
-                                <div class="card-body text-white d-flex flex-column justify-content-between">
-
-                                    <h5 class="card-title fs-22 pb-3"
+                                <div className="card-body text-white d-flex flex-column justify-content-between">
+                                    <h5 className="card-title fs-22 pb-3"
                                         dangerouslySetInnerHTML={{ __html: post.title.rendered }}
                                     />
                                     <div className='d-flex flex-column'>
                                         <div>
-                                            <p class="card-text para-text" dangerouslySetInnerHTML={{ __html: post.content.rendered }} />
+                                            <p className="card-text para-text" dangerouslySetInnerHTML={{ __html: post.content.rendered }} />
                                         </div>
                                     </div>
                                 </div>
@@ -70,11 +78,11 @@ const Posts = ({ slug }) => {
                         </div>
                     ))
                 ) : (
-                    <div className='text-white'>Loading...</div> // Render loading message while data is being fetched
+                    <div className='text-white'>No posts found.</div> // Handle case where no data is found
                 )}
             </Container>
         </>
-    )
+    );
 }
 
-export default Posts
+export default Posts;
