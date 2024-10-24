@@ -9,36 +9,39 @@ const Posts = ({ slug }) => {
     const siteUrl = ConfigData.wpApiUrl;
     const [data, setData] = useState(null); // Initialize data state with null initially
     const [loading, setLoading] = useState(true); // Track loading state
-
+    const serverUrl = ConfigData.SERVER;
+  
     useEffect(() => {
         const fetchData = async () => {
-            setLoading(true); // Set loading to true at the start of fetching
             try {
                 const response = await fetch(`${siteUrl}/blogs?_embed&slug=${slug}`);
-                const result = await response.json();
-                if (result.length) {
-                    setData(result); // Ensure the response is not empty
-                    setLoading(false);
-                }
-                setLoading(false); // Set loading to false once data is fetched
+                const data = await response.json();
+                setData(data);
+                console.log(data);
             } catch (error) {
                 console.error('Error fetching data:', error);
-                setLoading(false); // Handle error and stop loading
             }
         };
-
-        // if (slug) {
-        //     fetchData(); // Only fetch when slug is available
-        // }
-        fetchData(); 
-    }, []); // Add slug to the dependency array
+        fetchData();
+    }, [siteUrl, serverUrl, slug]);
 
     return (
         <>
+         {data ? (
+                data.map((post) => (
+                    <React.Fragment key={post.id}>
+                        <title>{post.acf.meta_title}</title>
+                        <meta name="description" content={post.acf.meta_description_} />
+                        <meta name="robots" content="index,follow"></meta>
+                        <meta name="viewport" content="width=device-width, initial-scale=1" />
+                        <meta property="article:modified_time" content="2023-07-06T15:35:40+00:00" />
+                    </React.Fragment>
+                ))
+            ) : (
+                <div className='text-white'>Loading...</div>
+            )}
             <Container fluid className="w-80 custom-container">
-                {loading ? ( // Check if loading
-                    <div className='text-white'>Loading...</div>
-                ) : data && data.length ? ( // Check if data exists and map it
+                {data ? ( 
                     data.map((post) => (
                         <div className="d-flex flex-column" key={post.id}>
 

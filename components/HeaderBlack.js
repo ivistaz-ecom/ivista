@@ -21,7 +21,7 @@ function Header1({ setChatVisible }) {
   const handleMouseEnter = () => {
     clearTimeout(timeoutRef.current);
     setShow(true);
-    setChatVisible(false);  // Hide the chat script when the menu is opened
+    // setChatVisible(false); 
   };
 
   const handleMouseLeave = () => {
