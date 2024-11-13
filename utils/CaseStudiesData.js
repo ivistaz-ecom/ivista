@@ -24,7 +24,7 @@ export const caseStudiesData = [
     id: 3,
     link: "/case-studies/thought-leadership-content-development-for-a-global-b2b-hi-tech-company",
     stats: "50",
-    title: "Strategic Thought Leadership Assets",
+    title: "Thought Leadership Assets",
     description: "For a global B2B Hi-Tech Company",
     buttonText: "Read More",
     image: "/images/magnet.svg",
