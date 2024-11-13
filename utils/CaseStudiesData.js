@@ -15,7 +15,7 @@ export const caseStudiesData = [
     link: "/case-studies/b2b-lead-gen-case-study-delivering-outcomes-with-paid-marketing-for-a-global-retail-giants-csr-project",
     stats: "93,345",
     title: "Unique Leads in 12 Months",
-    description: "For a Global Retail Corporation's MSME CSR Project",
+    description: "For a Global Retail Corporation's MSME CSR Project  ",
     buttonText: "Read More",
     image: "/images/magnet.svg",
   },
@@ -24,7 +24,7 @@ export const caseStudiesData = [
     id: 3,
     link: "/case-studies/thought-leadership-content-development-for-a-global-b2b-hi-tech-company",
     stats: "50",
-    title: "Strategic Thought Leadership Assets",
+    title: "Thought Leadership Assets",
     description: "For a global B2B Hi-Tech Company",
     buttonText: "Read More",
     image: "/images/magnet.svg",
@@ -40,6 +40,8 @@ export const caseStudiesData = [
     image: "/images/search.svg",
   },
 
+
+  
   {
     id: 5,
     link: "/case-studies/online-sales-success-for-a-leading-kitchen-appliance-brand",

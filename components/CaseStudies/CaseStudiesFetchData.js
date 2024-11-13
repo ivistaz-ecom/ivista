@@ -6,7 +6,7 @@ import { caseStudiesData } from "../../utils/CaseStudiesData";
 
 const CaseStudiesFetchData = () => {
   return (
-    <Container className="w-80 custom-container">
+    <Container className="w-80 custom-container mb-5">
       {/* Bread-crumb */}
       <div className="d-flex flex-row align-items-center mb-3 flex-nowrap ">
         <p>
