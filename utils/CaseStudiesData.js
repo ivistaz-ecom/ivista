@@ -15,7 +15,7 @@ export const caseStudiesData = [
     link: "/case-studies/b2b-lead-gen-case-study-delivering-outcomes-with-paid-marketing-for-a-global-retail-giants-csr-project",
     stats: "93,345",
     title: "Unique Leads in 12 Months",
-    description: "For a Global Retail Corporation's MSME CSR Project",
+    description: "For a Global Retail Corporation's MSME CSR Project  ",
     buttonText: "Read More",
     image: "/images/magnet.svg",
   },
