@@ -40,6 +40,8 @@ export const caseStudiesData = [
     image: "/images/search.svg",
   },
 
+
+  
   {
     id: 5,
     link: "/case-studies/online-sales-success-for-a-leading-kitchen-appliance-brand",
