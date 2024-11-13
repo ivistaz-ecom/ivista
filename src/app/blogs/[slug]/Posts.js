@@ -81,7 +81,7 @@ const Posts = ({ slug }) => {
                         </div>
                     ))
                 ) : (
-                    <div className='text-white'>No posts found.</div> // Handle case where no data is found
+                    <div className='text-white'>Loading...</div> // Handle case where no data is found
                 )}
             </Container>
         </>
