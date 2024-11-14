@@ -109,7 +109,7 @@ export const caseStudiesData = [
   {
     id: 12,
     link: "/case-studies/luxury-automobile-dealership-case-study-cost-optimization-and-sales-conversion",
-    stats: "in 14",
+    stats: "1 in 14",
     title: " Lead Conversion and Cost per Lead Reduced (CPL) to Rs.1,292",
     description: " Cost optimization for a Luxury Automobile Dealership",
     buttonText: "Read More",
