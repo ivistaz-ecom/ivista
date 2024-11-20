@@ -29,7 +29,7 @@ function NextSeo({ title, description, path, metaImage }) {
                     __html: JSON.stringify({
                         "@context": "https://schema.org/",
                         "@type": "WebSite",
-                        "name": "ivista",
+                        "name": "ivistaz",
                         "url": `${config.mainWebUrl}${path}`,
                         "potentialAction": {
                             "@type": "SearchAction",
