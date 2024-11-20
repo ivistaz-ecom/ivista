@@ -4,6 +4,7 @@ import Head from 'next/head';
 import config from '../../config';
 
 function NextSeo({ title, description, path, metaImage }) {
+
     return (
         <head>
             <meta charSet="utf-8" />
@@ -28,11 +29,11 @@ function NextSeo({ title, description, path, metaImage }) {
                     __html: JSON.stringify({
                         "@context": "https://schema.org/",
                         "@type": "WebSite",
-                        "name": "thezurihotels",
-                        "url": path,
+                        "name": "ivista",
+                        "url": `${config.mainWebUrl}${path}`,
                         "potentialAction": {
                             "@type": "SearchAction",
-                            "target": `${path}{search_term_string}`,
+                            "target": `${config.mainWebUrl}${path}/{search_term_string}`,
                             "query-input": "required name=search_term_string"
                         }
                     })
