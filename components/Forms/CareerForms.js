@@ -21,6 +21,8 @@ const CareerForms = () => {
   const [formSubmitted, setFormSubmitted] = useState(false); // New state for form submission
 
   const options = [
+    { value: 'Team Lead - Full Stack Developer', label: 'Team Lead - Full Stack Developer' },
+    { value: 'Creative Lead', label: 'Creative Lead' },
     { value: 'SEO & Social Media Executive', label: 'SEO & Social Media Executive' },
     // { value: "Account Manager", label: "Account Manager" },
     { value: "Inside Sales Executive", label: "Inside Sales Executive" },
