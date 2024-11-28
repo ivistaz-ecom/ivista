@@ -14,14 +14,14 @@ const SocialMediaMarketingContent = () => {
                 <article>
                     <div className='timeline1'>
                         {/* <h1 className='fs-3 text-red fw-bold ps-7 position-relative'>
-                            <div class="timeline-badge1"></div>
+                            <div className="timeline-badge1"></div>
                             <Container className='w-80 px-0'>
                                 Social Media Marketing
                             </Container>
                         </h1> */}
 
                         <Col className='position-relative'>
-                            <div class="timeline-badge1"></div>
+                            <div className="timeline-badge1"></div>
                             <Container className='w-80 ps-7 pe-lg-0 pe-4'>
                                 <p className="text-black para-text fw-bold">
                                     “Social media is not just a spoke on the wheel of marketing. It’s becoming the way entire bicycles are built.” – Ryan Lilly, Author, Entrepreneur, Kauffman Foundation
@@ -40,7 +40,7 @@ const SocialMediaMarketingContent = () => {
                         </Col>
 
                         <Col className='position-relative'>
-                            <div class="timeline-badge1"></div>
+                            <div className="timeline-badge1"></div>
                             <Container className='w-80 ps-7'>
                                 <h1 className='fs-5 text-red fw-bold'>
                                     Leads, online sales, enquiries, room bookings - what goals do you want to achieve with social media marketing?
@@ -53,7 +53,7 @@ const SocialMediaMarketingContent = () => {
                         </Col>
 
                         {/* <Col className='position-relative mb-5'>
-                            <div class="timeline-badge1"></div>
+                            <div className="timeline-badge1"></div>
                             <Container className='w-80 ps-7'>
                                 <h1 className='fs-5 text-red fw-bold'>
                                 <Link href="/contact-us" className='red'> Contact us</Link> today.

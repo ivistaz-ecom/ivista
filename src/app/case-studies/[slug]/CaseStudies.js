@@ -29,7 +29,7 @@ const CaseStudies = () => {
             <Container fluid className="w-80 custom-container">
                 {data ? ( // Check if data is available
                     data.map((post) => (
-                        <div class=" d-flex flex-column min-vh-100" key={post.id}>
+                        <div className=" d-flex flex-column min-vh-100" key={post.id}>
                             {/* <Image
                                 src={post.acf.desktop_banner_image.url}
                                 alt={post.title.rendered}
@@ -37,14 +37,14 @@ const CaseStudies = () => {
                             /> */}
 
                             <Container className='py-5'>
-                                <div class="card-body text-white d-flex flex-column justify-content-between">
+                                <div className="card-body text-white d-flex flex-column justify-content-between">
 
-                                    <h5 class="card-title fs-22 pb-3">
+                                    <h5 className="card-title fs-22 pb-3">
                                         {post.title.rendered}
                                     </h5>
                                     <div className='d-flex flex-column'>
                                         <div>
-                                            <p class="card-text" dangerouslySetInnerHTML={{ __html: post.content.rendered }} />
+                                            <p className="card-text" dangerouslySetInnerHTML={{ __html: post.content.rendered }} />
                                         </div>
                                     </div>
                                 </div>

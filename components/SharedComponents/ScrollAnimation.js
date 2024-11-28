@@ -107,8 +107,8 @@ const ScrollAnimation = () => {
     }, []);
 
     return (
-        <div class="KW_progressContainer">
-            <div class="KW_progressBar">
+        <div className="KW_progressContainer">
+            <div className="KW_progressBar">
             </div>
         </div>
     ); // This component doesn't render anything visible

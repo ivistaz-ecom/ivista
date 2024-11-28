@@ -14,7 +14,7 @@ const SearchEngineOptimizationContent = () => {
                 <article>
                     <div className='timeline1'>
                         {/* <h1 className='fs-3 text-red fw-bold ps-lg-0 ps-7 px-0 position-relative'>
-                            <div class="timeline-badge1"></div>
+                            <div className="timeline-badge1"></div>
                             <Container className='w-80 ps-7'>
                                 Search Engine Optimization
                             </Container>
@@ -22,7 +22,7 @@ const SearchEngineOptimizationContent = () => {
 
 
                         <Col className='position-relative'>
-                            <div class="timeline-badge1"></div>
+                            <div className="timeline-badge1"></div>
                             <Container className='w-80 ps-7 pe-lg-0 pe-3'>
                                 <p className="text-black para-text fw-semibold">
                                     If your company, product, or service does not show up in the top 10 search results, that enquiry, lead, or sale is going to your competitor. That’s why SEO is crucial for your business.
@@ -59,7 +59,7 @@ const SearchEngineOptimizationContent = () => {
                         </Col>
 
                         <div className='position-relative mt-2'>
-                            <div class="timeline-badge1"></div>
+                            <div className="timeline-badge1"></div>
                             <Container className='w-80 ps-7'>
                                 <h1 className='para-text text-red fw-bold pb-5'>
                                     Elevate your business with proven SEO strategies. <Link href="/contact-us" className='red'>Contact us</Link> today to start seeing real results.

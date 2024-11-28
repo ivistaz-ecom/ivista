@@ -106,7 +106,7 @@ function IhomePage() {
             <h2 className="text-white fs-80 fw-bold">MASTERY AND ART</h2>
             <Col className="d-flex flex-column justify-content-center align-items-center pb-4">
               <Link href="" onClick={handleScrollToResults}>
-                <div class="scroll-down cursor-pointer"></div>
+                <div className="scroll-down cursor-pointer"></div>
               </Link>
             </Col>
           </Col>

@@ -203,13 +203,13 @@ export default CaseStudiesCategoriesComponents
                 className='w-100 img-fluid'
                 width={200}
             />
-            <div class="card-body d-flex flex-column justify-content-between mb-0">
+            <div className="card-body d-flex flex-column justify-content-between mb-0">
                 <div>
-                    <div class="card-title" dangerouslySetInnerHTML={{ __html: items.title.rendered }} />
-                    <p class="card-text three-line-show" dangerouslySetInnerHTML={{ __html: items.excerpt.rendered }} />
+                    <div className="card-title" dangerouslySetInnerHTML={{ __html: items.title.rendered }} />
+                    <p className="card-text three-line-show" dangerouslySetInnerHTML={{ __html: items.excerpt.rendered }} />
                 </div>
                 <div className='mt-3'>
-                    <div class="iv-link cursor-pointer d-inline-block" onClick={() => handleShowModal(items)}>
+                    <div className="iv-link cursor-pointer d-inline-block" onClick={() => handleShowModal(items)}>
                         Read more
                         <FaArrowRight className="icons" />
                     </div>
@@ -219,9 +219,9 @@ export default CaseStudiesCategoriesComponents
     ))
 ) : (
     <div className='text-white'>
-        <div class="spinner-border text-danger" role="status">
+        <div className="spinner-border text-danger" role="status">
         </div>
-        <span class=" text-white">Loading...</span>
+        <span className=" text-white">Loading...</span>
     </div>
 )}
 </Col>

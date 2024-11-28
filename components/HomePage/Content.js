@@ -242,7 +242,7 @@ export default HomePage
 
 //           <Col className="d-flex flex-column justify-content-center align-items-center">
 //             <h2 className="text-white fs-60 fw-bold">WHAT DOES</h2>
-//             <div class="animate seven text-white fs-70 fw-bold">
+//             <div className="animate seven text-white fs-70 fw-bold">
 //               <span>P</span><span>E</span><span>R</span><span>F</span>
 //               <span>O</span><span>R</span><span>M</span><span>A</span><span>N</span><span>C</span><span>E</span>
 //             </div>
@@ -253,7 +253,7 @@ export default HomePage
 //             {/* <div className='icon-scroll mb-1' onClick={handleScroll}> */}
 //             <div className='' onClick={() => setShowSecondSection(true)}>
 //             </div>
-//             <div class="scroll-down cursor-pointer" onClick={() => setShowSecondSection(true)}></div>
+//             <div className="scroll-down cursor-pointer" onClick={() => setShowSecondSection(true)}></div>
 //           </Col>
 //         </Row>
 //       </Container>
@@ -262,7 +262,7 @@ export default HomePage
 //         <Row className="d-flex flex-column align-items-center justify-content-between min-vh-100">
 //           <Col className="d-flex flex-column justify-content-center align-items-center p-0">
 //             <h2 className="text-white fs-60 fw-bold">WHAT DOES</h2>
-//             <div class="animate seven text-white fs-70 fw-bold">
+//             <div className="animate seven text-white fs-70 fw-bold">
 //               <span>P</span><span>E</span><span>R</span><span>F</span>
 //               <span>O</span><span>R</span><span>M</span><span>A</span><span>N</span><span>C</span><span>E</span>
 //             </div>
@@ -380,7 +380,7 @@ export default HomePage
 //               <>
 //                 <Col className="d-flex flex-column justify-content-center align-items-center">
 //                   <h2 className="text-white fs-60 fw-bold">WHAT DOES</h2>
-//                   <div class=" text-white fs-70 fw-bold">
+//                   <div className=" text-white fs-70 fw-bold">
 //                     PERFORMANCE
 //                   </div>
 //                   <h2 className="text-white fs-60 fw-bold"> MEAN TO YOU?</h2>
@@ -427,7 +427,7 @@ export default HomePage
 //             ) : (
 //               <Col className="d-flex flex-column justify-content-center align-items-center">
 //                 <h2 className="text-white fs-60 fw-bold">WHAT DOES</h2>
-//                 <div class="animate seven text-white fs-70 fw-bold">
+//                 <div className="animate seven text-white fs-70 fw-bold">
 //                   <span>P</span><span>E</span><span>R</span><span>F</span>
 //                   <span>O</span><span>R</span><span>M</span><span>A</span><span>N</span><span>C</span><span>E</span>
 //                 </div>
@@ -435,7 +435,7 @@ export default HomePage
 
 //                 <div className='icon-scroll mb-1' onClick={handleScroll}>
 //                 </div>
-//                 <div class="scroll-down"></div>
+//                 <div className="scroll-down"></div>
 
 //               </Col>
 //             )

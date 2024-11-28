@@ -108,7 +108,7 @@ const CareerCom = () => {
                                             </div>
                                         </Col>
                                         <Col lg={12} className='d-flex flex-column justify-content-start align-items-start p-3'>
-                                            <button type="button" class="btn btn-16 z-0 ms-5 py-2 " onClick={() => handleShowModal(item)}>Apply</button>
+                                            <button type="button" className="btn btn-16 z-0 ms-5 py-2 " onClick={() => handleShowModal(item)}>Apply</button>
                                         </Col>
                                     </Row>
                                 </>
@@ -129,7 +129,7 @@ const CareerCom = () => {
                 <Col className='text-center'>
                     {data.length > visibleItems && (
                         // <Button className="bg-red-btn cursor-pointer" >Load More</Button>
-                        <button type="button" class="btn btn-15 my-5" onClick={handleLoadMore}>Load More</button>
+                        <button type="button" className="btn btn-15 my-5" onClick={handleLoadMore}>Load More</button>
                     )}
                 </Col>
                 <Row>

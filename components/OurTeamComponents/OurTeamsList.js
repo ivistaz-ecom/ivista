@@ -161,7 +161,7 @@ const OurTeamsList = () => {
                           fluid
                           className="rounded-4 z-1"
                         />
-                        <div class="overlay"></div>
+                        <div className="overlay"></div>
                       </div>
                       <div>
                         <h4 className="text-white mb-0 ">
@@ -194,7 +194,7 @@ const OurTeamsList = () => {
                           fluid
                           className="rounded-4 z-1"
                         />
-                        <div class="overlay"></div>
+                        <div className="overlay"></div>
                       </div>
                       <div>
                         <h4 className="text-white mb-0 ">
@@ -227,7 +227,7 @@ const OurTeamsList = () => {
                           fluid
                           className="rounded-4 z-1"
                         />
-                        <div class="overlay"></div>
+                        <div className="overlay"></div>
                       </div>
                       <div>
                         <h4 className="text-white mb-0">
@@ -275,7 +275,7 @@ const OurTeamsList = () => {
                           fluid
                           className="rounded-4 z-1"
                         />
-                        <div class="overlay"></div>
+                        <div className="overlay"></div>
                       </div>
                       <div>
                         <h4 className="text-white mb-0 ">
@@ -323,7 +323,7 @@ const OurTeamsList = () => {
                           fluid
                           className="rounded-4 z-1"
                         />
-                        <div class="overlay"></div>
+                        <div className="overlay"></div>
                       </div>
                       <div>
                         <h4 className="text-white mb-0 ">
@@ -356,7 +356,7 @@ const OurTeamsList = () => {
                           fluid
                           className="rounded-4 z-1"
                         />
-                        <div class="overlay"></div>
+                        <div className="overlay"></div>
                       </div>
                       <div>
                         <h4 className="text-white mb-0 ">
@@ -389,7 +389,7 @@ const OurTeamsList = () => {
                           fluid
                           className="rounded-4 z-1"
                         />
-                        <div class="overlay"></div>
+                        <div className="overlay"></div>
                       </div>
                       <div>
                         <h4 className="text-white mb-0 ">
@@ -422,7 +422,7 @@ const OurTeamsList = () => {
                           fluid
                           className="rounded-4 z-1"
                         />
-                        <div class="overlay"></div>
+                        <div className="overlay"></div>
                       </div>
                       <div>
                         <h4 className="text-white mb-0 ">

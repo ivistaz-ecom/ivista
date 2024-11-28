@@ -108,8 +108,8 @@ const ScrollAnimationPerformance = () => {
     }, []);
 
     return (
-        <div class="KW_progressContainer5">
-            <div class="KW_progressBar5">
+        <div className="KW_progressContainer5">
+            <div className="KW_progressBar5">
             </div>
         </div>
     );

@@ -64,13 +64,13 @@
 //               <h2 className="text-white fs-80 fw-bold">BACKED BY</h2>
 //               <h2 className="text-white fs-80 fw-bold">MASTERY AND ART</h2>
 //               {/* <div className='icon-scroll' onClick={handleScrollToResults}></div>
-//             <div class="scroll-down"></div> */}
+//             <div className="scroll-down"></div> */}
 
 //               <Col className="d-flex flex-column justify-content-center align-items-center pb-4">
 //                 {/* <div className='icon-scroll mb-1' onClick={handleScroll}> */}
 //                 <div className='' onClick={handleScrollToResults}>
 //                 </div>
-//                 <div class="scroll-down cursor-pointer" onClick={handleScrollToResults}></div>
+//                 <div className="scroll-down cursor-pointer" onClick={handleScrollToResults}></div>
 //               </Col>
 //             </Col>
 //           </Row>
