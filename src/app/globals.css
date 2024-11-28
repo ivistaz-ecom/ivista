@@ -2383,29 +2383,7 @@ background: rgba(255, 255, 255, 0) !important; */
 }
 
 /* Home page enter website button */
-.demo {
-  position: fixed;
-  top: 25px;
-  z-index: 99;
-  right: 100px;
-  background: #ffffff;
-  padding: 12px;
-  color: #000000;
-  text-decoration: none;
-  cursor: pointer;
-  -webkit-transition: -webkit-transform ease-out 0.1s, background 0.2s;
-  -moz-transition: -moz-transform ease-out 0.1s, background 0.2s;
-  transition: transform ease-out 0.1s, background 0.2s;
-  font-size: 13px;
-  font-family: "monument regular", sans-serif;
-  font-weight: 500;
-}
 
-.demo:hover {
-  background: #ffffff;
-  color: #000000;
-  box-shadow: 0 0 10px 2px #ffffff;
-}
 
 .font-size {
   font-size: 60px;
@@ -2463,9 +2441,7 @@ background: rgba(255, 255, 255, 0) !important; */
 
 /************| Mobile view |************/
 @media(max-width:767px) {
-  .demo {
-    display: none;
-  }
+
 
   .font-size {
     font-size: 40px;
