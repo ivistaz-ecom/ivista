@@ -13,13 +13,13 @@ const SearchEngineMarketingContent = () => {
                 <article>
                     <div className='timeline1'>
                         {/* <h1 className='fs-3 text-red fw-bold  position-relative'>
-                            <div class="timeline-badge1"></div>
+                            <div className="timeline-badge1"></div>
                             <Container className='w-80 ps-7'>
                                 Search Engine Marketing
                             </Container>
                         </h1> */}
                         <Col className='position-relative'>
-                            <div class="timeline-badge1"></div>
+                            <div className="timeline-badge1"></div>
                             <Container className='w-80 ps-7 pe-lg-0 pe-3'>
                                
                                 <p className="text-black para-text fw-semibold">
@@ -48,7 +48,7 @@ const SearchEngineMarketingContent = () => {
                         </Col>
 
                         <div className='position-relative mb-5 '>
-                            <div class="timeline-badge1"></div>
+                            <div className="timeline-badge1"></div>
                             <Container className='w-80 ps-7'>
                                 <h1 className='fs-5 text-red fw-bold'>
                                     Need help with your Search Engine Marketing? <Link href="/contact-us" className='red'> Contact us</Link> today.

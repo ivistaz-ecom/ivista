@@ -43,7 +43,7 @@
 //             <Col>
 //                 {data.slice(0, visibleItems).map((item) => (
 //                     <Col className='list-group mb-2' key={item.id} style={{ borderBottom: '3px dotted white' }}>
-//                         <Link href={`/case-studies/${item.slug}`} class="iv-link">
+//                         <Link href={`/case-studies/${item.slug}`} className="iv-link">
 //                             <div className="list-group-item d-flex justify-content-between align-items-center">
 //                                 <div className="ms-2 me-auto">
 //                                     <p className="fw-bold fs-3 m-3 text-white" dangerouslySetInnerHTML={{ __html: item.title.rendered }} />
@@ -61,7 +61,7 @@
 //             <Col className='text-center'>
 //                 {data.length > visibleItems && (
 //                     // <Button className="bg-red-btn cursor-pointer" >Load More</Button>
-//                     <button type="button" class="btn btn-15 my-5" onClick={handleLoadMore}>Load More</button>
+//                     <button type="button" className="btn btn-15 my-5" onClick={handleLoadMore}>Load More</button>
 //                 )}
 //             </Col>
 

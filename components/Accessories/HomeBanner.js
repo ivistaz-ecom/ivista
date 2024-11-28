@@ -63,32 +63,32 @@ function HeroBanner() {
       <Container className="w-80">
         <Row>
           <Col sm={12} lg={4}>
-            <div class="iv-cards">
-              <Image src="/images/1.jpg" class="card-img-top w-100 h-100 img-r" alt="..." width={200} height={200} />
-              <div class="card-body">
-                <h5 class="card-title">DIGITAL MARKETING ROUNDUP JANUARY 2022</h5>
-                <p class="card-text">In the January version of Digital Marketing Roundup, we provide the latest news and updates from the Digital marketing indust…</p>
-                <a href="#" class="iv-link">Read more <FaArrowRight className="icons" /></a>
+            <div className="iv-cards">
+              <Image src="/images/1.jpg" className="card-img-top w-100 h-100 img-r" alt="..." width={200} height={200} />
+              <div className="card-body">
+                <h5 className="card-title">DIGITAL MARKETING ROUNDUP JANUARY 2022</h5>
+                <p className="card-text">In the January version of Digital Marketing Roundup, we provide the latest news and updates from the Digital marketing indust…</p>
+                <a href="#" className="iv-link">Read more <FaArrowRight className="icons" /></a>
               </div>
             </div>
           </Col>
           <Col>
-            <div class="iv-cards">
-              <Image src="/images/2.jpg" class="card-img-top w-100 h-100 img-r" alt="..." width={200} height={200} />
-              <div class="card-body">
-                <h5 class="card-title">DIGITAL MARKETING ROUNDUP DECEMBER 2021</h5>
-                <p class="card-text">In the December version of Digital Marketing Roundup, we provide the latest news and updates from the Digital marketing indus…</p>
-                <a href="#" class="iv-link">Read more <FaArrowRight className="icons" /></a>
+            <div className="iv-cards">
+              <Image src="/images/2.jpg" className="card-img-top w-100 h-100 img-r" alt="..." width={200} height={200} />
+              <div className="card-body">
+                <h5 className="card-title">DIGITAL MARKETING ROUNDUP DECEMBER 2021</h5>
+                <p className="card-text">In the December version of Digital Marketing Roundup, we provide the latest news and updates from the Digital marketing indus…</p>
+                <a href="#" className="iv-link">Read more <FaArrowRight className="icons" /></a>
               </div>
             </div>
           </Col>
           <Col>
-            <div class="iv-cards">
-              <Image src="/images/3.jpg" class="card-img-top w-100 h-100 img-r" alt="..." width={200} height={200} />
-              <div class="card-body">
-                <h5 class="card-title">CROWDS VERSUS COMMUNITIES: A QUICK GUIDE FOR THE PERPLEXED</h5>
-                <p class="card-text">The wisdom of the crowd is one of the tenets of Web 2.0. It’s the belief that the aggregated opinions of a large group of people will be as g…</p>
-                <a href="#" class="iv-link">Read more <FaArrowRight className="icons" /></a>
+            <div className="iv-cards">
+              <Image src="/images/3.jpg" className="card-img-top w-100 h-100 img-r" alt="..." width={200} height={200} />
+              <div className="card-body">
+                <h5 className="card-title">CROWDS VERSUS COMMUNITIES: A QUICK GUIDE FOR THE PERPLEXED</h5>
+                <p className="card-text">The wisdom of the crowd is one of the tenets of Web 2.0. It’s the belief that the aggregated opinions of a large group of people will be as g…</p>
+                <a href="#" className="iv-link">Read more <FaArrowRight className="icons" /></a>
               </div>
             </div>
           </Col>

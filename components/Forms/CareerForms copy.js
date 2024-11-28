@@ -53,21 +53,21 @@ const CareerForms = () => {
     return (
         <>
             <Container>
-                <form class="row z-index-100">
-                    <div class="mb-3">
-                        <label for="formFile" class="form-label text-black">Full Name *</label>
-                        <input class="form-control" type="text" id="formFile" />
+                <form className="row z-index-100">
+                    <div className="mb-3">
+                        <label for="formFile" className="form-label text-black">Full Name *</label>
+                        <input className="form-control" type="text" id="formFile" />
                     </div>
-                    <div class="mb-3">
-                        <label for="formFile" class="form-label text-black">Mobile Number *</label>
-                        <input class="form-control" type="text" id="formFile" />
+                    <div className="mb-3">
+                        <label for="formFile" className="form-label text-black">Mobile Number *</label>
+                        <input className="form-control" type="text" id="formFile" />
                     </div>
-                    <div class="mb-3">
-                        <label for="formFile" class="form-label text-black">Email *</label>
-                        <input class="form-control" type="text" id="formFile" />
+                    <div className="mb-3">
+                        <label for="formFile" className="form-label text-black">Email *</label>
+                        <input className="form-control" type="text" id="formFile" />
                     </div>
-                    <div class="mb-3">
-                        <label for="formFile" class="form-label w-100 text-black">Job Type</label>
+                    <div className="mb-3">
+                        <label for="formFile" className="form-label w-100 text-black">Job Type</label>
 
                         <select value={selectedOption} onChange={handleChange} className='w-100 p-2 rounded-3'>
                             <option value="">Job Type</option>
@@ -78,8 +78,8 @@ const CareerForms = () => {
                             ))}
                         </select>
                     </div>
-                    <div class="mb-3">
-                        <label for="formFile" accept=".pdf,.doc,.docx" class="form-label w-100 text-black">Attach your CV </label>
+                    <div className="mb-3">
+                        <label for="formFile" accept=".pdf,.doc,.docx" className="form-label w-100 text-black">Attach your CV </label>
                         <input type="file" onChange={handleFileChange} />
                         {errorMessage && <p style={{ color: 'red' }}>{errorMessage}</p>}
                         {selectedFile && (
@@ -89,8 +89,8 @@ const CareerForms = () => {
                             </div>
                         )}
                     </div>
-                    <div class="mb-3 text-center">
-                        <button type="button" class="btn btn-15 bg-black text-white">Submit</button>
+                    <div className="mb-3 text-center">
+                        <button type="button" className="btn btn-15 bg-black text-white">Submit</button>
                     </div>
                 </form>
             </Container>

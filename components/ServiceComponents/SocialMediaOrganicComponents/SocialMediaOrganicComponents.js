@@ -13,7 +13,7 @@ const SocialMediaOrganicComponents = () => {
                 <article>
                     <div className='timeline1'>
                         {/* <div className='position-relative '>
-                            <div class="timeline-badge1"></div>
+                            <div className="timeline-badge1"></div>
                             <Container className='w-80 px-0'>
                                 <h1 className='fs-3 text-red fw-bold ps-7'>
                                     Organic Social Media
@@ -21,7 +21,7 @@ const SocialMediaOrganicComponents = () => {
                             </Container>
                         </div> */}
                         <Col className='position-relative'>
-                            <div class="timeline-badge1"></div>
+                            <div className="timeline-badge1"></div>
                             <Container className='w-80 ps-7 pe-lg-0 pe-3    '>
                                 <p className="text-black para-text fw-semibold">
                                 “Social media is the modern-day word of mouth. It can make or break a brand, so it’s crucial to use it wisely.” – Daniel Zhang, CEO of Alibaba Group

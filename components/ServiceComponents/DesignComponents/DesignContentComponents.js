@@ -15,14 +15,14 @@ const DesignContentComponents = () => {
                 <article>
                     <div className='timeline1'>
                         {/* <h1 className='fs-4 text-red fw-bold ps-7 position-relative'>
-                            <div class="timeline-badge1"></div>
+                            <div className="timeline-badge1"></div>
                             <Container className='w-80'>
                                 Design
                             </Container>
                         </h1> */}
 
                         <Col className='position-relative'>
-                            <div class="timeline-badge1"></div>
+                            <div className="timeline-badge1"></div>
                             <Container className='w-80 ps-7'>
                                 <p className="text-black para-text fw-semibold">
                                     “Design is not just what it looks like and feels like. Design is how it works.” - Steve Jobs
@@ -35,7 +35,7 @@ const DesignContentComponents = () => {
                         </Col>
 
                         <Col className='position-relative'>
-                            <div class="timeline-badge1 mt-1"></div>
+                            <div className="timeline-badge1 mt-1"></div>
                             <Container className='w-80 ps-7'>
                                 <h1 className='fs-3 text-red fw-bold'>
                                     Web Design Services
@@ -60,7 +60,7 @@ const DesignContentComponents = () => {
                         </Col>
 
                         <Col className='position-relative'>
-                            <div class="timeline-badge1 mt-1"></div>
+                            <div className="timeline-badge1 mt-1"></div>
                             <Container className='w-80 ps-7'>
                                 <h1 className='fs-4 text-red fw-bold'>
                                     Logo Design
@@ -77,7 +77,7 @@ const DesignContentComponents = () => {
                         </Col>
 
                         <Col className='position-relative'>
-                            <div class="timeline-badge1 mt-2"></div>
+                            <div className="timeline-badge1 mt-2"></div>
                             <Container className='w-80 ps-7'>
                                 <h1 className='fs-4 text-red fw-bold'>
                                     Infographics
@@ -94,7 +94,7 @@ const DesignContentComponents = () => {
                         </Col>
 
                         <Col className='position-relative'>
-                            <div class="timeline-badge1 mt-2"></div>
+                            <div className="timeline-badge1 mt-2"></div>
                             <Container className='w-80 ps-7'>
                                 <h1 className='fs-4 text-red fw-bold'>
                                     Collateral Design
@@ -112,7 +112,7 @@ const DesignContentComponents = () => {
 
 
                         <Col className='position-relative'>
-                            <div class="timeline-badge1 mt-1"></div>
+                            <div className="timeline-badge1 mt-1"></div>
                             <Container className='w-80 ps-7'>
                                 <h1 className='fs-5 text-red fw-bold'>
                                     What is your design requirement? <Link href="/contact-us" className='red'> Contact us</Link> today.
@@ -121,7 +121,7 @@ const DesignContentComponents = () => {
                         </Col>
 
                         {/* <Col className='position-relative mb-5'>
-                            <div class="timeline-badge1 mt-1"></div>
+                            <div className="timeline-badge1 mt-1"></div>
                             <Container className='w-80 ps-7'>
                                 <h1 className='fs-4 text-red fw-bold'>
                                     

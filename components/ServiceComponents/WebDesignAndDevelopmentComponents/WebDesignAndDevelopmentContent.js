@@ -14,7 +14,7 @@ const WebDesignAndDevelopmentContent = () => {
                 <article>
                     <div className='timeline1'>
                         <div className='position-relative'>
-                            <div class="timeline-badge1"></div>
+                            <div className="timeline-badge1"></div>
                             <Container className='w-80 ps-7'>
                                 <p className="text-black para-text fw-semibold pe-lg-0">
                                     If your website is not engaging, intuitive, and visually appealing, you're losing potential customers to competitors. That is why a professionally designed website by a top website designing company is crucial to bring back visitors for meaningful engagement. </p>
@@ -38,7 +38,7 @@ const WebDesignAndDevelopmentContent = () => {
                         </div>
 
                         <div className='position-relative mt-3  px-0'>
-                            <div class="timeline-badge1"></div>
+                            <div className="timeline-badge1"></div>
                             <Container className='w-80 ps-7'>
                                 <h3 className='fs-4 text-red fw-bold p-0'>
                                     Web and Mobile App Expertise:
@@ -76,7 +76,7 @@ const WebDesignAndDevelopmentContent = () => {
                         </div>
 
                         <div className='position-relative mt-3 px-0'>
-                            <div class="timeline-badge1"></div>
+                            <div className="timeline-badge1"></div>
                             <Container className='w-80 ps-7'>
                                 <p className='fs-4 text-red fw-bold'>
                                     Technology Proficiency:
@@ -169,7 +169,7 @@ const WebDesignAndDevelopmentContent = () => {
                             </Container>
                         </div>
                         <h1 className='para-text text-red fw-bold pb-5 mt-2 position-relative px-0'>
-                            <div class="timeline-badge1"></div>
+                            <div className="timeline-badge1"></div>
                             <Container className='w-80 ps-7 custom_height_service'>
                                 <Link href="/contact-us" className='red'>Contact us</Link> today to embark on your journey to digital success.
                             </Container>
