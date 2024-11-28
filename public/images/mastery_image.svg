@@ -221,15 +221,15 @@
 	.st215{fill:url(#Rectangle_8003_00000179607082394385156050000010530397006810601395_);}
 </style>
 <g id="Group_48729" transform="translate(13378.345 -1410.073)">
-	<line id="Line_61" class="st0" x1="-13159.7" y1="1488.6" x2="-13159.7" y2="1923.1"/>
-	<line id="Line_62" class="st0" x1="-13106.4" y1="1580.4" x2="-13106.4" y2="1923.1"/>
-	<line id="Line_63" class="st0" x1="-13040.1" y1="1615.7" x2="-13040.1" y2="1923.1"/>
-	<line id="Line_64" class="st0" x1="-13219.4" y1="1589" x2="-13219.4" y2="1923.1"/>
-	<line id="Line_65" class="st0" x1="-13285.7" y1="1653.6" x2="-13285.7" y2="1923.1"/>
-	<line id="Line_66" class="st0" x1="-13346.2" y1="1788.8" x2="-13346.2" y2="1923.1"/>
-	<line id="Line_67" class="st0" x1="-12980.4" y1="1731" x2="-12980.4" y2="1923.1"/>
-	<path id="Path_14403" class="st1" d="M-13196.5,1493.6l28.6,0.4l5.9,11.6v-12.5L-13196.5,1493.6z"/>
-	<path id="Path_14404" class="st1" d="M-13127.6,1493.6l-28.6,0.4l-5.9,11.6v-12.5L-13127.6,1493.6z"/>
+	<line id="Line_61" className="st0" x1="-13159.7" y1="1488.6" x2="-13159.7" y2="1923.1"/>
+	<line id="Line_62" className="st0" x1="-13106.4" y1="1580.4" x2="-13106.4" y2="1923.1"/>
+	<line id="Line_63" className="st0" x1="-13040.1" y1="1615.7" x2="-13040.1" y2="1923.1"/>
+	<line id="Line_64" className="st0" x1="-13219.4" y1="1589" x2="-13219.4" y2="1923.1"/>
+	<line id="Line_65" className="st0" x1="-13285.7" y1="1653.6" x2="-13285.7" y2="1923.1"/>
+	<line id="Line_66" className="st0" x1="-13346.2" y1="1788.8" x2="-13346.2" y2="1923.1"/>
+	<line id="Line_67" className="st0" x1="-12980.4" y1="1731" x2="-12980.4" y2="1923.1"/>
+	<path id="Path_14403" className="st1" d="M-13196.5,1493.6l28.6,0.4l5.9,11.6v-12.5L-13196.5,1493.6z"/>
+	<path id="Path_14404" className="st1" d="M-13127.6,1493.6l-28.6,0.4l-5.9,11.6v-12.5L-13127.6,1493.6z"/>
 	<g id="Group_48407" transform="translate(-13167.828 1410.073)">
 		<g>
 			<defs>
@@ -275,8 +275,8 @@
 			</g>
 		</g>
 	</g>
-	<path id="Path_14407" class="st6" d="M-13156.3,1493.6l-5.8,11.6v-95.2l5.2,69.7L-13156.3,1493.6z"/>
-	<path id="Path_14408" class="st6" d="M-13157.9,1474.6l0.5,0.3l0.6,6.1l0.5,12.7l-5.8,11.6v-26.6L-13157.9,1474.6z"/>
+	<path id="Path_14407" className="st6" d="M-13156.3,1493.6l-5.8,11.6v-95.2l5.2,69.7L-13156.3,1493.6z"/>
+	<path id="Path_14408" className="st6" d="M-13157.9,1474.6l0.5,0.3l0.6,6.1l0.5,12.7l-5.8,11.6v-26.6L-13157.9,1474.6z"/>
 	<g id="Group_48411" transform="translate(-13196.512 1436.248)">
 		<g>
 			<defs>
@@ -327,7 +327,7 @@
 				<use xlink:href="#SVGID_00000150794021932368190040000009568042170624926359_"  style="overflow:visible;"/>
 			</clipPath>
 			<g id="Group_48414" style="clip-path:url(#SVGID_00000021108712608821786520000016003238532954566804_);">
-				<rect id="Rectangle_7864" x="0" y="0" class="st12" width="34.5" height="83.5"/>
+				<rect id="Rectangle_7864" x="0" y="0" className="st12" width="34.5" height="83.5"/>
 			</g>
 		</g>
 	</g>
@@ -340,13 +340,13 @@
 				<use xlink:href="#SVGID_00000166641124128130522300000004402803851147203236_"  style="overflow:visible;"/>
 			</clipPath>
 			<g id="Group_48416" style="clip-path:url(#SVGID_00000115506439919100142930000010893418112187765173_);">
-				<rect id="Rectangle_7865" x="0" y="0" class="st12" width="34.5" height="83.5"/>
+				<rect id="Rectangle_7865" x="0" y="0" className="st12" width="34.5" height="83.5"/>
 			</g>
 		</g>
 	</g>
 	<g id="Group_48443" transform="translate(-13196.512 1410.073)">
 		<g id="Group_48442">
-			<g id="Group_48420" transform="translate(30.099 64.509)" class="st14">
+			<g id="Group_48420" transform="translate(30.099 64.509)" className="st14">
 				<g id="Group_48419">
 					<g>
 						<defs>
@@ -356,12 +356,12 @@
 							<use xlink:href="#SVGID_00000060728160432233858380000011857122365789563059_"  style="overflow:visible;"/>
 						</clipPath>
 						<g id="Group_48418" style="clip-path:url(#SVGID_00000159428211225330197240000015795153937635124129_);">
-							<path id="Path_14413" class="st16" d="M0.2,0l4.1,4.1L8.5,0l0.2,0.1L4.4,4.5L0.4,0.6L0,0.1L0.2,0z"/>
+							<path id="Path_14413" className="st16" d="M0.2,0l4.1,4.1L8.5,0l0.2,0.1L4.4,4.5L0.4,0.6L0,0.1L0.2,0z"/>
 						</g>
 					</g>
 				</g>
 			</g>
-			<g id="Group_48423" transform="translate(0 64.73)" class="st14">
+			<g id="Group_48423" transform="translate(0 64.73)" className="st14">
 				<g id="Group_48422">
 					<g>
 						<defs>
@@ -371,12 +371,12 @@
 							<use xlink:href="#SVGID_00000064323532830531493420000014059226234222664845_"  style="overflow:visible;"/>
 						</clipPath>
 						<g id="Group_48421" style="clip-path:url(#SVGID_00000143579311288699453950000018181427179310007444_);">
-							<path id="Path_14414" class="st16" d="M30,0L0,18.8L30,0.3L30,0z"/>
+							<path id="Path_14414" className="st16" d="M30,0L0,18.8L30,0.3L30,0z"/>
 						</g>
 					</g>
 				</g>
 			</g>
-			<g id="Group_48426" transform="translate(38.938 64.73)" class="st14">
+			<g id="Group_48426" transform="translate(38.938 64.73)" className="st14">
 				<g id="Group_48425">
 					<g>
 						<defs>
@@ -386,12 +386,12 @@
 							<use xlink:href="#SVGID_00000141434145952081315150000008254642945538756227_"  style="overflow:visible;"/>
 						</clipPath>
 						<g id="Group_48424" style="clip-path:url(#SVGID_00000179623353362725339510000011087691644862509970_);">
-							<path id="Path_14415" class="st16" d="M30,18.8L0,0l0,0.3L30,18.8z"/>
+							<path id="Path_14415" className="st16" d="M30,18.8L0,0l0,0.3L30,18.8z"/>
 						</g>
 					</g>
 				</g>
 			</g>
-			<g id="Group_48431" class="st19">
+			<g id="Group_48431" className="st19">
 				<g id="Group_48430">
 					<g>
 						<defs>
@@ -421,7 +421,7 @@
 					</g>
 				</g>
 			</g>
-			<g id="Group_48436" transform="translate(28.348 9.253)" class="st19">
+			<g id="Group_48436" transform="translate(28.348 9.253)" className="st19">
 				<g id="Group_48435">
 					<g>
 						<defs>
@@ -451,7 +451,7 @@
 					</g>
 				</g>
 			</g>
-			<g id="Group_48441" transform="translate(34.625 9.253)" class="st19">
+			<g id="Group_48441" transform="translate(34.625 9.253)" className="st19">
 				<g id="Group_48440">
 					<g>
 						<defs>
@@ -1751,7 +1751,7 @@
 	</g>
 	<g id="Group_48615" transform="translate(-13252.341 1726.007)">
 		<g id="Group_48614">
-			<g id="Group_48592" transform="translate(30.099 64.51)" class="st14">
+			<g id="Group_48592" transform="translate(30.099 64.51)" className="st14">
 				<g id="Group_48591">
 					<g>
 						<defs>
@@ -1761,12 +1761,12 @@
 							<use xlink:href="#SVGID_00000177477150937035873610000011998095868056865173_"  style="overflow:visible;"/>
 						</clipPath>
 						<g id="Group_48590" style="clip-path:url(#SVGID_00000132809222738999558820000004704564921150738603_);">
-							<path id="Path_14485" class="st147" d="M0.2,0l4.1,4.1L8.5,0l0.2,0.1L4.4,4.5L0,0.1L0.2,0z"/>
+							<path id="Path_14485" className="st147" d="M0.2,0l4.1,4.1L8.5,0l0.2,0.1L4.4,4.5L0,0.1L0.2,0z"/>
 						</g>
 					</g>
 				</g>
 			</g>
-			<g id="Group_48595" transform="translate(0 64.656)" class="st14">
+			<g id="Group_48595" transform="translate(0 64.656)" className="st14">
 				<g id="Group_48594">
 					<g>
 						<defs>
@@ -1776,12 +1776,12 @@
 							<use xlink:href="#SVGID_00000167397089115314708140000017065164413464531626_"  style="overflow:visible;"/>
 						</clipPath>
 						<g id="Group_48593" style="clip-path:url(#SVGID_00000062893193093332429410000007479438669906347950_);">
-							<path id="Path_14486" class="st147" d="M30.1,0L0,18.9L30.1,0.3L30.1,0z"/>
+							<path id="Path_14486" className="st147" d="M30.1,0L0,18.9L30.1,0.3L30.1,0z"/>
 						</g>
 					</g>
 				</g>
 			</g>
-			<g id="Group_48598" transform="translate(38.819 64.656)" class="st14">
+			<g id="Group_48598" transform="translate(38.819 64.656)" className="st14">
 				<g id="Group_48597">
 					<g>
 						<defs>
@@ -1791,12 +1791,12 @@
 							<use xlink:href="#SVGID_00000155136423524151090060000006122806808813619102_"  style="overflow:visible;"/>
 						</clipPath>
 						<g id="Group_48596" style="clip-path:url(#SVGID_00000135671509844324601900000014783912014444763039_);">
-							<path id="Path_14487" class="st147" d="M0,0l30.1,18.9L0,0.3L0,0z"/>
+							<path id="Path_14487" className="st147" d="M0,0l30.1,18.9L0,0.3L0,0z"/>
 						</g>
 					</g>
 				</g>
 			</g>
-			<g id="Group_48603" class="st19">
+			<g id="Group_48603" className="st19">
 				<g id="Group_48602">
 					<g>
 						<defs>
@@ -1826,7 +1826,7 @@
 					</g>
 				</g>
 			</g>
-			<g id="Group_48608" transform="translate(28.348 9.254)" class="st19">
+			<g id="Group_48608" transform="translate(28.348 9.254)" className="st19">
 				<g id="Group_48607">
 					<g>
 						<defs>
@@ -1856,7 +1856,7 @@
 					</g>
 				</g>
 			</g>
-			<g id="Group_48613" transform="translate(34.625 9.254)" class="st19">
+			<g id="Group_48613" transform="translate(34.625 9.254)" className="st19">
 				<g id="Group_48612">
 					<g>
 						<defs>

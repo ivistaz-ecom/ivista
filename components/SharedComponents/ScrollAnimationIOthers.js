@@ -108,8 +108,8 @@ const ScrollAnimationIOthers = () => {
     }, []);
 
     return (
-        <div class="KW_progressContainer2">
-            <div class="KW_progressBar2">
+        <div className="KW_progressContainer2">
+            <div className="KW_progressBar2">
             </div>
         </div>
     );

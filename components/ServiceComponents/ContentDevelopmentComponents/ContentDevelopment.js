@@ -31,14 +31,14 @@ const ContentDevelopment = () => {
         <article>
           <div className="timeline1">
             {/* <h1 className='fs-3 text-red fw-bold ps-7 position-relative'>
-                            <div class="timeline-badge1"></div>
+                            <div className="timeline-badge1"></div>
                             <Container className='w-80'>
                                 Content Development
                             </Container>
                         </h1> */}
 
             <Col className="position-relative">
-              <div class="timeline-badge1"></div>
+              <div className="timeline-badge1"></div>
               <Container className="w-80 ps-7 pe-lg-0 pe-3">
                 <p className="text-black para-text fw-semibold">
                   “Content builds relationships. Relationships are built on
@@ -68,7 +68,7 @@ const ContentDevelopment = () => {
             </Col>
 
             <Col className="position-relative">
-              <div class="timeline-badge1"></div>
+              <div className="timeline-badge1"></div>
               <Container className="w-80 ps-7 position-relative">
                 <h1 className="fs-3 text-red fw-bold">
                   Our content development expertise covers the following:
@@ -168,7 +168,7 @@ const ContentDevelopment = () => {
             </Col>
 
             <Col className="position-relative mt-2">
-              <div class="timeline-badge1"></div>
+              <div className="timeline-badge1"></div>
               <Container className="w-80 ps-7 ">
                 <p className="text-red fw-bold para-text">
                   What is your content requirement?{" "}

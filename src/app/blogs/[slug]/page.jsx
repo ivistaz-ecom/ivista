@@ -8,7 +8,7 @@ const page = ({ params }) => {
     return (
         <>
             <>
-                <Container fluid className='bg-black p-0'>
+                <Container fluid className='text-black p-0'>
                     <Header1 />
                     <Posts slug={params.slug} />
                     <Footer />

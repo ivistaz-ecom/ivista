@@ -107,8 +107,8 @@ const ScrollAnimatIonindustries = () => {
     }, []);
 
     return (
-        <div class="KW_progressContainer3">
-            <div class="KW_progressBar3">
+        <div className="KW_progressContainer3">
+            <div className="KW_progressBar3">
             </div>
         </div>
     ); // This component doesn't render anything visible

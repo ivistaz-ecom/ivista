@@ -38,7 +38,7 @@ const Posts = ({ slug }) => {
                     </React.Fragment>
                 ))
             ) : (
-                <div className='text-white'>Loading...</div>
+                <div className='text-black'>Loading...</div>
             )}
             <Container fluid className="w-80 custom-container">
                 {data ? ( 
@@ -49,13 +49,13 @@ const Posts = ({ slug }) => {
                             <div className='d-flex flex-row align-items-center mb-3 flex-nowrap'>
                                 <p>
                                     <Link href="/blogs" className='text-decoration-none '>
-                                        <span className='fs-6 text-white mb-0 px-1'>Blogs</span>
+                                        <span className='fs-6 text-black mb-0 px-1'>Blogs</span>
                                     </Link>
                                     <span className='px-1'>
-                                        <CiCircleChevRight fill='white' />
+                                        <CiCircleChevRight fill='black' />
                                     </span>
                                     <Link href="" className='text-decoration-none px-1'>
-                                        <span className='fs-6 text-decoration-none text-white mb-0' dangerouslySetInnerHTML={{ __html: post.title.rendered }} />
+                                        <span className='fs-6 text-decoration-none text-black mb-0 text-black' dangerouslySetInnerHTML={{ __html: post.title.rendered }} />
                                     </Link>
                                 </p>
                             </div>
@@ -67,13 +67,13 @@ const Posts = ({ slug }) => {
                             />
 
                             <Container className='py-5'>
-                                <div className="card-body text-white d-flex flex-column justify-content-between">
-                                    <h5 className="card-title fs-22 pb-3"
+                                <div className="card-body text-black d-flex flex-column justify-content-between">
+                                    <h5 className="card-title text-black fs-22 pb-3"
                                         dangerouslySetInnerHTML={{ __html: post.title.rendered }}
                                     />
                                     <div className='d-flex flex-column'>
                                         <div>
-                                            <p className="card-text para-text" dangerouslySetInnerHTML={{ __html: post.content.rendered }} />
+                                            <p className="card-text para-text text-black" dangerouslySetInnerHTML={{ __html: post.content.rendered }} />
                                         </div>
                                     </div>
                                 </div>
@@ -81,7 +81,7 @@ const Posts = ({ slug }) => {
                         </div>
                     ))
                 ) : (
-                    <div className='text-white'>Loading...</div> // Handle case where no data is found
+                    <div className='text-black'>Loading...</div> // Handle case where no data is found
                 )}
             </Container>
         </>
